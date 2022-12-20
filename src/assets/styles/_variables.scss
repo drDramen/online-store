@@ -1,0 +1,15 @@
+:root {
+  --color-white: #fff;
+
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 1rem;
+
+  --bg-page-color: var(--color-white);
+  --font-color: var(--color-white);
+
+  --transition: 0.3s ease-in-out;
+
+  --content-width: 1200px;
+  --container-offset: 30px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
