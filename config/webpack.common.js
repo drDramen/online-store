@@ -27,7 +27,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Online-store',
-      favicon: paths.public + '/favicon/favicon.png',
+      favicon: paths.public + '/favicon/favicon_2.svg',
       template: paths.src + '/template.html',
       filename: 'index.html',
     }),
