@@ -37,6 +37,14 @@ export class BaseComponent {
     });
   }
 
+  setContent(content: string): void {
+    this.node.textContent = content;
+  }
+
+  setInnerHTML(html: string): void {
+    this.node.innerHTML = html;
+  }
+
   destroy(): void {
     this.children.forEach((child) => child.destroy());
     this.node.remove();
