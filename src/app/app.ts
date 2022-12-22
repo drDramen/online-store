@@ -12,7 +12,7 @@ export class App {
   }
 
   create() {
-    this.append(this.footer);
+    this.append(this.header, this.footer);
   }
 
   append(...elements: BaseComponent[]) {
