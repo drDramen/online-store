@@ -30,17 +30,19 @@ export class BaseComponent {
     this.node.classList.remove(...className);
   }
 
-  append(...rest: HTMLElement[]): void;
-  append(...rest: BaseComponent[]): void;
-  append(...rest: BaseComponent[] | HTMLElement[]): void {
+  append(...rest: BaseComponent[]): void {
     rest.forEach((child) => {
-      if (child instanceof BaseComponent) {
-        this.children.push(child);
-        this.node.append(child.getNode());
-      } else {
-        this.node.append(child);
-      }
+      this.children.push(child);
+      this.node.append(child.getNode());
     });
+  }
+
+  setContent(content: string): void {
+    this.node.textContent = content;
+  }
+
+  setInnerHTML(html: string): void {
+    this.node.innerHTML = html;
   }
 
   destroy(): void {
