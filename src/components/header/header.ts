@@ -2,7 +2,7 @@ import { BaseComponent } from '@/templates/base-component';
 import { Container } from '../container/container';
 import './header.scss';
 
-export class Footer extends BaseComponent {
+export class Header extends BaseComponent {
   private container: Container;
 
   constructor() {
