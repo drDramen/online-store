@@ -12,14 +12,10 @@ export class Logo extends BaseComponent {
       className: 'logo',
     });
 
-    //this.node.innerHTML = 'TakeCare';
-
     this.logoImage = new BaseComponent('span', { className: 'logo__image' }, this.node);
     this.append(this.logoImage);
 
     this.logoText = new BaseComponent('div', { className: 'logo__text' }, this.node);
-    // this.logoText.setInnerHTML('TakeCare');
-    // this.append(this.logoText);
 
     this.logoTextFirst = new BaseComponent('span', { className: 'logo_colour_one' }, this.node);
     this.logoTextFirst.setInnerHTML('Take');

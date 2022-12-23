@@ -1,5 +1,5 @@
 .navigation {
-    width: 838px;
+    width: 438px;
     height: 42px;
 
     &__items {
@@ -14,6 +14,14 @@
 
     &__item {
         margin-left: 57px;
+        list-style: none;
+
+        &.active {
+
+            .navigation__link {
+                color: var(--color-java);
+            }
+        }
 
         &.cart {
             width: 123px;
@@ -33,15 +41,9 @@
 
     &__link {
         transition: all 0.4s ease-in-out;
-
-        &.active {
-            color: var(--color-java);
-        }
     }
 
     &__link:hover {
         color: var(--color-charlotte);
     }
-
-    
 }

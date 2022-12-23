@@ -1,32 +1,60 @@
+import { AppRoute } from './../enums/enums';
 import { BaseComponent } from '@/templates/base-component';
 import './navigation.scss';
 
+const navigationLinks = [
+  { text: 'Home', href: AppRoute.Home },
+  { text: 'Shop', href: AppRoute.Shop },
+  { text: 'Contacts', href: AppRoute.Contacts },
+];
+
 export class Navigation extends BaseComponent {
+  private navigationItems: BaseComponent;
+
   constructor() {
     super('nav', {
       className: 'navigation',
     });
 
-    this.node.innerHTML = `
-        <ul class="navigation__items list-reset">
-          <li class="navigation__item sum">
-            <a class="navigation__link" href="#">Sum</a>
-          </li>
-          <li class="navigation__item cart">
-            <a class="navigation__link" href="#">Cart
-              <span class="cart__image"></span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link active" href="#">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Shop</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Contacts</a>
-          </li>
-        </ul>
-        `;
+    this.navigationItems = new BaseComponent('ul', { className: 'navigation__items' });
+    this.append(this.navigationItems);
+
+    this.createNavigationItems();
+  }
+
+  onPathChange() {
+    const path = window.location.pathname;
+    console.log(path);
+  }
+
+  createNavigationItems() {
+    navigationLinks.forEach(({ text, href }) => {
+      const navigationItem = new BaseComponent('li', { className: 'navigation__item' });
+      const navigationLink = new BaseComponent('a', {
+        className: 'navigation__link',
+        href: href,
+        textContent: text,
+      });
+      navigationLink.getNode().addEventListener('click', (event: Event) => {
+        event.preventDefault();
+        window.history.pushState({}, '', href);
+        this.onPathChange();
+        this.navigationItems.getChildren().forEach((element) => {
+          element.removeClass('active');
+        });
+        const { currentTarget } = event;
+        if (currentTarget instanceof HTMLElement) {
+          //currentTarget.classList.add('active');
+          currentTarget.parentElement?.classList.add('active');
+        }
+      });
+      navigationItem.append(navigationLink);
+      this.navigationItems.append(navigationItem);
+    });
+
+    //window.addEventListener('popstate', this.onPathChange.bind(this));
+    window.addEventListener('popstate', () => {
+      this.onPathChange();
+    });
   }
 }

@@ -4,7 +4,8 @@ export class BaseComponent {
 
   constructor(
     tagName: keyof HTMLElementTagNameMap = 'div',
-    props: Partial<HTMLElement> = {},
+    //props: Partial<HTMLElement> = {},
+    props: Record<string, unknown> = {},
     parentNode?: HTMLElement,
   ) {
     this.node = document.createElement(tagName);
@@ -20,6 +21,10 @@ export class BaseComponent {
 
   getNode(): HTMLElement {
     return this.node;
+  }
+
+  getChildren(): BaseComponent[] {
+    return this.children;
   }
 
   addClass(...className: string[]) {
