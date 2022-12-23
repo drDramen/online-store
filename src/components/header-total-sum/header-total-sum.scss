@@ -1,0 +1,23 @@
+.header_total_sum {
+    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+
+    &.text {
+        width: 163px;
+        height: 42px;
+    }
+
+    &.amount {
+        width: 81px;
+        height: 42px;
+        justify-content: center;
+    }
+}
