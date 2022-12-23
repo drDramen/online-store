@@ -21,11 +21,11 @@ export class Logo extends BaseComponent {
     // this.logoText.setInnerHTML('TakeCare');
     // this.append(this.logoText);
 
-    this.logoTextFirst = new BaseComponent('span', { className: 'color_charlotte' }, this.node);
+    this.logoTextFirst = new BaseComponent('span', { className: 'logo_colour_one' }, this.node);
     this.logoTextFirst.setInnerHTML('Take');
     this.logoText.append(this.logoTextFirst);
 
-    this.logoTextSecond = new BaseComponent('span', { className: 'color_java' }, this.node);
+    this.logoTextSecond = new BaseComponent('span', { className: 'logo_colour_two' }, this.node);
     this.logoTextSecond.setInnerHTML('Care');
     this.logoText.append(this.logoTextSecond);
   }

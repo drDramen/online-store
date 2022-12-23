@@ -4,10 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &:hover {
-        cursor: pointer;
-    }
+    transition: all 0.4s ease-in-out;
 
     &__image {
         width: 93px;
@@ -25,13 +22,26 @@
         font-size: 64px;
         line-height: 92px;
         user-select: none;
+        transition: all 0.4s ease-in-out;
 
-        .color_charlotte {
+        .logo_colour_one {
             color: var(--color-charlotte);
         }
 
-        .color_java {
+        .logo_colour_two {
             color: var(--color-java);
         }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover > .logo__text > .logo_colour_one {
+        color: var(--color-java);
+    }
+
+    &:hover > .logo__text > .logo_colour_two {
+        color: var(--color-charlotte);
     }
 }
