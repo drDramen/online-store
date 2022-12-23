@@ -1,0 +1,37 @@
+.logo {
+    width: 333px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 93px;
+        height: 93px;
+        user-select: none;
+        background-image: url('../../assets/images/logo.png');
+    }
+
+    &__text {
+        width: 220px;
+        height: 92px;
+        font-family: var(--font-family-logo);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 92px;
+        user-select: none;
+
+        .color_charlotte {
+            color: var(--color-charlotte);
+        }
+
+        .color_java {
+            color: var(--color-java);
+        }
+    }
+}

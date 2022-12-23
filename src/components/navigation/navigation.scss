@@ -1,0 +1,47 @@
+.navigation {
+    width: 838px;
+    height: 42px;
+
+    &__items {
+        display: flex;
+        font-size: 36px;
+        font-family: var(--font-family-main);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px;
+        user-select: none;
+    }
+
+    &__item {
+        margin-left: 57px;
+
+        &.cart {
+            width: 123px;
+            height: 48px;
+
+            &__image {
+                width: 27px;
+                height: 27px;
+            }
+        }
+
+        &.sum {
+            width: 185px;
+            height: 42px;
+        }
+    }
+
+    &__link {
+        transition: all 0.4s ease-in-out;
+
+        &.active {
+            color: var(--color-java);
+        }
+    }
+
+    &__link:hover {
+        color: var(--color-charlotte);
+    }
+
+    
+}
