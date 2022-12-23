@@ -1,13 +1,16 @@
+import { HeaderCart } from './../header-cart/header-cart';
 import { Navigation } from './../navigation/navigation';
 import { Logo } from './../logo/logo';
 import { BaseComponent } from '@/templates/base-component';
 import { Container } from '../container/container';
+
 import './header.scss';
 
 export class Header extends BaseComponent {
   private container: Container;
   private logo: Logo = new Logo();
   private navigation: Navigation = new Navigation();
+  private headerCart: HeaderCart = new HeaderCart();
 
   constructor() {
     super('header', {
@@ -21,6 +24,8 @@ export class Header extends BaseComponent {
     this.append(this.container);
 
     this.container.append(this.logo);
+
+    this.container.append(this.headerCart);
 
     this.container.append(this.navigation);
   }
