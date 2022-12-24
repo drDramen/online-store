@@ -45,6 +45,10 @@ export class BaseComponent {
     this.node.innerHTML = html;
   }
 
+  setAttribute(attribute: string, value: string): void {
+    this.node.setAttribute(attribute, value);
+  }
+
   destroy(): void {
     this.children.forEach((child) => child.destroy());
     this.node.remove();
