@@ -740,4 +740,188 @@ export const products: Product[] = [
     for: 'Face',
     availableAmount: 195,
   },
+  {
+    id: '0123',
+    brandName: 'Bioderma',
+    productName: 'Sensibio AR Cream',
+    description: `Soft cream Bioderma Sensibio AR cream instantly soothes irritated skin,
+     reduces redness and prevents their appearance. The patented complex of active ingredients
+      Rozactiv® affects the capillary dilation mechanism, which causes permanent redness.
+       The likelihood of the appearance and development of diffuse redness is reduced.
+    Bioderma Sensibio AR cream protects sensitive, dry, thinned, fragile skin from external
+     factors, intensively moisturizes it. The cream is perfectly tolerated due to the optimally
+      selected composition, which includes only mild components. Non-greasy light texture makes
+       the application of the cream comfortable.`,
+    ingredients: `Aqua/Water/Eau, Paraffinum Liquidum/Mineral Oil/Huile Minerale, Glycerin,
+     Tridecyl Trimellitate, Glycol Palmitate, Caprylic/Capric Triglyceride, Canola/Canola Oil/Huile De Colza,
+      Triceteareth-4 Phosphate, Fructooligosaccharides, Mannitol, Xylitol, Glycol Stearate, Peg-2 Stearate,
+       Propylene Glycol, Glycyrrhetinic Acid, Pentylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+        1,2-Hexanediol, Caprylyl Glycol, Disodium Edta, Xanthan Gum, Glycine Soja (Soybean) Germ Extract, Allantoin,
+         Laminaria Ochroleuca Extract, Rhamnose, Ginkgo Biloba Leaf Extract, Sodium Hydroxide, Camellia Sinensis Leaf Extract, Citric Acid`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0123/bioderma-sensibio-ar-cream-1.jgp',
+      'assets/product-images/0123/bioderma-sensibio-ar-cream-2.jpg',
+    ],
+    price: 27,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 244,
+  },
+  {
+    id: '0124',
+    brandName: 'Bioderma',
+    productName: 'Sensibio Soothing Mask',
+    description: `The patented formula Toleridine ® has a strong anti-inflammatory effect.
+     It restores the protective barrier of the skin, protecting it from negative environmental influences.
+    Sensibio mask eliminates signs of inflammation, redness, intensively moisturizes the skin.
+    It is optimally tolerated, also by the skin of the eyelids.
+    Does not contain surfactants, and fragrances, hypoallergenic.
+    Non-comedogenic (does not contribute to the appearance of comedones, does not clog skin pores).`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Cetearyl Isononanoate, Isohexadecane, Glycol Palmitate,
+     Caprylic/Capric Triglyceride, Triceteareth-4 Phosphate, Fructooligosaccharides, Mannitol,
+      Xylitol, Glycyrrhetinic Acid, Rhamnose, Laminaria Ochroleuca Extract, Glycol Stearate,
+       PEG-2 Stearate, Pentylene Glycol, Titanium Dioxide, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+        Caprylyl Glycol, 1,2-Hexanediol, Disodium EDTA, Xanthan Gum, Sodium Hydroxide, Alumina, Stearic Acid`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0124/bioderma-sensibio-mask-1.jgp',
+      'assets/product-images/0124/bioderma-sensibio-ar-cream-2.jpg',
+    ],
+    price: 25,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 11,
+  },
+  {
+    id: '0125',
+    brandName: 'Bioderma',
+    productName: 'Sensibio AR BB Cream',
+    description: `This is the first BB cream designed for irritated skin.
+     The main effect that you get when using Sensibio AR cream:
+    removal of irritations caused by stress, climate change, hot food;
+    alignment and improvement of complexion;
+    moisturizing the skin of the face, strengthening the protective barrier;
+    protection from UV rays, which is especially important for skin prone to irritation.
+    Thanks to the presence of SPF 30 filters, the cream protects against the negative effects of ultraviolet rays.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Cyclopentasiloxane, Dimethicone, Octocrylene, Titanium Dioxide (Ci 77891),
+     Hdi/Trimethylol Hexyllactone Crosspolymer, Titanium Dioxide, Dipropylene Glycol, PEG-10 Dimethicone, Sorbitol,
+      Caprylic/Capric Triglyceride, Butyl Methoxydibenzoylmethane, Cyclohexasiloxane, Canola Oil, Mannitol,
+       Xylitol, Rhamnose, Laminaria Ochroleuca Extract, Camellia Sinensis Leaf Extract, Glycyrrhetinic Acid,
+        Glycine Soja (Soybean) Germ Extract, Ginkgo Biloba Leaf Extract, Allantoin, Propylene Glycol,
+         Iron Oxides (Ci 77492), Dimethicone/Polyglycerin-3 Crosspolymer, Silica, Disteardimonium Hectorite, Dimethicone/Vinyl
+          Dimethicone Crosspolymer, 1,2-Hexanediol, Caprylyl Glycol, Trimethoxycaprylylsilane, Hydrogenated Lecithin,
+           Propylene Carbonate, Iron Oxides (Ci 77499), PVP, Sodium Phytate, Sodium Citrate, Tocopherol, Sodium Chloride,
+            Pentylene Glycol, Iron Oxides (Ci 77491), Xanthan Gum, Sodium Hydroxide, Lecithin, Citric Acid, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0125/bioderma-sensibio-ar-bb-1.jgp',
+      'assets/product-images/0125/bioderma-sensibio-ar-bb-2.jpg',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 26,
+  },
+  {
+    id: '0126',
+    brandName: 'Bioderma',
+    productName: 'Sensibio Eye Contour Gel',
+    description: `The active ingredients of Toleridine ® provide an anti-inflammatory effect.
+     Reduce hypersensitivity of the skin. Quickly quench the feeling of discomfort and irritation.
+      Reduces puffiness. Due to the pronounced hydrating properties, it smoothes fine wrinkles.
+       Reflective particles visually reduce the depth of wrinkles. Hypoallergenic, does not contain
+        dyes and preservatives. Optimal skin and eye tolerance. It is a good base for makeup.
+         Compatible with contact lenses.`,
+    ingredients: `Water (Aqua), Glycerin, Dimethicone, Polyethylene, Tridecyl Trimellitate,
+     Caprylic/Capric Triglyceride, Isostearyl Alcohol, Butylene Glycol Cocoate, Fructooligosaccharides,
+      Mannitol, Xylitol, Caffeine, Sodium Hyaluronate, Glycyrrhetinic Acid, Rhamnose, Laminaria Ochroleuca
+       Extract, Acrylates/ C10-30 Alkyl Acrylate Crosspolymer, Pentylene Glycol, Caprylyl Glycol,
+        1,2-Hexanediol, Disodium Edta, Sodium Hydroxide, Ethylcellulose`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0126/bioderma-sensibio-eye-cream-1.jgp',
+      'assets/product-images/0126/bioderma-sensibio-eye-cream-2.jpg',
+    ],
+    price: 24,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 201,
+  },
+  {
+    id: '0127',
+    brandName: 'Bioderma',
+    productName: 'Sensibio Défensive Crème active apaisante légère',
+    description: `Tingling, burning sensation and tightness, itching - more than 60% of
+     the world's population experiences similar signs of skin sensitivity. In addition
+      to the natural violation of the biological function of the skin, urban residents
+       face an acquired problem due to the influence of aggressive environmental factors.
+        Cream Bioderma Sensibio Defensive will help in solving the problem of sensitivity,
+         photosensitivity of the skin and their combination, regardless of the cause of the appearance.
+          The product eliminates tingling in 30 seconds and soothes the skin for a long time, restores
+           comfort. Défensive technology is aimed at enhancing the natural protective functions of the
+            epidermis, in the future it strengthens the mechanism of self-defense against aggressive
+             environmental factors. Cream with a light refreshing texture quickly penetrates the skin,
+              has a high tolerance, tested under dermatological control. Excellent base for make-up.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Dicaprylyl Ether, Propylheptyl Caprylate, Butylene Glycol,
+     Glyceryl Stearate Citrate, Glycol Palmitate, Squalane, Sucrose Stearate, Mangifera Indica (Mango)
+      Seed Butter, Pentylene Glycol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Caprylyl Glycol,
+       Carnosine, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Mannitol, Xylitol,
+        Tocopherol, Salvia Miltiorrhiza Flower/Leaf/Root Extract, Rhamnose, Glycine Soja (Soybean)
+         Oil, Polysorbate 60, Sorbitan Isostearate, Palmitoyl Tetrapeptide-10`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0127/bioderma-sensibio-defensive-1.jgp',
+      'assets/product-images/0127/bioderma-sensibio-defensive-2.jpg',
+    ],
+    price: 18,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 480,
+  },
+  {
+    id: '0128',
+    brandName: 'Bioderma',
+    productName: 'Sensibio Défensive Crème active apaisante riche',
+    description: `Tingling, burning sensation and tightness, itching - more than 60% of the
+     world's population experiences similar signs of skin sensitivity. In addition to the
+      natural violation of the biological function of the skin, urban residents face
+       acquired sensitivity due to the influence of aggressive environmental factors.
+        Cream Bioderma Sensibio Defensive will help in solving the problem of sensitivity,
+         photosensitivity of the skin and their combination, regardless of the cause of
+          the appearance. The product eliminates tingling in 30 seconds and soothes the
+           skin for a long time, restores comfort. Défensive technology is aimed at
+            enhancing the natural protective functions of the epidermis, in the future
+             it strengthens the mechanism of self-defense against aggressive environmental
+              factors. Cream with a rich enveloping texture nourishes and softens the skin,
+               is highly tolerated, tested under dermatological control. Excellent base for make-up.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Dicaprylyl Ether, Glycol Palmitate, Butylene
+     Glycol, Cetyl Palmitate, Glyceryl Stearate Citrate, Squalane, Sucrose Stearate, Tridecyl
+      Trimellitate, Glyceryl Dibehenate, Polysorbate 60, Pentylene Glycol, Tribehenin, Glyceryl Behenate,
+       Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Caprylyl Glycol, Carnosine, Hydroxyethyl
+        Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Mannitol, Xylitol, Tocopherol, Salvia
+         Miltiorrhiza Flower/Leaf/Root Extract, Rhamnose, Glycine Soja (Soybean) Oil, Sorbitan
+          Isostearate, Sodium Hydroxide, Palmitoyl Tetrapeptide-10`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0128/bioderma-sensibio-defensive-riche-1.jgp',
+      'assets/product-images/0128/bioderma-sensibio-defensive-riche-2.avif',
+    ],
+    price: 19,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 167,
+  },
 ];
