@@ -443,4 +443,301 @@ export const products: Product[] = [
     for: 'Face',
     availableAmount: 328,
   },
+  {
+    id: '0113',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Lait Moisturising cleansing milk',
+    description: `The unique texture combines the softness of cosmetic milk and the
+     freshness of water, making the use of the product as comfortable as possible.
+    Due to the content of the patented Aquagenium® complex based on liquid crystals,
+     it normalizes the processes of natural skin hydration.
+    Perfectly tolerated by the skin of the face and eye contour. Contains hypoallergenic
+     fragrance. Does not promote the appearance of comedones.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Cetearyl Isononanoate, Paraffinum
+     Liquidum/Mineral Oil/Huile Minerale, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+      Ethylhexylglycerin, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,
+       Disodium EDTA, Squalane, Xylitol, Sodium Hydroxide, Niacinamide, Hexyldecanol, Polysorbate
+        60, Sorbitan Isostearate, Fructooligosaccharides, Mannitol, Caprylic/Capric
+         Triglyceride, Rhamnose, Laminaria Ochroleuca Extract, Pyrus Malus (Apple) Seed
+          Extract, Brassica Campestris (Rapeseed) Sterols, Tocopherol, Phenoxyethanol, Fragrance (Parfum)`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0113/bioderma-hydrabio-lait-moisturising-cleansing-milk-1.jpg',
+      'assets/product-images/0113/bioderma-hydrabio-lait-moisturising-cleansing-milk-2.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 126,
+  },
+  {
+    id: '0114',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Serum',
+    description: `Bioderma Hydrabio Serum is a dense, rich texture product designed
+     to intensely moisturize and reduce the reactivity of extremely dehydrated,
+      sensitive skin. Its formula contains the patented Aquagenium® complex, which
+       activates the natural hydration mechanism.
+    Serum Bioderma Hydrabio Serum makes even very dry skin soft, supple, radiant
+     with health. Complex D.A.F. improves its barrier functions, thereby reducing
+      transdermal moisture loss and the risk of developing inflammatory processes,
+       allergic reactions.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Xylitol, Sodium Polyacrylate, Dimethicone,
+     Cyclopentasiloxane, Trideceth-6, Disodium EDTA, Niacinamide, PEG/PPG-18/18 Dimethicone,
+     Fructooligosaccharides, Mannitol, Sodium Hyaluronate, Hexyldecanol, Caprylic/Capric
+     Triglyceride, Rhamnose, Laminaria Ochroleuca Extract, Pyrus Malus (Apple) Seed Extract,
+        Brassica Campestris (Rapeseed) Sterols, Tocopherol, Chlorphenesin, Phenoxyethanol,
+         Fragrance (Parfum)`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0114/bioderma-hydrabio-serum-1.jpg',
+      'assets/product-images/0114/bioderma-hydrabio-serum-2.jpg',
+    ],
+    price: 42,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 26,
+  },
+  {
+    id: '0115',
+    brandName: 'Bioderma',
+    productName: 'Bioderma Sébium Night Peel',
+    description: `While you sleep, the skin is renewed, becomes smoother, more uniform,
+     healthy and radiant - dreams come true with Sebium Night Peeling! The healing
+      concentrate provides effective gentle peeling at home, reduces the number of
+       comedones and rashes, tightens pores, restores radiance and a uniform complexion.
+        Glycolic acid at a concentration of 15% has a natural exfoliating effect, keratolytic
+         properties and high tolerance. That is why it is often used by dermatologists in salon
+          peels. The Fluidactiv® patent enhances the effectiveness of Bioderma Sébium Night
+           Peel against breakouts and blackheads, improves sebum quality and prevents clogged pores.`,
+    ingredients: `Aqua/Water/Eau, Glycolic Acid (15%), Sodium Hydroxide, Panthenol,
+     Ammonium Acryloyldimethyltaurate/VP Copolymer, Dipropylene Glycol, Hydroxyethylcellulose,
+      Mannitol, Propyl Gallate, Xylitol, Sodium Metabisulfite, Rhamnose, Fructooligosaccharides,
+       Caprylic/Capric Triglyceride, Laminaria Ochroleuca Extract, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0115/bioderma-sebium-night-peel-1.jpg',
+      'assets/product-images/0115/bioderma-sebium-night-peel-2.jpg',
+    ],
+    price: 33,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 26,
+  },
+  {
+    id: '0116',
+    brandName: 'Bioderma',
+    productName: 'Sébium Sensitive Soin Apaisant anti-imperfections',
+    description: `Thanks to SeboRestore technology (Patent Fluidactiv ™ - Bakuchiol),
+     the product restores the balanced composition of sebum, as a result, the natural
+      functions of sebum are strengthened - moisturizing and preventing inflammatory
+       elements. Sébium Sensitive also eliminates already existing inflammations,
+        preventing the appearance of post-acne. As a result of using the product,
+         the skin calms down, inflammatory elements disappear, redness and oily sheen
+          disappears, the face becomes matte and acquires a healthy shade. The product
+           is highly tolerable, has a non-greasy, non-sticky texture and is quickly
+            absorbed. Can be used as a make-up base.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Methyl Methacrylate Crosspolymer,
+     Dipropylene Glycol, Zinc Gluconate, Coco-Caprylate/Caprate, Vinyl Dimethicone/Methicone
+      Silsesquioxane Crosspolymer, Caprylic/Capric Triglyceride, Arachidyl Alcohol, Behenyl
+       Alcohol, Polyacrylate Crosspolymer-6, Sodium Polyacrylate, Glycyrrhetinic Acid,
+        Propylene Glycol, Arachidyl Glucoside, Bakuchiol, Laminaria Ochroleuca
+         Extract, Mannitol, Xylitol, Sodium Metabisulfite, Rhamnose, Ginkgo
+          Biloba Leaf Extract, Tocopherol, Fructooligosaccharides, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0116/bioderma-sebium-sensitive-1.jpg',
+      'assets/product-images/0116/bioderma-sebium-sensitive-2.jpg',
+    ],
+    price: 21,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 41,
+  },
+  {
+    id: '0117',
+    brandName: 'Bioderma',
+    productName: 'Sebium Solution Micellaire',
+    description: `Micellar water effectively cleanses pores of sebum, normalizes its composition and quantity.
+     Does not contain alkalis and alcohol, and therefore does not dry the skin.
+      Does not require rinsing, has an anti-inflammatory and antibacterial effect.`,
+    ingredients: `Water, PEG-6 Caprylic/Capric Glycerides, Sodium Citrate, Zinc Gluconate,
+     Copper Sulfate, Ginkgo Biloba Leaf Extract, Mannitol, Xylitol, Rhamnose,
+      Fructooligosaccharides, Propylene Glycol, Citric Acid, Disodium EDTA,
+       Cetrimonium Bromide, Fragrance`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0117/bioderma-sebium-solution-micellaire-1.jgp',
+      'assets/product-images/0117/bioderma-sebium-solution-micellaire-2.jpg',
+    ],
+    price: 18,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 10,
+  },
+  {
+    id: '0118',
+    brandName: 'Bioderma',
+    productName: 'Sebium Global intensive purifying care',
+    description: `Bioderma Sebium Global intensive purifying care is a unique
+     product that eliminates the causes of inflammation and acne by normalizing the composition of sebum.
+    Bioderma Sebium Global intensive healing care formula includes a new generation patented Fluidactiv
+     complex, which contains the most powerful antibacterial and anti-inflammatory drug - Bakuchiol.
+      Thanks to its action, the quantity and quality of sebum is normalized, which prevents
+       the appearance of pimples, pustules and blackheads.`,
+    ingredients: `Aqua/Water/Eau, C12-13 Alkyl Lactate, Dipropylene Glycol, Citric Acid,
+     Cyclopentasiloxane, Sodium Hydroxide, Glycerin, Zinc Gluconate, Methyl Methacrylate
+      Crosspolymer, Salicylic Acid, Arachidyl Alcohol, Dimethicone, Mannitol, Xylitol,
+       Rhamnose, Fructooligosaccharides, Laminaria Ochroleuca Extract, Ginkgo Biloba Leaf
+        Extract, Behenyl Alcohol, Glyceryl Stearate, PEG-100 Stearate, Silica, Hydroxyethyl
+         Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Xanthan Gum, Arachidyl Glucoside,
+          C30-45 Alkyl Cetearyl Dimethicone Crosspolymer, Glycyrrhetinic Acid, Propylene Glycol,
+           Polysorbate 60, Caprylic/Capric Triglyceride, Bakuchiol, Squalane, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0118/bioderma-sebium-global-intensive-purifying-care-1.jgp',
+      'assets/product-images/0118/bioderma-sebium-global-intensive-purifying-care-2.jpg',
+    ],
+    price: 20,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 312,
+  },
+  {
+    id: '0119',
+    brandName: 'Bioderma',
+    productName: 'Sébium Lotion',
+    description: `The innovative product of the Bioderma laboratory - Sebium Lotion - has a complex
+     effect on problem skin: it moisturizes, regulates the secretion of the sebaceous glands
+      and maintains natural pH. The patented Fluidactive component improves the quality of sebum,
+       relieves inflammation, and prevents the formation of comedones. With regular use of Bioderma
+        Sébium Lotion, the skin acquires a healthy glow, evens out complexion, and oily sheen and
+         acne disappear. Sebium lotion is suitable for use after shaving to prevent skin inflammation.`,
+    ingredients: `Aqua/Water/Eau, PEG-11 Methyl Ether Dimethicone, Butylene Glycol, Glycerin,
+     Fomes Officinalis (Mushroom) Extract, Capryloyl Glycine, Polysorbate 20, Sodium Citrate,
+      Zinc Gluconate, Salicylic Acid, Sodium Hydroxide, Mannitol, Sodium Metabisulfite, Xylitol,
+       Rhamnose, Pyridoxine Hcl, Propyl Gallate, PEG-40 Hydrogenated Castor Oil, Fructooligosaccharides,
+        Phenoxyethanol, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0119/bioderma-sebium-lotion-1.jgp',
+      'assets/product-images/0119/bioderma-sebium-lotion-2.jpg',
+    ],
+    price: 27,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 400,
+  },
+  {
+    id: '0120',
+    brandName: 'Bioderma',
+    productName: 'Sebium Hydra Moisturizing cream',
+    description: `After aggressive cosmetic procedures, dermatological treatment with
+     the use of drying preparations, the skin loses moisture, its protective qualities
+      decrease. As a result, the face begins to peel off, there is discomfort from tightness,
+       burning and itching.
+    To restore the normal hydrobalance of dehydrated oily, combination, problematic
+     skin, Bioderma specialists created Bioderma Sebium Hydra Cream. It contains the
+      patented D.A.F. (Dermatological Advanced Formulation), which strengthens the barrier
+       properties of the epidermis. Another patented complex - Fluidactiv® - normalizes
+        the quality of sebum, prevents clogging of pores.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Paraffinum Liquidum/Mineral Oil/Huile Minerale,
+     Ethylhexyl Palmitate, Dipropylene Glycol, Xylitol, Bis-PEG/PPG-16/16 PEG/PPG-16/16 Dimethicone,
+      Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Mannitol, Rhamnose, Fructooligosaccharides,
+       Laminaria Ochroleuca Extract, Glycyrrhetinic Acid, Allantoin, Ceramide 3, Tocopheryl Acetate,
+        Isohexadecane, Caprylic/Capric Triglyceride, Polysorbate 80, Disodium EDTA, Cetrimonium Bromide,
+         Methylparaben, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0120/bioderma-sebium-hydra-1.jgp',
+      'assets/product-images/0120/bioderma-sebium-hydra-2.jpg',
+    ],
+    price: 20,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 180,
+  },
+  {
+    id: '0121',
+    brandName: 'Bioderma',
+    productName: 'Bioderma Sebium Pore Refiner',
+    description: `Bioderma Sebium Pore Refiner is specifically designed to combat
+     the deformation and expansion of pores. It contains the patented Fluidactiv® complex,
+      which normalizes the composition of sebum, reduces the activity of the sebaceous
+       glands and prevents clogging of their excretory ducts.
+    Due to its light texture, Bioderma Sebium Pore Concentrate is quickly absorbed. After
+     its application, the oily sheen disappears, the face looks well-groomed. Every day
+      the pores become less noticeable, inflammatory elements and black spots disappear,
+       the color and texture of the skin evens out.`,
+    ingredients: `Aqua/Water/Eau, Methyl Methacrylate Crosspolymer, Dipropylene Glycol,
+     Cyclopentasiloxane, Cyclohexasiloxane, Dimethicone, Glycerin, Butylene Glycol,
+      Fomes Officinalis (Mushroom) Extract, Sodium Polyacrylate, Salicylic Acid,
+       Dodecyl Gallate, Ginkgo Biloba Leaf Extract, Mannitol, Xylitol, Rhamnose,
+        Fructooligosaccharides, Laminaria Ochroleuca Extract, Silica, Trideceth-6,
+         C30-45 Alkyl Cetearyl Dimethicone Crosspolymer, Lauryl Peg/Ppg- 18/18 Methicone,
+          Caprylic/Capric Triglyceride, Mineral Oil (Paraffinum Liquidum), Pentylene Glycol,
+           1,2-Hexanediol, Peg/Ppg-18/18 Dimethicone, Caprylyl Glycol, Propylene Glycol,
+            Sodium Hydroxide, Citric Acid, Disodium Edta, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0121/bioderma-sebium-pore-refiner-1.jgp',
+      'assets/product-images/0121/bioderma-sebium-pore-refiner-2.jpg',
+    ],
+    price: 24,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 166,
+  },
+  {
+    id: '0122',
+    brandName: 'Bioderma',
+    productName: 'Sébium Mat Control',
+    description: `Bioderma Sébium Mat Control is a new treatment for problem skin that
+     works in three directions: moisturizing, matting, smoothing. After applying the
+      product, the skin instantly becomes matte. Oily sheen does not appear within 8 hours,
+       the skin structure improves day by day.
+    The active ingredients of Bioderma Sebium Mat Control improve the texture of the skin,
+     tighten pores, regulate the production of sebum, the excess of which leads to the
+      appearance of oily sheen. The patented Fluidactiv complex acts on the biological
+       mechanisms that improve the quality of sebum and thus prevent clogging of pores.
+        The ultra-light texture is quickly absorbed and leaves a feeling of freshness.
+         Bioderma Sébium Mat Control can be used as a make-up base. The product has been
+          dermatologically tested and can be used by people with sensitive skin.`,
+    ingredients: `Aqua/Water, Glycerin, Cyclopentasiloxane, Methyl Methacrylate Crosspolymer,
+     Cyclohexasiloxane, Dipropylene Glycol, Polymethylsilsesquioxane, PEG-10 Dimethicone,
+      Hdi/Trimethylol Hexyllactone Crosspolymer, Butylene Glycol, Sodium Chloride,
+       Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, C30-45 Alkyl Cetearyl Dimethicone
+        Crosspolymer, Zinc Gluconate, Disodium EDTA, Salicylic Acid, Mannitol, Xylitol, Rhamnose,
+         Xanthan Gum, Sodium Hydroxide, Dodecyl Gallate, Pyridoxine Hcl, Fomes Officinalis
+          (Mushroom) Extract, PEG-40 Hydrogenated Castor Oil, Phenoxyethanol, Fragrance`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0122/bioderma-sebium-mat-control-1.jgp',
+      'assets/product-images/0122/bioderma-sebium-mat-control-2.jpg',
+    ],
+    price: 26,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 195,
+  },
 ];
