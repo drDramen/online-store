@@ -1050,7 +1050,7 @@ export const products: Product[] = [
       'assets/product-images/0036/iam-from-ginseng-eye-cream-2.jpg',
     ],
     price: 38,
-    bestseller: false,
+    bestseller: true,
     segment: 'Korean',
     category: 'Eye Cream',
     for: 'Face',
@@ -1200,6 +1200,266 @@ export const products: Product[] = [
     category: 'Toner',
     for: 'Face',
     availableAmount: 14,
+  },
+  {
+    id: '0042',
+    brandName: `I'm From`,
+    productName: 'Rice Toner',
+    description: `Nourishing toner with rice extract I'm From Rice Toner forms
+     a protective barrier on the skin, preventing moisture loss, restores dry and
+      tired skin. Formulated with pesticide-free organic rice from Yeoju, South
+       Korea to hydrate, brighten and rejuvenate dry, dull and irritated skin.`,
+    ingredients: `Rice extract, Methylpropanediol, Triethylhexanoin, Hydrogenated poly
+     (C6-14 olefin), Niacinamide, Pentylene glycol, Common Purslane extract,
+      Rice bran extract, Japanese elm bark extract, Amaranthus caudatus seed
+       extract, Hydrogenated lecithin, Distilled water, Polyglyceryl-10-myristate,
+        Butylene glycol, Adenosine, Cellulose gum, Ethylhexylglycerin, 1,2-Hexanediol.`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0042/iam-from-rice-toner-1.jpg',
+      'assets/product-images/0042/iam-from-rice-toner-2.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 12,
+  },
+  {
+    id: '0043',
+    brandName: `I'm From`,
+    productName: 'Rice Mask',
+    description: `I'm From Rice Mask is a revitalizing rice mask formulated with specially grown rice
+     in Yeoju City. Rice has a number of healing properties for the skin: it regenerates and
+      increases firmness and elasticity. The mask gently cleanses and exfoliates
+       the skin without drying or irritating it.`,
+    ingredients: `Water, Glycerin, Dipropylene glycol, Oryza sativa (rice) powder,
+     Cetearyl ethylhexanoate, Oryza sativa (rice) hull powder, Beeswax, 1,2-hexanediol,
+      Stearic acid, Butyrospermum parkii (shea) butter, Betaine, Cetyl alcohol, Hydrogenated
+       poly(c6-14 olefin), Saccharomyces ferment filtrate, Dimethicone, Cyclopentasiloxane,
+        Phenoxyethanol, Sorbitan stearate, Glyceryl stearate, Methylpropanediol, Sodium polyacrylate,
+         Xanthan gum, Peg-100 stearate, Allantoin, Fragrance, Oryza sativa (rice) bran extract,
+          Oryza sativa (rice) extract, Tocopheryl acetate, Algae extract, Eclipta prostrata
+           leaf extract, Avena sativa (oat) kernel extract, Cynara scolymus (artichoke) leaf
+            extract, Pteris multifida extract, Amaranthus caudatus seed extract, Ulmus davidiana
+             root extract, Butylene glycol, Magnesium aluminum silicate, Ethylhexylglycerin,
+              Disodium edta, Hydrogenated lecithin, Polyquaternium-51, Hydrolyzed hyaluronic
+               acid, Beta-glucan, Hydrogenated polyisobutene, Squalane, Alcohol, Argania spinosa
+                kernel oil, Isononyl isononanoate, Polyglyceryl-10 stearate, Cetearyl alcohol,
+                 Fructooligosaccharides, Polyglyceryl-2 dipolyhydroxystearate, Lecithin,
+                  Inulin lauryl carbamate, Disodium stearoyl glutamate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0043/iam-from-rice-mask-1.jpg',
+      'assets/product-images/0043/iam-from-rice-mask-2.jpg',
+      'assets/product-images/0043/iam-from-rice-mask-3.jpg',
+    ],
+    price: 26,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 13,
+  },
+  {
+    id: '0044',
+    brandName: `I'm From`,
+    productName: 'Honey Mask',
+    description: `I'm From Honey Mask is the ideal face mask for dry, irritated and
+     dehydrated skin in need of quick nourishment. Lovely grown and harvested honey
+      from Mount Chirisan deeply nourishes, softens and restores environmentally damaged skin.`,
+    ingredients: `Honey, Caprylic/Capric Triglyceride, PEG-7 Glyceryl Cocoate,
+     Disteardimonium Hectorite, Macadamia Integrifolia Seed Oil, Helianthus Annuus (Sunflower)
+      Seed Oil, Pentylene Glycol, Microcrystalline Wax, Polysorbate 20, Butyrospermum Parkii
+       (Shea) Butter, Beeswax, Tocopheryl Acetate, Argania Spinosa Kernel Extract, Corylus Avellana
+        (Hazel) Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Snail Secretion Filtrate, Water,
+         Bambusa Vulgaris Water, Nelumbo Nucifera Flower Water, Aloe Barbadensis Leaf Water, Propolis
+          Extract, Beta-Glucan, Bee Venom, Citrus Paradisi (Grapefruit) Fruit Extract, Sophora
+          Angustifolia Root Extract, Eugenia Caryophyllus (Clove) Flower Extract, Eucalyptus
+           Globulus Leaf Extract, Punica Granatum Fruit Extract, Bambusa Vulgaris Extract,
+            Butylene Glycol, Glycerin`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0044/iam-from-honey-mask-1.jpg',
+      'assets/product-images/0044/iam-from-honey-mask-2.jpg',
+      'assets/product-images/0044/iam-from-honey-mask-3.jpg',
+      'assets/product-images/0044/iam-from-honey-mask-4.jpg',
+    ],
+    price: 22,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 6,
+  },
+  {
+    id: '0045',
+    brandName: `I'm From`,
+    productName: 'Fig Scrub Mask',
+    description: `Regular mask - scrub with fig powder and black sugar I'm From
+     Fig Scrub Mask gently cleanses the skin of impurities, dead cells and sebum.
+      Contains powdered figs grown in the warm region of Yeonam, South Korea. Thanks
+       to its carefully thought-out texture, the mask effectively cleanses the skin
+        without irritating or injuring it.`,
+    ingredients: `Caprylic/Capric Triglyceride, Sucrose, PEG-7 Glyceryl Cocoate,
+     Stearalkonium Hectorite, C13-15 Alkane, Ficus Carica (Fig) Fruit Powder (1,2%),
+      Euphorbia Cerifera (Candelilla) Wax, Prunus Amygdalus Dulcis (Sweet Almond) Seed Meal,
+       Fragrance(Parfum), Juglans Regia (Walnut) Shell Powder, Caprylyl Glycol, Caramel`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0045/iam-from-fig-mask-1.jpg',
+      'assets/product-images/0045/iam-from-fig-mask-2.jpg',
+      'assets/product-images/0045/iam-from-fig-mask-3.jpg',
+    ],
+    price: 22,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 9,
+  },
+  {
+    id: '0100',
+    brandName: 'Bioderma',
+    productName: 'Sensibio Gel Moussant',
+    description: `Transparent gel Bioderma Sensibio Gel Moussant delicately
+     cleanses sensitive skin of the face from dirt, makeup, excess sebum.
+      Thanks to its neutral pH, soothing and softening ingredients, it is
+       suitable for the eye area. Patented D.A.F. (Dermatological Advanced
+        Formulation) lowers the reactivity threshold.
+    After washing with Bioderma Sensibio Gel Moussant, there are no such
+    problems as redness and tightness of the skin. The face looks fresh and rested.`,
+    ingredients: `Aqua/Water/Eau, Sodium Cocoamphoacetate, Propanediol,
+    Sodium Lauroyl Sarcosinate, Citric Acid, Coco-Glucoside,
+    Glyceryl Oleate, Sodium Citrate, Peg-90 Glyceryl Isostearate,
+    Mannitol, Xylitol, Laureth-2, Rhamnose, Fructooligosaccharides,
+    Tocopherol, Hydrogenated Palm Glycerides Citrate, Lecithin,
+    Ascorbyl Palmitate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0100/bioderma-gel-muss-sensibio-1.jpg',
+      'assets/product-images/0100/bioderma-gel-muss-sensibio-2.jpg',
+    ],
+    price: 28,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 180,
+  },
+  {
+    id: '0101',
+    brandName: 'Bioderma',
+    productName: 'Sensibio Micelle Solution',
+    description: `Bioderma Sensibio Micelle solution
+     (Bioderma Sensibio H2O Cleansing Water) for fragile, thin, sensitive 
+     skin prone to skin redness. Micellar solution Sensibio H20 qualitatively 
+     and quickly cleanses the skin of the face and eye contour by microemulsifying 
+     impurities and makeup, while maintaining the hydrolipidic balance of 
+     the stratum corneum of the skin. Soothes and moisturizes the skin. 
+     Does not contain alkali, alcohol, phenoxyethanol and fragrances; pH neutral.`,
+    ingredients: `Aqua/water/eau, Peg-6 Caprylic/capric Glycerides,
+     Fructooligosaccharides, Mannitol, Xylitol, Rhamnose, Cucumis Sativus
+      (cucumber) Fruit Extract, Propylene Glycol, Cetrimonium Bromide, Disodium Edta`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0101/bioderma-sensibio-h2o-makeup-removing-micelle-solution-1.jpg',
+      'assets/product-images/0101/bioderma-sensibio-h2o-makeup-removing-micelle-solution-2.jpg',
+    ],
+    price: 32,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 110,
+  },
+  {
+    id: '0102',
+    brandName: 'Bioderma',
+    productName: 'Sébium Gel moussant actif',
+    description: `Especially for the cleansing of oily skin prone to acne, 
+    the Bioderma laboratory offers a solution with an optimal combination
+     of keratolytic effect and good tolerance - Intensive Action Gel Active.
+     The soap-free formula with zinc gluconate, salicylic acid and glycolic
+      acid has a physiological pH level, deeply cleanses pores, improves
+       skin texture, evens out tone and eliminates shine. Bioderma Sébium
+        Gel moussant actif, during the cleansing phase, acts on both
+         the causes of acne and the consequences.`,
+    ingredients: `Aqua/Water/Eau, Caprylyl/Capryl Glucoside, Propanediol, Glycerin,
+     Zinc Gluconate, Salicylic Acid, Glycolic Acid, Coco-Glucoside, Glyceryl Oleate,
+      Cellulose Gum, Sodium Hydroxide, Citric Acid, Fragrance (Perfume), Inulin,
+       Xanthan Gum, Mannitol, Sodium Citrate, Xylitol, Cellulose, Fructose,
+        Glucose, Rhamnosis, Sodium Metabisulphite, Fructooligosaccharides,
+         Tocopherol, Hydrogenated Palm Glycerides Citrate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0102/bioderma-sébium-gel-moussant-actif-1.jpg',
+      'assets/product-images/0102/bioderma-sébium-gel-moussant-actif-2.jpg',
+    ],
+    price: 22,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 118,
+  },
+  {
+    id: '0103',
+    brandName: 'Bioderma',
+    productName: 'Sebium purifying foaming gel',
+    description: `Sébium Foaming Gel gently cleanses and purifies the skin without
+     drying it : containing zinc and copper sulphates, it cleanses the epidermis,
+      reduces the appearance of irregularities, and absorbs excess of sebum.
+       Its ultra-gentle, soap-free formula respects the skin's balance and
+        its physiological pH is maintained. The patented natural complex
+         contributes to raise the skin's tolerance threshold.`,
+    ingredients: `Water (Aqua), Sodium Cocoamphoacetate, Sodium Laureth Sulfate,
+     PEG-200 Hydrogenated Glyceryl Palmate, PEG-40 Glyceryl Cocoate, Disodium EDTA,
+      Citric Acid, Zinc Sulfate, Sodium Coceth Sulfate, PEG-7 Glyceryl Cocoate,
+       Copper Sulfate, Ginkgo Biloba Extract, Sodium Chloride, Xylitol,
+        Fructooligosaccharides, Mannitol, Rhamnose, Sodium Hydroxide,
+         Propylene Glycol, Sodium Methylparaben, Sodium Propylparaben, Fragrance (Parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0103/bioderma-sébium-gel-moussant-actif-1.jpg',
+      'assets/product-images/0103/bioderma-sébium-gel-moussant-actif-2.jpg',
+    ],
+    price: 23,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 220,
+  },
+  {
+    id: '0104',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio water Micelle solution',
+    description: `The high efficiency and tolerance of micellar water Bioderma
+     Hydrabio H2O is provided with micelles of fatty acid esters, which are
+      identical to the phospholipids of skin cell membranes. Micelles restore
+       the hydrolipidic film of the epidermis, effectively cleanse the skin
+        even from waterproof cosmetics without the appearance of signs of
+         discomfort and dryness. Bioderma Hydrabio water Micelle solution
+          is suitable for removing sebum, cosmetics and impurities without rinsing with water.`,
+    ingredients: `Aqua/water/eau, Glycerin, Peg-6 Caprylic/capric Glycerides,
+     Disodium Edta, Mannitol, Xylitol, Cetrimonium Bromide, Rhamnose, Niacinamide,
+      Hexyldecanol, Sodium Hydroxide, Pyrus Malus (apple) Seed Extract,
+       Brassica Campestris (rapeseed) Sterols, Tocopherol, Fragrance (parfum)`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0104/bioderma-hydrabio-water-micelle-solution-1.jpg',
+      'assets/product-images/0104/bioderma-hydrabio-water-micelle-solution-2.jpg',
+      'assets/product-images/0104/bioderma-hydrabio-water-micelle-solution-3.jpg',
+      'assets/product-images/0104/bioderma-hydrabio-water-micelle-solution-4.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 220,
   },
   {
     id: '0105',
