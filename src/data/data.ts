@@ -205,6 +205,284 @@ export const products: Product[] = [
     availableAmount: 458,
   },
   {
+    id: '0008',
+    brandName: 'Skadi',
+    productName: 'Lotion for Sensitive Skin',
+    description: `Deep hydration of the skin when using milk is achieved through
+     a combination of natural moisturizing factor components, ceramides and oils
+      rich in essential fatty acids. Physiological lamellar emulsion based on
+       lecithin maintains the protective properties of sensitive skin without
+        compromising its barrier function.`,
+    ingredients: `Aqua (water), Squalane, Vitis vinifera L. (Grape Seed Oil),
+     Behenyl alcohol (and) Glyceryl stearate (and)  Lecithin (and) Glycine soja
+      (soybean) sterols, Ceramide Complex (Ceramide 1, Ceramide 2, Ceramide 3,
+         Ceramide 6-II, Butylene Glycol, Hydrogenated Lecithin, Caprylic Glycerides
+          Polyglyceryl-10 Esters), Cannabis Sativa Oil,  Lysine (and)  Histidine (and)
+            Arginine (and)  Aspartic acid (and)  Threonine (and)  Serine (and)
+             Glutamic acid (and)  Proline (and)  Glycine (and)  Alanine (and)
+               Valine (and)  Methionine (and) Isoleucine (and)  Leucine,
+                Tyrosine (and)  Phenylalanine (and)  Cysteine, Butyrospermum
+                 Parkii (Shea) Butter,  Glycerin, Dex-Panthenol, Betaine,
+                  Sodium acrylates copolymer, Benzyl Alcohol (and) Ethylhexylglycerin,
+                   Allantoin, Arabinogalactan, Sodium hyaluronate(H-M), Tocopherol, Lactic acid`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0008/skadi-lotion-1.jpg',
+      'assets/product-images/0008/skadi-lotion-2.jpg',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 81,
+  },
+  {
+    id: '0009',
+    brandName: 'Skadi',
+    productName: 'Antioxidant Face Cream legere',
+    description: `Deep hydration is achieved through a combination of cascade moisturizers
+     (amino acids, hyaluronic acid) and skin barrier enhancing ingredients with a physiological
+      ratio of fatty acids in oils specially selected for oily skin. The high content of β-sitosterols
+       in sabal palm extract improves the condition of oily skin, reduces inflammation, sebum secretion
+        and at the same time promotes the synthesis of type 1 collagen. Highly concentrated (in terms
+           of flavonoid content) extracts of turmeric and chaga, as well as raspberries and dihydroquercetin
+            - a powerful bunch of antioxidants. Arabinogalactan supports the skin microbiome. Physiological
+             emulsion based on lecithin with a complex of ceramides in the form of "hectosomes"
+              - for greater stability and bioavailability.`,
+    ingredients: `Aqua (water), Niacinamide, Sesamum Indicum Seed Oil, Cannabis Sativa Seed Oil,
+     Ceramide Complex (Disteardimonium Hectorite, Polyglyceryl-10 stearate, Caprylic/Capric Triglyceride,
+      BP ceramide PC-104/ Hydroxypropyl Bispalmitamide MEA, Ceramide NP, Phytosterols, Stearic Acid) ,
+       Lysine (and)  Histidine (and)  Arginine (and)  Aspartic acid (and)  Threonine (and)  Serine (and)
+        Glutamic acid (and)  Proline (and)  Glycine (and)  Alanine (and)  Valine (and)  Methionine (and)
+         Isoleucine (and)  Leucine, Tyrosine (and)  Phenylalanine (and)  Cysteine, SC-CO2 Rubus idaeus Extract,
+          Lecithin (and) Sodium acrylates copolymer, Serenoa Serrulata Fruit extract, Arabinogalactan, Glycerin,
+           Dihydroquercetin, Benzyl Alcohol (and) Ethylhexylglycerin, Sodium hyaluronate(L-M), Sodium hyaluronate(H-M),
+            Lactic acid, SC-CO2 Curcuma longa (Turmeric) Root extract, SC-CO2  Fungus betulinus Extract, Tocopherol`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0009/skadi-cream-antiox-legere-1.jpg',
+      'assets/product-images/0009/skadi-cream-antiox-legere-2.jpg',
+    ],
+    price: 41,
+    bestseller: true,
+    segment: 'Russian',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 77,
+  },
+  {
+    id: '0010',
+    brandName: 'Skadi',
+    productName: 'Cleansing Milk',
+    description: `Makeup Remover Milk gently removes stubborn makeup or sunscreen
+     from the skin. Panthenol and allantoin relieve irritation, taurine has a positive
+      effect on the structure of eyebrow and eyelash hairs. Cornflower CO2 extract
+       strengthens the vascular wall, removes swelling and redness.`,
+    ingredients: `Aqua, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Vitis Vinifera
+     (Grape) Seed Oil, Glyceryl Stearate, Glycerin, Allantoin, Panthenol, Xanthan gum,
+      Taurine, Tocopheryl Acetate, SC-CO2 Centaurea cyanus Extract, Ethylhexylglycerin,
+       Phenoxyethanol`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0010/skadi-cleansing-milk-1.jpg',
+      'assets/product-images/0010/skadi-cleansing-milk-2.jpg',
+    ],
+    price: 11,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 46,
+  },
+  {
+    id: '0011',
+    brandName: 'Skadi',
+    productName: 'Peptide Eye Cream',
+    description: `The cream perfectly moisturizes and nourishes the skin of the eyelids
+     thanks to cascade moisturizers and components that strengthen the skin's barrier
+      function. A high percentage of peptides provides a quick visible effect of smoothing
+       the skin, prevents glycation processes, improves elasticity and firmness, reduces
+        swelling and sagging in the eyelid area.`,
+    ingredients: `Aqua (water),NMF (sodium PCA, glucose, glutamic acid, dextrin,
+       alanine, lysine,  glycine, aspartic acid, water), Cetearyl Olivate, Sorbitan Olivate,
+        Eyeseryl ™ (Water (Aqua), Acetyl Tetrapeptide-5), Argania spinosa oil, Ceramide Complex(Ceramide NP,
+           Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Sodium Lauroyl Lactylate, Carbomer, Xanthan Gum),
+            Coffea Arabica Seed Oil, Cannabis Sativa Seed Oil, Betaine, Eyeliss ™ ( Aqua (Water) - Glycerin -
+             Hesperidin MethylChalcone - Steareth-20 - Dipeptide-2 - Palmitoyl Tetrapeptide-7),
+              Vegetable Glycerin, Panthenol, Rubixyl™ (Water, Glycerin, Hexapeptide 48-HCL),
+               Phenoxyethanol, Ethylhexylglycerin, Sodium hyaluronate(L-M),Sodium hyaluronate(M-M),
+                Camellia sinensis (Green Tea) Leaf CO2 Extract , Succinic acid`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0011/skadi-peptide-eye-cream-1.jpg',
+      'assets/product-images/0011/skadi-peptide-eye-cream-2.jpg',
+    ],
+    price: 55,
+    bestseller: true,
+    segment: 'Russian',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 22,
+  },
+  {
+    id: '0012',
+    brandName: 'Skadi',
+    productName: 'Moisturising Lysate Toner',
+    description: `Maintains a constant level of skin hydration even in
+     dry air due to cascading physiological humidifiers.
+    Prebiotics help to strengthen the skin's own protective functions.`,
+    ingredients: `Salvia officinalis water, NMF (sodium PCA, glucose, glutamic acid, dextrin,
+       alanine, lysine, glycine),Lactobacillus Ferment Lysate( Probiotic), Vegetable Glycerin,
+        Bifidobacterium Ferment Lysate( Probiotic),Dex- Panthenol,Inulin,Propionibacterium Ferment
+         Lysate( Probiotic), Biotin, Sodium hyaluronate(L-M), Sodium hyaluronate(M-M), Sodium Benzoate,
+          Potassium Sorbate`,
+    starIngredient: 'Lysate',
+    pics: [
+      'assets/product-images/0012/skadi-toner-lysate-1.jpg',
+      'assets/product-images/0012/skadi-toner-lysate-2.jpg',
+    ],
+    price: 31,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 46,
+  },
+  {
+    id: '0013',
+    brandName: 'Skadi',
+    productName: 'Cream with Ceramides, Centella, Prebiotics',
+    description: `The cream maintains an optimal level of skin hydration regardless of environmental
+     humidity, and also gradually evens out skin tone with regular use. Strengthens the barrier functions
+      of the skin and improves the condition of oily skin. The cream is also suitable for combination
+       skin at any time and normal skin is great for summer.`,
+    ingredients: `Aqua (water),NMF (sodium PCA, glucose, glutamic acid, dextrin, alanine,
+       lysine, glycine),Sesamum indicum seed oil, Niacinamide, Cannabis Sativa Seed Oil,Ceramide Complex(Ceramide NP,
+         Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Sodium Lauroyl Lactylate, Carbomer, Xanthan Gum),
+          Vegetable Glycerin, Isoamyl Laurate (and) Isoamyl Cocoate ,Lecithin, SC-CO2 Vanilla Tahitensis (Vanilla)
+           Extract,Ammonium Acryloyldimethyltaurate/VP Copolymer, Oleanolic Acid, Benzyl Alcohol (and) Glyceryl
+            Laurate Resveratrol,Inulin,SC-CO2 Glycyrrhiza Uralensis (Licorice) Root Extract,SC-CO2 Centella Asiatica Root Extract`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0013/skadi-cream-centella-1.jpg',
+      'assets/product-images/0013/skadi-cream-centella-2.jpg',
+    ],
+    price: 51,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 62,
+  },
+  {
+    id: '0014',
+    brandName: 'Skadi',
+    productName: 'Antioxidant Cream for Dry to Normal Skin',
+    description: `Deep hydration is achieved through the combination of cascade moisturizers
+     (amino acids and hyaluronic acid) and components that enhance the barrier function of
+      the skin, with a physiological ratio of fatty acids in vegetable oils. Phytosterols
+       promote the synthesis of type 1 collagen. Highly concentrated (in terms of flavonoid content)
+        extracts of turmeric and chaga, as well as raspberries and dihydroquercetin - a powerful
+         bunch of antioxidants. Arabinogalactan supports the skin microbiome. Lamellar emulsion with
+          a complex of ceramides in the form of "hectosomes" - for greater stability, physiology
+           and bioavailability.`,
+    ingredients: `Aqua (water), Vitis Vinifera (Grape) Seed Oil, Behenyl alcohol (and) Glyceryl
+     stearate (and)  Lecithin (and) Glycine soja (soybean) sterols, Prunus Amygdalus Dulcis
+      (Sweet Almond) Oil, Persea gratissima (Avocado) oil,  Ceramide Complex (Disteardimonium Hectorite,
+         Polyglyceryl-10 stearate, Caprylic/Capric Triglyceride, BP ceramide PC-104/ Hydroxypropyl
+          Bispalmitamide MEA, Ceramide NP, Phytosterols, Stearic Acid) , Lysine (and)  Histidine (and)
+            Arginine (and)  Aspartic acid (and)  Threonine (and)  Serine (and) Glutamic acid (and)
+              Proline (and)  Glycine (and)  Alanine (and)  Valine (and)  Methionine (and) Isoleucine
+               (and)  Leucine, Tyrosine (and)  Phenylalanine (and)  Cysteine, Arabinogalactan, SC-CO2
+                Rubus idaeus Extract, Allantoin, Sorbitol, Dihydroquercetin, Glycerin, Lecithin, Sodium
+                 acrylates copolymer, Benzyl Alcohol (and) Ethylhexylglycerin, Sodium hyaluronate(L-M),
+                  Sodium hyaluronate(H-M), Lactic acid, SC-CO2 Curcuma longa (Turmeric) Root extract,
+                   SC-CO2  Fungus betulinus Extract, Tocopherol`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0014/skadi-cream-normal-dry-1.jpg',
+      'assets/product-images/0014/skadi-cream-normal-dry-2.jpg',
+    ],
+    price: 42,
+    bestseller: true,
+    segment: 'Russian',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 48,
+  },
+  {
+    id: '0015',
+    brandName: 'Skadi',
+    productName: 'Peptides Serum Blocking Mimic',
+    description: `Laconic targeted serum with peptides in a high dosage. At the same time,
+     it helps to block facial expressions (especially effective in the forehead, between
+       the eyebrows and in the corners of the eyes) and the synthesis of type 1 collagen
+        while protecting your own collagen from degradation. Prolongs the effect of Botox,
+         and also allows you to delay injections. Taurine and centella in the composition
+          additionally protect your own collagen from glycation and reduce oxidative stress.`,
+    ingredients: `Aqua (water), Syn-Ake (Glycerin, Aqua, Dipeptide Diaminobutyroyl
+       Benzylamide Diacetate), Syn-Coll (Glycerin, Aqua, Tripeptide-5), Lysolecithin,
+        Taurine, Sorbitol, Glycerin, SC-CO2 Centella Asiatica Leaf extract, Sclerotium gum,
+         Xanthan gum, Pullulan, Phenoxyethanol, Ethylhexylglycerin`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0015/skadi-blocking-mimic-serum-1.jpg',
+      'assets/product-images/0015/skadi-blocking-mimic-serum-2.jpg',
+    ],
+    price: 27,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 12,
+  },
+  {
+    id: '0016',
+    brandName: 'Skadi',
+    productName: 'PHA Serum',
+    description: `Evens out skin tone and texture. Improves complexion.
+     Protects against glycation processes, reduces oxidative stress.`,
+    ingredients: `Aqua (water), Gluconolactone, Punica granatum (pomegranate) seed extract,
+     Saccharomyces/Xylinum/Black Tea Ferment, Ecogel (Lysolecithin (and) Sclerotiumgum (and)
+      Xanthan gum (and) Pullulan), Taurine, Sorbitol, Glycerin, Alpha-lipoic Acid,
+       Phenoxyethanol, Ethylhexylglycerin`,
+    starIngredient: 'PHA Gluconolactone',
+    pics: [
+      'assets/product-images/0016/skadi-pha-1.jpg',
+      'assets/product-images/0016/skadi-pha-2.jpg',
+    ],
+    price: 26,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 22,
+  },
+  {
+    id: '0017',
+    brandName: 'Skadi',
+    productName: 'Vitamin C Serum',
+    description: `The serum has a complex rejuvenating effect due to the synthesis of
+     collagen, evening out skin tone, tightening the skin and accelerated regeneration.`,
+    ingredients: `Aqua (water), Sodium Ascorbyl Phosphate, Cordyceps Sinensis (Mushroom) 
+    Extract/Lentinus Edods (Mushroom) Extract/Tremella Fuciformis (Mushroom) Extract/Ganoderma
+     Lucidum (Mushroom) Extract, Ecogel (Lysolecithin (and) Sclerotiumgum (and) Xanthan gum
+      (and) Pullulan), Taurine, Sorbitol, Glycerin, SC-CO2 Vanilla Tahitensis (Vanilla) Extract,
+       Ferulic Acid, Lactic Acid,  Phenoxyethanol, Ethylhexylglycerin, Tocopherol`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0017/skadi-vitamin-c-1.jpg',
+      'assets/product-images/0017/skadi-vitamin-c-2.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Russian',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 17,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
