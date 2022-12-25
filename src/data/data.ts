@@ -634,6 +634,196 @@ export const products: Product[] = [
     availableAmount: 19,
   },
   {
+    id: '0023',
+    brandName: 'Manyo',
+    productName: 'Bifida Complex Ampoule Gel Cleanser',
+    description: `Manyo Bifida Complex Ampoule Gel Cleanser is a natural, slightly
+     acidic foam gel for removing makeup and daily skin cleansing. The formula
+      protects the skin barrier, which is easily damaged during cleansing, while
+       plant enzymes and micelles remove impurities from deep within the pores.`,
+    ingredients: `Water, sodium olefin sulfinate C14-16, lauryl betaine,
+     glycerin, sodium chloride, lactobacilli/ ginseng root enzyme 
+     filtrate, lactobacilli/ soy milk enzyme filtrate, butylene glycol,
+      sodium hyaluronate, hydroxypropyltrimonium hyaluronate, hydrolyzed hyaluronic acid,
+       sodium acetyl-hyaluronate, hyaluronic acid, sodium hyaluronate crosspolymer, potassium
+        hyaluronate, hydrogenated lecithin, Centella asiatica extract, green tea leaf extract,
+         1,2-hexanediol, rosemary extract, allantoin, xylitol, ginseng fruit extract, soapberry
+          extract, guar hydroxypropyltrimonium chloride, maltodextrin, hexylene glycol, propylene
+           glycol laurate, ceramide np, bifida enzyme lysate(1,000 ppm), glucose, sodium
+            bicarbonate, phytosteryl / octyldodecyl lauroyl glutamate, papain, xylitylglucoside,
+             anhydroxylitol, fructan, ethylhexylglycerol, gluconolactone, Caprylic/Caprylic triglyceride,
+              sodium metabisulfite, levulinic acid, licorice root extract, chamomile extract,
+               caprylyl glycol, laurylpyridinium chloride, xanthan gum, disodium salt of
+                ethylenediaminetetraacetic acid, Japanese rhinuria root extract, extract of Baikal skullcap roots`,
+    starIngredient: 'Lysate',
+    pics: [
+      'assets/product-images/0023/manyo-bifida-gel-cleanser-1.jpg',
+      'assets/product-images/0023/manyo-bifida-gel-cleanser-2.jpg',
+      'assets/product-images/0023/manyo-bifida-gel-cleanser-3.jpg',
+      'assets/product-images/0023/manyo-bifida-gel-cleanser-4.jpg',
+    ],
+    price: 41,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 68,
+  },
+  {
+    id: '0024',
+    brandName: 'Manyo',
+    productName: 'Bifida Ampoule Mist',
+    description: `Mist for the face with bifidobacteria Manyo Bifida Ampoule Mist -
+     moisturizes and nourishes the skin, increases its protective functions by 93%,
+      soothes and prevents the formation of wrinkles and acne. Gives the skin a
+       radiant and healthy look. Contains no alcohol and dermatologically tested.`,
+    ingredients: `Milk-flowered peony extract, bifida enzyme lysate 20%, pumpkin
+     lactobacilli filtrate 10%, butylene glycol, sodium hyaluronate, soy extract enzyme,
+      fellinus extract, acetyl Hexapeptide-8, fermentated aureobasidium budding filtrate,
+       Palmitoyl dipeptide, Palmitoyl Tripeptide-1, shiitake extract, trametes multicolored
+        extract, copper Tripeptide-1, allantoin, panthenol, glycerin, common physalis extract,
+         black tea extract, PU'er tea extract, epigallocatechin gallate, red ginseng root eestrac,
+          common ginseng extract, alginic acid, Dioscorea Cayenne extract, methyl glucet-20, caffeine,
+           Japanese pepper fruit extract, Korean lumbago extract, Usnea borodovidnaya extract,
+            caprylyl glycol, Baikal skullcap extract, anise extract, adenosine`,
+    starIngredient: 'Lysate',
+    pics: [
+      'assets/product-images/0024/manyo-bifida-mist-1.jpg',
+      'assets/product-images/0024/manyo-bifida-mist-2.jpg',
+      'assets/product-images/0024/manyo-bifida-mist-3.jpg',
+    ],
+    price: 51,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 57,
+  },
+  {
+    id: '0025',
+    brandName: 'Manyo',
+    productName: 'Bifida Biome Concentrate Cream',
+    description: `Manyo Factory Bifida Biome Concentrate Cream is the perfect
+     cream for daily use. The synergistic effect of highly effective ingredients
+      restores vitality, freshness and youthful appearance to the skin. It protects
+       the skin from damage, while at the same time it has an anti-aging effect,
+        nourishes, moisturizes and gives the skin a healthy glow. Delicate texture
+         on contact with the skin instantly melts quickly absorbed.`,
+    ingredients: `Bifida Ferment Lysate (62%), Butylene Glycol, Caprylic/Capric
+     Triglyceride, Cetyl Ethylhexanoate, Glycerin, Squalane, Niacinamide, 1,2-Hexanediol,
+      Cetearyl Alcohol, Polyglyceryl-2 Stearate, Cutibacterium Granulosum Ferment Extract
+       Filtrate(10,000Ppm), Coco-Caprylate/Caprate, Lactobacillus/Pumpkin Fruit Ferment
+        Filtrate, Aureobasidium Pullulans Ferment, Betaine, Panthenol, Acetyl Hexapeptide-8,
+         Palmitoyl Tripeptide-1, Copper Tripeptide-1, SH-Polypeptide-1, SH-Oligopeptide-1,
+          Glyceryl Stearate, Stearyl Alcohol, Polyglyceryl-3 Methylglucose Distearate, Ceramide NP,
+           Ceramide AP, Ceramide AS, Ceramide NS, Ceramide EOP, Epigallocatechin Gallate, Glyceryl
+            Stearate SE, Sorbitan Stearate, Dipropylene Glycol, Isopropyl Myristate, Sodium Carbomer,
+             Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl
+              Caprylate, Sodium Hyaluronate, Hydroxypropyltrimonium Hyaluronate,
+               Hydrolyzed Hyaluronic Acid, Potassium Hyaluronate, Hydrolyzed
+                Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Hyaluronic Acid,
+                 Sodium Acetylated Hyaluronate, Water, Ethylhexylglycerin, Scutellaria
+                  Baicalensis Root Extract, Panax Ginseng Callus Culture Extract,
+                   Panax Ginseng Root Extract, Hydrogenated Lecithin, Phytosphingosine,
+                    Cholesterol, Hydrolyzed Algin, Stearic Acid, Physalis Alkekengi
+                     Fruit Extract, Foeniculum Vulgare (Fennel) Fruit Extract,
+                      Phosphatidylcholine, Illicium Verum (Anise) Fruit Extract,
+                       Caramel, Dextrin, Rosa Damascena Flower Oil, Caffeine, Adenosine`,
+    starIngredient: 'Lysate',
+    pics: [
+      'assets/product-images/0025/manyo-bifida-biom-cream-1.jpg',
+      'assets/product-images/0025/manyo-bifida-biom-cream-2.jpg',
+    ],
+    price: 81,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 28,
+  },
+  {
+    id: '0026',
+    brandName: 'Manyo',
+    productName: 'Galactomy Peeling Gel',
+    description: `Peeling roll with galactamisis and enzymes Manyo Galactomy
+     Peeling Gel - 94.44% consists of natural ingredients that provide gentle
+      exfoliation, cleansing and narrowing of pores without overdrying and injuring the skin.`,
+    ingredients: `Purified water, cellulose, methylpropanediol, 1,2-hexanediol,
+     fermented galactomisis filtrate, butylene glycol, protease, Perilla leaf extract,
+      lemon balm extract, marshmallow / root leaf extract, borage extract, common Jasmine
+       Extract, hydrogenated lecithin, hydrolyzed hyaluronic acid, NPI ceramide,
+        fructooligosaccharide, lecithin, beta-glucan, glycerin, DIPROPYLENE glycol,
+         xylyl glucoside, anhydroxylite, xylitol , Centella asiatica extract, Fig extract,
+          budella extract, algae extract, thyme extract, nasturtium leaf extract, trometamine,
+           glucose, polyglyceryl-10-laurate, carbomer, Ethylhexylglycerin`,
+    starIngredient: 'Enzyme',
+    pics: [
+      'assets/product-images/0026/manyo-galactomy-peeling-gel-1.jpg',
+      'assets/product-images/0026/manyo-galactomy-peeling-gel-2.jpg',
+    ],
+    price: 19,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 8,
+  },
+  {
+    id: '0027',
+    brandName: 'Manyo',
+    productName: 'Pure Aqua Peel',
+    description: `Manyo Pure Aqua Peel PHA facial peeling gel gently exfoliates
+     dead skin cells. Contains deeply moisturizing ingredients to quickly restore
+      skin's lack of moisture. Makes skin radiant & smooth.`,
+    ingredients: `Purified water, cellulose, dipropylene glycol, betaine, 1,2-hexanediol,
+     glycerin, sodium hyaluronate, pot marigold flower extract, ceramide n-p, corn starch,
+      glucolactone, gold iris extract, lotus flower Extract, butylene glycol, hydrolyzed
+       hyaluronic acid, sodium acetylated hyaluronate, polyglyceryl-10 laurate, polyglyceryl-10
+        myristate, glyceryl caprylate, ethylhexylglycerin , Caprylyl glycol, hydrogenated
+         lecithin, phytosteryl / octyldodecyllauroyl glutamate, caprylic / capric triglyceride,
+          gardenia extract, sodium carbomer, maltodextrin, common jasmine oil, ylang-ylang flower oil`,
+    starIngredient: 'Enzyme',
+    pics: [
+      'assets/product-images/0027/manyo-pure-aqua-peel-1.jpg',
+      'assets/product-images/0027/manyo-pure-aqua-peel-2.jpg',
+      'assets/product-images/0027/manyo-pure-aqua-peel-2.jpg',
+    ],
+    price: 20,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 13,
+  },
+  {
+    id: '0028',
+    brandName: 'Manyo',
+    productName: 'Biome Ampoule Toner',
+    description: `Manyo Biome Ampoule Toner is a highly concentrated toner specifically
+     formulated to protect and restore healthy skin. Leaves skin smooth, soft & supple without stickiness.`,
+    ingredients: `Water, butylene glycol, glycerin, Pro-pandiol, pentylene glycol,
+     witch hazel extract, Lactobacillus lysate, Lactobacillus fermentation lysate,
+      Lactobacillus / pumpkin sourdough extract, sucrose enzyme filtrate, betaine,
+       allantoin, panthenol, ceramide np, hyaluronic acid, hydrolyzed hyaluronic acid,
+        hydrolyzed glycosaminoglycans, sodium hyaluronate, sodium hyaluronate crosspolymer,
+         hydrogenated lecithin, Bifidobacterium filtrate, Bifidobacterium lysate, xylitol,
+          anhydroxylitol, xylitylglucoside, glucose, 1,2-hexanediol, willow bark extract,
+           lactobionic acid, sugar cane extract, cutibacterium granulosum (10ppb) enzyme extract filtrate,
+            fructooligosaccharides, Capri-lik / Caprylic triglyceride, benzylglycol, Tocopherols, ethylhexylglycerol,
+             xanthan gum, EDTA disodium, Irish moss extract, Chlorella extract`,
+    starIngredient: 'Lysate',
+    pics: [
+      'assets/product-images/0028/manyo-biome-toner-1.jpg',
+      'assets/product-images/0028/manyo-biome-toner-2.jpg',
+    ],
+    price: 22,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 99,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
