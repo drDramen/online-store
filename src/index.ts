@@ -1,6 +1,6 @@
-import { App } from './app/app';
 import 'normalize.css';
 import '@/assets/styles/index.scss';
+import { App } from './app/app';
 
 document.documentElement.classList.add('page');
 document.body.classList.add('page__body');

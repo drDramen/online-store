@@ -7,6 +7,7 @@
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 32px;
 
     @include tablet {
       flex-direction: column;
@@ -34,7 +35,6 @@
   }
 
   &__rs {
-    width: 80px;
-    height: 29px;
+    width: 150px;
   }
 }
