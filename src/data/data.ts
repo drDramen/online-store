@@ -824,117 +824,149 @@ export const products: Product[] = [
     availableAmount: 99,
   },
   {
-    id: '0100',
-    brandName: 'Bioderma',
-    productName: 'Sensibio Gel Moussant',
-    description: `Transparent gel Bioderma Sensibio Gel Moussant delicately
-     cleanses sensitive skin of the face from dirt, makeup, excess sebum.
-      Thanks to its neutral pH, soothing and softening ingredients, it is
-       suitable for the eye area. Patented D.A.F. (Dermatological Advanced 
-        Formulation) lowers the reactivity threshold.
-    After washing with Bioderma Sensibio Gel Moussant, there are no such 
-    problems as redness and tightness of the skin. The face looks fresh and rested.`,
-    ingredients: `Aqua/Water/Eau, Sodium Cocoamphoacetate, Propanediol, 
-    Sodium Lauroyl Sarcosinate, Citric Acid, Coco-Glucoside, 
-    Glyceryl Oleate, Sodium Citrate, Peg-90 Glyceryl Isostearate, 
-    Mannitol, Xylitol, Laureth-2, Rhamnose, Fructooligosaccharides, 
-    Tocopherol, Hydrogenated Palm Glycerides Citrate, Lecithin, 
-    Ascorbyl Palmitate`,
+    id: '0029',
+    brandName: `I'm From`,
+    productName: 'Fig Cleansing Balm',
+    description: `I'm from Fig Cleansing Balm contains carefully selected fresh figs grown
+     in the warm region of Yong-am, South Korea. Used as the first step in cleansing, it
+      gently yet effectively dissolves and removes makeup, sunscreen, dirt and excess oil,
+       leaving skin clean and hydrated.`,
+    ingredients: `Cetyl Ethylhexanoate, Polyethylene, Synthetic Wax, Ficus carica (fig)
+     Fruit Extract, Peg-10 Isostearate, Peg-20 Glyceryl Triisostearate, Caprylic/Capric
+      Triglyceride, Fragrance, Sorbitan Sesquioleate, Caprylyl Glycol, Ethylhexylglycerin,
+       Moringa Oleifera Seed Oil, Curcuma longa (turmeric) Root Extrac, Melia Azadirachta
+        Flower Extract, Melia Azadirachta Leaf extract, Melia Azadirachta Bark Extract,
+         Corallina Officinalis Extract, Ocimum Sanctum Leaf Extract`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0100/bioderma-gel-muss-sensibio-1.jpg',
-      'assets/product-images/0100/bioderma-gel-muss-sensibio-2.jpg',
+      'assets/product-images/0029/iam-from-cleansing-fig-balm-1.jpg',
+      'assets/product-images/0029/iam-from-cleansing-fig-balm-2.jpg',
     ],
     price: 28,
-    bestseller: true,
-    segment: 'Drugstore (Europe)',
+    bestseller: false,
+    segment: 'Korean',
     category: 'Cleanser',
     for: 'Face',
-    availableAmount: 180,
+    availableAmount: 43,
   },
   {
-    id: '0101',
-    brandName: 'Bioderma',
-    productName: 'Sensibio Micelle Solution',
-    description: `Bioderma Sensibio Micelle solution
-     (Bioderma Sensibio H2O Cleansing Water) for fragile, thin, sensitive 
-     skin prone to skin redness. Micellar solution Sensibio H20 qualitatively 
-     and quickly cleanses the skin of the face and eye contour by microemulsifying 
-     impurities and makeup, while maintaining the hydrolipidic balance of 
-     the stratum corneum of the skin. Soothes and moisturizes the skin. 
-     Does not contain alkali, alcohol, phenoxyethanol and fragrances; pH neutral.`,
-    ingredients: `Aqua/water/eau, Peg-6 Caprylic/capric Glycerides,
-     Fructooligosaccharides, Mannitol, Xylitol, Rhamnose, Cucumis Sativus
-      (cucumber) Fruit Extract, Propylene Glycol, Cetrimonium Bromide, Disodium Edta`,
+    id: '0030',
+    brandName: `I'm From`,
+    productName: 'Rice Mask',
+    description: `Renewing mask with rice I'm From Rice Mask actively regenerates the skin,
+     restores, delicately exfoliates and cleanses from various types of impurities. The
+      mask does not dry the skin, does not cause irritation, redness, does not provoke new inflammations.`,
+    ingredients: `Water, Glycerin, Dipropylene Glycol, Oryza Sativa (Rice) Powder(41,000ppm),
+     Cetearyl Ethylhexanoate, Oryza Sativa (Rice) Hull Powder(30,000ppm), 1,2-Hexanediol,
+      Synthetic Beeswax, Synthetic Wax, Stearic Acid, Betaine, Cetyl Alcohol, Butyrospermum
+       Parkii (Shea) Butter, Hydrogenated Poly(C6-14 Olefin), Centella Asiatica Extract,
+        Ficus Carica (Fig) Fruit Extract, Oryza Sativa (Rice) Bran Extract(1,000ppm),
+         Oryza Sativa (Rice) Extract(1,000ppm), Laminaria Japonica Extract, Eclipta
+          Prostrata Leaf Extract, Ulmus Davidiana Root Extract, Amaranthus Caudatus
+           Seed Extract, Hydrogenated Lecithin, Palmitic Acid, Sorbitan Stearate,
+            Glyceryl Stearate, Sodium Polyacrylate, Dimethicone, Cyclopentasiloxane,
+             Xanthan Gum, Magnesium Aluminum Silicate, Allantoin, Tocopheryl Acetate,
+              Butylene Glycol, Disodium Edta, Hydrolyzed Hyaluronic Acid, Myristic Acid,
+               Fructooligosaccharides, Lecithin, Beta-Glucan, Ceramide Np, Peg-100 Stearate,
+                Hydroxyacetophenone, Ethylhexylglycerin`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0030/iam-from-rice-mask-1.jpg',
+      'assets/product-images/0030/iam-from-rice-mask-2.jpg',
+    ],
+    price: 12,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 38,
+  },
+  {
+    id: '0031',
+    brandName: `I'm From`,
+    productName: 'Pear Serum',
+    description: `I'm From Pear Serum Moisturizing Face Serum with pear enzyme refreshes the skin,
+     fills it with useful vitamins and minerals, and also deeply moisturizes and returns a
+      healthy color. It also helps to relieve signs of fatigue, smoothes fine wrinkles and eliminates peeling.`,
+    ingredients: `Pyrus Ussuriensis Leaf Extract 83%, Glycerin, Methylpropanediol,
+     Water, Butylene Glycol, Dipropylene Glycol, Glycereth-26, Chondrus Crispus Extract,
+      Saccharum Officinarum (Sugarcane) Extract, Pyrus Pyrifolia (Pear) Fruit Extract (0.1%),
+       Sodium Hyaluronate, Theobroma Cacao (Cocoa) Seed Extract, Hydroxyethyl Urea, Panthenol,
+        1,2-Hexanediol, Polyglyceryl-10 Laurate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+         Caprylyl Glycol, Tromethamine, Sodium Phytate, Allantoin, Dextrin, Xanthan Gum`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0101/bioderma-sensibio-h2o-makeup-removing-micelle-solution-1.jpg',
-      'assets/product-images/0101/bioderma-sensibio-h2o-makeup-removing-micelle-solution-2.jpg',
+      'assets/product-images/0031/iam-from-pear-serum-1.jpg',
+      'assets/product-images/0031/iam-from-pear-serum-2.jpg',
+      'assets/product-images/0031/iam-from-pear-serum-3.jpg',
+      'assets/product-images/0031/iam-from-pear-serum-4.jpg',
+    ],
+    price: 20,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 6,
+  },
+  {
+    id: '0032',
+    brandName: `I'm From`,
+    productName: 'Beet Purifying Mask',
+    description: `I'm From Beet Purifying Mask is a wash-off mask containing 1.5% red beet
+     enzyme from Tamyang, South Korea. Soft, creamy clay moisturizing formula unclogs pores
+      and controls sebum for a clear complexion.`,
+    ingredients: `Water, Kaolin, Dipropylene Glycol, Propanediol, Cetyl Alcohol,
+     Cellulose, Caprylic/Capric Triglyceride, 1,2-Hexanediol, Arachidyl Alcohol,
+      Glyceryl Stearate, Isononyl Isononanoate, Palmitic Acid, Beta Vulgaris (Beet)
+       Root Powder, Stearic Acid, Behenyl Alcohol, Arachidyl Glucoside, Bentonite,
+        Cocos Nucifera (Coconut) Shell Powder, Vitis Vinifera (Grape) Seed Powder,
+         Hydroxyacetophenone, Polyacrylate-13, Xanthan Gum, Hydrogenated Polyisobutene,
+          Potassium Cetyl Phosphate, Ethylhexylglycerin, Fragrance, Disodium Edta,
+           Iron Oxides(Ci 77491), Polyglyceryl-10 Laurate, Ethylhexyl Palmitate,
+            Myristic Acid, Sorbitan Isostearate, Glucose, Panthenol, Beta Vulgaris
+             (Beet) Root Extract, Sucrose, Tocopherol, Citric Acid, Gluconolactone`,
+    starIngredient: 'Enzyme',
+    pics: [
+      'assets/product-images/0032/iam-from-beet-mask-1.jpg',
+      'assets/product-images/0032/iam-from-beet-mask-2.jpg',
+      'assets/product-images/0032/iam-from-beet-mask-3.jpg',
+      'assets/product-images/0032/iam-from-beet-mask-4.jpg',
     ],
     price: 32,
-    bestseller: true,
-    segment: 'Drugstore (Europe)',
-    category: 'Cleanser',
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
     for: 'Face',
-    availableAmount: 110,
+    availableAmount: 8,
   },
   {
-    id: '0102',
-    brandName: 'Bioderma',
-    productName: 'Sébium Gel moussant actif',
-    description: `Especially for the cleansing of oily skin prone to acne, 
-    the Bioderma laboratory offers a solution with an optimal combination
-     of keratolytic effect and good tolerance - Intensive Action Gel Active.
-     The soap-free formula with zinc gluconate, salicylic acid and glycolic
-      acid has a physiological pH level, deeply cleanses pores, improves
-       skin texture, evens out tone and eliminates shine. Bioderma Sébium
-        Gel moussant actif, during the cleansing phase, acts on both
-         the causes of acne and the consequences.`,
-    ingredients: `Aqua/Water/Eau, Caprylyl/Capryl Glucoside, Propanediol, Glycerin,
-     Zinc Gluconate, Salicylic Acid, Glycolic Acid, Coco-Glucoside, Glyceryl Oleate,
-      Cellulose Gum, Sodium Hydroxide, Citric Acid, Fragrance (Perfume), Inulin,
-       Xanthan Gum, Mannitol, Sodium Citrate, Xylitol, Cellulose, Fructose,
-        Glucose, Rhamnosis, Sodium Metabisulphite, Fructooligosaccharides,
-         Tocopherol, Hydrogenated Palm Glycerides Citrate`,
-    starIngredient: '',
+    id: '0033',
+    brandName: `I'm From`,
+    productName: 'Beet Energy Ampoule',
+    description: `I'm From Beet Energy Ampoule, a beet-based radiance serum, 
+    restores skin tone, evens out tone and deeply moisturizes in an instant.
+    The composition of the serum includes beetroot extract (81.5%), grown
+     in the picturesque county in South Korea - Tamyang. This extract is
+      obtained using the cold decoction extraction method, so all the
+       beneficial substances contained in the beetroot remain intact.
+    Serum deeply fills the skin with useful vitamins and microelements,
+     improves skin elasticity and gives it a healthy glow. Features a lightweight
+      texture that glides on easily and absorbs quickly.`,
+    ingredients: `Beta Vulgaris (Beet) Root Extract, Glycerin, Squalane, Propanediol,
+     1,2-Hexanediol, Niacinamide, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+      Tromethamine, Xanthan Gum, Panthenol, Adenosine, Allantoin, Carnosine`,
+    starIngredient: 'Niacinamide',
     pics: [
-      'assets/product-images/0102/bioderma-sébium-gel-moussant-actif-1.jpg',
-      'assets/product-images/0102/bioderma-sébium-gel-moussant-actif-2.jpg',
+      'assets/product-images/0033/iam-from-beet-serum-1.jpg',
+      'assets/product-images/0033/iam-from-beet-serum-2.jpg',
+      'assets/product-images/0033/iam-from-beet-serum-3.jpg',
     ],
-    price: 22,
+    price: 32,
     bestseller: false,
-    segment: 'Drugstore (Europe)',
-    category: 'Cleanser',
+    segment: 'Korean',
+    category: 'Serum',
     for: 'Face',
-    availableAmount: 118,
-  },
-  {
-    id: '0103',
-    brandName: 'Bioderma',
-    productName: 'Sebium purifying foaming gel',
-    description: `Sébium Foaming Gel gently cleanses and purifies the skin without
-     drying it : containing zinc and copper sulphates, it cleanses the epidermis,
-      reduces the appearance of irregularities, and absorbs excess of sebum.
-       Its ultra-gentle, soap-free formula respects the skin's balance and
-        its physiological pH is maintained. The patented natural complex
-         contributes to raise the skin's tolerance threshold.`,
-    ingredients: `Water (Aqua), Sodium Cocoamphoacetate, Sodium Laureth Sulfate,
-     PEG-200 Hydrogenated Glyceryl Palmate, PEG-40 Glyceryl Cocoate, Disodium EDTA,
-      Citric Acid, Zinc Sulfate, Sodium Coceth Sulfate, PEG-7 Glyceryl Cocoate,
-       Copper Sulfate, Ginkgo Biloba Extract, Sodium Chloride, Xylitol,
-        Fructooligosaccharides, Mannitol, Rhamnose, Sodium Hydroxide,
-         Propylene Glycol, Sodium Methylparaben, Sodium Propylparaben, Fragrance (Parfum)`,
-    starIngredient: '',
-    pics: [
-      'assets/product-images/0103/bioderma-sébium-gel-moussant-actif-1.jpg',
-      'assets/product-images/0103/bioderma-sébium-gel-moussant-actif-2.jpg',
-    ],
-    price: 23,
-    bestseller: false,
-    segment: 'Drugstore (Europe)',
-    category: 'Cleanser',
-    for: 'Face',
-    availableAmount: 220,
+    availableAmount: 15,
   },
   {
     id: '0104',
