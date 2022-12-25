@@ -1320,6 +1320,35 @@ export const products: Product[] = [
     availableAmount: 9,
   },
   {
+    id: '0046',
+    brandName: `I'm From`,
+    productName: 'Mugwort Mask ',
+    description: `I'm From Mugwort Mask is a purifying mask that instantly soothes irritated
+     and sensitive skin. Formulated with a mugwort harvest from Ganghwa County in South Korea,
+      this mask helps detoxify the skin and replenishes it with essential vitamins and minerals.`,
+    ingredients: `Water, Butylene Glycol, Glycerin, Artemisia Princeps Leaf Powder, 1,2-Hexanediol,
+     Cordyceps Sinensis Extract, Polygonum Cuspidatum Root Extract, Scutellaria Baicalensis
+      Root Extract, Methylpropanediol, Ligularia Fishceri Leaf Extract, Rosa Davurica Bud
+       Extract, Camellia Sinensis Leaf Extract, Glycyrrhiza Glabra (Licorice) Root Extract,
+        Chamomilla Recutita (Matricaria) Flower Extract, Rosmarinus Officinalis (Rosemary)
+         Leaf Extract, Centella Asiatica Extract, Glyceryl Polyacrylate, Sodium Polyacrylaste,
+          Carbomer, Arginine, Phenoxyethanol, Allantoin, Dipotassium Glycyrrhizate, Panthenol,
+           Xanthan Gum, Disodium EDTA`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0046/iam-from-mugwort-mask-1.jpg',
+      'assets/product-images/0046/iam-from-mugwort-mask-2.jpg',
+      'assets/product-images/0046/iam-from-mugwort-mask-3.jpg',
+      'assets/product-images/0046/iam-from-mugwort-mask-4.jpg',
+    ],
+    price: 21,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 10,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
