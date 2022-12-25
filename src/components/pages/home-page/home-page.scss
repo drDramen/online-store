@@ -1,0 +1,118 @@
+.home-page {
+  height: 100%;
+  background-color: var(--color-charlotte);
+
+  &__container {
+    display: grid;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    height: 100%;
+    grid-template-columns: 1fr 30%;
+    grid-template-areas:
+      'content image'
+      'advantages advantages';
+  }
+
+  &__content {
+    grid-area: content;
+    padding-top: 30px;
+  }
+
+  &__image-wrapper {
+    grid-area: image;
+    justify-self: end;
+  }
+
+  &__advantages {
+    grid-area: advantages;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__moto {
+    margin-bottom: 36px;
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--color-niagara);
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    padding-right: 18%;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &__button {
+    max-width: max-content;
+    padding: 15px 28px;
+    font-size: 36px;
+    color: var(--font-color-secondary);
+    border-radius: 10px;
+    background-color: var(--color-java);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--color-java);
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  column-gap: 145px;
+
+  &__item {
+    max-width: 180px;
+  }
+
+  &__description {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.icon {
+  display: block;
+  fill: var(--color-java);
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 180px;
+    border: 2px solid var(--color-java);
+    border-radius: 50%;
+    background: var(--color-white);
+  }
+
+  &-flask-science {
+    width: 114px;
+    height: 114px;
+  }
+
+  &-planet {
+    width: 130px;
+    height: 130px;
+  }
+
+  &-package {
+    width: 116px;
+    height: 116px;
+  }
+}
