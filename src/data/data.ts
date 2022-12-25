@@ -184,4 +184,263 @@ export const products: Product[] = [
     for: 'Face',
     availableAmount: 220,
   },
+  {
+    id: '0105',
+    brandName: 'Bioderma',
+    productName: 'Atoderm Gentle Shower Gel',
+    description: `The ideal solution for the daily hygiene of the whole family
+     - Atoderm Shower Gel from Bioderma in large volume! Recommended by
+      dermatologists for normal to dry sensitive skin in babies, children
+       and adults. The mild formula of Bioderma Atoderm Ultra-Gentle shower
+        gel cleanses without disturbing the lipid balance, moisturizing and
+         softening ingredients make the skin soft and supple. The gel has
+          a creamy foamy texture and a delicate aroma, is highly tolerable
+           and rinses off well.
+    The product is developed in accordance with the principles of
+     NAOS - instead of over-treatment, it helps the skin restart its natural
+      mechanisms to function properly. The Skin protect complex has a dual
+       biological action: moisturizing and restoring. Stimulation of the synthesis
+        of hyaluronic acid allows to increase the level of skin hydration, and the
+         restoration of the lipid word provides protection for the epidermis for a long time.`,
+    ingredients: `Aqua/water/eau, Sodium Laureth Sulfate, Coco-Betaine, Sodium
+     Lauroyl Sarcosinate, Glycerin, Methylpropanediol, Coco-Glucoside, Glyceryl
+      Oleate, Disodium EDTA, Citric Acid, Capryloyl Glycine, Copper Sulfate,
+       Xylitylglucoside, Anhydroxylitol, Xylitol, Niacinamide, Glucose,
+        Fructooligosaccharides, Mannitol, Tocopherol, Hydrogenated Palm
+         Glycerides Citrate, Lecithin, Rhamnose, Ascorbyl Palmitate, Fragrance (Parfum)
+    `,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0105/bioderma-atoderm-gentle-shower-gel-1.jpg',
+      'assets/product-images/0105/bioderma-atoderm-gentle-shower-gel-2.jpg',
+      'assets/product-images/0105/bioderma-atoderm-gentle-shower-gel-3.jpg',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Body',
+    availableAmount: 80,
+  },
+  {
+    id: '0106',
+    brandName: 'Bioderma',
+    productName: 'Atoderm Intensive gel-creme',
+    description: `Bioderma Atoderm Gel-Cream Intensive is the first soothing
+     daily skin care product adapted to the needs of patients with atopic
+      skin in warm seasons, as well as in humid or tropical climates. It
+       has a revolutionary texture, leaving an instant feeling of freshness
+        on the skin. Thanks to its light, non-greasy and non-sticky texture,
+         it is quickly absorbed and does not leave marks on clothes.`,
+    ingredients: `Aqua/Water, Glycerin, Niacinamide, Sodium Polyacrylate,
+     Dipotassium Glycyrrhizate, Hydrogenated Polydecene, Pentylene Glycol,
+      1,2-Hexanediol, Caprylyl Glycol, Mannitol, Polysorbate 20, Xylitol,
+       Rhamnose, Sodium Citrate, Polyquaternium-51, Fructooligosaccharides,
+        Caprylic/Capric Triglyceride, Laminaria Ochroleuca Extract`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0106/bioderma-atoderm-intensive-gel-creme-1.jpg',
+      'assets/product-images/0106/bioderma-atoderm-intensive-gel-creme-2.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 113,
+  },
+  {
+    id: '0107',
+    brandName: 'Bioderma',
+    productName: 'Sensibio DS+ Gel',
+    description: `Cleanses the skin without causing irritation.
+    It has an antifungal effect, limiting the proliferation of microflora.
+    Restores the hydro-lipid balance, normalizing the barrier function of the skin.
+    Does not contain fragrances.`,
+    ingredients: `Aqua/Water/Eau, Sodium Laureth Sulfate, Coco-Betaine,
+     Sodium Lauroyl Sarcosinate, Mannitol, Xylitol, Rhamnose, Fructooligosaccharides,
+      Laminaria Ochroleuca Extract, Zinc Gluconate, PEG-90 Glyceryl Isostearate,
+       Sodium Chloride, Coco-Glucoside, Glyceryl Oleate, Capryloyl Glycine,
+        Decylene Glycol, Caprylic/Capric Triglyceride, Laureth-2, Ammonium
+         Glycyrrhizate, Lysine Azelate, Pyridoxine Hcl, Undecyl Alcohol,
+          Citric Acid, Disodium EDTA, Sodium Hydroxide`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0107/bioderma-sensibio-ds-gel-1.jpg',
+      'assets/product-images/0107/bioderma-sensibio-ds-gel-2.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 56,
+  },
+  {
+    id: '0108',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Perfecteur SPF 30',
+    description: `Multifunctional product Bioderma Hydrabio Perfecteur SPF30
+     visibly improves the appearance of the skin and protects it from UVA,
+      UVB rays. The care contains the Aquagenium biological complex, which
+       instantly and permanently moisturizes the epidermis. Thanks to the
+        delicate, velvety texture of the product, the active ingredients
+         penetrate deeply into the skin, restoring its ability to retain
+          moisture. Bioderma Hydrabio Perfector evens out complexion and
+           conceals minor imperfections. The tool can be used as a base for make-up.`,
+    ingredients: `Water, Glycerin, Octocrylene, Ethylhexyl Salicylate, Cyclopentasiloxane,
+     Dimethicone, Dipropylene Glycol, Butyl Methoxydibenzoylmethane, Cetyl Alcohol,
+      Polymethylsilsesquioxane, Niacinamide, Phenylbenzimidazole Sulfonic Acid, Styrene/Acrylates
+       Copolymer, Arachidyl Alcohol, Hdi/Trimethylol Hexyllactone Crosspolymer, Arginine,
+       Cyclohexasiloxane, Behenyl Alcohol, C30-45 Alkyl Cetearyl Dimethicone Crosspolymer, Mica (Ci 77019),
+       Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Pentylene Glycol, Tocopheryl Acetate,
+        Arachidyl Glucoside, Ci 77891 (Titanium Dioxide), Disodium Edta, Peg-8 Laurate, Salicylic Acid,
+         Mannitol, Xylitol, Hexyldecanol, Sodium Hydroxide, Rhamnose, Polysorbate 60, Sorbitan Isostearate,
+          Pyrus Malus (Apple) Seed Extract, Brassica Campestris (Rapeseed) Sterols, Red 33 (Ci 17200),
+           Tocopherol, Fragrance`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0108/bioderma-hydrabio-perfecteur-spf-1.jpg',
+      'assets/product-images/0108/bioderma-hydrabio-perfecteur-spf-2.jpg',
+    ],
+    price: 38,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 380,
+  },
+  {
+    id: '0109',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Gel-Crème',
+    description: `Does dehydrated skin cause discomfort? Feeling of burning
+     and tightness, peeling, dull color, loss of elasticity -
+      all these problems can be solved by Bioderma Gel-Cream Hydrabio!
+    The product based on the Aquagenium patent provides instant and
+     long-lasting moisturizing effect, the skin is saturated with moisture,
+      becomes elastic and radiant. Thanks to the biomimetic emulsion, the active
+       ingredients of the Bioderma Hydrabio Gel-Crème cream penetrate into the deeper
+        layers of the skin and provide maximum effectiveness. The tool helps to
+         restore the natural mechanism of moisturizing and water balance of the
+          skin. The cream has a light texture and pleasant aroma.`,
+    ingredients: `Water, Glycerin, Octocrylene, Ethylhexyl Salicylate, Cyclopentasiloxane,
+     Dimethicone, Dipropylene Glycol, Butyl Methoxydibenzoylmethane, Cetyl Alcohol,
+      Polymethylsilsesquioxane, Niacinamide, Phenylbenzimidazole Sulfonic Acid, Styrene/Acrylates
+       Copolymer, Arachidyl Alcohol, Hdi/Trimethylol Hexyllactone Crosspolymer, Arginine,
+       Cyclohexasiloxane, Behenyl Alcohol, C30-45 Alkyl Cetearyl Dimethicone Crosspolymer, Mica (Ci 77019),
+       Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Pentylene Glycol, Tocopheryl Acetate,
+        Arachidyl Glucoside, Ci 77891 (Titanium Dioxide), Disodium Edta, Peg-8 Laurate, Salicylic Acid,
+         Mannitol, Xylitol, Hexyldecanol, Sodium Hydroxide, Rhamnose, Polysorbate 60, Sorbitan Isostearate,
+          Pyrus Malus (Apple) Seed Extract, Brassica Campestris (Rapeseed) Sterols, Red 33 (Ci 17200),
+           Tocopherol, Fragrance`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0109/bioderma-gydrabio-gel-creme-1.jpg',
+      'assets/product-images/0109/bioderma-gydrabio-gel-creme-2.jpg',
+    ],
+    price: 36,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 460,
+  },
+  {
+    id: '0110',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Mask',
+    description: `Provides the most deep and long-term hydration of the skin.
+    Contains the patented Aquagenium® complex - normalizes the processes of natural skin hydration.
+    The light texture of the mask leaves a pleasant feeling of softness and protection.
+    Non-comedogenic.
+    Hypoallergenic.`,
+    ingredients: `Water (Aqua), Glycerin, Cyclomethicone, Dicaprylyl Ether,
+     Dimethicone, Xylitol, Glycol Palmitate, Corn Starch Modified, Arachidyl Alcohol,
+      Xylitylglucoside, Anhydroxylitol, Niacinamide, Pyrus Malus (Apple) Fruit Extract,
+      Rhamnose, Laminaria Ochroleuca Extract, Cyclopentasiloxane, Glyceryl Stearate,
+       PEG-100 Stearate, Behenyl Alcohol, Cetyl Alcohol, Titanium Dioxide, Arachidyl
+        Glucoside, Fructooligosaccharides, Disodium EDTA, Mannitol, Xanthan Gum,
+         Hexyldecanol, C30-45 Alkyl Cetearyl Dimethicone Crosspolymer, Alumina,
+          Stearic Acid, Caprylic/Capric Triglyceride, Chlorphenesin, Phenoxyethanol, Fragrance (Parfum)`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0110/bioderma-hydrabio-mask-1.jpg',
+      'assets/product-images/0110/bioderma-hydrabio-mask-2.jpg',
+    ],
+    price: 32,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 174,
+  },
+  {
+    id: '0111',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Creme',
+    description: `A real salvation for dry, flaky skin that has lost its shine
+     and healthy appearance - Hydrabio cream from Bioderma! Now you can forget
+      about discomfort, burning sensation and tightness, your skin will become
+       smooth, soft and radiant.
+    Bioderma Hydrabio Crème not only moisturizes the dermis, it restores the
+     skin's natural hydration mechanism, providing both instant comfort and
+      long-term hydration. Thanks to its rich creamy texture, the product
+       intensively nourishes the skin, and due to the mimetic emulsion,
+        the active ingredients penetrate deep into the dermis, showing maximum
+         effectiveness. The skin is saturated with moisture, becomes soft and radiant.
+    Pleasant, fresh aroma brings additional pleasure. The cream does not
+     contain alcohol, has excellent tolerance. Bioderma Hydrabio Cream
+      is ideal as a make-up base.`,
+    ingredients: `Aqua/Water/Eau, Glycerin, Isododecane, Cyclopentasiloxane,
+     Propylene Glycol Dicaprylate/Dicaprate, Dimethicone, Propanediol, Xylitol,
+      Cetyl Palmitate, Hydrogenated Polydecene, Niacinamide, Tridecyl Trimellitate,
+       Arachidyl Alcohol, Polymethylsilsesquioxane, Glyceryl Dibehenate, Behenyl Alcohol,
+        Hdi/Trimethylol Hexyllactone Crosspolymer, Tribehenin, Dimethicone/Vinyl Dimethicone
+         Crosspolymer, Pentylene Glycol, Tocopheryl Acetate, Arachidyl Glucoside, Acrylates/C10-30
+          Alkyl Acrylate Crosspolymer, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,
+           Glyceryl Behenate, Disodium Edta, Squalane, Salicylic Acid, Sodium Hydroxide, Mannitol,
+            Sodium Hyaluronate, Hexyldecanol, Tocopherol, Polysorbate 60, Rhamnose, Helianthus
+             Annuus (Sunflower) Seed Oil, Pyrus Malus (Apple) Seed Extract, Brassica Campestris
+              (Rapeseed) Sterols, Fragrance (Parfum)`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0111/bioderma-hydrabio-cream-1.jpg',
+      'assets/product-images/0111/bioderma-hydrabio-cream-2.jpg',
+      'assets/product-images/0111/bioderma-hydrabio-cream-3.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 280,
+  },
+  {
+    id: '0112',
+    brandName: 'Bioderma',
+    productName: 'Hydrabio Tonique Moisturising toning lotion',
+    description: `Innovation Bioderma, the biological patented Aquagenium complex,
+     affects the mechanisms that lead to the accumulation of moisture,
+      its retention on the surface, which is necessary to preserve the natural balance.
+    Restores, moisturizes for a long time, the skin returns tone, softness and radiance.
+    The innovative liquid and transparent texture of Hydrabio Toning Lotion provides
+     a pleasant feeling of freshness to the skin after its application.`,
+    ingredients: `Water (Aqua), Glycerin, Polysorbate 20, Allantoin, Pyrus Malus (Apple)
+     Fruit Extract, Xylitol, Mannitol, Rhamnose, Fructooligosaccharides, Citric Acid,
+      Niacinamide, Hexyldecanol, Sodium Hydroxide, Cetrimonium Bromide, Disodium Edta,
+       Fragrance (Parfum)`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0112/bioderma-hydrabio-toner-1.jpg',
+      'assets/product-images/0112/bioderma-hydrabio-toner-2.jpg',
+      'assets/product-images/0112/bioderma-hydrabio-toner-3.jpg',
+    ],
+    price: 30,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 328,
+  },
 ];
