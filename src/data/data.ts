@@ -3,44 +3,206 @@ import { Product } from './../interfaces/product';
 export const products: Product[] = [
   {
     id: '0001',
-    brandName: 'Youth to the People',
-    productName: 'Superfood Cleanser',
-    description: `The daily green juice cleanse for your face.
-      The powerful, but gentle daily face wash is formulated
-      with superfood antioxidants from kale, spinach, and green tea
-       - to give your skin the ultimate cleanse. It works effectively
-        to prevent buildup in pores, remove makeup,
-      and balance pH without drying or stripping.
-      This is the green juice cleanse for your face.`,
-    ingredients: `Water/Aqua/Eau , Cocamidopropyl Hydroxysultaine ,
-       Sodium Cocoyl Glutamate , Sorbeth-230 Tetraoleate ,
-       Polysorbate 20 , Sodium Chloride , Aloe Barbadensis
-       Leaf (Aloe Vera) Juice Powder , Brassica Oleracea Acephala
-       (Kale) Leaf Extract , Spinacia Oleracea (Spinach) Leaf Extract ,
-       Camellia Sinensis (Green Tea) Leaf Extract , Medicago Sativa
-       (Alfalfa) Extract , Chamomilla Recutita (Matricaria) Flower
-       Extract , Tetrahexyldecyl Ascorbate (Vitamin C) , Glycerin ,
-       Panthenol (Vitamin B5) , Tocopheryl Acetate (Vitamin E) ,
-        Decyl Glucoside , Sorbitan Laurate , Tetrasodium Glutamate
-        Diacetate , Gluconolactone , Ethylhexylglycerin , Maltodextrin ,
-        Citric Acid , Phenoxyethanol , Potassium Sorbate ,
-        Sodium Benzoate , Gardenia Jasminoides (Jasmine) Fruit Extract ,
-        Fragrance/Parfum , Sodium Hydroxide , Sodium Glycolate ,
-        Sodium Formate , Hexyl Cinnamal , Linalool , Limonene ,
-        Chlorophyllin-Copper Complex (CI 75810)`,
-    starIngredient: 'Vitamin C',
+    brandName: 'CeraVe',
+    productName: 'Micellar Cleansing Water',
+    description: `The mild formula of Cerave micellar water is suitable
+     for cleansing the skin of the face and eye contour from impurities
+      and cosmetics. The product effectively cleanses the epidermis
+       without the use of water, and also strengthens its protective barrier
+        and compensates for the lack of moisture. CeraVe Micellar Cleansing
+         Water is suitable for people with sensitive, allergy-prone skin,
+          as confirmed by the ECARF (European Center for Allergy Research).`,
+    ingredients: `Aqua/Water, Glycerin, Hexylene Glycol, Poloxamer 184,
+     Disodium Cocoamphodiacetate, Disodium EDTA, Niacinamide, Polyaminopropyl
+      Biguanide, Sodium Lauroyl Lactylate, BHT, Ceramide NP, Phenoxyethanol,
+       Ceramide AP, Phytosphingosine, Cholesterol, Xanthan Gum, Carbomer,
+        Ethylhexylglycerin, Ceramide EOP`,
+    starIngredient: 'Ceramide',
     pics: [
-      'assets/product-images/0001/yttp-SuperfoodCleanser-1.jpg',
-      'assets/product-images/0001/yttp-SuperfoodCleanser-2.jpg',
-      'assets/product-images/0001/yttp-SuperfoodCleanser-3.jpg',
-      'assets/product-images/0001/yttp-SuperfoodCleanser-4.jpg',
+      'assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg',
+      'assets/product-images/0001/cerave-hydrating-micellair-water-2.jpeg',
     ],
-    price: 36,
+    price: 20,
     bestseller: true,
-    segment: 'USA / Canada',
+    segment: 'Drugstore (Europe)',
     category: 'Cleanser',
     for: 'Face',
-    availableAmount: 200,
+    availableAmount: 230,
+  },
+  {
+    id: '0002',
+    brandName: 'CeraVe',
+    productName: 'Facial Moisturising Lotion for Normal to Dry Skin SPF25',
+    description: `Cerave SPF25 lotion provides intensive hydration throughout
+     the day and protection from UVA and UVB rays. The product contains a
+      complex of components that maintain the hydrobalance of the epidermis
+       and restore its protective layer. CeraVe Facial Moisturizing Lotion
+        for Normal to Dry Skin SPF25 spreads easily over the skin, absorbs
+         quickly and leaves no residue on clothing. MVE technology involves
+          the gradual release of ingredients over a long period of time.`,
+    ingredients: `Aqua/Water, Homosalate, Glycerin, Octocrylene, Ethylhexyl
+     Salicylate, Niacinamide, Silica, Butyl Methoxydibenzoylmethane, Dimethicone,
+      Cetearyl Alcohol, PEG-100 Stearate, Glyceryl Stearate, Phenoxyethanol,
+       Stearic Acid, Behentrimonium Methosulfate, Caprylyl Glycol, Palmitic Acid,
+        Ammonium Polyacryloyldimethyl Taurate, Xanthan Gum, Disodium EDTA, Tocopherol,
+         Sodium Lauroyl Lactylate, Myristic Acid, Sodium Hyaluronate, Ceramide NP,
+          Ceramide AP, Phytosphingosine, Cholesterol, Carbomer, Ethylhexylglycerin, Ceramide EOP`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0002/cerave-facial-moisture-lotion-spf-1.jpg',
+      'assets/product-images/0002/cerave-facial-moisture-lotion-spf-2.jpg',
+    ],
+    price: 22,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 348,
+  },
+  {
+    id: '0003',
+    brandName: 'CeraVe',
+    productName: 'Moisturising Cream for Dry to Very Dry Skin',
+    description: `Thanks to its rich, yet light and non-greasy texture, Cerave Moisturizing
+     Cream is quickly absorbed, eliminates discomfort and replenishes the lack of moisture
+      in the stratum corneum. MVE technology provides a gradual release of the ingredients
+       of the formula, which provides long-term hydration and restoration of the skin's
+        protective layer. CeraVe Moisturizing Cream for Dry to Very Dry Skin is well
+         tolerated by sensitive, allergy-prone skin as assessed by ECARF (European
+           Center for Allergy Research).`,
+    ingredients: `Aqua, Glycerin, Cetearyl Alcohol, Caprylic/Capric Triglyceride,
+     Cetyl Alcohol, Ceteareth-20, Petrolatum, Potassium Phosphate, Ceramide NP, Ceramide AP,
+      Ceramide EOP, Carbomer, Dimethicone, Behentrimonium Methosulfate, Sodium Lauroyl Lactylate,
+       Sodium Hyaluronate, Cholesterol, Phenoxyethanol, Disodium EDTA, Dipotassium Phosphate, Tocopherol,
+        Phytosphingosine, Xanthan Gum, Ethylhexylglycerin`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0003/cerave-moisture-cream-1.avif',
+      'assets/product-images/0003/cerave-facial-moisture-lotion-spf-2.jpg',
+    ],
+    price: 22,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 212,
+  },
+  {
+    id: '0004',
+    brandName: 'CeraVe',
+    productName: 'SA Skin Smoothing Cleanser For Dry, Rough, Bumpy Skin',
+    description: `Repair dry, rough and uneven skin with CeraVe SA Skin Smoothing Cleanser.
+     The tool forms a thick foam, which perfectly washes away all dirt and make-up residues
+      from the epidermis. The salicylic acid included in the composition gently dissolves
+       dead cells without disturbing the natural balance of the dermis and accelerating
+        its renewal. Cerave SA Softening Cleansing Gel intensively moisturizes the skin
+         during cleansing, leaving it incredibly soft, smooth and soft.`,
+    ingredients: `Aqua/Water, Sodium Lauroyl Sarcosinate, Cocamidopropyl Hydroxysultaine,
+     Glycerin, Niacinamide, Gluconolactone, Sodium Methyl Cocoyl Taurate, PEG-150
+      Pentaerythrityl Tetrastearate, Ceramide NP, Ceramide AP, Ceramide EOP, Carbomer,
+       Calcium Gluconate, Salicylic Acid, Sodium Benzoate, Sodium Lauroyl Lactylate, Cholesterol,
+        Phenoxyethanol, Disodium EDTA, Tetrasodium EDTA, Hydrolyzed Hyaluronic Acid,
+         Phytosphingosine, Xanthan Gum, Ethylhexylglycerin`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0004/cerave-sa-smoothing-cleanser-1.jpg',
+      'assets/product-images/0004/cerave-sa-smoothing-cleanser-2.jpg',
+    ],
+    price: 20,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 172,
+  },
+  {
+    id: '0005',
+    brandName: 'CeraVe',
+    productName: 'SA Cream for Rough & Bumpy Skin',
+    description: `An effective way to improve dry, rough and uneven skin is to use CeraVe
+     SA Cream for Rough & Bumpy Skin. Components specially selected by dermatologists in
+      optimal concentrations provide intensive care for the epidermis, delicately
+       exfoliating and removing dead cells, softening rough areas without disturbing
+        the natural hydrolipid balance. The tool helps to moisturize the dermis and
+         prevents repeated loss of moisture, thereby preventing the further development
+          of dryness and the appearance of peeling. Cerave SA softening cream has a pleasant
+           texture, is perfectly applied and absorbed without leaving greasy marks.`,
+    ingredients: `Water, Urea, Glyceryl Stearate SE, Cetearyl Alcohol, Butyrospermum Parkii (Shea)
+     Butter, Glycerin, Niacinamide, Cetyl Alcohol, PEG-100 Stearate, Limnanthes Alba (Meadowfoam)
+      Seed Oil, Laureth-9, Gossypium Herbaceum (Cotton) Seed Oil, Behentrimonium Methosulfate,
+       C12-13 Alkyl Lactate, 1,2-Hexanediol, Dimethicone, Ceramide NP, Ceramide AP,
+        Ceramide EOP, Carbomer, Glyceryl Stearate, Sodium Hydroxide, Sodium Lauroyl
+         Lactylate, Cholesterol, Tasmannia Lanceolata Fruit/Leaf Extract, Phenoxyethanol,
+          Disodium EDTA, Tocopherol, Hydroxyacetophenone, Hydrogenated Olive Oil,
+           Hydrolyzed Hyaluronic Acid, Citric Acid, Phytosphingosine, Xanthan Gum, Ethylhexylglycerin`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0005/cerave-sa-cream-1.jpg',
+      'assets/product-images/0005/cerave-sa-cream-2.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 225,
+  },
+  {
+    id: '0006',
+    brandName: 'CeraVe',
+    productName: 'Hydrating Cleanser for Normal to Dry Skin',
+    description: `Soft hypoallergenic cleansing cream-gel Cerave is suitable for gentle
+     cleansing of dehydrated dry sensitive skin. The product effectively removes impurities,
+      makeup and sebum, helps to restore the hydrolipidic mantle, and intensively moisturizes.
+       CeraVe Hydrating Cleanser for Normal to Dry Skin is non-foaming. MVE technology involves
+        the gradual release of the components of the formula, which ensures long-term hydration
+         of the stratum corneum. The high tolerability and hypoallergenicity of the product is
+          confirmed by the ECARF (European Center for Allergy Research).`,
+    ingredients: `Aqua/Water, Glycerin, Cetearyl Alcohol, Phenoxyethanol, Stearyl Alcohol,
+     Cetyl Alcohol, Peg-40 Stearate, Behentrimonium Methosulfate, Glyceryl Stearate, Polysorbate 20,
+      Ethylhexylglycerin, Potassium Phosphate, Disodium EDTA, Dipotassium Phosphate, Sodium Lauroyl
+       Lactylate, Ceramide NP, Ceramide AP, Phytosphingosine, Cholesterol, Sodium Hyaluronate,
+        Xanthan Gum, Carbomer, Tocopherol, Ceramide Eop`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0006/cerave_hydrating_cleanser_for_normal_to_dry_skin-1.jpg',
+      'assets/product-images/0006/cerave_hydrating_cleanser_for_normal_to_dry_skin-2.jpg',
+      'assets/product-images/0006/cerave_hydrating_cleanser_for_normal_to_dry_skin-3.jpg',
+    ],
+    price: 12,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 432,
+  },
+  {
+    id: '0007',
+    brandName: 'CeraVe',
+    productName: 'Facial Moisturising Lotion for Normal to Dry Skin',
+    description: `Ultra-light moisturizing lotion Cerave maintains optimal hydrobalance of
+     the epidermis throughout the day, and also strengthens the natural protective barrier
+      of the skin. Thanks to MVE technology, the active components of the formula are gradually
+       released. CeraVe Facial Moisturizing Lotion for Normal to Dry Skin contains a unique
+        complex of ceramides and skin care ingredients that relieve discomfort, restore softness,
+         elasticity and comfort to the skin.`,
+    ingredients: `Purified Water, Glycerin, Caprylic/Capric Triglycerides, Niacinamide,
+     Cetearyl Alcohol, Ceramide 3, Ceramide 6 II, Ceramide 1, Phytosphingosine,
+      Hyaluronic Acid, Sodium Hydroxide, Dimethicone, Behentrimonium Methosulfate,
+       Ceteareth-20, Polyglyceryl-3 Diisostearate, Cholesterol, Xanthan Gum, Carbomer,
+        Disodium EDTA, Dipotassium Phosphate, Potassium Phosphate, Sodium Lauroyl Lactylate`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0007/cerave-moisture-lotion-normal-dry-1.jpg',
+      'assets/product-images/0007/cerave-moisture-lotion-normal-dry-2.jpg',
+      'assets/product-images/0007/cerave-moisture-lotion-normal-dry-3.jpg',
+    ],
+    price: 22,
+    bestseller: true,
+    segment: 'Drugstore (Europe)',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 458,
   },
   {
     id: '0100',
@@ -923,5 +1085,46 @@ export const products: Product[] = [
     category: 'Cream',
     for: 'Face',
     availableAmount: 167,
+  },
+  {
+    id: '0129',
+    brandName: 'Youth to the People',
+    productName: 'Superfood Cleanser',
+    description: `The daily green juice cleanse for your face.
+      The powerful, but gentle daily face wash is formulated
+      with superfood antioxidants from kale, spinach, and green tea
+       - to give your skin the ultimate cleanse. It works effectively
+        to prevent buildup in pores, remove makeup,
+      and balance pH without drying or stripping.
+      This is the green juice cleanse for your face.`,
+    ingredients: `Water/Aqua/Eau , Cocamidopropyl Hydroxysultaine ,
+       Sodium Cocoyl Glutamate , Sorbeth-230 Tetraoleate ,
+       Polysorbate 20 , Sodium Chloride , Aloe Barbadensis
+       Leaf (Aloe Vera) Juice Powder , Brassica Oleracea Acephala
+       (Kale) Leaf Extract , Spinacia Oleracea (Spinach) Leaf Extract ,
+       Camellia Sinensis (Green Tea) Leaf Extract , Medicago Sativa
+       (Alfalfa) Extract , Chamomilla Recutita (Matricaria) Flower
+       Extract , Tetrahexyldecyl Ascorbate (Vitamin C) , Glycerin ,
+       Panthenol (Vitamin B5) , Tocopheryl Acetate (Vitamin E) ,
+        Decyl Glucoside , Sorbitan Laurate , Tetrasodium Glutamate
+        Diacetate , Gluconolactone , Ethylhexylglycerin , Maltodextrin ,
+        Citric Acid , Phenoxyethanol , Potassium Sorbate ,
+        Sodium Benzoate , Gardenia Jasminoides (Jasmine) Fruit Extract ,
+        Fragrance/Parfum , Sodium Hydroxide , Sodium Glycolate ,
+        Sodium Formate , Hexyl Cinnamal , Linalool , Limonene ,
+        Chlorophyllin-Copper Complex (CI 75810)`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0001/yttp-SuperfoodCleanser-1.jpg',
+      'assets/product-images/0001/yttp-SuperfoodCleanser-2.jpg',
+      'assets/product-images/0001/yttp-SuperfoodCleanser-3.jpg',
+      'assets/product-images/0001/yttp-SuperfoodCleanser-4.jpg',
+    ],
+    price: 36,
+    bestseller: true,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 200,
   },
 ];
