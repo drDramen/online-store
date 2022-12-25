@@ -1322,7 +1322,7 @@ export const products: Product[] = [
   {
     id: '0046',
     brandName: `I'm From`,
-    productName: 'Mugwort Mask ',
+    productName: 'Mugwort Mask',
     description: `I'm From Mugwort Mask is a purifying mask that instantly soothes irritated
      and sensitive skin. Formulated with a mugwort harvest from Ganghwa County in South Korea,
       this mask helps detoxify the skin and replenishes it with essential vitamins and minerals.`,
@@ -1347,6 +1347,192 @@ export const products: Product[] = [
     category: 'Mask',
     for: 'Face',
     availableAmount: 10,
+  },
+  {
+    id: '0047',
+    brandName: `Dear, Klairs`,
+    productName: 'All-Day Airy Sunscreen SPF50+ PA++++',
+    description: `Light face sunscreen Dear, Klairs All-Day Airy Sunscreen SPF50+ PA++++ -
+     airy texture and reliable UV protection in one bottle. The light texture of the
+      cream creates a weightless coating.`,
+    ingredients: `Aqua (Water), Dibutyl Adipate, Butyloctyl Salicylate, Diethylamino Hydroxybenzoyl
+     Hexyl Benzoate, Polysilicone-15, C12-15 Alkyl Benzoate, Ethylhexyl Triazone,
+      Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Polymethylsilsesquioxane, Glycerin,
+       Niacinamide, Polyglyceryl-6 Stearate, Cetearyl Olivate, Microcrystalline Cellulose,
+        Panthenol, Silica, Sorbitan Olivate, Dipropylene Glycol, Hydroxyacetophenone,
+         Poly C10-30 Alkyl Acrylate, Polyglyceryl-6 Behenate, Allantoin, Caprylyl Glycol,
+          Stearyl Alcohol, Glyceryl Stearate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer,
+           Tromethamine, Adenosine, Cetearyl Alcohol, Disodium EDTA, Butylene Glycol,
+            Portulaca Oleracea Extract, Aloe Barbadensis Leaf Extract, Dioscorea Japonica
+             Root Extract, Laminaria Japonica Extract, Viola Mandshurica Flower Extract,
+              Ulmus Davidiana Root Extract, Dipotassium Glycyrrhizate, Lepidium Meyenii Root Extract,
+               1,2-Hexanediol, Lycium Chinense Fruit Extract, Fragaria Chiloensis (Strawberry)
+                Fruit Extract, Berberis Vulgaris Root Extract, Morus Nigra Fruit Extract`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0047/dear-klairs-sunscreen-1.jpg',
+      'assets/product-images/0047/dear-klairs-sunscreen-2.jpg',
+    ],
+    price: 32,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 18,
+  },
+  {
+    id: '0048',
+    brandName: `Dear, Klairs`,
+    productName: 'Gentle Black Facial Cleanser',
+    description: `Creamy foam for deep skin cleansing Klairs Gentle Black Facial Cleanser has
+     a delicate creamy texture for delicate and deep cleansing of the skin. The product
+      thoroughly cleanses the surface of the skin from various types of contaminants,
+       while not drying or clogging pores.`,
+    ingredients: `Water, Glycerin, Sodium Cocoyl Glycinate, Sodium Lauroyl Glutamate,
+     1,2-Hexanediol, Hydroxypropyl Starch Phosphate, Lauryl Betaine, Hydroxyacetophenone,
+      Ethylhexylglycerin, Sodium Chloride, Decylene Glycol, Butylene Glycol, Dipropylene Glycol,
+       Laminaria Japonica Extract, Eclipta Prostrata Leaf Extract, Nigella Sativa Seed Extract,
+        Hydrogenated Lecithin, Fructooligosaccharides, Amaranthus Caudatus Seed Extract, Ulmus
+         Davidiana Root Extract, Beta-Glucan, Ficus Carica (Fig) Fruit Extract, Centella Asiatica
+          Extract, Rubus Fruticosus (Blackberry) Fruit Extract, Hydrolyzed Hyaluronic Acid,
+           Tuber Melanosporum Extract, Tocopherol, Ceramide Np, Glycine Soja (Soybean) Seed
+            Extract, Aspartic Acid, Acetyl Hexapeptide-8`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0048/dear-klairs-black-facial-cleanser-1.jpg',
+      'assets/product-images/0048/dear-klairs-black-facial-cleanser-2.jpg',
+    ],
+    price: 23,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 22,
+  },
+  {
+    id: '0049',
+    brandName: `Dear, Klairs`,
+    productName: 'Fundamental Watery Oil Drop',
+    description: `Dear, Klairs Fundamental Watery Oil Drop anti-aging serum for the
+     radiance of the skin of the face - deeply moisturizes and nourishes the skin,
+      keeps the skin nourished and soft for a long time. Serum helps retain moisture
+       in skin cells, prevents dehydration, eliminates dryness and flaking.`,
+    ingredients: `Aqua(Water), Glycerin, Butylene Glycol, Camellia Sinensis Leaf Water,
+     Oryza Sativa (Rice) Extract, Bifida Ferment Extract, Betaine, Dipropylene Glycol,
+      Sorbitol, 1,2-Hexanediol, Aspergillus/Rice Ferment Extract, Camellia Sinensis Leaf
+       Extract, Dipotassium Glycyrrhizate, Sorbitan Sesquioleate, Ethylhexylglycerin,
+        Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium Hyaluronate,
+         Hydroxyethylcellulose, Xanthan Gum, Arginine, Carbomer, Tocopheryl Acetate,
+          Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Laminaria Japonica Extract,
+           Ceramide NP, Hydrogenated Lecithin, Copper Tripeptide-1, Acetyl Hexapeptide-8`,
+    starIngredient: 'Lysate',
+    pics: [
+      'assets/product-images/0049/dear-klairs-watery-oil-drop-1.jpg',
+      'assets/product-images/0049/dear-klairs-watery-oil-drop-2.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 20,
+  },
+  {
+    id: '0050',
+    brandName: `Dear, Klairs`,
+    productName: 'Gentle Black Fresh Cleansing Oil',
+    description: `Moisturizing hydrophilic oil Dear, Klairs Gentle Black Fresh Cleansing
+     Oil is a high-quality and deep cleansing for every day without skin irritation.
+      The oil cleanses all types of dirt: whether it be foundation, dust or sebum.
+       In addition to a thorough cleansing, the product also cares for the skin - all thanks
+        to blackcurrant, bean and black sesame oils, which are sources of
+         vitamins and minerals that transform the skin.`,
+    ingredients: `Helianthus Annuus(Sunflower) Seed Oil, Caprylic/Capric
+     Triglyceride, PEG-20 Glyceryl Triisostearate, Vitis Vinifera (Grape)
+      Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Ribes Nigrum (Black Currant) Seed Oil`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0050/dear-klairs-black-cleansing-oil-1.jpg',
+      'assets/product-images/0050/dear-klairs-black-cleansing-oil-2.jpg',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 17,
+  },
+  {
+    id: '0051',
+    brandName: `Dear, Klairs`,
+    productName: 'Fundamental Water Gel Cream',
+    description: `Based on green tea hydrolate, Klairs Fundamental Water Gel Cream
+     provides deep nourishment and hydration for all skin types, including
+      dehydrated ones. The tool has a weightless texture that is instantly
+       absorbed and does not leave a sticky film on the face.`,
+    ingredients: `Camellia Sinensis Leaf Water, Butylene Glycol, Glycerin,
+     Aqua (Water), Ethylhexyl Palmitate, Cetyl Ethylhexanoate, 1,2-Hexanediol,
+      Pentaerythrityl Tetraethylhexanoate, Panthenol, Oryza Sativa (Rice) Extract,
+       HibiscusEsculentus Fruit Extract, Camellia Sinensis Leaf Extract, Laminaria Japonica
+        Extract, Artemisia Vulgaris Extract, Centella Asiatica Extract, Rosmarinus Officinalis
+         (Rosemary) Leaf Extract, Phytosphingosine, Caproyl Sphingosine, Tocopherol,
+          Glyceryl glucoside, Hydrolyzed Hyaluronic Acid, Trehalose, Jojoba Esters, Helianthus Annuus
+           (Sunflower) Seed Oil, Hydrolyzed Jojoba Esters, Glyceryl Acrylate/Acrylic Acid Copolymer,
+            Cetyl Alcohol, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer,
+             Hydrogenated Polydecene, Ethylhexylglycerin, Cyclohexasiloxane`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0051/dear-klairs-water-gel-cream-1.jpg',
+      'assets/product-images/0051/dear-klairs-water-gel-cream-2.jpg',
+    ],
+    price: 14,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 17,
+  },
+  {
+    id: '0052',
+    brandName: `Dear, Klairs`,
+    productName: 'Rich Moist Foaming Cleanser',
+    description: `Based on green tea hydrolate, Klairs Fundamental Water Gel Cream
+     provides deep nourishment and hydration for all skin types, including
+      dehydrated ones. The tool has a weightless texture that is instantly
+       absorbed and does not leave a sticky film on the face.`,
+    ingredients: `Aqua (Water), Sodium Lauroyl Sarcosinate, Glycerin, Propylene Glycol,
+     Lauric Acid, Caprylic/Capric Triglyceride, Dimethyl Sulfone, Betaine, Stearic Acid,
+      Glycyrrhiza Glabra (Licorice) Root Extract, Potassium Hydroxide, Chamaecyparis
+       Obtusa Water, Ananas Sativus (Pineapple) Fruit Extract, Butylene Glycol,
+        Chlorphenesin, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Paeonia Suffruticosa
+         Root Extract, Illicium Verum (Anise) Fruit Extract, Nelumbium Speciosum Flower
+          Extract, Citrus Paradisi (Grapefruit) Fruit Extract, Scutellaria Baicalensis
+           Root Extract, 1,2-Hexanediol, Capric Acid, Sodium Hyaluronate, Citric Acid,
+            Panthenol, Pyridoxine HCl, Palmitic Acid, Arachidic Acid, Propanediol,
+             Oleic Acid, Lysine HCl, Sodium Ascorbyl Phosphate, Acetyl Methionine,
+              Theanine, Proline, Corchorus Olitorius Leaf Extract, Hibiscus Mutabilis
+               Flower Extract, Linum Usitatissimum (Linseed) Seed Extract, Hibiscus
+                Esculentus Fruit Extract, Arctium Lappa Root Extract, Apium Graveolens
+                 (Celery) Extract, Brassica Rapa (Turnip) Leaf Extract, Oryza Sativa
+                  (Rice) Bran Extract, Brassica Oleracea Capitata (Cabbage) Leaf Extract,
+                   Daucus Carota Sativa (Carrot) Root Extract, Brassica Oleracea Italica
+                    (Broccoli) Extract, Solanum Lycopersicum (Tomato) Fruit/Leaf/Stem
+                     Extract, Aloe Barbadensis Leaf Juice, Tocopheryl Acetate, Papain,
+                      Portulaca Oleracea Extract, Centella Asiatica Extract, Hydrolyzed
+                       Pea Protein, Phytosterols, Lecithin, Squalane, Olea Europaea
+                        (Olive) Fruit Oil, Beta-Glucan, Ceramide NP, Butyrospermum Parkii
+                         (Shea) Butter, Panax Ginseng Callus Culture Extract`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0052/dear-klairs-moist-foaming-cleanser-1.jpg',
+      'assets/product-images/0052/dear-klairs-moist-foaming-cleanser-2.jpg',
+    ],
+    price: 24,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 14,
   },
   {
     id: '0100',
