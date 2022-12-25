@@ -1535,6 +1535,204 @@ export const products: Product[] = [
     availableAmount: 14,
   },
   {
+    id: '0053',
+    brandName: `Dear, Klairs`,
+    productName: 'Rich Moist Soothing Cream',
+    description: `Dear, Klairs Rich Moist Soothing Cream is an all-weather moisturizer
+     designed to combat sensitive skin in all seasons.`,
+    ingredients: `Water, Caprylic/Capric Triglyceride, Glycerin, Cetyl Alcohol, Cyclopentasiloxane,
+     Glyceryl Stearate, Sodium Hyaluronate, Cetyl Ethylhexanoate, Stearic Acid, Butyrospermum
+      Parkii (Shea Butter), Simmondsia Chinensis (Jojoba) Seed Oil, Beta-Glucan, Sorbitan
+       Sesquioleate, Microcrystalline Wax, Betaine, PEG-100 Stearate, Ceramide 3,
+        Polyquaternium-51, Sorbitan Stearate, Dimethicone, Tocopheryl Acetate, Carbomer,
+         Arginine, Illicium Verum(Anise) Fruit Extract, Citrus Paradisi(Grapefruit)
+          Fruit Extract, Nelumbium Speciosum Flower Extract, Paeonia Suffruticosa Root
+           Extract, Scutellaria Baicalensis Root Extract, Chlorphenesin, Disodium Adenosine
+            Triphosphate, Algin, Carica Papaya (Papaya) Fruit Extract, Citric Acid, Portulaca
+             Oleracea Extract, Natto Gum, Centella Asiatica Extract, Althaea Rosea Flower
+              Extract, Aloe Barbadensis Leaf Extract, Disodium EDTA, Apium Graveolens (Celery)
+               Extract, Brassica Oleracea Capitata (Cabbage) Leaf Extract, Brassica Oleracea
+                Italica (Broccoli) Extract, Brassica Rapa (Turnip) Leaf Extract, Daucus Carota
+                 Sativa (Carrot) Root Extract, Oryza Sativa (Rice) Bran Extract, Solanum
+                  Lycopersicum (Tomato) Fruit/Leaf/Stem Extract, Lysine HCL, Proline,
+                   Sodium Ascorbyl Phosphate, Acetyl Methionine, Theanine, Lavandula
+                    Angustifolia (Lavender) Oil, Eucalyptus Globulus Leaf Oil, Pelargonium
+                     Graveolens Flower Oil, Citrus Limon (Lemon) Peel Oil, Citrus Aurantium
+                      Dulcis (Orange) Peel Oil, Cananga Odorata Flower Oil`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0053/dear-klairs-rich-moist-cream-1.jpg',
+      'assets/product-images/0053/dear-klairs-rich-moist-cream-2.jpg',
+    ],
+    price: 33,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 21,
+  },
+  {
+    id: '0054',
+    brandName: `Dear, Klairs`,
+    productName: 'Blue Calming Cream',
+    description: `Dear Klairs Midnight Blue Calming Cream - instantly soothes and hydrates sensitive skin.`,
+    ingredients: `Water, Cetyl Ethylhexanoate, Butylene Glycol, Glycerin, Sodium Hyaluronate,
+     Caprylic/Capric Triglyceride, Centella Asiatica Extract, Sorbitan Stearate, Cetyl Alcohol,
+      Butyrospermum Parkii (Shea) Butter, Argania Spinosa Kernel Oil, Simmondsia Chinensis (Jojoba)
+       Seed Oil, Sorbitan Sesquioleate, Glyceryl Stearate, Stearic Acid, Portulaca Oleracea Extract,
+        Anthemis Nobilis Flower Extract, Ceramide NP, Polysorbate 60, Candelilla Cera, Chlorphenesin,
+         Tocopheryl Acetate, Xanthan Gum, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Morus Alba
+          Root Extract, Tromethamine, Brassica Oleracea Italica (Broccoli) Extract, Guaiazulene,
+           Acetyl Hexapeptide-8, Lecithin, Acetyl Glutamine, sh-Oligopeptide-1, sh-Oligopeptide-2,
+            sh-Polypeptide-1, sh-Polypeptide-9, sh-Polypeptide-11, Bacillus/Soybean/Folic
+             Acid Ferment Extract, Caprylyl Glycol, 1,2-Hexanediol`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0054/dear-klairs-blue-midnight-cream-1.jpg',
+      'assets/product-images/0054/dear-klairs-blue-midnight-cream-2.jpg',
+      'assets/product-images/0054/dear-klairs-blue-midnight-cream-3.jpg',
+      'assets/product-images/0054/dear-klairs-blue-midnight-cream-4.jpg',
+    ],
+    price: 30,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 66,
+  },
+  {
+    id: '0055',
+    brandName: `Dear, Klairs`,
+    productName: 'Supple Preparation All Over Lotion',
+    description: `Klairs Supple Preparation All Over Lotion Ceramide Hydrating Lotion deeply
+     hydrates dry and sensitive skin by creating a protective barrier that prevents moisture
+      from evaporating. The lotion gives the skin a feeling of hydration for the whole
+       day without an oily and sticky film!`,
+    ingredients: `Water, Glycerin, Caprylic/Capric Triglyceride, Sodium Hyaluronate,
+     Butyrospermum Parkii (Shea Butter), Cetyl Ethylhexanoate, Simmondsia Chinensis (Jojoba)
+      Seed Oil, Glyceryl Stearate, Sorbitan Stearate, Cetyl Alcohol, Stearic Acid, Beta-Glucan,
+       Sorbitan Sesquioleate, Microcrystalline Wax, Cyclopentasiloxane, Betaine, Ceramide NP,
+        Polyquaternium-51, PEG-100 Stearate, Illicium Verum(Anise) Fruit Extract,
+         Citrus Paradisi(Grapefruit) Fruit Extract, Nelumbium Speciosum Flower Extract,
+          Paeonia Suffruticosa Root Extract, Scutellaria Baicalensis Root Extract,
+           Dimethicone, Tocopheryl Acetate, Chlorphenesin, Carbomer, Arginine,
+            Citric Acid, Ethylhexylglycerin, Portulaca Oleracea Extract, Althaea
+             Rosea Flower Extract, Aloe Barbadensis Leaf Extract, Apium
+              Graveolens (Celery) Extract, Brassica Oleracea Capitata (Cabbage)
+               Leaf Extract, Brassica Oleracea Italica (Broccoli) Extract, Brassica
+                Rapa (Turnip) Leaf Extract, Daucus Carota Sativa (Carrot) Root Extract,
+                 Oryza Sativa (Rice) Bran Extract, Solanum Lycopersicum (Tomato) Fruit/Leaf/Stem
+                  Extract, Natto Gum, Centella Asiatica Extract, Disodium EDTA, Lysine HCL,
+                   Proline, Sodium Ascorbyl Phosphate, Acetyl Methionine, Theanine`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0055/dear-klairs-supple-preparation-all-over-lotion-1.jpg',
+      'assets/product-images/0055/dear-klairs-supple-preparation-all-over-lotion-2.jpg',
+      'assets/product-images/0055/dear-klairs-supple-preparation-all-over-lotion-3.jpg',
+      'assets/product-images/0055/dear-klairs-supple-preparation-all-over-lotion-4.jpg',
+    ],
+    price: 40,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 12,
+  },
+  {
+    id: '0056',
+    brandName: `Dear, Klairs`,
+    productName: 'Supple Unscented Toner',
+    description: `Klairs Supple Unscented Toner is specially formulated for sensitive
+     and reactive skin. The toner does not contain alcohol, fragrances or other
+      ingredients that can cause irritation or redness.`,
+    ingredients: `Water, Butylene Glycol, Dimethyl Sulfone, Betaine, Caprylic/Capric
+     Triglyceride, Natto Gum, Sodium Hyaluronate, Disodium EDTA, Centella Asiatica Extract,
+      Glycyrrhiza Glabra (Licorice) Root Extract, Polyquaternium-51, Chlorphenesin, Tocopheryl
+       Acetate, Carbomer, Panthenol, Arginine, Luffa Cylindrica Fruit/Leaf/Stem Extract,
+        Beta-Glucan, Althaea Rosea Flower Extract, Aloe Barbadensis Leaf Extract,
+         Hydroxyethylcellulose, Portulaca Oleracea Extract, Lysine HCL, Proline,
+          Sodium Ascorbyl Phosphate, Acetyl Methionine, Theanine, Copper Tripeptide-1`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0056/dear-klairs-supple-prep-toner-unscented-1.jpg',
+      'assets/product-images/0056/dear-klairs-supple-prep-toner-unscented-2.jpg',
+      'assets/product-images/0056/dear-klairs-supple-prep-toner-unscented-3.jpg',
+      'assets/product-images/0056/dear-klairs-supple-prep-toner-unscented-4.jpg',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 62,
+  },
+  {
+    id: '0057',
+    brandName: `Dear, Klairs`,
+    productName: 'Rich Moist Sooting Serum',
+    description: `Klairs Rich Moist Sooting Serum helps to make your skin care even
+     more effective! Serum soothes the skin, deeply nourishes it and prevents moisture loss.`,
+    ingredients: `Water, Sodium Hyaluronate, Butylene Glycol, Dimethyl Sulfone, Betaine,
+     Natto Gum, Propanediol, Polyquaternium-51, Disodium EDTA, Centella Asiatica Extract,
+      Glycyrrhiza Glabra (Licorice) Root Extract, Carbomer, Arginine, PEG-60 Hydrogenated
+       Castor Oil, Lysine HCL, Proline, Sodium Ascorbyl Phosphate, Acetyl Methionine,
+        Theanine, Chlorphenesin, Tocopheryl Acetate, Illicium Verum(Anise) Fruit Extract,
+         Citrus Paradisi(Grapefruit) Fruit Extract, Nelumbium Speciosum Flower Extract,
+          Paeonia Suffruticosa Root Extract, Scutellaria Baicalensis Root Extract, Panthenol,
+           Luffa Cylindrica Fruit/Leaf/Stem Extract, Beta-Glucan, Althaea Rosea Flower Extract,
+            Aloe Barbadensis Leaf Extract, Lavandula Angustifolia (Lavender) Oil, Eucalyptus
+             Globulus Leaf Oil, Pelargonium Graveolens Flower Oil, Citrus Limon (Lemon)
+              Peel Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Cananga Odorata Flower Oil,
+               Portulaca Oleracea Extract, Apium Graveolens (Celery) Extract,
+                Brassica Oleracea Capitata (Cabbage) Leaf Extract, Brassica Oleracea
+                 Italica (Broccoli) Extract, Brassica Rapa (Turnip) Leaf Extract, Daucus
+                  Carota Sativa (Carrot) Root Extract, Oryza Sativa (Rice) Bran Extract,
+                   Solanum Lycopersicum (Tomato) Fruit/Leaf/Stem Extract`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0057/dear-klairs-moist-soothing-serum-1.jpg',
+      'assets/product-images/0057/dear-klairs-moist-soothing-serum-2.jpg',
+      'assets/product-images/0057/dear-klairs-moist-soothing-serum-3.jpg',
+      'assets/product-images/0057/dear-klairs-moist-soothing-serum-4.jpg',
+    ],
+    price: 23,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 28,
+  },
+  {
+    id: '0058',
+    brandName: `Dear, Klairs`,
+    productName: 'Supple Preparation Facial Toner',
+    description: `Dear, Klairs Supple Preparation Facial Toner with phyto-oligo complex -
+     moisturizes and soothes sensitive skin after cleansing, evens out skin texture,
+      maintaining an optimal pH balance, which helps absorption of other products.`,
+    ingredients: `Water, Butylene Glycol, Dimethyl Sulfone, Betaine, Caprylic/Capric Triglyceride,
+     Natto Gum, Sodium Hyaluronate, Disodium EDTA, Centella Asiatica Extract, Glycyrrhiza
+      Glabra (Licorice) Root Extract, Polyquaternium-51, Chlorphenesin, Tocopheryl Acetate,
+       Carbomer, Panthenol, Arginine, Luffa Cylindrica Fruit/Leaf/Stem Extract, Beta-Glucan,
+        Althaea Rosea Flower Extract, Aloe Barbadensis Leaf Extract, Hydroxyethylcellulose,
+         Portulaca Oleracea Extract, Lysine HCL, Proline, Sodium Ascorbyl Phosphate, Acetyl
+          Methionine, Theanine, Lavandula Angustifolia (Lavender) Oil, Eucalyptus Globulus
+           Leaf Oil, Pelargonium Graveolens Flower Oil, Citrus Limon (Lemon) Peel Oil,
+            Citrus Aurantium Dulcis (Orange) Peel Oil, Cananga Odorata Flower Oil, Copper Tripeptide-1`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0058/dear-klairs-supple-prep-toner-1.jpg',
+      'assets/product-images/0058/dear-klairs-supple-prep-toner-2.jpg',
+      'assets/product-images/0058/dear-klairs-supple-prep-toner-3.jpg',
+      'assets/product-images/0058/dear-klairs-supple-prep-toner-4.jpg',
+    ],
+    price: 36,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 28,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
