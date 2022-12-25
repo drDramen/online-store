@@ -483,6 +483,157 @@ export const products: Product[] = [
     availableAmount: 17,
   },
   {
+    id: '0018',
+    brandName: 'Manyo',
+    productName: 'Manyo Galac Niacin 2.0 Essence',
+    description: `The serum has a complex rejuvenating effect due to the synthesis of
+     collagen, evening out skin tone, tightening the skin and accelerated regeneration.`,
+    ingredients: `Galactomyces Fermentation Filtrate (93.69%), Niacinamide (4%), Panthenol,
+     Sodium Hyaluronate, 1,2-hexanediol, Butylene Glycol, Virginia Poongnyeonhwasu,
+      Ethylhexylglycerin, Chrysanthemum Flower Extract , algin, glutathione, pentylene glycol, purified water`,
+    starIngredient: 'Galactomyces',
+    pics: [
+      'assets/product-images/0018/manyo-galac-niacin-1.jpg',
+      'assets/product-images/0018/manyo-galac-niacin-2.jpg',
+    ],
+    price: 37,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 285,
+  },
+  {
+    id: '0019',
+    brandName: 'Manyo',
+    productName: 'Herbgreen Cleansing Oil',
+    description: `Hydrophilic oil based on herbal extracts for problem skin Manyo Herbgreen
+     Cleansing Oil - effectively cleanses the skin of makeup and impurities. Prevents the
+      formation of comedones and blackheads. Due to its texture, the oil penetrates deep
+       into the pores, dissolving and eliminating impurities. The cleansing oil strengthens
+        the skin's protective layer, improves complexion, does not leave a sticky or greasy
+         film on the skin, and does not contain artificial ingredients.`,
+    ingredients: `Glycine Soja (Soybean) Oil, Sorbeth-30 Tetraoleate, Isoamyl Laurate,
+     Caprylic/Capric Triglyceride, Camellia Sinensis Leaf Oil, Olea Europaea (Olive)
+      Fruit Oil, Vitis Vinifera (Grape) Seed Oil, Artemisia Vulgaris Oil, Salvia Officinalis (Sage)
+       Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Glyceryl Caprylate, Prunus Amygdalus Dulcis
+        (Sweet Almond) Oil, Moringa Pterygosperma Seed Oil, Melaleuca Alternifolia (Tea Tree)
+         Leaf Oil, Eucalyptus Globulus Leaf Oil, Rosmarinus Officinalis (Rosemary) Leaf Oil,
+          Lavandula Angustifolia (Lavender) Oil, Tocopherol, Camellia Sinensis Leaf Extract,
+           Camellia Sinensis Leaf Water, Artemisia Vulgaris Extract, Carica Papaya (Papaya)
+            Fruit Extract, Pogostemon Cablin Oil, Olibanum`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0019/manyo-herb-cleansing-oil-1.jpg',
+      'assets/product-images/0019/manyo-herb-cleansing-oil-2.jpg',
+      'assets/product-images/0019/manyo-herb-cleansing-oil-3.jpg',
+    ],
+    price: 36,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 136,
+  },
+  {
+    id: '0020',
+    brandName: 'Manyo',
+    productName: 'Pure Deep Cleansing Foam',
+    description: `Manyo Pure Deep Cleansing Foam Ceramide Cleansing Foam Hypoallergenic
+     formula contains natural surfactants to create a wonderfully soft and supple foam.
+      It removes up to 99% of impurities from the surface of the skin, while the flower
+       complex and ceramides help to moisturize and protect the integrity of the skin barrier.`,
+    ingredients: `Purified water, glycerin, myristic acid, stearic acid, lauric acid,
+     potassium hydroxide, butylene glycol, glycol distearate, potassium cocoyl glycolate,
+      glyceryl stearate S, coco-betaine , Ceramide N.P., Milk Protein Extract, Giant Cypress
+       Leaf Extract, Elm Root Extract, Perilla Root Extract, Yeoju Fruit Extract, Okra Fruit
+        Extract, Noni Fruit Extract, Chrysanthemum Flower Extract, Portmary Gold Flower Extract,
+         Evening Primrose Extract , Lavender flower extract, rosemary leaf extract, oregano extract,
+          thyme flower / leaf / stem extract, common jasmine extract, sodium hyaluronate,
+           morning glory daffodil extract, caprylyl glycol, lotus water, pentylene glycol,
+            chamomile flower Extract, polyquaternium-10, polyquaternium-7, star anise extract,
+             golden extract, sodium bicarbonate, sorbitan olive, beads wax, 1 , 2-hexanediol,
+              dipropylene glycol, ethylhexylglycerin, sunflower seed oil, sodium chloride,
+               common jasmine oil, ylang-ylang flower oil, sodium benzoate, tocopherol`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0020/manyo-pure-deep-cleansing-foam-1.jpg',
+      'assets/product-images/0020/manyo-pure-deep-cleansing-foam-2.jpg',
+      'assets/product-images/0020/manyo-pure-deep-cleansing-foam-3.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 92,
+  },
+  {
+    id: '0021',
+    brandName: 'Manyo',
+    productName: 'Cleansing Soda Foam',
+    description: `Manyo Cleansing Soda Foam is a creamy, refreshing cleansing foam
+     with natural herbs that gently but effectively cleanses the skin of oil, make-up
+      residue and impurities. It will make the skin soft and balanced, eliminate
+       imperfections and roughness of the skin, and protect against inflammation.`,
+    ingredients: `Camellia Sinensis Leaf Water, Myristic Acid, Glycerin, Sodium Hyaluronate,
+     Lauric Acid, Caprylic/Capric Triglyceride, Aloe Barbadensis Leaf Water, Stearic Acid,
+      Potassium Hydroxide, Diatomaceous Earth, Kaolin, Isoamyl Laurate, Sodium Bicarbonate,
+       Zea Mays (Corn) Starch, Sodium PCA, Glycol Distearate, Beeswax, Glyceryl Stearate,
+        Saponaria Officinalis Leaf Extract, Decyl Glucoside, Olea Europaea (Olive)
+         Fruit Oil, Camellia Sinensis Leaf Powder, Morus Alba Root Extract, Chlorella
+          Vulgaris Powder, Red Ginseng Extract, Carica Papaya (Papaya) Fruit Extract,
+           Phaseolus Radiatus Seed Powder, Anthemis Nobilis Flower Powder, Lactuca
+            Scariola Sativa (Lettuce) Leaf Extract, Phaseolus Radiatus Seed Extract,
+             Citrus Limon (Lemon) Fruit Water, Glycyrrhiza Glabra (Licorice) Root Extract,
+              Portulaca Oleracea Extract, Zanthoxylum Piperitum Fruit Extract, Pulsatilla
+               Koreana Extract, Usnea Barbata (Lichen) Extract, Dioscorea Opposita (Wild Yam)
+                Root Extract, Oryza Sativa (Rice) Bran Extract, Lavandula Angustifolia
+                 (Lavender) Oil, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Camellia
+                  Sinensis Leaf Extract, Citrus Aurantium Dulcis (Orange) Oil`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0021/manyo-cleansing-soda-foam-1.jpg',
+      'assets/product-images/0021/manyo-cleansing-soda-foam-2.jpg',
+      'assets/product-images/0021/manyo-cleansing-soda-foam-3.jpg',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 55,
+  },
+  {
+    id: '0022',
+    brandName: 'Manyo',
+    productName: 'Vitamin Tree Brightening Pack',
+    description: `Manyo Vitamin Tree Brightening Pack is a hydrating and nourishing
+     night mask with natural vitamins, honey, propolis and royal jelly that softens,
+      smoothes skin and stimulates cell renewal so you wake up with fresher, more even-toned skin.`,
+    ingredients: `Altai sea buckthorn water, Yuzu fruit extract, lemon fruit water, Niacinamide,
+     betaine, sleroglucan, xanthan gum, glycerin, isoamyl laurate, Cetearyl olivate, sorbitan olivate,
+      Arachidyl alcohol, behenyl alcohol, arachine glucoside, Cetearyl alcohol, Cetearyl glucoside,
+       rosehip seed oil, tocopherol, annual sunflower seed oil, sea buckthorn oil, Royal jelly extract,
+        bean fruit extract, camu-camu fruit extract, common physalis fruit extract, rosehip fruit extract,
+         dry acai extract, pomegranate extract, licorice root extract, honey, Japanese pepper fruit extract,
+          Korean lumbago extract, Usnea borodovidna extract, honey and propolis extract, orange extract,
+           anisic acid, lactic acid`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0022/manyo-vitamin-tree-mask-1.jpg',
+      'assets/product-images/0022/manyo-vitamin-tree-mask-2.jpg',
+      'assets/product-images/0022/manyo-vitamin-tree-mask-3.jpg',
+      'assets/product-images/0022/manyo-vitamin-tree-mask-4.jpg',
+    ],
+    price: 24,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 19,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
