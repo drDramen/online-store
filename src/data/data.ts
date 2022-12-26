@@ -2391,6 +2391,161 @@ export const products: Product[] = [
     availableAmount: 417,
   },
   {
+    id: '0081',
+    brandName: `MEDI-PEEL`,
+    productName: 'Derma Maison Eye Cream',
+    description: `Anti-aging eye cream with stem extracts and peptides MEDI-PEEL
+     Derma Maison 3X Eye Cream contains the strongest components that deeply nourish the
+      skin under the eyes, increase its firmness and elasticity, and also fight mimic wrinkles
+       and creases. The cream is perfectly absorbed, does not leave behind a sticky finish and
+        can be used under make-up.`,
+    ingredients: `Purified water, butylene glycol, caprylic capric triglyceride, glycerin, cetyl
+     alcohol, stearic acid, polyglyceryl 3-methylglucose distearate, niacinamide, cyclopenta siloxane,
+      birch sap hydrolyzed De collagen, lavender, extract, rosemary extract, oregano flower leaf stem
+       extract, thyme extract, decay locust bark extract, broccoli extract, green tea extract, rosemary
+        leaf extract, aloe vera leaf juice, spanish licorice root extract, spirulina platensis extract,
+         Licorice Root Extract, Snow Riding Extract, Sewage Root Extract, Black Sesame Extract,
+          Mud Mushroom Extract, True Angelica Root Extract, Mulberry Bark Extract, Peony Extract,
+           Thief Stick Root Extract, Hydroxypropyl Methyl Cellulose, Pullulan, Porphy rhythm crew Extract,
+            Squalane, Shea Butter, Ceramide NP, Hydrogenated Polyisobutene, Zimo Root Extract, Acetyl
+             Hexapeptide 8, Copper Tripeptide 1, Palmitoyl Pentapeptide 4, Tripeptide 1, Palmitoyl
+              Tripeptide 1, Hexapeptide 9 nona peptide 1, palmitoyl tetrapeptide 7, acetyl octapeptide
+               3 propane diol, sodium hyaluronate, sodium hyaluronate crosspolymer, hydrolyzed deglycosaminoglycans,
+                benzyl glycol, hydrolysate Suede Hyaluronic Acid, Grape Callus Culture Extract,
+                 Lotus Callus Culture Extract, Green Tea Callus Culture Extract, Ginseng Callus
+                  Culture Extract, Tocopheryl Acetate, Calcium Pantothenate, Sodium Ascorbyl
+                   Phosphate, Pyridoxine HCl, Sodium Starchi Octenite Cine , Maltodextrin, silica,
+                    ethylhexyl glycerine, hyaluronic acid, hydroxypropyl trimonium hyaluronate,
+                     sodium acetylated hyaluronate, macadamia seed oil, jojoba seed oil,
+                      avocado oil, lysine, heath Tidon, Al Hag, Aspartic Acid, Threonine,
+                       Serine, Glutamic Acid, Proline, Glycine, Alanine, Valine, Methionine,
+                        Isoleucine, Leucine Tyrosine, Phenylalanine, Cysteine, Carbomer, Disodium
+                         D-Diet, Panthenol, Beta Phosphorus, urea, fipglyceryl stearate, mineral
+                          oil, cetyl ethyl hexanoate, dimethicone, cyclohexasiloxane, adenosine
+                           tromethamine, 1.2 hexanediol, star anise extract golden extract`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0081/medi-peel-eye-cream-1.jpg',
+      'assets/product-images/0081/medi-peel-eye-cream-2.jpg',
+      'assets/product-images/0081/medi-peel-eye-cream-3.jpg',
+    ],
+    price: 47,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 76,
+  },
+  {
+    id: '0082',
+    brandName: `MEDI-PEEL`,
+    productName: 'Peptide 9 Volume Bio Tox Ampoule ',
+    description: `Anti-aging face serum with peptides MEDI-PEEL Peptide 9 Volume Bio Tox
+     Ampoule provides a powerful complex effect on the skin, restores its brightness and
+      healthy radiance. Rich in astaxanthin, which is 6,000 times more powerful than
+       vitamin C, and 9 types of peptides, it restores firmness and elasticity, restoring
+        youthfulness to the skin.`,
+    ingredients: `Purified water, glycerin, butylene glycol, niacinamide, sodium lactate,
+     1,2-hexanediol, gellan gum, ethylhexyl glycerin, adenosine, disodium EDTA, Dosong fruit
+      extract, eucalyptus leaf extract, glyceryl poly Methacrylate, Centella asiatica extract,
+       propylene glycol, Hojanggeun root extract, golden extract, propanediol, green tea extract,
+        Spanish licorice root extract, sodium hyaluronate crosspolymer, matricaria flower extract,
+         rosemary leaf extract, Fructan, Hydrolyzed Glycosaminoglycan, Sodium Hyaluronate, Glycine,
+          Serine, Glutamic Acid, Hydrolyzed Elastin, Hydrogenated Polyisobutene, Aspartic Acid,
+           Hydrolyzed High Aluronic acid, leucine, white rice flower extract, astaxanthin,
+            desamidocollagen, sorbitan laurate, alanine, lysine, arginine, tyrosine, phenylalanine,
+             proline, valine, threonine, isoleucine, histidine, cysteine, methionine, Palmitoyl
+              Tripeptide-5, Hydrolyzed Collagen, Hydroxyethyl Cellulose, Acetyldipeptide-1 Cetyl Ester,
+               Sodium Acetylated Hyaluronate, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-1,
+                PalmyToyl oligopeptide, acetylhexapeptide-8, copper tripeptide-1, hyaluronic acid,
+                 oligopeptide-29, oligopeptide-32, raspberry ketone, palmitoylpentapeptide-4,
+                  zymoroot extract, polysorbate 80 , PEG-60 Hydrogenated Castor Oil, Benzyl Glycol, Ethanol, Fragrance`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0082/medi-peel-volume-bio-ampoule-1.jpg',
+      'assets/product-images/0082/medi-peel-volume-bio-ampoule-2.jpg',
+      'assets/product-images/0082/medi-peel-volume-bio-ampoule-3.jpg',
+    ],
+    price: 46,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 78,
+  },
+  {
+    id: '0083',
+    brandName: `MEDI-PEEL`,
+    productName: 'Cell Toxing Dermajours Cream ',
+    description: `Anti-aging face cream with stem cells MEDI-PEEL Cell Toxing Dermajours Cream slows
+     down the aging process in skin cells, prevents the appearance of wrinkles and participates in
+      active regenerative processes. The cream also deeply nourishes the skin, making it supple and smooth.`,
+    ingredients: `Water, Glycerin, Caprylic/Capric Triglyceride, 1,2-Hexanediol, Cetyl Ethylhexanoate,
+     Hydrogenated Polydecene, Methylpropanediol, Niacinamide, Cyclopentasiloxane, Butylene Glycol,
+      Cetearyl Alcohol, Butyrospermum Parkii (Shea Butter), Cyclohexasiloxane, PEG-40 Hydrogenated Castor Oil,
+       Sorbitan Stearate, Glyceryl Stearate SE, Dimethicone, Beeswax, Glyceryl Stearate, PEG-100 Stearate,
+        Lilium Candidum Callus Culture Extract(10,000ppm), Polyacrylate-13, Trehalose, Tromethamine, Carbomer,
+         Polyisobutene, Prunus Persica (Peach) Fruit Extract, Crataegus Cuneata Fruit Extract, Pyrus Communis
+          (Pear) Fruit Extract, Adenosine, Hedera Helix (Ivy) Extract, Musa Sapientum (Banana) Fruit Extract,
+           Vanilla Planifolia Fruit Extract, Malt Extract, Polysorbate 20, Magnolia Officinalis Bark Extract,
+            Rosa Damascena Callus Culture Extract(30ppm), Glycine Soja (Soybean) Oil, Sodium Hyaluronate,
+             Phosphatidylcholine, Fructan, Caprylyl Glycol, Hydrogenated Lecithin, Palmitoyl Tripeptide-5,
+              Sodium Phosphate, Disodium EDTA, Sodium Ascorbyl Phosphate, PPG-26-Buteth-26, Ethylhexylglycerin,
+               Lecithin, Acetyl Octapeptide-3, Palmitoyl Tetrapeptide-7, Palmitoyl Pentapeptide-4,
+                Palmitoyl Tripeptide-1, Tripeptide-1, Acetyl Hexapeptide-8, Dipeptide Diaminobutyroyl
+                 Benzylamide Diacetate, Copper Tripeptide-1, Hexapeptide-9, rh-Oligopeptide-2,
+                  rh-Polypeptide-1, rh-Polypeptide-3, rh-Oligopeptide-1, Nonapeptide-1`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0083/medi-peel-cell-toxing-cream-1.jpg',
+      'assets/product-images/0083/medi-peel-cell-toxing-cream-2.jpg',
+      'assets/product-images/0083/medi-peel-cell-toxing-cream-3.jpg',
+    ],
+    price: 42,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 235,
+  },
+  {
+    id: '0084',
+    brandName: `MEDI-PEEL`,
+    productName: 'Cell Toxing Dermajours Cream',
+    description: `Anti-aging face cream with stem cells MEDI-PEEL Cell Toxing Dermajours
+     Cream slows down the aging process in skin cells, prevents the appearance of wrinkles
+      and participates in active regenerative processes. The cream also deeply nourishes
+       the skin, making it supple and smooth.`,
+    ingredients: `Water, Glycerin, Caprylic/Capric Triglyceride, 1,2-Hexanediol, Cetyl
+     Ethylhexanoate, Hydrogenated Polydecene, Methylpropanediol, Niacinamide, Cyclopentasiloxane,
+      Butylene Glycol, Cetearyl Alcohol, Butyrospermum Parkii (Shea Butter), Cyclohexasiloxane,
+       PEG-40 Hydrogenated Castor Oil, Sorbitan Stearate, Glyceryl Stearate SE, Dimethicone,
+        Beeswax, Glyceryl Stearate, PEG-100 Stearate, Lilium Candidum Callus Culture Extract(10,000ppm),
+         Polyacrylate-13, Trehalose, Tromethamine, Carbomer, Polyisobutene, Prunus Persica (Peach)
+          Fruit Extract, Crataegus Cuneata Fruit Extract, Pyrus Communis (Pear) Fruit Extract,
+           Adenosine, Hedera Helix (Ivy) Extract, Musa Sapientum (Banana) Fruit Extract, Vanilla
+            Planifolia Fruit Extract, Malt Extract, Polysorbate 20, Magnolia Officinalis Bark Extract,
+             Rosa Damascena Callus Culture Extract(30ppm), Glycine Soja (Soybean) Oil, Sodium Hyaluronate,
+              Phosphatidylcholine, Fructan, Caprylyl Glycol, Hydrogenated Lecithin, Palmitoyl Tripeptide-5,
+               Sodium Phosphate, Disodium EDTA, Sodium Ascorbyl Phosphate, PPG-26-Buteth-26, Ethylhexylglycerin,
+                Lecithin, Acetyl Octapeptide-3, Palmitoyl Tetrapeptide-7, Palmitoyl Pentapeptide-4,
+                 Palmitoyl Tripeptide-1, Tripeptide-1, Acetyl Hexapeptide-8, Dipeptide Diaminobutyroyl
+                  Benzylamide Diacetate, Copper Tripeptide-1, Hexapeptide-9, rh-Oligopeptide-2,
+                   rh-Polypeptide-1, rh-Polypeptide-3, rh-Oligopeptide-1, Nonapeptide-1`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0083/medi-peel-cell-toxing-serum-1.jpg',
+      'assets/product-images/0083/medi-peel-cell-toxing-serum-2.jpg',
+      'assets/product-images/0083/medi-peel-cell-toxing-serum-3.jpg',
+    ],
+    price: 45,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 108,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
