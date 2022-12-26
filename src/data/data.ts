@@ -1897,6 +1897,204 @@ export const products: Product[] = [
     availableAmount: 62,
   },
   {
+    id: '0065',
+    brandName: `Purito`,
+    productName: 'Centella Unscented Toner',
+    description: `PURITO Centella Unscented Toner for sensitive skin repairs, deeply
+     hydrates and protects the skin. The composition does not contain: essential oils
+      and fragrances, so it is suitable for even the most sensitive skin.`,
+    ingredients: `Water, Centella Asiatica Extract, Butylene Glycol, Pentylene Glycol, Dipropylene Glycol,
+     1,2-Hexanediol, Trehalose, Sodium Hyaluronate, Hamamelis Virginiana (Witch Hazel) Extract,
+      Madecassoside, Asiaticoside, Asiatic Acid, Madecassic Acid, Panthenol, Carbomer, Allantoin,
+       Arginine, Portulaca Oleracea Extract, Ethylhexylglycerin, Disodium EDTA`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0065/purito-unscented-toner-1.jpg',
+      'assets/product-images/0065/purito-unscented-toner-2.jpg',
+      'assets/product-images/0065/purito-unscented-toner-3.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 38,
+  },
+  {
+    id: '0066',
+    brandName: `Purito`,
+    productName: 'Centella Green Level Calming Toner',
+    description: `The composition of the product does not contain a single gram of alcohol,
+     so it is ideal for even the most sensitive skin prone to irritation and redness.
+      Centella Green Level Calming Toner gently restores moisture levels, fights dehydration and dryness.`,
+    ingredients: `Water, Centella Asiatica Extract (strengthens skin barrier),
+     Butylene Glycol (humectants), Pentylene Glycol (humectants), Dipropylene Glycol
+      (humectants), 1,2- Hexanediol (stabilizers), Trehalose (humectants), Glycerin
+       (humectants), Sodium Hyaluronate (humectants), Polyglyceryl-10 Laurate (solubilizers),
+        Panthenol (strengthens skin barrier), Carbomer (viscosity increasing agents),
+         Polygyceryl-10 Myristate (solubilizers), Allantoin (skin protectant agents),
+          Arginine (pH adjusters), Portulaca Oleracea Extract (skin-conditioning agents),
+           Ethylhexylglycerin (skin- conditioning agents), Disodium EDTA (stabilizers),
+            Citrus Aurantium Bergamia (Bergamot) Fruit Oil (skin-conditioning agents),
+             Pelargonium Graveolens Flower Oil (skin-conditioning agents), Cananga
+              Odorata Flower Oil (skin-conditioning agents), Rose Flower Oil
+               (skin-conditioning agents), Limonene(skin-conditioning agents),
+                Citronellol(skin-conditioning agents), Linalool(skin-conditioning agents)`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0066/purito-centella-calming-green-level-toner-1.jpg',
+      'assets/product-images/0066/purito-centella-calming-green-level-toner-2.jpg',
+      'assets/product-images/0066/purito-centella-calming-green-level-toner-3.jpg',
+    ],
+    price: 34,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 46,
+  },
+  {
+    id: '0067',
+    brandName: `Purito`,
+    productName: 'Centella Green Level Recovery Cream',
+    description: `Natural recovery cream with Centella Green Level Recovery Cream normalizes the acid-base
+     balance of the skin, moisturizes it and gives a healthy complexion to your face. Healthy fresh skin
+      ages and fades much more slowly, remains elastic and elastic for many months.`,
+    ingredients: `Centella Asiatica Extract (50%), Water, Caprylic/Capric Triglyceride, Squalane, Glycerin,
+     Cetearyl Alcohol, Niacinamide, Macadamia Ternifolia Seed Oil, Butylene Glycol, Hydrogenated lecithin,
+      Butyrospermum Parkii Extract, 1,2-Hexanediol, Tribehenin, Stearic Acid, Behenic acid, Argania
+       spinosa Kernel Oil, Tromethamine, Spent grain wax, Carbomer, Caprylyl Glycol, Tremella Fuciformis
+        Extract, Sodium Hyaluronate, Perilla Ocymoides Seed Extract, Hamamelis Virginiana Extract, Betaine,
+         Beta-Glucan, Citrus Aurantium Bergamia Fruit Oil, Xanthan Gum, Sodium carbomer, Hydroxyethylcellulose,
+          Cholesterol, Adenosine, Lavandula Angustifolia Oil, Asiaticoside, Asiatic acid, Phytosphingosine,
+           Ceramide NP, Madecassic acid, Tocopherol`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0067/purito-centella-green-level-recovery-cream-1.jpg',
+      'assets/product-images/0067/purito-centella-green-level-recovery-cream-2.jpg',
+      'assets/product-images/0067/purito-centella-green-level-recovery-cream-3.jpg',
+    ],
+    price: 31,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 216,
+  },
+  {
+    id: '0068',
+    brandName: `Purito`,
+    productName: 'Centella Green Level Buffet',
+    description: `Is your skin tired and in urgent need of repair? Then the product of the Korean brand Purito
+     - Centella Green Level Buffet Serum with Centella - is what you were looking for!
+      A natural multifunctional product suitable for all skin types.`,
+    ingredients: `Centella Asiatica Extract (49%), Water, Dipropylene glycol, Niacinamide,
+     Glycerin, Butylene Glycol, 1,2-Hexanediol, Glycereth-26, Carbomer, Arginine, Sclerotium Gum,
+      Hydrolyzed Jojoba Esters, Caprylyl Glycol, Panthenol, Polyglyceryl-10 laurate, Polyglyceryl-10
+       myristate, Hydrogenated lecithin, Hydrolyzed collagen, Camellia Sinensis Leaf Extract, Alteromonas
+        Ferment Extract, Pancratium Maritimum Extract, Citrus Aurantium Bergamia Fruit Oil, Dipotassium
+         Glycyrrhizate, Disodium EDTA, Adenosine, Lavandula Angustifolia Oil, Ceramide NP, Sodium Hyaluronate,
+          Asiaticoside, Asiatic acid, Madecassic acid, Palmitoyl Hexapeptide-12, Palmitoyl Tripeptide-1,
+           Palmitoyl Tetrapeptide-7, Palmitoyl Dipeptide-10`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0068/purito-centella-green-buffet-1.jpg',
+      'assets/product-images/0068/purito-centella-green-buffet-2.jpg',
+      'assets/product-images/0068/purito-centella-green-buffet-3.jpg',
+      'assets/product-images/0068/purito-centella-green-buffet-4.jpg',
+    ],
+    price: 32,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 263,
+  },
+  {
+    id: '0069',
+    brandName: `Purito`,
+    productName: 'Defence Barrier pH Cleanser',
+    description: `You can’t even imagine how much dust and dirt our skin collects during the day! Plus makeup,
+     which also does not always allow the pores to breathe. The result is tired skin, clogged pores,
+      a dull complexion, and persistent breakouts.`,
+    ingredients: `Water, Cocamidopropyl Betaine, Sodium Lauroyl Methyl lsethionate, Butylene Glycol,
+     1.2-Hexanediol, Citrus Paradisi (Grapefruit) Fruit Extract, Allantoin, Melaleuca Alternifolia (Tea Tree)
+      Leaf Oil, Centella Asiatica Extract, Hydrolyzed Collagen, Royal Jelly Extract, Ethylhexylglycerin,
+       Citric Acid, Disodium EDTA`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0069/purito-defence-barrier-1.jpg',
+      'assets/product-images/0069/purito-defence-barrier-2.jpg',
+      'assets/product-images/0069/purito-defence-barrier-3.jpg',
+      'assets/product-images/0069/purito-defence-barrier-4.jpg',
+    ],
+    price: 14,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 312,
+  },
+  {
+    id: '0070',
+    brandName: `Purito`,
+    productName: 'Sea Buckthorn Vital 70 Cream',
+    description: `Purito Sea Buckthorn Vital 70 Cream with vitamins and 70% sea buckthorn extract -
+     helps to brighten and visibly soften the skin. Instead of purified water, the formula uses sea
+      buckthorn extract, which contains various vitamins that improve skin tone, giving it a fresh and healthy look.`,
+    ingredients: `Hippophae Rhamnoides Fruit Extract (70%), Methylpropanediol, Glycerin, Cetyl Ethylhexanoate,
+     Macadamia Ternifolia Seed Oil, Niacinamide, Polyglyceryl-3 methylglucose distearate, Cetearyl
+      Alcohol, Phenyl Trimethicone, Portulaca Oleracea Extract, Citrus unshiu, Sodium Hyaluronate, Butylene
+       Glycol, Adenosine, Panthenol, Citrus aurantium dulcis, Sorbitan Stearate, Glyceryl Stearate SE,
+        Methyl methacrylate crosspolymer, 11,2-Hexanediol, Carbomer, Arginine, Ammonium
+         Acryloyldimethyltaurate/VP Copolymer, Caprylyl Glycol, Ethylhexylglycerin, Disodium EDTA`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0070/purito-buckthorn-cream-1.jpg',
+      'assets/product-images/0070/purito-buckthorn-cream-2.jpg',
+      'assets/product-images/0070/purito-buckthorn-cream-3.jpg',
+      'assets/product-images/0070/purito-buckthorn-cream-4.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 213,
+  },
+  {
+    id: '0071',
+    brandName: `Purito`,
+    productName: 'Centella Green Level Eye Cream',
+    description: `Centella Green Level Eye Cream is a product that includes peptides, as well as Centella Asiatica
+     (49% of the total composition of the cream), which is a unique soothing and rejuvenating
+      component in the composition of the product.`,
+    ingredients: `Centella Asiatica Extract (49 %) , Water , Hydrogenated C6-14 Olefin Polymer , Glycerin ,
+     Caprylic/Capric Triglyceride , Cetyl Ethylhexanoate , Cetyl Alcohol , 1,2-Hexanediol , Butylene Glycol ,
+      Methyl Trimethicone , Dipropylene Glycol , Pentaerythrityl Tetraisostearate , Dipentaerythrityl Hexa C5-9
+       Acid Esters, Potassium Cetyl Phosphate , Cetearyl Olivate , Butyrospermum Parkii , Palmitoyl Hexapeptide-12 ,
+        Palmitoyl Tripeptide-1 , Palmitoyl Tetrapeptide-7 , Palmitoyl Dipeptide-10, Asiaticoside , Asiatic Acid ,
+         Sodium Hyaluronate , Madecassic Acid , Sorbitan Olivate , Stearic Acid , Polyglyceryl-2 Stearate ,
+          Tromethamine , Caprylyl Glycol , Glyceryl Stearate , Panthenol , Carbomer , Stearyl Alcohol ,
+           Hydrolyzed Collagen , Cholesterol , Acetyl Glucosamine , Argania Spinosa Kernel Oil ,
+            Limnanthes Alba Seed Oil (Meadowfoam) , Macadamia Ternifolia Seed Oil , Acrylates/C10-30
+             Alkyl Acrylate Crosspolymer , Ceramide Np , Pancratium Maritimum Extract , Citrus Aurantium
+              Bergamia Fruit Oil (Bergamot) , Disodium Edta , Adenosine , Lavandula Angustifolia Oil (Lavender)`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0071/purito-eye-centella-cream-1.jpg',
+      'assets/product-images/0071/purito-eye-centella-cream-2.jpg',
+      'assets/product-images/0071/purito-eye-centella-cream-3.jpg',
+      'assets/product-images/0071/purito-eye-centella-cream-4.jpg',
+    ],
+    price: 19,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 80,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
