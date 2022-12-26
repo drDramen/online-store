@@ -1,11 +1,10 @@
 export class BaseComponent {
-  protected node: HTMLElement;
+  protected node;
   protected children: BaseComponent[] = [];
 
   constructor(
-    tagName: keyof HTMLElementTagNameMap = 'div',
-    //props: Partial<HTMLElement> = {},
-    props: Record<string, unknown> = {},
+    tagName: keyof HTMLElementTagNameMap,
+    props: Partial<HTMLElementTagNameMap[typeof tagName]> = {},
     parentNode?: HTMLElement,
   ) {
     this.node = document.createElement(tagName);
@@ -19,7 +18,7 @@ export class BaseComponent {
     }
   }
 
-  getNode(): HTMLElement {
+  getNode() {
     return this.node;
   }
 
