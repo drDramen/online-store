@@ -2766,6 +2766,329 @@ export const products: Product[] = [
     availableAmount: 14,
   },
   {
+    id: '0091',
+    brandName: `MEDI-PEEL`,
+    productName: 'Hyaluronic Volumy Eye Cream',
+    description: `Lifting eye cream with a complex of peptides MEDI-PEEL Peptide balance
+     9 Hyaluronic Volumy Eye Cream is a moisturizing and tightening cream for mature skin.
+      The cream contains 9 types of peptides and has a pronounced tightening and moisturizing
+       effect. Visibly improves the turgor of the delicate area around the eyes and smoothes deep wrinkles.`,
+    ingredients: `Water, Methyloropanediol Capryfic/Capric Thiglyceride Glycerin, Dimethicone,
+     Niacinamide, Pentaerythrityl Tetraisostarate, Cyclopentasiloxan, Cetearyl Alcohol,
+      Cetearyl Olivate, Cydohexasiloxane, Sorbitan Olivate, Glyceryl Stearate, Butyrospemum
+       Parki (Shea) Butter, Hydroxypropyl Methylcellulose, PEG-100 Stearate, Pullulan,
+        Hydroxyacetophenone, Helianthus Annuus (Sunflower) Seed Oil, Sodium Polyacylate,
+         Arginine, Carbomer, Sodium Acylate/Sodium Acryloyldimethyl Taurate Copolymer,
+          Cetearyl Glucoside, Isohexadecane, Juniperus Communis Fruit Extract, Eucalyptus
+           Globulus Leaf Extract, Trehalose, Ethylhexylglycerin, Xanthan Gum, Polysorbate
+            80, Porphyridium Cruentum Extract, Fragrance, Gycine Soja (Soybean) Oil,
+             Adenosine, Sodium Hyaluronate (215ppm), Disodium EDTA, Sorbitan Oleate,
+              Malt Extract, Propanediol, Sodium Hyaluronate Crosspolymer(60ppm), Bixa
+               Orelana Seed oil, Hydrolyzed Glycosaminoglycans, Olea Europaea (Olive)
+                Leaf Extract, Gyoymhiza Glabra (Licorice) Root Extract, Taraxacum
+                 Officinale (Dandelion) Leaf Extract, Magnolia Officinalis Bark Extract,
+                  Fructan, Hydrolyzed Elastin, Hydrolyzed Collagen, Hydrogenated Polyisobutene,
+                   Glyceryl Polymethagylate, Benzyl Glycol, Tocopherol, Propylene Glycol,
+                    Rosa Damascena Flower Extract, Rhodiola Rosea Root Extract,
+                     Hydrolyzed Hyaluronic Acid(15ppm), Usnea Barbata (Lichen) Extract,
+                      Zanthoxylum Piperitum Fruit Extract, Pulsatilla Koreana Extract,
+                       Butylene Glycol, 1,2-Hexanediol, Raspbery Ketone, Palmitoyl Tripeptide-5/0.1ppm),
+                        Hyaluronic Acid(0.075), Palmitoyl Tetrapeptyde-7(0,005ppm), Anemarrhena
+                         Asphodeloides Root Extract, Acetyl Hexapetide-8(0,001ppm), Copper Tripeptide
+                          -1(00,1ppm), Palmitoyl Oligopeptide(0.001ppm), Palmitoyl Tripeptide-1(0,001ppm),
+                           Oligopeptide-29(0,0005ppm), Oligopeptide-32(0,0005ppm), Palmitoyl Pentapeptide-4(0,0001ppm)`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0091/medi-peel-eye-volumy-cream-1.avif',
+      'assets/product-images/0091/medi-peel-eye-volumy-cream-2.avif',
+      'assets/product-images/0091/medi-peel-eye-volumy-cream-3.avif',
+    ],
+    price: 39,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 114,
+  },
+  {
+    id: '0092',
+    brandName: `MEDI-PEEL`,
+    productName: 'Mezzo Filla Eye Serum',
+    description: `Eye serum with peptides MEDI-PEEL Mezzo Filla Eye Serum is a nourishing
+     and moisturizing serum for the eye area. It prevents the appearance of creases and
+      wrinkles due to dehydration of the skin. Contains a powerful complex with peptides
+       to fight the signs of aging and improve skin elasticity. It has a pronounced lifting effect.`,
+    ingredients: `Purified water, glycerin, Niacinamide, butylene glycol, Glyceryl methyl
+     methacrylate, sodium hyaluronate E, propylene glycol, gellan gum, wax extract,
+      hydrogenated polyisobutene, Zymo root extract, Alantoin, Panthenol, Adenosine, Ethanol,
+       Palmitoyl Trilptide-1, palmitoyltetrapeptide-7, S-oligopeptide-1, Siegelopeptide-2,
+        Siezaparrapeptide-3, Ashpolypeptide-16, polylactic acid, dimethicone / vinyl dicarboxylate-7,
+         S-oligopeptide-1, S-oligopeptide- Metacon cross polymer, C12-14Sec-Pareth-7. Hydrogenated
+          starch hydrolyzate, Lavender extract, Rosemary extract, Oregano flower / leaf / stem extract,
+           Time extract, Porphyridium creutum extract. Carboxymethyl cellulose, dimethicone, mica agar,
+            irish moss powder, acalilate / C10-30, polyglyceryl palmitate, Alkyl acrylate crospolymer,
+             tromethamine, synthetic fluorofluorophosphite, yellow iron oxide, silica, titanium
+              dioxide oxides. Pola Solvent 2, Nitride as Pazard, and Itera Oil. Pifiza-1-piza
+               'lauryl glycol ether, Dimotaxyl glycyrrhizae 01E, Dissodium diethite, fragrance`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0092/medi-peel-eye-serum-1.avif',
+      'assets/product-images/0092/medi-peel-eye-serum-2.avif',
+      'assets/product-images/0092/medi-peel-eye-serum-3.avif',
+    ],
+    price: 18,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 40,
+  },
+  {
+    id: '0093',
+    brandName: `MEDI-PEEL`,
+    productName: 'Volume TOX Cream Peptide 9',
+    description: `Cream - lifting MEDI-PEEL Volume TOX Cream Peptide 9 - provides intensive skin
+     care with 9 types of peptides to increase skin elasticity. An intensive anti-ageing cream
+      that adds radiance to your skin. The product contains not only a complex of 9 types of
+       peptides, but also other effective anti-aging ingredients.`,
+    ingredients: `Purified Water, Methyl Propane Diol, Glycerin, Dimethicone, Cyclopentasiloxane,
+     12-Nucleic Acid Diol, Caprylic / Caproxyl Triglyceride, Cetaryl Alcohol, Cetaryl Olate, Cyclo
+      Hexasiloxane Sein, Solbi-Tanol Rebate, Glyceryl Stearate, Pentaerythritol Tetraisostearate,
+       Piza-100 Stearate, Cetaryl Glucoside, Arginine, Carbomer, Sodium Acrylate / Sodium Acryloyl
+        Dimethyl Taurate Cocolate Polymer, Isohexadecane, Trehalose, Sunflower Seed Oil, Xanthan
+         Gum, Adenosine, Polysorbate 80, Sodium Hyaluronate, Disodium Itiate, Solbitan Oleate,
+          Stone Soybean Oil, Desamido Collagen , Cypress Fruit Extract, Decadent Thick Bark
+           Extract, Eucalyptus Leaf Extract, Fructan, Hydrol Izde collagen, butylene glycol,
+            fragrance, hydrogenated polyisobutene, anatose oil, propane diol, glyceryl dooly
+             methacrylate, sodium hyaluronate crosspolymer, sorbitan laurate, propylene glycol,
+              Hydrolyzed deglycosaminoglycan, nonoxynol-12, phenoxy ethanol, Irish moss extract,
+               tocopherol, hydroxyethyl cellulose, benzyl glycol, acetyldipeptide-1 cetyl ester (0.8ppm),
+                as Tarzanine, Ethyl Hexanediol, Hydrolyzed Elastin, Hydrolyzed Hyaluronic Acid, Ethyl
+                 Hexyl Glycerin, Palmitoyl Tripeptide-5 (0.1ppm), Caprylralglycol, Jimmy Root Extract,
+                  Acetyl Hexapeptide-8 (0.01ppm), copper tripeptide-1 (0,01ppm), palmitoyl
+                   pentamemide -4001 pp m), hyaluronic acid, acetyl octapeptide-3 (0.005 ppm),
+                    palmitoyl tetrapeptide -70005 ppm), hexafeltide -90.005 ppm), raspberry ketone,
+                     palmitoyl oligopeptide (0.001 ppm), palmitoyl Tripeptide-1 (0.01ppm)`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0093/medi-peel-volume-tox-cream-1.avif',
+      'assets/product-images/0093/medi-peel-volume-tox-cream-2.avif',
+      'assets/product-images/0093/medi-peel-volume-tox-cream-3.avif',
+    ],
+    price: 40,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 328,
+  },
+  {
+    id: '0094',
+    brandName: `MEDI-PEEL`,
+    productName: 'Peptide 9 Volume Essence',
+    description: `Oxygen essence with peptides for skin elasticity MEDI-PEEL Peptide 9 Volume
+     Essence is a multifunctional product that not only instantly moisturizes, but also tightens
+      the skin, giving it a powerful boost of energy.`,
+    ingredients: `Water, Methylpropanediol, Glycerin, Hydrogenated Polyisob utene, Methyl
+     Perfluoroisobutyl Ether, Caprylic/Capric Triglyceride, Methyl Perfluorobutyl Ether,
+      Cyclopentasiloxane, Niacinamide, Butylene Glycol Dicaprylate/Dicaprate, Cetearyl Alcohol,
+       Cyclohexasiloxane, Elaeis Guineensis (Palm) Oil, Decyl GIucoside, Sodium Myristoyl Glutamate,
+        Stearic Acid, Glycery! Stearate, PEG-100 Stearate, Betaine, Hydroxyethyl Urea, Elae is
+         Guineensis (Palm) Kernel Oil, Hyoxyedetophenone, Dime thicone Arginine Ammonium
+          Acryloyldimethyltaurate/VP C opolymer, Carbomer, Hydrogenatedtecihin, Propanediol,
+           J uniperus Communis Fruit Extract, Eucalyps Globulus Leaf E xtract, Dimethicone/Vinyl
+            Dimethicone Crospolymer, Glycer yl Acrylate/Acrylic Acid Copolymer, Sodium yaluronate
+             Crosspolymer, Ethylhexylglycerin, Allantoin, Ammonium Lactate, Urea, Fragrance, Adenosine,
+              Sodium Hyalurhate, Laureth-2 3, Propylene Glycol, Disodium EDTA, Hydrozed Glycosami
+               noglycans, Butylene Glycol, Camellia Sinensis Leaf Extract, Ta raxacum Officinale
+                (Dandelion) Rhizome/Root Extract, Sodiu m Guaiazulene Sulfonate, Argania Spinosa
+                 Kernel Oil, Magn olia Officinalis Bark Extract, Anthem is Nobilis Flower Water,
+                  F ructan, Butylphenyl Methylpropional, Benzyl Glycol, Hydroly zed Hyaluronic Acid,
+                   Desamido Collagen, Hydrolyzed Elastin, Hydrolyzed Collagen, Decylene Glycol,
+                    Sodium Polyacrylate Caprylyl Glycol, Trideceth-6, Pentylene Glycol Hydrogenated
+                     Polydecene, Glyceryl Polymethacrylate, Anemarhena Aspho deloides Root Extract,
+                      1,2-Hexaned iol, Raspberry Ketone, Hy aluronic Acid, Sorbitan Laurate, Nonoxynol-
+                       1 2, Phenoxyetha nol, Hydroxyethylcellulose, Acetyl Dipeptide-1 Cetyl Ester(0.0 8 ppm),
+                        Astaxanthin, Ethyl Hexanediol, Acetyl Hexapeptide-8 (0.01 ppm), Copper Tripeptide-1
+                         (0.01 ppm), Oligopeptide-29 (0.005 ppm), Oligopeptide-32(0.005 ppm), Palmitoyl
+                          Pentap eptide-4(0.001 ppm), Palmitoyl Tripeptide- 1 (0.001 ppm) Pal mitoyl
+                           Tetrapeptide-7(0.005 ppm), Palmitoyl Tripeptide-51 ppm), Palmitoyl Oligopeptide(0.001 ppm)`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0094/medi-peel-peptide9-essence-1.avif',
+      'assets/product-images/0094/medi-peel-peptide9-essence-2.avif',
+      'assets/product-images/0094/medi-peel-peptide9-essence-3.avif',
+    ],
+    price: 51,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 216,
+  },
+  {
+    id: '0095',
+    brandName: `MEDI-PEEL`,
+    productName: 'Collagen Super 10 Sleeping Cream',
+    description: `Night face cream with collagen MEDI-PEEL Collagen Super 10 Sleeping Cream
+     - fights signs of premature aging and sagging, restores dehydrated skin.`,
+    ingredients: `Purified Water, Glycerin, Niacinamide, Dimethicone, Fiji -240 / E.Diicopolymer
+     Bismuth-decyl Tetradeceth-20 Ether, Butylene Glycol, Oat Powder Extract, Dimethicone / Vinyl
+      Dimethicone Cross Polymer, Hydroxy Acetophenone, Fiji-10 Dimethicone, Glyceryl Stearate,
+       Low Sweet Blueberry Extract, Garlic Extract, Sweet Almond Oil, Squalane, Spinach Extract,
+        Tomato Fruit / Leave / Stem Extract, Wine Extract, Blood Easy-60 Hydrogenated Castor Oil,
+         Hydrolyzed Collagen, Walnut Extract, Propane Diol, Fiji-100 Stearate, Al-Han, Carbomer,
+          Ethyl Hexyl Glycerin, Allantoin, Trehalose, Flavoring, Adenosine Disodium dithiate,
+           sodium hyaluronate, green tea extract, argan kernel oil, jojoba seed oil, Lamide N-Py,
+            Hydrogenated Lecithin, Aloe Vera Leaf Extract, Dipropylene Glycol, Glyceres-20,
+             Bioflavonoid, Fiji-10 Grape Seed Sterol, 1,2-hexanediol, Olive Tree Leaf Extract,
+              Spain Licorice Root Extract, Western Dandelion Leaf Extract, Broccoli Extract,
+               Oregano Leaf Extract, Cypress Leaf Extract, White Willow Bark Extract, Lactobacillus
+                / Ball Ferment Extract, Purslane Extract, Broiler Bark Extract, Golden Wine Extract,
+                 Damask Rose Flower Extract, Rock Stone Root Extract, Ussonia Extract, Cedar Fruit
+                  Extract Halmiflower Extract, Acetyl Hexapeptide-8, Copper Tripeptide-1,
+                   Oligopeptide-29, Oligopeptide-32, Palmitoyl Pentapeptide-4`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0095/medi-peel-super-collagen-cream-1.avif',
+      'assets/product-images/0095/medi-peel-super-collagen-cream-2.avif',
+      'assets/product-images/0095/medi-peel-super-collagen-cream-3.avif',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 175,
+  },
+  {
+    id: '0096',
+    brandName: `MEDI-PEEL`,
+    productName: 'Red Lacto Collagen Toner',
+    description: `Revitalizing toner with probiotics MEDI-PEEL Red Lacto Collagen Toner
+     enhances the protective functions of the skin, restoring its microbiome. Perfectly
+      combats dryness, tightness and dullness of the skin after washing. Relieves irritation
+       and rejuvenates. Thanks to the incredible volume of 1000 ml, it is economically consumed.`,
+    ingredients: `Water, Glycerin, Niacinamide, Dipropylene Glycol, 1,2-Hexanediol, Hydrolyzed
+     Collagen, Lysine, Histidine, Arginine, Aspartic Acid, Threonine, Serine, Glutamic Acid,
+      Proline, Glycine, Alanine, Valine, Methionine, Isoleucine, Leucine, Tyrosine, Phenylalanine,
+       Cysteine, Glycyrrhiza Glabra (Licorice) Root Extract, Cimicifuga Dahurica Root Extract,
+        Polygonum Multiflorum Root Extract, Sesamum Indicum (Sesame) Seed Extract, Phellinus Linteus
+         Extract, Angelica Gigas Root Extract, Morus Alba Bark Extract, Paeonia Albiflora Root Extract,
+          Sophora Angustifolia Root Extract, Scutellaria Baicalensis Root Extract, Adenosine, Hydrolyzed
+           Elastin, Betaine, Sodium Hyaluronate, Ceramide 3, Panthenol, Copper Tripeptide-1, Acetyl
+            Hexapeptide-8, Palmitoyl Pentapeptide-4, Dipeptide-2, Acetyl Octapeptide-3, Acetyl
+             Tetrapeptide-5, Dipeptide Diaminobutyroyl Benzylamide Diacetate, Kousou Ekisu,
+              Tocopheryl Acetate, Hydroxyacetophenone, Dipotassium Glycyrrhizate, Acrylates/C10-30
+               Alkyl Acrylate Crosspolymer, PEG-60 Hydrogenated Castor Oil, Caprylyl Glycol, Tromethamine,
+                Disodium EDTA, Caramel, Benzyl Benzoate, Citral, Citronellol, Limonene, Linalool, Fragrance`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0096/medi-peel-red-lacto-collagen-toner-1.avif',
+      'assets/product-images/0096/medi-peel-red-lacto-collagen-toner-2.avif',
+      'assets/product-images/0096/medi-peel-red-lacto-collagen-toner-3.avif',
+    ],
+    price: 64,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 347,
+  },
+  {
+    id: '0097',
+    brandName: `MEDI-PEEL`,
+    productName: 'Easy Energizing Peel',
+    description: `Tonic facial peeling with AHA and BHA acids MEDI-PEEL Derma Maison Easy
+     Energizing Peel gently removes the dead layer from the surface of the skin, allowing
+      the skin to breathe, and subsequent care to penetrate deeper and act in full force.`,
+    ingredients: `Purified water, lactic acid, triethanolamine, modified alcohol, glycolic acid,
+     1,2-hexanediol, propylene glycol, allantoin, dipotassium glycyrrhizate, malt extract, bokryeong
+      extract, reed extract, Palmitoylpentapeptide-4, Bacillus fermented product, copper tripeptide-1,
+       acetylhexapeptide-8, hexapeptide-9, palmitoylhexapeptide-12, acetyloctapeptide-3, butylene glycol,
+        hydroxyethylcellulose , PEG-60 Hydrogenated Castor Oil, Cocamidopropyl Betaine, Lecithin,
+         Ethylhexyl Glycerin, Sodium Chloride, Salicylic Acid, Sodium Citrate, Citric Acid,
+          Polysorbate 20, Fragrance, Disodium EDTA , Sodium benzoate`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0097/medi-peel-easy-peel-1.avif',
+      'assets/product-images/0097/medi-peel-easy-peel-2.avif',
+      'assets/product-images/0097/medi-peel-easy-peel-3.avif',
+    ],
+    price: 76,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 210,
+  },
+  {
+    id: '0098',
+    brandName: `MEDI-PEEL`,
+    productName: 'Azulene Water Calming Mask',
+    description: `MEDI-PEEL Azulene Water Calming Mask is a rinse-off treatment mask
+     containing azulene that soothes and provides a cooling sensation to irritated skin.`,
+    ingredients: `Matricaria water, Glycerin, Water, 1,2-Hexanediol, Butylene Glycol,
+     Panthenol, Betaine, Glyceryl Acrylate/Acrylic AcidCopolymer, Penthylene Glycol,
+      Sodium Hyalurante, Hydroxypropyltrimonium Hyalurante, Sodium Acelerated Hyaluronate,
+       Hydrolized Hyaluronic Acid, Hyaluronic Acid, Sodium Hyalurante Crosspolymer,
+        Hydrolyzed Sodium Hyaloronate, Potassium Hyaluronate, Camelia Sinensis Leaf
+         Extract, Matricaria Extract, Centella Asiatica Extract, Lavender Extract,
+          Aloe Barbadensis Extract, Wheat Sprout Extract, Broccoli Extract, Cabbage
+           Leaf Extract, Alfalfa Extract, Radish Extract, Rapeseed Extract, Origanum
+            Vulgare Leaf Extract, Chamaecyparis Obtusa Leaf Extract, Willow Bark Extract,
+             Lactobacillus/Soybean Ferment Extract, Portulaca Oleracea Extract, Cinnamomum
+              Cassia Bark Extract, Scutellaria Baicalensis Root Extract, Azulene, Dipotassium
+               Glycyrrhizate, Arginine, Carbomer, Disodium EDTA, PEG-60 Hydrogated Castor
+                Oil, Hydroxyacetophenone, Caprylyc Glycol, Ethylhexylglycerin, CI 17200, CI 42090, Fragrance`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0098/medi-peel-azulene-mask-1.avif',
+      'assets/product-images/0098/medi-peel-azulene-mask-2.avif',
+      'assets/product-images/0098/medi-peel-azulene-mask-3.avif',
+    ],
+    price: 40,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 120,
+  },
+  {
+    id: '0099',
+    brandName: `MEDI-PEEL`,
+    productName: 'Revitenol Multi Repair Cream',
+    description: `Anti-aging cream for damaged skin with panthenol and polynucleotides
+     MEDI-PEEL Revitenol Multi Repair Cream - intensively restores damaged epidermis,
+      while having an anti-aging effect, improves skin turgor. Thanks to strong active
+       ingredients in the cream, it renews the skin, improves its protective and barrier
+        functions, normalizes water balance, and rejuvenates.`,
+    ingredients: `Sea Water, Panthenol, Propanediol, Corylus Avellana (Hazelnut) Seed Oil,
+     Polyglyceryl-3 Methylglucose Distearate, 1,2-Hexanediol, Niacinamide, Cyclopentasiloane,
+      Water, Stearic acid, Cetearyl Alcohol, Cyclohexasiloxane, Simmondsia Chinensis (Jojoba)
+       Seed Oil, Macadamia Integrifolia Seed Oil, Argania Spinosa Kernel Oil, Dimethicone,
+        Glyceryl Stearate, Rhizophora Mangle Callus Culture Extract, Dipropylene Giycol,
+         Tromethamine, Carbomer, Hydroxyacetophenone, Chamomilla Recutita (Matricaria) Extract,
+          Butyrospermum Parkii (Shea) Butter, Betaine, Caprylyl Glycol, Butylene Glycol,
+           Ceramide NP, Calcium Pantothenate, Sodium Ascorbyl Phosphate, Pyridoxine HCL,
+            Sodium Starch Octenylsuccinate, Maltodextrin, Silica, Tocopheryl Acetate, Adenosine,
+             Disodium EDTA, Glycerin, Sodium Hyaluronate, Sodium DNA, Ethylhexylglycerin,
+              Hydrolyzed Collagen, Dipotassium Glycyrrhizate, Tripeptide-48, PaImitoyl
+               Pentapeptide-4, Copper Tripeptide-1, Acetyl Hexapeptide-8, Myristoyl Pentapeptide-17,
+                rh Polypeptide-11, rh-Oligopeptide-1, Spirulina Platensis Extract, Sodium Citrate, Dextrin, Fragrance`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0099/medi-peel-revitenol-1.avif',
+      'assets/product-images/0099/medi-peel-revitenol-2.avif',
+    ],
+    price: 40,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 120,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
