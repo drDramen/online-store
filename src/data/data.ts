@@ -4468,6 +4468,187 @@ export const products: Product[] = [
     availableAmount: 101,
   },
   {
+    id: '0145',
+    brandName: 'Drunk Elephant',
+    productName: 'A-Passioni™ Retinol Cream',
+    description: `Retinol and supportive peptides restore bounce, resilience, and a brighter
+     clarity to skin while helping to even skin tone and texture—without the associated redness
+      and irritation. Vitamin F and a blend of comforting passionfruit, apricot, marula, and
+       jojoba oils replenish essential lipids and moisture, while antioxidant-packed kale,
+        winter cherry, and xanthophylls help defend against environmental stressors. It’s
+         like a reboot of your skin back to its healthiest, most youthful state.`,
+    ingredients: `Water/Aqua/Eau, Glycerin, Coco-Caprylate, Stearic Acid, Coconut Alkanes,
+     Glyceryl Stearate, Niacinamide, Caprylic/Capric Triglyceride, Cetearyl Alcohol, Pentylene
+      Glycol, Passiflora Edulis Seed Oil, Retinol, Simmondsia Chinensis (Jojoba) Seed Oil,
+       Sclerocarya Birrea Seed Oil, Prunus Armeniaca (Apricot) Kernel Oil, Cetyl Ethylhexanoate,
+        Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Brassica Oleracea Acephala Leaf Extract,
+         Brassica Oleracea Italica (Broccoli) Extract, Tetrahexyldecyl Ascorbate, Chrysin, Persea
+          Gratissima (Avocado) Oil, Linoleic Acid, Linolenic Acid, Ceramide NP, Xanthophylls,
+           Phytosphingosine, Phytosterols, Jojoba Esters, Physalis Pubescens Fruit Juice, Stearyl
+            Glycyrrhetinate, Oryza Sativa (Rice Bran) Extract, Glycine Soja (Soybean) Oil,
+             Carthamus Tinctorium (Safflower) Seed Oil, Palmitoyl Hexapeptide-12, Cetyl Palmitate,
+              Trehalose, Lauric Acid, Sodium Hyaluronate Crosspolymer, Olea Europaea (Olive)
+               Fruit Oil, Glucosamine HCL, Tocopheryl Acetate, Coco-Caprylate/Caprate, Pisum
+                Sativum (Pea) Extract, Tocopherol, Bambusa Vulgaris Leaf/Stem Extract, Phenoxyethanol,
+                 Caprylyl Glycol, Carbomer, Trideceth-6 Phosphate, N-Hydroxysuccinimide, Ceteareth-20,
+                  Sodium Hydroxide, Laureth-23, Steareth-20, Propanediol, Chlorhexidine Digluconate,
+                   Polysorbate 20, Trisodium Ethylenediamine Disuccinate, Chlorphenesin,
+                    Potassium Sorbate, Ethylhexylglycerin`,
+    starIngredient: 'Retinol',
+    pics: [
+      'assets/product-images/0145/drunk-elephant-retinol-cream-1.avif',
+      'assets/product-images/0145/drunk-elephant-retinol-cream-2.avif',
+      'assets/product-images/0145/drunk-elephant-retinol-cream-3.avif',
+      'assets/product-images/0145/drunk-elephant-retinol-cream-4.avif',
+    ],
+    price: 74,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 189,
+  },
+  {
+    id: '0146',
+    brandName: 'Drunk Elephant',
+    productName: 'T.L.C. Sukari Babyfacial™',
+    description: `This next-generation mask is an at-home “facial” that effectively
+     yet gently exfoliates the pore lining and resurfaces by getting rid of built-up dead
+      skin cells. With a whopping 25% AHA / 2% BHA blend of our dream team glycolic, tartaric,
+       lactic, citric, and salicylic acids, this pro-quality formula dramatically smooths
+        texture while minimizing the look of pores, fine lines, and wrinkles. Uniquely
+         formulated with chickpea flour, pumpkin ferment, and a soothing antioxidant blend
+          of matcha tea, milk thistle, and apple, Babyfacial™ delivers incredible brightening
+           and enzymatic action, improves skin’s elastic feel, and reveals the look of a more
+            even, radiant, baby-soft complexion. Think of it as an extra nudge for stubborn dull skin.`,
+    ingredients: `Water (Aqua), Glycolic Acid, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl
+     Taurate Copolymer, Glycerin, Sodium Hydroxide, Salicylic Acid, Aloe Barbadensis Leaf Extract,
+      Camellia Oleifera Leaf Extract, Lactobacillus/Pumpkin Ferment Extract, Lactobacillus/Punica
+       Granatum Fruit Ferment Extract, Opuntia Ficus-Indica Extract, Pyrus Malus (Apple) Fruit
+        Extract, Silybum Marianum Seed Extract, Saccharomyces Cerevisiae Extract, Vitis Vinifera
+         (Grape) Juice Extract, Camellia Sinensis Leaf Powder, Cicer Arietinum Seed Powder,
+          Sclerocarya Birrea Seed Oil, Passiflora Edulis Seed Oil, Leuconostoc/Radish Root
+           Ferment Filtrate, Sodium Hyaluronate Crosspolymer, Sodium PCA, Allantoin, Dipotassium
+            Glycyrrhizate, Dextrin, Polydextrose, Sorbitan Isostearate, Amylopectin, Niacinamide,
+             Phytosphingosine, Lactic Acid, Propanediol, Citric Acid, Titanium Dioxide, Trisodium
+              Ethylenediamine Disuccinate, Polysorbate 60, Caprylyl Glycol, Chlorphenesin, Phenoxyethanol`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0146/drunk-elephant-sukari-babyfacial-1.avif',
+      'assets/product-images/0146/drunk-elephant-sukari-babyfacial-2.avif',
+      'assets/product-images/0146/drunk-elephant-sukari-babyfacial-3.avif',
+      'assets/product-images/0146/drunk-elephant-sukari-babyfacial-4.avif',
+    ],
+    price: 80,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 36,
+  },
+  {
+    id: '0147',
+    brandName: 'Drunk Elephant',
+    productName: 'F-Balm™ Electrolyte Waterfacial',
+    description: `With a blend of barrier-replenishing ingredients, including niacinamide, sodium PCA,
+     plant squalane, five forms of ceramides, omega fatty acids, and powerful antioxidants, F-Balm™
+      effectively rehydrates hungover, overly parched skin, making it soft and supple. Tiny beads
+       loaded with vitamin F burst during application to deliver extra emollience and soothing hydration.`,
+    ingredients: `Water/Aqua/Eau, Squalane, Propanediol, Niacinamide, Olive Oil Glycereth-8 Esters,
+     Coconut Alkanes, Cocos Nucifera (Coconut) Water, Simmondsia Chinensis (Jojoba) Seed Oil, Ammonium
+      Acryloyldimethyltaurate/VP Copolymer, Glycerin, Mannitol, Sclerocarya Birrea Seed Oil, Sclerocarya
+       Birrea Seed Butter, Sodium PCA, Opuntia Tuna Fruit Extract, Linum Usitatissimum (Linseed) Seed
+        Oil, Sorbitol, Quercetin, Trehalose, Zea Mays (Corn) Oil, Cetyl Alcohol, Sucrose, Creatine,
+         Inositol, Pentylene Glycol, Ferulic Acid, Hydroxytyrosol, Behenic Acid, Linoleic Acid, Cholesterol,
+          Ceramide NS, Ceramide AP, Ceramide EOS, Ceramide NP, Ceramide EOP,  Phospholipids, Sodium Hyaluronate
+           Crosspolymer, Magnesium PCA, Microcrystalline Cellulose, Adenosine, Sodium Hyaluronate, Xanthan Gum,
+            Caprooyl Phytosphingosine, Ascorbyl Palmitate, Hydroxypropyl Methylcellulose, Caprooyl Sphingosine,
+             Coco-Caprylate/Caprate, Ceteareth-25, Citric Acid, Glyceryl Caprylate, Phenoxyethanol, Caprylyl
+              Glycol, Sodium Benzoate, Tocopherol, Chlorphenesin, Potassium Sorbate, Ethylhexylglycerin`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0147/drunk-elephant-electrolyte-1.avif',
+      'assets/product-images/0147/drunk-elephant-electrolyte-2.avif',
+      'assets/product-images/0147/drunk-elephant-electrolyte-3.avif',
+      'assets/product-images/0147/drunk-elephant-electrolyte-4.avif',
+    ],
+    price: 52,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 176,
+  },
+  {
+    id: '0148',
+    brandName: 'Drunk Elephant',
+    productName: 'Sweet Biome™ Fermented Sake Spray',
+    description: `Sweet Biome’s cocktail of fermented sake extract, kombucha, and hops supplies skin with
+    nutrient-dense substances that restore, soothe, and contribute to a balanced and healthy acid mantle
+     and microbiome. Powerful electrolytes—coconut water and sodium PCA— provide potent antioxidant
+      protection and critical hydration while natural minerals zinc, copper, and calcium gluconate help
+       reduce redness and promote healthy collagen production. Ceramides, vitamin F, and essential
+        amino acids keep skin soft, flexible, and moisturized.`,
+    ingredients: `Water/Aqua/Eau, Sodium PCA, Propanediol, Galactomyces Ferment Filtrate, Glycerin,
+     Beta Vulgaris (Beet) Root Extract, Fructooligosaccharides, Saccharomyces/Xylinum/Black Tea
+      Ferment, Cocos Nucifera (Coconut) Fruit Juice, Sclerocarya Birrea Seed Oil, Lactic Acid,
+       Pentylene Glycol, Sodium Hyaluronate Crosspolymer, Zinc Gluconate, Sodium Lactate, Magnesium
+        Aspartate, PCA, Alanine, Arginine,  Glycine, Histidine, Isoleucine, Phenylalanine, Proline,
+         Serine, Threonine, Valine, Aspartic Acid, Calcium Gluconate, Copper Gluconate,  Trehalose,
+          Linoleic Acid, Linolenic Acid, Ceramide AP, Ceramide EOP, Ceramide NP, Phytosphingosine,
+           Cholesterol, Xylitol, Humulus Lupulus  (Hops) Extract, Hyaluronic Acid, Sodium Lauroyl
+            Lactylate, Tapioca Starch, Tetrasodium Glutamate Diacetate, Xanthan Gum, Potassium Lactate,
+             Polysorbate 20, Citric Acid, Carbomer, Phenoxyethanol, Sodium Benzoate, Tocopherol,
+              Sodium Hydroxide, Potassium Sorbate, Ethylhexylglycerin`,
+    starIngredient: 'Galactomyces',
+    pics: [
+      'assets/product-images/0148/drunk-elephant-sake-spray-1.avif',
+      'assets/product-images/0148/drunk-elephant-sake-spray-2.avif',
+      'assets/product-images/0148/drunk-elephant-sake-spray-3.avif',
+      'assets/product-images/0148/drunk-elephant-sake-spray-4.avif',
+    ],
+    price: 42,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 120,
+  },
+  {
+    id: '0149',
+    brandName: 'Drunk Elephant',
+    productName: 'Umbra Sheer™ Physical Daily Defense SPF 30',
+    description: `Umbra Sheer™ is a daily sunscreen loaded with potent antioxidants, like
+     astaxanthin, grape juice, and sunflower shoot extract, to minimize the appearance of
+      photoaging for a more youthful-looking complexion. Infused with raspberry seed and marula
+       oils, Umbra Sheer™ delivers essential moisture and minimizes the look of fine lines
+        and wrinkles for skin that appears healthy and preserved.`,
+    ingredients: `Water, caprylic/capric triglyceride, dicaprylyl carbonate, pentylene glycol,
+     glycerin, steareth-2, propanediol, steareth-21, polyhydroxystearic acid, cetearyl alcohol,
+      silica, sclerocarya birrea seed oil, aloe barbadensis leaf extract, chondrus crispus extract,
+       haematococcus pluvialis extract, helianthus annuus (sunflower) sprout extract, vitis vinifera
+        (grape) juice extract, helianthus annuus (sunflower) seed oil, simmondsia chinensis (jojoba)
+         seed oil, raspberry seed oil/tocopheryl succinate aminopropanediol esters, hydrolyzed wheat
+          protein, tocopheryl acetate, tocopherol, sea water, acetyl glucosamine, cetearyl glucoside,
+           sodium stearoyl glutamate, tetrahexyldecyl ascorbate, glycine, sucrose, lecithin,
+            triethoxycaprylylsilane, xanthan gum, trisodium ethylenediamine disuccinate,
+             caprylhydroxamic acid, caprylyl glycol, phenoxyethanol, chlorphenesin,
+              sodium dehydroacetate, iron oxides`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0149/drunk-elephant-sunscreen-1.avif',
+      'assets/product-images/0149/drunk-elephant-sunscreen-2.avif',
+      'assets/product-images/0149/drunk-elephant-sunscreen-3.avif',
+      'assets/product-images/0149/drunk-elephant-sunscreen-4.avif',
+    ],
+    price: 34,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Sunscreen',
+    for: 'Face',
+    availableAmount: 37,
+  },
+  {
     id: '0200',
     brandName: 'Youth to the People',
     productName: 'Superfood Cleanser',
