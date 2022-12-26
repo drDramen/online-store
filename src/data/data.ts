@@ -2511,39 +2511,259 @@ export const products: Product[] = [
   {
     id: '0084',
     brandName: `MEDI-PEEL`,
-    productName: 'Cell Toxing Dermajours Cream',
-    description: `Anti-aging face cream with stem cells MEDI-PEEL Cell Toxing Dermajours
-     Cream slows down the aging process in skin cells, prevents the appearance of wrinkles
-      and participates in active regenerative processes. The cream also deeply nourishes
-       the skin, making it supple and smooth.`,
-    ingredients: `Water, Glycerin, Caprylic/Capric Triglyceride, 1,2-Hexanediol, Cetyl
-     Ethylhexanoate, Hydrogenated Polydecene, Methylpropanediol, Niacinamide, Cyclopentasiloxane,
-      Butylene Glycol, Cetearyl Alcohol, Butyrospermum Parkii (Shea Butter), Cyclohexasiloxane,
-       PEG-40 Hydrogenated Castor Oil, Sorbitan Stearate, Glyceryl Stearate SE, Dimethicone,
-        Beeswax, Glyceryl Stearate, PEG-100 Stearate, Lilium Candidum Callus Culture Extract(10,000ppm),
-         Polyacrylate-13, Trehalose, Tromethamine, Carbomer, Polyisobutene, Prunus Persica (Peach)
-          Fruit Extract, Crataegus Cuneata Fruit Extract, Pyrus Communis (Pear) Fruit Extract,
-           Adenosine, Hedera Helix (Ivy) Extract, Musa Sapientum (Banana) Fruit Extract, Vanilla
-            Planifolia Fruit Extract, Malt Extract, Polysorbate 20, Magnolia Officinalis Bark Extract,
-             Rosa Damascena Callus Culture Extract(30ppm), Glycine Soja (Soybean) Oil, Sodium Hyaluronate,
-              Phosphatidylcholine, Fructan, Caprylyl Glycol, Hydrogenated Lecithin, Palmitoyl Tripeptide-5,
-               Sodium Phosphate, Disodium EDTA, Sodium Ascorbyl Phosphate, PPG-26-Buteth-26, Ethylhexylglycerin,
-                Lecithin, Acetyl Octapeptide-3, Palmitoyl Tetrapeptide-7, Palmitoyl Pentapeptide-4,
-                 Palmitoyl Tripeptide-1, Tripeptide-1, Acetyl Hexapeptide-8, Dipeptide Diaminobutyroyl
-                  Benzylamide Diacetate, Copper Tripeptide-1, Hexapeptide-9, rh-Oligopeptide-2,
-                   rh-Polypeptide-1, rh-Polypeptide-3, rh-Oligopeptide-1, Nonapeptide-1`,
+    productName: 'Cell Toxing Dermajours Serum',
+    description: `Rejuvenating facial serum with stem cells MEDI-PEEL Cell Toxing Dermajours
+     Ampoule, acting on the deep layers of the skin, promotes enhanced skin cell regeneration
+      and rejuvenation. Increases skin elasticity and firmness, reduces wrinkles and creases.
+       In addition, the serum deeply nourishes the skin and strengthens its barrier function.`,
+    ingredients: `Water, Betaine, Diglycerin, Butylene Glycol, Niacinamide, 1,2-Hexanediol,
+     PEG-60 Hydrogenated Castor Oil, Lilium Candidum Callus Culture Extract, Carbomer, Arginine,
+      Ethylhexylglycerin, Adenosine, Sodium Hyaluronate, Disodium EDTA, Hydroxyethylcellulose,
+       Malt Extract, Glycerin, Prunus Persica (Peach) Fruit Extract, Crataegus Cuneata Fruit
+        Extract, Xanthan Gum, Pyrus Communis (Pear) Fruit Extract, Dipotassium Glycyrrhizate,
+         Magnolia Officinalis Bark Extract, Musa Sapientum (Banana) Fruit Extract, Hedera Helix
+          (Ivy) Extract, Vanilla Planifolia Fruit Extract, Rosa Damascena Callus Culture
+           Extract(30ppm), Glycine Soja (Soybean) Oil, Phosphatidylcholine, Fructan, Caprylyl
+            Glycol, Hydrogenated Lecithin, Palmitoyl Tripeptide-5, Sodium Phosphate, Sodium
+             Ascorbyl Phosphate, PEG-40 Hydrogenated Castor Oil, PPG-26-Buteth-26, Polysorbate
+              20, Lecithin, Palmitoyl Tetrapeptide-7, Acetyl Octapeptide-3, Palmitoyl
+               Pentapeptide-4, Palmitoyl Tripeptide-1, Acetyl Hexapeptide-8, Copper Tripeptide-1`,
     starIngredient: 'Niacinamide',
     pics: [
-      'assets/product-images/0083/medi-peel-cell-toxing-serum-1.jpg',
-      'assets/product-images/0083/medi-peel-cell-toxing-serum-2.jpg',
-      'assets/product-images/0083/medi-peel-cell-toxing-serum-3.jpg',
+      'assets/product-images/0084/medi-peel-celltox-serum-1.jpg',
+      'assets/product-images/0084/medi-peel-celltox-serum-2.jpg',
+      'assets/product-images/0084/medi-peel-celltox-serum-3.jpg',
     ],
-    price: 45,
+    price: 51,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 108,
+  },
+  {
+    id: '0085',
+    brandName: `MEDI-PEEL`,
+    productName: 'Bio-Intense Gluthione 600 White Ampoule',
+    description: `The complex whitening agent effectively brightens all dark spots and imperfections,
+     moreover, deeply moisturizes the skin. Forget about unpleasant whitening procedures,
+      get acquainted with the intensive serum.`,
+    ingredients: `Purified water, niacinamide, sunflower seed oil, glutathione (Drg),
+     Pepper Steak Extract, Whey Extract, Mallow Extract, Mallow Extract, Lemon Chestnut Extract,
+      Speed Well Extract, Sky Root Extract, Indian Gooseberry Fruit Extract Mulberry Bark Extract,
+       Virginia Weathered Leaf Extract, Sodium Hyaluronate, Glyceryl Arachidonate, Glycerinolinate,
+        Panthenol, Tocofepil Acetate, Sodium Ascorbyl Phosphate, Pyridoxine, Mullic Acid, Thiamine HciL,
+         Cyanocobalamin, Biotin, Retinyl Palmitate, Acetyl Hexapeptide-8, Copper Tricopide Tide-1,
+          oligomap tide-23, oligomethide tide-32, palmitoyl pentapeptide-4, cetealyl oleate, polyacrylamide,
+           sorbitan oleate, 1,2-nucleic acid diol, pasqueflower extract, gree Ficus Fruit Extract,
+            Ussian Extract, C13-14 Isoparaffin, Incense , Carbomer, triethanolamine, glycerin,
+             laureth-7, butyleneglycol, ethyl soaked glycerin, hydrolyzed lecithin, plyglyceryl-10 stearate`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0085/medi-peel-glutathione-serum-1.jpg',
+      'assets/product-images/0085/medi-peel-glutathione-serum-2.jpg',
+      'assets/product-images/0085/medi-peel-glutathione-serum-3.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 62,
+  },
+  {
+    id: '0086',
+    brandName: `MEDI-PEEL`,
+    productName: 'Aqua Essence Emulsion Peptide 9',
+    description: `Anti-aging emulsion with peptides for the face MEDI-PEEL Aqua
+     Essence Emulsion Peptide 9 - provides intensive skin care. Contains 9 varieties
+      of peptides to improve elasticity.
+    MEDI-PEEL has partnered with the French company Sederma to make the products as
+     effective as possible, so each product, when used regularly, will return the skin to a healthy appearance.`,
+    ingredients: `Water, methylpropanediol, glycerin, cyclopentasiloxane, cetearyl olivate,
+     cyclohexasiloxane, betaine, cetyl ethylhexanoate, sorbitan olivate, canola oil, caprylic/capric
+      triglyceride, glyceryl stearate, peg-100 stearate, vitis vinifera (grape) seed oil, prunus
+       armeniaca (apricot) kernel oil, hydroxyacetophenone, trehalose, macadamia integrifolia seed oil,
+        arginine, carbomer, fragrance, hydroxyethylcellulose, ethylhexylglycerin, adenosine,
+         disodium edta, allantoin, desamido collagen, juniperus communis fruit extract, magnolia
+          officinalis bark extract, eucalyptus globulus leaf extract, fructan,
+           hydrolyzed collagen butylene glycol, hydrogenated polyisobutene, argania spinosa kernel oil,
+            propanediol, glyceryl polymethacrylate, sodium hyaluronate crosspolymer, sorbitan laurate,
+             propylene glycol, hydrolyzed glycosamonoglycans, 1,2-hexanediol, nonoxynol-12, sodium hyaluronate,
+              phenoxyethanol, chondrus crispus extract, benzyl glycol, acetyl dipeptide-1 cetyl ester (0.8 ppm),
+               astaxanthin, ethyl hexanediol, hydrolyzed elastin, hydrolyzed hyaluronic acid, palmitoyl
+                tripeptide-5 (0.1 ppm), caprylyl glycol, anemarrhena asphodeloides root extract, acetyl
+                 hexapeptide-8 (0.01 ppm), copper tripeptide-1 (0.01 ppm), hyaluronic acid, acetyl
+                  octapeptide-3 (0.005 ppm), palmitoyl tetrapeptide-7 (0.005 ppm), hexapeptide-9 (0.005 ppm),
+                   raspberry ketone, palmitoyl oligopeptide (0.001 ppm), palmitoyl tripeptide-1 (0.001 ppm),
+                    palmitoyl pentapeptide-4 (0.001 ppm)`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0086/medi-peel-aqua-essence-emulsion-peptide9-1.avif',
+      'assets/product-images/0086/medi-peel-aqua-essence-emulsion-peptide9-2.avif',
+      'assets/product-images/0086/medi-peel-aqua-essence-emulsion-peptide9-3.avif',
+    ],
+    price: 38,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 53,
+  },
+  {
+    id: '0087',
+    brandName: `MEDI-PEEL`,
+    productName: 'Melanon X Cream',
+    description: `Brightening face cream against pigmentationMEDI-PEEL Melanon X Cream -
+     evens out skin tone, reducing and preventing hyperpigmentation.`,
+    ingredients: `Water, Butyrospermum Parkii (Shea Butt er), Butylene Glycol, Caprylic /
+     Capric Tri glyceride, Hydrogenated Polydecene, B etaine, Dimethicone, Niacinamide,
+      Poly glycery-3 Methylglucose Distearate, Ce tearyl Alcohol, Glyceryl Stearate,
+       Beeswax, Transw ax Acid, Carnitine, Ascorbi c Acid, Cysteine, Magnesium Ascorbyl
+        Phosphate, Alpha-Arbutin, Morus Alba Bark Extract, Trichosanthes kinilowii
+         root Extract, Hamamelis Virginiana (Witch H azel) Leaf Extract, Phyllanthus
+          Emblica Fruit Extract, Scutellaria Baicalensis Root Extract, Polygonum
+           Multiflorum Root Extract, Angelica Gigas Root Extract, Phe llinus Linteus
+            Extract, Paeonia Lactiflora Root Extract, Glycynrhiza Glabra (Licoric e)
+             Root Extract, Cimicituga Racemosa Root Extract, Sophora Angustifolia Root Extract,
+              Sesamum Indicum (Sesame) Seed Extract Extr act, Acetyl Hexapeptide 8, Copper
+               Trip eptide-1, Oligopeptide-29, Oligopeptide -32, Palmitoyl Pentapeptide-4,
+                Glycerin, Sodium Hyaluronate, Simmondsia Ch in ensis (Jojoba) Seed Oil,
+                 Vitis Vinifera (Gr ape) Seed Oil, Tocopheryl Acetate, PEG 100 Stearate,
+                  Dimethicone / Vinyl Dimet hicone Crosspolymer, Sucrose Cocoate Sorbitan
+                   Stearale, Hydroxyacetophe none, Paratfin, Arginine, Microcrystalline
+                    Wax, Ethylhexylbolycen 1,2 Hexanediol, Xanthan Gum, Adenosine
+                     Disodium EDTA, Fragrance, Polyethylene, Ethylene / Propylene Copolymer`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0087/medi-peel-melanon-cream-1.avif',
+      'assets/product-images/0087/medi-peel-melanon-cream-2.avif',
+      'assets/product-images/0087/medi-peel-melanon-cream-3.avif',
+    ],
+    price: 30,
     bestseller: false,
     segment: 'Korean',
     category: 'Cream',
     for: 'Face',
-    availableAmount: 108,
+    availableAmount: 34,
+  },
+  {
+    id: '0088',
+    brandName: `MEDI-PEEL`,
+    productName: 'Peptide 9 Volume White Cica Essence',
+    description: `Oxygen essence with centella MEDI-PEEL Peptide 9 Volume White Cica Essence -
+     provides soothing care for sensitive skin and visibly evens out its tone. The multifunctional
+      essence penetrates deep into the skin and is much more effective than other products.`,
+    ingredients: `Purified water, glycerin, methyl propane diol, methyl perfluoroisobutyl ether, hydrogenated
+     polyisobutene, butylene glycol dicaprylate/dicaprate, caprylic/capric triglyceride, methyl purple
+      Luobutyl ether, niacinamide, cyclopentasiloxane, cetearyl alcohol, cyclohexasiloxane, oil palm oil,
+       sodium myristoyl glutamate, arginine, glyceryl stearate, PG-100 stearate, decyl glucoside, betaine,
+        hydrogenated lecithin, hydroxyethyl urea, oil palm kernel oil, dimethicone, decylene glycol,
+         ammonium acryloyl dimethyl taurate/v picopolymer , Myristic Acid, Hexylene Glycol, Carbomer,
+          Propane Diol, Eucalyptus Leaf Extract, Dusong Fruit Extract, Butylene Glycol, Dimethicone/Vinyl
+           Dimethicone Cross Polymer, Glycerylacrylate/Acrylic Acid Polymer, sodium hyaluronate cross polymer,
+            urea, allantoin, ammonium lactate, adenosine, Sodium hyaluronate, hydrolyzed glycosaminoglycan,
+             laureth-23, propylene glycol, disodium ID, butes-3, centella extract, centella leaf extract,
+              chamomile flowers, argan kernel oil , Green tea extract, columbine bark extract, fructans,
+               roots/root extracts, sodium benzotriazylbutylphenol sulfonate, benzyl glycol, ethanol,
+                decyl alcohol, tris(tetramethylhydroxypiperidinol) Citrate, hydrolyzed hyaluronic acid,
+                 glucose, desamido collagen, Hydrolyzed Collagen, Tranexamic Acid, Tributyl Citrate,
+                  Trideceth-6, Sodium Polyacrylate, Pentylene Glycol, Hydrogenated Polydecene, Glyceryl
+                   Polymethacrylate, Zymo Root Extract, Cypress Leaf extract, Asiaticoside, Oregano leaf
+                    extract, White willow bark extract, Hyaluronic acid, Lactobacillus/bean fermentation
+                     extract, Broiler bark extract, Golden extract, Purslane extract, sorbitan laurate,
+                      polysorbate 20, raspberry ketone, polysorbate 80, irismos extract, hydroxyethylcellulose,
+                       acetyldipeptide-1 cetyl ester, astaxanthin, hydrolyzed elastin, palmitoyl Tripeptide-5,
+                        madecassoside, madecca acid, acetylhexapeptide-8, copper tripeptide-1, asiatic acid,
+                         oligopeptide-29, oligopeptide-32, Palmitoyl tetrapeptide-7, palmitoyl tripeptide-1,
+                          palmitoyl oligopeptide, palmitoyl pentapeptide-4, 1,2-hexanediol,
+                           ethylhexylglycerin, totalol, caprylyl glycol, fragrance`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0088/medi-peel-peptide9-essence-1.avif',
+      'assets/product-images/0088/medi-peel-peptide9-essence-2.avif',
+      'assets/product-images/0088/medi-peel-peptide9-essence-3.avif',
+    ],
+    price: 52,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 44,
+  },
+  {
+    id: '0089',
+    brandName: `MEDI-PEEL`,
+    productName: 'Pore 9 Tightening Serum',
+    description: `Anti-aging serum for narrowing pores MEDI-PEEL Pore 9 Tightening Serum is
+     a special serum with a complex of peptides that tightens pores and gives the skin elasticity.
+      You no longer need to worry about enlarged pores and blackheads. the skin becomes incredibly smooth and elastic.`,
+    ingredients: `Purified Water, Butylene Glycol, Hydroxypropyl Methyl Cellulose, Pullulan, Fiji-60 Hydrogenated
+     Castor Oil, Hydroxyacetophenone, Acrylate / C10-30 Alkyl Acrylate Crosspolymer, Tromethamine ,
+      Arsenic extract, thorny agallium root extract, seawater, porphyridium gluentum extract, golden extract,
+       ethyl hexyl glycerine, virginia foliar leaf extract, adenosine, betaine, allantoin, flavoring, linalul,
+        glycerin, dextrin, dusong Lychee Extract, Lactobacillus / Turmeric Fermentation Filtrate, Salvia Leaf
+         Extract, Eucalyptus Leaf Extract, Cacao Extract, Tea Tree Leaf Water, Palmitoyl Tetrapeptide-7,
+          Palmitoyl Tripeptide-1, Fructan, Glyceryl Polymetha Krill, buckthorn fruit extract, ussian extract,
+           pasqueflower extract, ceramide 3, pro Phenylene Glycol, Hydrogenated Lecithin, Persimmon Leaf
+            Extract, Dipropylene Glycol, Grape Extract, Glyceres-20, Coffee Extract, Fuchsia Root Extract,
+             Safflower Extract, Green Tea Extract, Chestnut Bark Extract, Sodium Hyaluronate , Pyza H10
+              Grape Seed Sterol, 12- Academic Diol, Glyceryl Stearate, Olive Tree Leaf Extract, Spanish
+               Licorice Root Extract, Western Dandelion Leaf Extract, Oregano Leaf Extract, Palmitoyl
+                Tripeptide-5, Cypress Leaf Extract, cyclic willow bark extract, lactobacillus / bean
+                 fermentation extract, broiler bark extract, damask rose extract, rock stone root extract,
+                  yacetylhexapeptide-8, caper tripeptide-1, palmitoyl oligomatide, Oligopeptide-2,
+                   Oligopeptide-2, Palmitoyl Pentareptide 4`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0089/medi-peel-pore-tightening-serum-1.avif',
+      'assets/product-images/0089/medi-peel-pore-tightening-serum-2.avif',
+      'assets/product-images/0089/medi-peel-pore-tightening-serum-3.avif',
+    ],
+    price: 32,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 81,
+  },
+  {
+    id: '0090',
+    brandName: `MEDI-PEEL`,
+    productName: 'Herbal Peel Tox Wash Off Type Cream Mask',
+    description: `MEDI-PEEL Herbal Peel Tox Wash Off Type Cream Mask - A washable creamy peeling mask
+     removes dead skin cells and other impurities that cause skin problems, restores bright and smooth
+      skin with 41 types of medicinal herbs .`,
+    ingredients: `Water, Glycerin, Dipropylene Glycol, Green Tea Powder, Bentonite, Cetyl Ethyl
+     Hexanoate, Polysorbate 60, Evergreen Mugwort Powder, Matricaria Extract, BACOPA MONNIERA
+      (WATER HYSSOP) EXTRACT , Grape callus culture extract, Lotus callus culture extract,
+       Green tea callus culture extract, Licorice root extract, Snow riding extract (DIOSCOREA
+         VILLOSA), Mud mushroom extract, Mulberry bark Extract, Peony Extract, Golden Extract,
+          Green Tea Extract, Centella Extract, Matricaria Flower Extract, Spanish Licorice Root
+           Extract, Rosemary Leaf Extract, HAMAMELIS VIRGINIANA (WITCH HAZEL) EXTRACT, Salvia
+            Leaf Extract , Tea Tree Extract, Eucalyptus Leaf Extract, White Willow bark extract,
+             Marigold extract, Barley malt extract, Common jasmine extract, Water mint leaf extract,
+              Rosemary extract, Mulberry root extract, Thyme extract, Black bean extract, Black
+               Sesame Extract, Asianticoside, Madecassid Acid, Centella Leaf Extract, Western
+                Dandelion Leaf Extract, Ginkgo Leaf Extract, Chromium Oxide Green, Allantoin,
+                 Sodium Hyaluronate, Acetyl Hexapeptide-8, Copper Tripeptide-1, Palmitoyl
+                  Pentapeptide-4, Tripeptide-1, Palmitoyl Tripeptide-1, Hexapeptide-9,
+                   Nona Peptide- 1, Palmitoyl tetrapeptide 7, acetyl octapeptide-3, Tapepeptide-17,
+                    Al H-Ligopeptide-1, Al H-polypeptide-11, Sorbitan Stearate, Stearic Acid,
+                     Sodium Acetate, Sodium Acryloyl Dimethyl Taurate Copolymer, Isohexadecane,
+                      Plysorbate 80, Glycerin, Caprylyl Glycol, Hydrolyzed Sponge`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0090/medi-peel-herbal-mask-1.avif',
+      'assets/product-images/0090/medi-peel-herbal-mask-2.avif',
+      'assets/product-images/0090/medi-peel-herbal-mask-3.avif',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 14,
   },
   {
     id: '0100',
