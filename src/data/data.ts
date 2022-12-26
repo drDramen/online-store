@@ -4110,6 +4110,214 @@ export const products: Product[] = [
     availableAmount: 190,
   },
   {
+    id: '0134',
+    brandName: 'Drunk Elephant',
+    productName: 'C-Firma™ Fresh Day Serum',
+    description: `C-Firma™ Fresh Day Serum is designed to be mixed by you before its first use, which
+     maximizes the potency of its delicate (but powerful) ingredients while keeping the formula fresh.
+      This revolutionary vitamin C serum is packed with a powerful antioxidant complex of 15% l-ascorbic
+       acid, 0.5% ferulic acid, and 1% vitamin E to reveal a brighter, firmer, and more even-looking
+        complexion. Potently formulated with pumpkin ferment extract and sodium hyaluronate crosspolymer,
+         C-Firma™ helps to enzymatically dissolve surface dead skin cells as it hydrates and soothes.
+          The result is a noticeably diminished appearance of signs of aging and photodamage—replaced
+           by incredible radiance and luminosity.`,
+    ingredients: `Water/Aqua/Eau, Dimethyl Isosorbide, Ascorbic Acid, Laureth-23, Glycerin, Tocopherol,
+     Lactobacillus/Pumpkin Ferment Extract, Sclerocarya Birrea Seed Oil, Dipotassium Glycyrrhizate,
+      Glycyrrhiza Glabra (Licorice) Root Extract, Vitis Vinifera (Grape) Juice Extract, Ferulic Acid,
+       Phyllanthus Emblica Fruit Extract, Camellia Sinensis Leaf Extract, Lactobacillus/Punica
+        Granatum Fruit Ferment Extract, Propanediol, Gluconolactone, Sodium Hyaluronate Crosspolymer,
+         Sodium Hyaluronate, Oryza Sativa (Rice) Bran Extract, Glutamylamidoethyl Imidazole,
+          Tetrahydrobisdemethoxydiferuloylmethane, Tetrahydrodemethoxydiferuloylmethane,
+           Tetrahydrodiferuloylmethane, Pentylene Glycol, Caprylhydroxamic Acid, Leuconostoc/Radish Root
+            Ferment Filtrate, Sorbic Acid, Phenoxyethanol, Sodium Benzoate, Caprylyl Glycol, Chondrus
+             Crispus (Carrageenan) Extract, Ethylhexylglycerin`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0134/drunk-elephant-c-firma-1.avif',
+      'assets/product-images/0134/drunk-elephant-c-firma-2.avif',
+      'assets/product-images/0134/drunk-elephant-c-firma-3.avif',
+      'assets/product-images/0134/drunk-elephant-c-firma-4.avif',
+    ],
+    price: 78,
+    bestseller: true,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 86,
+  },
+  {
+    id: '0135',
+    brandName: 'Drunk Elephant',
+    productName: 'O-Bloos™ Rosi Drops',
+    description: `O-Bloos™ (the O stands for omegas) gives skin that flattering “nobody knows why you’re
+     flushed” flush. The foolproof, watercolor-light formula is buildable and flatters most skin, and
+      it’s delivered in concentrated drops that can be mixed into your other Drunk Elephant products.`,
+    ingredients: `Water/Aqua/Eau, Hydrogenated Polyisobutene, Glyceryl Oleate Citrate, Hydroxyethyl
+     Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glycerin, Ribes Nigrum (Black Currant) Seed Oil,
+      Sclerocarya Birrea Seed Oil, Theobroma Cacao (Cocoa) Extract, Caprylic/Capric Triglyceride, Palmitoyl
+       Tripeptide-1, Vitis Vinifera (Grape) Juice Extract, Caesalpinia Sappan Bark Extract, Sodium Lactate,
+        Palmitoyl Tetrapeptide-7, Linoleic Acid, Linolenic Acid, Sorbitan Isostearate, Camellia Sinensis Leaf
+         Extract, Propanediol, Sodium Hyaluronate Crosspolymer, Glutamylamidoethyl Imidazole, Silica, Butylene
+          Glycol, Tocopherol, Polysorbate 20, Carbomer, Xanthan Gum, Phenoxyethanol, Pentylene Glycol, Sodium
+           Benzoate, Sorbic Acid, Sodium Citrate, Caprylyl Glycol, Boron Nitride, Hexylene Glycol, Polysorbate
+            60, Ethylhexylglycerin, Tin Oxide`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0135/drunk-elephant-rosi-drops-1.avif',
+      'assets/product-images/0135/drunk-elephant-rosi-drops-2.avif',
+      'assets/product-images/0135/drunk-elephant-rosi-drops-3.avif',
+      'assets/product-images/0135/drunk-elephant-rosi-drops-4.avif',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 85,
+  },
+  {
+    id: '0136',
+    brandName: 'Drunk Elephant',
+    productName: 'T.L.C. Framboos™ Glycolic Night Serum',
+    description: `Formulated with our dream team of glycolic, tartaric, lactic, citric, and salicylic
+     acids and blended with raspberry extract and horse chestnut, T.L.C. Framboos™ curbs excess oiliness
+      as it reveals greater clarity and luminosity. It also enhances the performance of other products
+       by clearing the way for maximum absorption. T.L.C. Framboos™ sinks in easily and delivers an
+        effective level of chemical exfoliation without harsh side effects, like dryness or sensitization.
+         Go from a drab complexion to an absolutely luminous one, practically overnight.`,
+    ingredients: `Water/Aqua/Eau, Glycolic Acid, Butylene Glycol, Glycerin, Sodium Hydroxide,
+     Lactic Acid, Salicylic Acid, Tartaric Acid, Vitis Vinifera (Grape) Juice Extract, Aloe
+      Barbadensis Leaf Juice, Opuntia Ficus-Indica Extract, Aesculus Hippocastanum (Horse Chestnut)
+       Seed Extract, Camellia Sinensis Leaf Extract, Rubus Idaeus (Raspberry) Fruit Extract, Saccharomyces
+        Cerevisiae Extract, Buddleja Davidii Meristem Cell Culture, Sclerocarya Birrea Seed Oil,
+         Sodium Hyaluronate Crosspolymer, Allantoin, Hydroxyethylcellulose, Galactoarabinan, Propanediol,
+          Citric Acid, Tetrasodium Glutamate Diacetate, Xanthan Gum, Hexylene Glycol, Phenoxyethanol,
+           Sodium Benzoate, Caprylyl Glycol, Potassium Sorbate, Pentylene Glycol, Sodium Carbonate,
+            Sodium Chloride, Disodium Phosphate, Sodium Phosphate, Ethylhexylglycerin`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0136/drunk-elephant-glycolic-night-serum-1.avif',
+      'assets/product-images/0136/drunk-elephant-glycolic-night-serum-2.avif',
+      'assets/product-images/0136/drunk-elephant-glycolic-night-serum-3.avif',
+      'assets/product-images/0136/drunk-elephant-glycolic-night-serum-4.avif',
+    ],
+    price: 134,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 20,
+  },
+  {
+    id: '0137',
+    brandName: 'Drunk Elephant',
+    productName: 'B-Hydra™ Intensive Hydration Serum',
+    description: `Formulated with pro-vitamin B5 and pineapple ceramide, B-Hydra™
+     delivers steady hydration throughout the day, leaving the skin looking healthy and more
+      illuminated. Blended with a unique lentil-apple-and-watermelon complex, B-Hydra™ helps
+       diminish drabness, dryness, and the appearance of fine lines. Your complexion
+        will appear brighter and more youthful upon every application.`,
+    ingredients: `Water/Aqua/Eau, Coconut Alkanes, Ammonium Acryloyldimethyltaurate/VP Copolymer,
+     Glycerin, Pentylene Glycol, Sclerocarya Birrea Seed Oil, Wheat Amino Acids, Ananas Sativus
+      (Pineapple) Fruit Extract, Berberis Vulgaris Root Extract, Citrullus Lanatus (Watermelon)
+       Fruit Extract, Lens Esculenta (Lentil) Fruit Extract, Pyrus Malus (Apple) Fruit Extract,
+        Coco-Caprylate/Caprate, Panthenol, Sodium PCA, Sodium Hyaluronate Crosspolymer,
+         Dipotassium Glycyrrhizate, Niacinamide, Cyclodextrin, Sodium Hyaluronate, Sodium
+          Lactate, Phenoxyethanol, Hydroxyproline, Trisodium Ethylenediamine Disuccinate,
+           Citric Acid, Caprylyl Glycol, Chlorphenesin, Ethylhexylglycerin`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0137/drunk-elephant-hydra-serum-1.avif',
+      'assets/product-images/0137/drunk-elephant-hydra-serum-2.avif',
+      'assets/product-images/0137/drunk-elephant-hydra-serum-3.avif',
+      'assets/product-images/0137/drunk-elephant-hydra-serum-4.avif',
+    ],
+    price: 48,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 60,
+  },
+  {
+    id: '0138',
+    brandName: 'Drunk Elephant',
+    productName: 'Protini™ Powerpeptide Resurf Serum',
+    description: `With its ultra-concentrated blend of 11 peptides, Protini™ Powerpeptide
+     Resurf Serum delivers plump, bouncy skin while targeting a dull, uneven complexion.
+      The appearance of fine lines, sun damage, and enlarged pores is improved and glow is
+       restored, while powerful water-boosting ingredients (such as snow mushroom extract,
+         sodium hyaluronate, and sodium PCA) replenish hydration levels. Antioxidant-rich,
+          nonfragrant plant oils and vitamins (tocotrienols, squalane, green tea seed oil,
+             and marula oil) soothe while adding a touch of lightweight moisture to skin.  `,
+    ingredients: `Water/Aqua/Eau, Glycerin, Lactic Acid, Dicaprylyl Carbonate, Squalane, Sodium
+     Hydroxide, Glycine Max (Soybean) Seed Extract, Sclerocarya Birrea Seed Oil, Camellia
+      Sinensis Seed Oil, Sodium PCA, Caprylic/Capric Triglyceride, Borago Officinalis Seed Oil,
+       Tremella Fuciformis Polysaccharide, Tocotrienols, Sh-Oligopeptide-1, Sh-Oligopeptide-2,
+        Sh-Polypeptide-1, Sh-Polypeptide-9, Sh-Polypeptide-11, Copper Palmitoyl Heptapeptide-14,
+         Heptapeptide-15 Palmitate, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-1, Palmitoyl
+          Tripeptide-38, Palmitoyl Hexapeptide-12, Tripeptide-1, Pyrus Malus (Apple) Fruit Extract,
+           Propanediol, Sodium Hyaluronate, Panthenol, Sodium Hyaluronate Crosspolymer, Sodium
+            Lactate, PCA, Alanine, Arginine, Glycine, Histidine, Isoleucine, Phenylalanine,
+             Proline, Serine, Threonine, Valine, Adenosine, Nymphaea Alba Root Extract,
+              Bacillus/Folic Acid Ferment Filtrate Extract, Symphytum Officinale Callus
+               Culture Extract, Dextran, Oryza Sativa (Rice) Bran Oil, Linoleic Acid,
+                Linolenic Acid, Butylene Glycol, Acetyl Glutamine, Coconut Alkanes,
+                 Coco-Caprylate/Caprate, Pentylene Glycol, Isomalt, Lecithin, Xanthan Gum,
+                  Aspartic Acid, Phytosphingosine, Phospholipids, Glycine Soja (Soybean)
+                   Sterols, Tocopherol, Citric Acid, Lactic Acid/Glycolic Acid Copolymer,
+                    Polyvinyl Alcohol, Phenoxyethanol, Sodium Benzoate, Hydroxypropyl Cyclodextrin,
+                     Polysorbate 20, Caprylyl Glycol, Phenylpropanol, Chlorphenesin, Carbomer,
+                      Glyceryl Caprylate, Ethylhexylglycerin`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0138/drunk-elephant-protiti-serum-1.avif',
+      'assets/product-images/0138/drunk-elephant-protiti-serum-2.avif',
+      'assets/product-images/0138/drunk-elephant-protiti-serum-3.avif',
+      'assets/product-images/0138/drunk-elephant-protiti-serum-4.avif',
+    ],
+    price: 82,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 28,
+  },
+  {
+    id: '0139',
+    brandName: 'Drunk Elephant',
+    productName: 'Protini™ Polypeptide Cream',
+    description: `Protini’s proprietary formula restores younger, revived-looking skin,
+     almost from the first application. Lines, wrinkles, and signs of sun damage appear
+      reduced, and skin feels strengthened and moisturized.`,
+    ingredients: `Water/Aqua/Eau, Dicaprylyl Carbonate, Glycerin, Cetearyl Alcohol,
+     Cetearyl Olivate, Sorbitan Olivate, Sclerocarya Birrea Seed Oil, Bacillus/Folic
+      Acid Ferment Extract, Nymphaea Alba Root Extract, sh-Oligopeptide-1, sh-Oligopeptide-2,
+       sh-Polypeptide-1, sh-Polypeptide-9, sh-Polypeptide-11, Copper Palmitoyl Heptapeptide-14,
+        Heptapeptide-15 Palmitate, Palmitoyl Tetrapeptide-7, Palmitoyl Tripeptide-1, Alanine,
+         Arginine, Glycine, Histidine, Isoleucine, Phenylalanine, Proline, Serine, Threonine,
+          Valine, Acetyl Glutamine, Coconut Alkanes, Coco-Caprylate/Caprate, Sodium Hyaluronate,
+           Aspartic Acid, Linoleic Acid, Linolenic Acid, Lecithin, Butylene Glycol, Polyvinyl
+            Alcohol, Sodium Lactate, Sodium PCA, PCA, Sorbitan Isostearate, Carbomer, Polysorbate
+             20, Polysorbate 60, Lactic Acid/Glycolic Acid Copolymer, Hydroxyethyl Acrylate/Sodium
+              Acryloyldimethyl Taurate Copolymer, Xanthan Gum, Isomalt, 1,2-Hexanediol, Caprylyl
+               Glycol, Chlorphenesin, Phenoxyethanol, Tocopherol, Sodium Benzoate, Phenylpropanol,
+                Glyceryl Caprylate, Symphytum Officinale Callus Culture Extract`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0139/drunk-elephant-protini-cream-1.avif',
+      'assets/product-images/0139/drunk-elephant-protini-cream-2.avif',
+      'assets/product-images/0139/drunk-elephant-protini-cream-3.avif',
+      'assets/product-images/0139/drunk-elephant-protini-cream-4.avif',
+    ],
+    price: 68,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 93,
+  },
+  {
     id: '0200',
     brandName: 'Youth to the People',
     productName: 'Superfood Cleanser',
