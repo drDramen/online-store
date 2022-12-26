@@ -4318,6 +4318,156 @@ export const products: Product[] = [
     availableAmount: 93,
   },
   {
+    id: '0140',
+    brandName: 'Drunk Elephant',
+    productName: 'Lala Retro™ Whipped Cream',
+    description: `Lala Retro™ is a whipped dream-come-true for tired, dry skin. This
+     multifaceted rescue cream, infused with six African oils and a plant ceramide complex,
+      provides replenishing barrier support by reinforcing skin’s acid mantle and defending
+       against the effects of everyday stressors. Sodium hyaluronate crosspolymer easily soaks
+        in to release intense hydration. In addition, antioxidant-rich fermented green tea
+         helps combat signs of aging. Loaded with omega acids, Lala helps skin retain long-lasting
+          moisture, forming a protective layer that allows skin to function at its optimal level.`,
+    ingredients: `Water/Aqua/Eau, Glycerin, Caprylic/Capric Triglyceride, Isopropyl Isostearate,
+     Pseudozyma Epicola/Camellia Sinensis Seed Oil/Glucose/Glycine Soja (Soybean) Meal/Malt
+      Extract/Yeast Extract Ferment Filtrate, Glyceryl Stearate SE, Cetearyl Alcohol, Palmitic
+       Acid, Stearic Acid, Pentylene Glycol, Plantago Lanceolata Leaf Extract, Adansonia Digitata
+        Seed Oil, Citrullus Lanatus (Watermelon) Seed Oil, Passiï¬‚ora Edulis Seed Oil, Schinziophyton
+         Rautanenii Kernel Oil, Sclerocarya Birrea Seed Oil, Polyglyceryl-6 Ximenia Americana Seedate,
+          Cholesterol, Ceramide AP, Ceramide EOP, Sodium Hyaluronate Crosspolymer, Ceramide NP,
+           Phytosphingosine, Ceteareth-20, Trisodium Ethylenediamine Disuccinate, Tocopherol,
+            Sodium Lauroyl Lactylate, Sodium Hydroxide, Citric Acid, Carbomer, Xanthan Gum,
+             Caprylyl Glycol, Chlorphenesin, Phenoxyethanol, Ethylhexylglycerin`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0140/drunk-elephant-lala-cream-1.avif',
+      'assets/product-images/0140/drunk-elephant-lala-cream-2.avif',
+      'assets/product-images/0140/drunk-elephant-lala-cream-3.avif',
+      'assets/product-images/0140/drunk-elephant-lala-cream-4.avif',
+    ],
+    price: 60,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 218,
+  },
+  {
+    id: '0141',
+    brandName: 'Drunk Elephant',
+    productName: 'Virgin Marula Facial Oil',
+    description: `Straight from the pip of the marula fruit, our pure, unrefined oil is virtually
+     untouched by any chemical or fragrance, natural or synthetic. This super-absorbable oil will
+      quickly sink in and diminish the look of fine lines and wrinkles. Appropriate for all skin,
+       including the most sensitive. Our marula oil contains greater concentrations of polyphenols
+        than dark chocolate or green or black teas, which means a powerful antioxidant defense
+         against pollution and damaging environmental free radicals. `,
+    ingredients: `100% Unrefined Sclerocarya Birrea (Marula) Kernel Oil`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0141/drunk-elephant-marula-oil-1.avif',
+      'assets/product-images/0141/drunk-elephant-marula-oil-2.avif',
+      'assets/product-images/0141/drunk-elephant-marula-oil-3.avif',
+      'assets/product-images/0141/drunk-elephant-marula-oil-4.avif',
+    ],
+    price: 68,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Oil',
+    for: 'Face',
+    availableAmount: 37,
+  },
+  {
+    id: '0142',
+    brandName: 'Drunk Elephant',
+    productName: 'Bouncy Brightfacial™',
+    description: `Skin-soothing azelaic acid and exfoliating salicylic acid work together
+     to correct the appearance of blemishes and discoloration while improving skin’s texture
+      and tone. A triple-antioxidant brightening complex targets dark spots, hyperpigmentation,
+       visible signs of photodamage, and post-acne marks to promote dramatically more radiant and
+        clearer-looking skin. Moisturizing plant oils—marula, chia, fermented green tea,
+         and pumpkin seed—replenish, while ceramides, niacinamide, tocotrienols, and fatty acids
+          strengthen and support a healthy skin barrier. All of which adds up to brighter,
+           clearer, and happier skin—and mood.`,
+    ingredients: `Water/Aqua/Eau, Azelaic Acid, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,
+     Salicylic Acid, Glycerin, Cucurbita Pepo (Pumpkin) Seed Oil, Salvia Hispanica Seed Oil, Sclerocarya
+      Birrea Seed Oil, Pentylene Glycol, Diglucosyl Gallic Acid, Niacinamide, Phloretin, Allantoin, Ferulic Acid,
+       Dipotassium Glycyrrhizate, Tremella Fuciformis Sporocarp Extract, Behenic Acid, Glutathione, Linoleic Acid,
+        Tocotrienols, Thioctic Acid, Linolenic Acid, Ergothioneine, Cholesterol, Ceramide NS, Ceramide AP,
+         Ceramide EOP, Ceramide EOS, Ceramide NP, Sodium Hyaluronate Crosspolymer, Amylopectin, Ellagic Acid,
+          Pseudozyma Epicola/Camellia Sinensis Seed Oil Ferment Extract Filtrate, Caprooyl Phytosphingosine,
+           Caprooyl Sphingosine, Squalane, Ascorbyl Palmitate, Acetyl Glucosamine, Punica Granatum Extract,
+            Dextrin, Sebacic Acid, Oryza Sativa (Rice) Bran Oil, Tocopherol, Ceteareth-25, Phenoxyethanol,
+             Sorbitan Isostearate, Polydextrose, Cetyl Alcohol, Caprylyl Glycol, Chlorphenesin,
+              Polysorbate 60, Ethylhexylglycerin`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0142/drunk-elephant-bouncy-brightfacial-1.avif',
+      'assets/product-images/0142/drunk-elephant-bouncy-brightfacial-2.avif',
+      'assets/product-images/0142/drunk-elephant-bouncy-brightfacial-3.avif',
+      'assets/product-images/0142/drunk-elephant-bouncy-brightfacial-4.avif',
+    ],
+    price: 68,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Exfoliating',
+    for: 'Face',
+    availableAmount: 19,
+  },
+  {
+    id: '0143',
+    brandName: 'Drunk Elephant',
+    productName: 'Wonderwild™ Miracle Midi',
+    description: `Restorative plant butters—marula, cupuaçu, mango, and shea—help shield skin from
+     environmental stressors, while antioxidant- and fatty-acid-rich plant oils (such as meadowfoam,
+       pumpkin, green tea seed, kukui, and rose hip) replenish vital lipids to deeply nourish and
+        strengthen a temporarily compromised skin barrier, bringing skin back to its healthiest state.`,
+    ingredients: `Sclerocarya Birrea Seed Oil, Cocos Nucifera (Coconut) Oil, Hydrogenated Vegetable Oil,
+     Cucurbita Pepo (Pumpkin) Seed Oil, Butyrospermum Parkii (Shea) Butter, Sclerocarya Birrea Seed Butter,
+      Mangifera Indica (Mango) Seed Butter, Theobroma Grandiflorum Seed Butter, Camellia Sinensis Seed
+       Oil, Rosa Canina Fruit Oil, Aleurites Moluccanus Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil,
+        Limnanthes Alba (Meadowfoam) Seed Oil, Oryza Sativa (Rice) Bran Oil, Persea Gratissima (Avocado)
+         Oil, Helianthus Annuus (Sunflower) Seed Wax, Vitis Vinifera (Grape) Seed Oil`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0143/drunk-elephant-wonderwild-mask-1.avif',
+      'assets/product-images/0143/drunk-elephant-wonderwild-mask-2.avif',
+      'assets/product-images/0143/drunk-elephant-wonderwild-mask-3.avif',
+      'assets/product-images/0143/drunk-elephant-wonderwild-mask-4.avif',
+    ],
+    price: 36,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Oil',
+    for: 'Face',
+    availableAmount: 35,
+  },
+  {
+    id: '0144',
+    brandName: 'Drunk Elephant',
+    productName: 'A-Gloei™ Maretinol Oil',
+    description: `A gentle dose of retinol clarifies, refines, and smooths uneven, blemished, textured,
+     or aging skin. It also evens out tone, reducing discoloration and boosting skin’s natural glow,
+      while ceramides replenish the skin barrier and improve elasticity. Antioxidant- and omega-rich
+       virgin marula oil (which makes up 95% of the formula!) replenishes essential moisture and
+        reduces the appearance of redness, bringing skin back to its healthiest, most youthful state.`,
+    ingredients: `Sclerocarya Birrea Seed Oil, Glycine Soja (Soybean) Oil, Retinol, Tocopherol,
+     Ceramide AP, Ceramide NP`,
+    starIngredient: 'Retinol',
+    pics: [
+      'assets/product-images/0144/drunk-elephant-retinol-1.avif',
+      'assets/product-images/0144/drunk-elephant-retinol-2.avif',
+      'assets/product-images/0144/drunk-elephant-retinol-3.avif',
+      'assets/product-images/0144/drunk-elephant-retinol-4.avif',
+    ],
+    price: 72,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 101,
+  },
+  {
     id: '0200',
     brandName: 'Youth to the People',
     productName: 'Superfood Cleanser',
