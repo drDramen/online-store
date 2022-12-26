@@ -2176,6 +2176,221 @@ export const products: Product[] = [
     availableAmount: 12,
   },
   {
+    id: '0075',
+    brandName: `MEDI-PEEL`,
+    productName: 'Bor-Tox Peptide Ampoule',
+    description: `Multi-peptide anti-aging serum that significantly reduces
+     the signs of aging. It smoothes wrinkles and improves skin texture almost
+      instantly without the actual use of Botox or surgery. Smoothes all types
+       of wrinkles: fine lines, wrinkles around the eyes, wrinkles on the forehead,
+        wrinkles on the neck, nasolabial and purse-string wrinkles - all in one concentrated serum.`,
+    ingredients: `Hydrolyzed decollagen, purified water, butylene glycol, hydrogenated
+     polyisobutene, 1,2-hexane diol polyacrylamide, lactobacillus / pumpkin fermented
+      extract, lactobacillus / soybean fermented extract, C13 -14 Isoparaffin,
+       Polysorbate 20, Al Nag, Lactobacillus / Pomegranate Fermented Extract, Lactobacillus
+        / Wasabi Root Fermented Extract, Sodium Hyaluronate, Ethyl Hexyl Glycerin, Yeast /
+         Grape Fermented Extract, Cabo Mercer, Allantoin, Acrylate / C10-30 Alkyl Acrylate
+          Cross-Polymer Yeast Fermentation Filtrate, Laureth-7, BP Bundled Seafood, Disodium
+           Ideti, Adenosine, Edelweiss Callus Culture Extract, Fertilizer, Hydroroll Rise
+            de elastin gardenia extract, thyme root extract um, chaga mushroom extract.
+             Oil Palm Oil, Copper Tripeptide-1 (10ppb), Acetyl Hexapeptide-8 (5ppb),
+              Oligopeptide-32 (5ppb), Oligopeptide-29 (1ppb), Palmitoyl Pentapeptide-4 (1ppb)`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0075/medi-peel-bortox-serum-1.jpg',
+      'assets/product-images/0075/medi-peel-bortox-serum-2.jpg',
+      'assets/product-images/0075/medi-peel-bortox-serum-3.jpg',
+    ],
+    price: 32,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 428,
+  },
+  {
+    id: '0076',
+    brandName: `MEDI-PEEL`,
+    productName: 'Vitamin Dr.Body Lotion',
+    description: `Nourishing vitamin body lotion MEDI-PEEL Vitamin Dr.Body Lotion deeply nourishes
+     and softens, accelerates the regeneration of skin cells, improves color, tones, quickly
+      absorbs into the skin and does not leave a sticky layer on the surface.`,
+    ingredients: `Water, Hippophae Rhamnoides Water(10%), Caprylic/Capric Triglyceride,
+     Ethylhexyl Stearate, Glycerin, Propanediol, Cyclomethicone, Hydrogenated Poly(C6-14 Olefin),
+      Dipropylene Glycol, Polyglyceryl-6 Stearate, Butyrospermum Parkii (Shea) Butter, 1,2-Hexanediol,
+       Trehalose, Cetearyl Alcohol, Butylene Glycol, Glyceryl Stearate, Palmitic Acid, Stearic Acid,
+        Polyglyceryl-6 Behenate, Carbomer, Tromethamine, Panthenol (1,010ppm), Ethylhexylglycerin,
+         Pentylene Glycol, Caprylyl Glycol, Disodium EDTA, Hydrolyzed Jojoba Esters, Camellia Sinensis
+          Leaf Extract, Hydrogenated Lecithin, Agrimonia Eupatoria Extract, Polyglyceryl-10 Stearate,
+           Adenium Obesum Leaf Cell Extract, Dipotassium Glycyrrhizate, Biosaccharide Gum-1, Centella
+            Asiatica Extract, Houttuynia Cordata Extract, Perilla Frutescens Leaf Extract, Salvia
+             Hispanica Seed Extract, Citrus Unshiu Fruit Extract, Sodium Ascorbyl Phosphate (5ppm),
+              Sodium Hyaluronate, Beta-Glucan, Lactobacillus/Punica Granatum Fruit Ferment Extract,
+               Lactobacillus/Soybean Ferment Extract, Saccharomyces/Barley Seed Ferment Filtrate,
+                Lactobacillus/Pear Juice Ferment Filtrate, Niacinamide (1ppm), Pancratium Maritimum
+                 Extract, Phosphatidylcholine, Ascorbic Acid (100ppb), Folic Acid (100ppb), Biotin
+                  (100ppb), Pyridoxine (100ppb), Ceramide NP, Tocopherol (10ppb), Cyanocobalamin
+                   (10ppb), Glycine, Glutamic Acid, Linoleic Acid (1ppb), Serine, Thiamine HCl
+                    (1ppb), Beta-Carotene (1ppb), Riboflavin (1ppb), Inositol, Lysine, Alanine,
+                     Arginine, Threonine, Proline, Yellow 4 (CI 19140), Blue 1 (CI 42090),
+                      Fragrance, Limonene, Linalool, Alpha-Isomethyl Ionone, Citral`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0076/medi-peel-body-lotion-1.jpg',
+      'assets/product-images/0076/medi-peel-body-lotion-2.jpg',
+      'assets/product-images/0076/medi-peel-body-lotion-3.jpg',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 317,
+  },
+  {
+    id: '0077',
+    brandName: `MEDI-PEEL`,
+    productName: 'Silky Shining Salt Body Wash',
+    description: `Silky Shining Salt Body Wash exfoliating gel-body scrub cleanses
+     the skin of various impurities without causing dryness and damage. Small particles of the
+      scrub gently exfoliate, smooth and restore smoothness to the skin, while the delicate
+       texture deeply nourishes and softens.`,
+    ingredients: `Water, Ammonium Laureth Sulfate, Glycerin, Cocamidopropyl Betaine, Acrylates
+     Copolymer, Dimethicone, Arginine, Butylene Glycol, Sodium Chloride(5,000 ppm), Limnanthes
+      Alba (Meadowfoam) Seed Oil, Rosa Canina Fruit Oil, Argania Spinosa Kernel Oil, Canola Oil,
+       Helianthus Annuus (Sunflower) Seed Oil, Prunus Cerasus (Bitter Cherry) Fruit Extract,
+        Tuber Melanosporum Extract, Camellia Sinensis Leaf Extract, Chamomilla Recutita (Matricaria)
+         Flower Extract, Centella Asiatica Extract, Lavandula Angustifolia (Lavender) Flower Extract,
+          Aloe Barbadensis Leaf Extract, Pinus Palustris Leaf Extract, Ulmus Davidiana Root Extract,
+           Oenothera Biennis (Evening Primrose) Flower Extract, Pueraria Lobata Root Extract,
+            Lycopodium Clavatum Extract, Equisetum Arvense Extract, Cryptomeria Japonica Leaf Extract,
+             Nelumbo Nucifera Leaf Extract, Saccharomyces Ferment, Nelumbium Speciosum Flower Extract,
+              Artemisia Annua Extract, Oryza Sativa (Rice) Extract, Vitis Vinifera (Grape) Seed Powder,
+               Xylitylglucoside, Anhydroxylitol, Xylitol, Glucose, Sodium Hyaluronate, Sodium Hyaluronate
+                Crosspolymer, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Hydrolyzed Sodium Hyaluronate,
+                 Sea Salt(100 ppm), Hydrated Silica, Titanium Dioxide(CI 77891), Papain, Polyquaternium-7,
+                  Laureth-20, Laureth-3, Disodium EDTA, Polyglyceryl-10 Stearate, 1,2-Hexanediol, Caprylyl
+                   Glycol, Pentylene Glycol, Hydroxyacetophenone, Ethylhexylglycerin, Sodium Benzoate,
+                    CI 17200, CI 14700, Fragrance`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0077/medi-peel-silky-shining-body-wash-1.jpg',
+      'assets/product-images/0077/medi-peel-silky-shining-body-wash-2.jpg',
+      'assets/product-images/0077/medi-peel-silky-shining-body-wash-3.jpg',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Body',
+    availableAmount: 110,
+  },
+  {
+    id: '0078',
+    brandName: `MEDI-PEEL`,
+    productName: 'Bakuchiol Miracle Firming Ampoule',
+    description: `Bakuchiol Miracle Firming Ampoule anti-aging facial serum with bakuchiol
+     extract solves a whole range of tasks. The product contains an ingredient that is a safe
+      analogue of retinol - bakuchiol. Due to this, the serum actively fights age-related skin changes.`,
+    ingredients: `Water, Caprylic/Capric Triglyceride, Glycerin, Butylene Glycol, Diglycerin, 1,2-Hexanediol,
+     Niacinamide, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Arginine, Polyglyceryl-10 Laurate,
+      Adenosine, Disodium EDTA, Sodium Hyaluronate, Polyquaternium-51, Bakuchiol(100 ppm), Carapa
+       Guaianensis Seed Oil, Xylitylglucoside, Lilium Candidum Callus Culture Extract, Anhydroxylitol,
+        Xylitol, Diospyros Kaki Leaf Extract, Vitis Vinifera (Grape) Fruit Extract, Hydrolyzed
+         Collagen, Coffea Arabica (Coffee) Seed Extract, Carthamus Tinctorius (Safflower) Flower
+          Extract, Polygonum Cuspidatum Root Extract, Zanthoxylum Piperitum Fruit Extract,
+           Castanea Crenata Shell Extract, Camellia Sinensis Leaf Extract, Glucose, Centella
+            Asiatica Root Extract, Aronia Melanocarpa Fruit Extract, Centella Asiatica Extract,
+             Centella Asiatica Leaf Extract, Resveratrol, Pinus Palustris Leaf Extract, Ulmus
+              Davidiana Root Extract, Pueraria Lobata Root Extract, Oenothera Biennis (Evening Primrose)
+               Flower Extract, Saccharomyces/Xylinum/Black Tea Ferment, Hydrolyzed Hyaluronic Acid,
+                Ethylhexylglycerin, Hexapeptide-9, Nonapeptide-1, Copper Tripeptide-1,
+                 Acetyl Hexapeptide-8, Sodium Acetylated Hyaluronate, Tripeptide-1,
+                  Palmitoyl Oligopeptide, Palmitoyl Pentapeptide-4, Palmitoyl Tetrapeptide-7,
+                   Palmitoyl Tripeptide-1, Palmitoyl Tripeptide-5, Acetyl Tetrapeptide-2,
+                    Madecassoside, Asiaticoside, Fragrance`,
+    starIngredient: 'Bakuchiol',
+    pics: [
+      'assets/product-images/0078/medi-peel-backuchiol-1.jpg',
+      'assets/product-images/0078/medi-peel-backuchiol-2.jpg',
+      'assets/product-images/0078/medi-peel-backuchiol-3.jpg',
+    ],
+    price: 33,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 68,
+  },
+  {
+    id: '0079',
+    brandName: `MEDI-PEEL`,
+    productName: 'Bio Intense Glutathione White Cream',
+    description: `The balanced composition of the product works complexly with the skin, gently brightens
+     pigmentation and evens out the tone of the face, and also fights age-related skin changes.
+      The cream has a pleasant light texture that is instantly absorbed, nourishes the skin for
+       a long time and does not roll down when applied on top of makeup.`,
+    ingredients: `Purified water, butylene glycol, caprylic/capric triglyceride, beeswax, niacinamide,
+     cetearyl alcohol, isononyl isononanoate, arachidyl alcohol, 1,2-hexanediol, polyglycerol
+      Lyl-3methylglucose distearate, behenyl alcohol, glyceryl stearate, betaine, simethicone,
+       arachidyl glucoside, cetearyl olivate, arginine, carbomer, sorbitan olivate, allantoin,
+        glycerin, panthenol, Tocopherol, xanthan gum, glutathione (600 ppm), dipotassium
+         glycyrrhizate, ethylhexylglycerin, disodium EDTA, sodium hyaluronate, glucose,
+          ethanol, mallow extract, lemon balm leaf extract, lady's mantle extract, western
+           Yarrow extract, Speedwell extract, Peppermint leaf extract, Sulfuric primrose extract,
+            Lycopodium extract, Horsetail extract, Ceramide NP, Hydrogenated Lecithin, Polyglyceryl-10 Stearate,
+             Sodium Hydroxide, Sodium Ascorbyl Phosphate, Biotin, Folic Acid, pyridoxine, cyanocobalamine,
+              linoleic acid, riboflavin, beta-carotene, thiamine HCL, copper tripeptide-1, acetylhexapeptide-8,
+               palmitoylpentapeptide-4, palmitoyltetrapeptide-7, palmi Toil Tripeptide-1, Fragrance`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0079/medi-peel-glutathione-1.jpg',
+      'assets/product-images/0079/medi-peel-glutathione-2.jpg',
+      'assets/product-images/0079/medi-peel-glutathione-3.jpg',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 26,
+  },
+  {
+    id: '0080',
+    brandName: `MEDI-PEEL`,
+    productName: 'Bor-Tox Peptide Cream',
+    description: `Anti-aging cream with the effect of Botox MEDI-PEEL Bortox Peptide Cream has the
+     strongest composition, which is aimed at skin rejuvenation. The cream tightens the oval of
+      the face, improves skin firmness and elasticity, and also has a nourishing and softening effect.
+       As an active ingredient, the product contains volufilin, which has the property of lipofilling,
+        which provides quick and noticeable results. The cream effectively smoothes existing wrinkles
+         and creases, tactilely tightens the skin and tightens the oval of the face.`,
+    ingredients: `Water, Butylene Glycol, Hydrogenated Polyisobutene, Behenyl Alcohol, Glycerin,
+     Butyrospermum Parkii (Shea) Butter, C14-22 Alcohols, Triethylhexanoin, 1,2-Hexanediol,
+      Stearic Acid, Palmitic Acid, Cetearyl Olivate, Ethylhexyl Palmitate, Caprylic/Capric Triglyceride,
+       Propanediol, Sorbitan Olivate, C12-20 Alkyl Glucoside, Simethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl
+        Taurate Copolymer, Tocopherol, Allantoin, Arginine, Trehalose, Panthenol, Sorbitan Isostearate, Leontopodium
+         Alpinum Callus Culture Extract, Saccharomyces/Rice Ferment Filtrate, Lactobacillus Ferment,
+          Lactobacillus/Pear Juice Ferment Filtrate, Lactobacillus/Punica Granatum Fruit Ferment Extract,
+           Lactobacillus/Soybean Ferment Extract, Saccharomyces/Barley Seed Ferment Filtrate, Lactococcus Ferment,
+            Chondrus Crispus Extract, Jania Rubens Extract, Anemarrhena Asphodeloides Root Extract (20 ppm), Malt Extract,
+             Hydrolyzed Collagen, Hydrolyzed Elastin, Sodium Hyaluronate , Copper Tripeptide-1(20 ppb),
+              Acetyl Hexapeptide-8(10 ppb), Palmitoyl Pentapeptide-4(10 ppb), Palmitoyl Tetrapeptide-7(5 ppb),
+               Palmitoyl Tripeptide-1(5 ppb), Ethylhexylglycerin, Adenosine, Polysorbate 60, Disodium EDTA, Fragrance`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0080/medi-peel-bortox-cream-1.jpg',
+      'assets/product-images/0080/medi-peel-bortox-cream-2.jpg',
+      'assets/product-images/0080/medi-peel-bortox-cream-3.jpg',
+    ],
+    price: 40,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 417,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
