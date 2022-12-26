@@ -2095,6 +2095,87 @@ export const products: Product[] = [
     availableAmount: 80,
   },
   {
+    id: '0072',
+    brandName: `Pyunkang Yul`,
+    productName: 'Low pH Pore Deep Cleansing Foam',
+    description: `Pyunkang Yul Low pH Pore Deep Cleansing Foam gently cleanses the skin of
+     various impurities without drying or causing irritation. The foam is suitable for
+      daily use even on the most sensitive skin.`,
+    ingredients: `Water, Sodium Cocoyl Isethionate, Glycerin, Coconut Acid, Polyquaternium-67,
+     1,2-Hexanediol, Sodium Isethionate, Sodium Methyl Cocoyl Taurate, Litsea Cubeba Fruit Oil,
+      Sodium Chloride, Disodium EDTA, Ethylhexylglycerin, Sodium Acetate, Butylene Glycol, Centella
+       Asiatica Extract, Portulaca Oleracea Extract, Camellia Sinensis Leaf Extract, Hamamelis
+        Virginiana Extract, Sodium Hyaluronate, Beta-Glucan, Melaleuca Alternifolia, Leaf Extract,
+         Phaseolus Angularis Seed Extract, Pentylene Glycol, Caprylyl Glycol, Diatomaceous Earth,
+          Isopropyl Alcohol, Citric Acid`,
+    starIngredient: 'Centella',
+    pics: [
+      'assets/product-images/0072/pyunkang-yul-cleansing-foam-1.jpg',
+      'assets/product-images/0072/pyunkang-yul-cleansing-foam-2.jpg',
+    ],
+    price: 33,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 78,
+  },
+  {
+    id: '0073',
+    brandName: `Pyunkang Yul`,
+    productName: 'Black Tea Time Reverse Eye Cream',
+    description: `Anti-aging eye cream Pyunkang Yul Black Tea Time Reverse Eye Cream is
+     a real find for the delicate skin around the eyes. A product with a balanced rich
+      composition day after day cares for delicate skin, fights age-related changes,
+       relieves dryness and improves elasticity.`,
+    ingredients: `Water, Glycerin, Methylpropanediol, Caprylic/Capric Triglyceride,
+     Cetearyl Alcohol, Macadamia Ternifolia Seed Oil, Hydrogenated Polydecene, Niacinamide,
+      Butyrospermum Parkii (Shea) Butter, Glyceryl Stearate, Beeswax, Saccharomyces/Xylinum/Black Tea Ferment,
+       Arachidyl Alcohol, Behenyl Alcohol, Arachidyl Glucoside, Phenyl Trimethicone, Cetearyl Glucoside,
+        Sorbitan Stearate, Cellulose Gum, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Sodium Acetylated
+         Hyaluronate, Hydroxyethylcellulose, Broussonetia Kazinoki Root Extract, Punica Granatum Fruit
+          Extract, Coptis Japonica Extract, Centella Asiatica Extract, Adenosine, Ceramide NP, Yeast
+           Beta-Glucan, Copper Tripeptide-1, Acetyl Hexapeptide-8, Hydrogenated Lecithin, Carbomer,
+            Butylene Glycol, Hydroxyacetophenone, Myrtus Communis Extract, Tropaeolum Majus Extract,
+             Tromethamine, Disodium EDTA, Octyldodecanol, Caprylyl Glycol, Ethylhexylglycerin, 1,2-Hexanediol`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0073/pyunkang-yul-eye-black-tea-cream-1.jpg',
+      'assets/product-images/0073/pyunkang-yul-eye-black-tea-cream-2.jpg',
+    ],
+    price: 38,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 47,
+  },
+  {
+    id: '0074',
+    brandName: `Pyunkang Yul`,
+    productName: 'Moisture Cream',
+    description: `Moisturizing and regenerating cream Pyunkang Yul Moisture Cream,
+     thanks to its composition, which does not contain fragrances, parabens, dyes and
+      alcohol, is suitable for daily care of even the most sensitive and problematic skin.`,
+    ingredients: `Coptis Japonica Root Extract, Butylene Glycol, Simmondsia Chinensis (Jojoba)
+     Seed Oil, Polyglyceryl-3 Methylglucose Distearate, Cetyl Ethylhexanoate, Butylene Glycol
+      Dicaprylate/ Dicaprate, Isohexadecane, 1,2-Hexanediol, Cetearyl Alcohol, Glyceryl Stearate,
+       Butyrospermum Parkii (Shea) Butter, Sodium Acrylate/Sodium Acryloyldimethyi Taurate
+        Copolymer, Polysorbate 80, Glyceryl Caprylate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0074/pyunkang-yul-moisture-cream-1.jpg',
+      'assets/product-images/0074/pyunkang-yul-moisture-cream-2.jpg',
+      'assets/product-images/0074/pyunkang-yul-moisture-cream-3.jpg',
+    ],
+    price: 41,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 12,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
