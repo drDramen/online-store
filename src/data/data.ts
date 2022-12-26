@@ -3972,6 +3972,145 @@ export const products: Product[] = [
   },
   {
     id: '0129',
+    brandName: 'Drunk Elephant',
+    productName: 'Jelly Cleanser',
+    description: `With a unique blend of mild surfactants and makeup-dissolving emollients,
+     this gentle formula rinses away without an ounce of residue, leaving skin clean and soft.`,
+    ingredients: `Water/Aqua/Eau, Glycerin, Cocamidopropyl Betaine, Coco-Glucoside,
+     Sodium Lauroyl Methyl Isethionate, Cocamidopropyl Hydroxysultaine, Sodium Methyl Oleoyl Taurate,
+      Propanediol, Aloe Barbadensis Leaf Extract, Glycolipids, Linoleic Acid, Linolenic Acid, Lauryl
+       Glucoside, Cucumis Melo Cantalupensis Fruit Extract, Sclerocarya Birrea Seed Oil, Dipotassium
+        Glycyrrhizate, Tocopherol, Citric Acid, Phenoxyethanol, Sodium Hydroxide, Sodium Benzoate,
+         Sodium Chloride, Polylysine`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0129/drunk-elephant-jelly-cleanser-1.jgp',
+      'assets/product-images/0129/drunk-elephant-jelly-cleanser-2.avif',
+    ],
+    price: 32,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 83,
+  },
+  {
+    id: '0130',
+    brandName: 'Drunk Elephant',
+    productName: 'Milki Micellar Water',
+    description: `Made with ultra-mild micelles, soothing vitamin E, replenishing fatty acids,
+     and antioxidant-rich, nonfragrant plant oils (marula, baobab, mongongo, wild melon seed,
+       ximenia seed, passionfruit, and sweet almond), E-Rase™ nourishes skin while dissolving
+        and lifting away makeup and dirt, is barrier-supportive, and may be used anytime
+         you need a quick skin refreshment. `,
+    ingredients: `Water/Aqua/Eau, Cetearyl Isononanoate, Propanediol, C15-19 Alkane,
+     Dicaprylyl Carbonate, Heptyl Undecylenate, Sclerocarya Birrea Seed Oil, Adansonia
+      Digitata Seed Oil, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Schinziophyton Rautanenii
+       Kernel Oil, Tocopherol, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Citrullus
+        Lanatus (Watermelon) Seed Oil, Ximenia Americana Seed Oil, Sodium Lauroyl Lactylate,
+         Ceramide AP, Ceramide EOP, Ceramide NP, Cholesterol, Phytosphingosine, Xanthan Gum,
+          Carbomer, Sodium Hydroxide, Phenoxyethanol, Potassium Sorbate, Polysorbate 20, Ethylhexylglycerin`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0130/drunk-elephant-milki-cleanser-1.avif',
+      'assets/product-images/0130/drunk-elephant-milki-cleanser-2.avif',
+      'assets/product-images/0130/drunk-elephant-milki-cleanser-3.avif',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 55,
+  },
+  {
+    id: '0131',
+    brandName: 'Drunk Elephant',
+    productName: 'Makeup Melting Butter',
+    description: `Skin-compatible Slaai™ effortlessly removes even water-resistant
+     formulations and is free of PEGs and essential oils. Formulated with antioxidant-rich
+      fruit extracts and oils to help soothe, plus a nourishing African oil blend of marula,
+       baobab, kalahari melon, mongongo, and ximenia, Slaai™ Makeup-Melting Butter Cleanser
+        cleanses and moisturizes without any irritants or sensitizers. Designed to be used
+         on dry skin, Slaai™ removes excess oil, grime, and makeup from skin. Adding water
+          activates Slaai™, transforming it into a milk that rinses cleanly, leaving behind a dewy glow.`,
+    ingredients: `Ethylhexyl Palmitate, Caprylic/Capric Triglyceride, Carthamus Tinctorius
+     (Safflower) Seed Oil, Lauryl Laurate, Polyglyceryl-3 Laurate, Polyhydroxystearic Acid,
+      Helianthus Annuus (Sunflower) Seed Wax, Polyglyceryl-10 Laurate, Sclerocarya Birrea Seed
+       Oil, Euterpe Oleracea Fruit Oil, Actinidia Chinensis (Kiwi) Fruit Extract, Fragaria
+        Ananassa (Strawberry) Seed Extract, Vaccinium Macrocarpon (Cranberry) Seed Oil,
+         Borago Officinalis Seed Oil, Adansonia Digitata Seed Oil, Polyglyceryl-2 Caprate,
+          Citrullus Lanatus (Watermelon) Seed Oil, Prunus Amygdalus Dulcis (Sweet Almond)
+           Oil, Schinziophyton Rautanenii Kernel Oil, Vaccinium Angustifolium (Blueberry)
+            Fruit Extract, Ximenia Americana Seed Oil, Tocopherol, Glycerin`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0131/drunk-elephant-melting-butter-1.avif',
+      'assets/product-images/0131/drunk-elephant-melting-butter-2.avif',
+      'assets/product-images/0131/drunk-elephant-melting-butter-3.avif',
+      'assets/product-images/0131/drunk-elephant-melting-butter-4.avif',
+    ],
+    price: 34,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 208,
+  },
+  {
+    id: '0132',
+    brandName: 'Drunk Elephant',
+    productName: 'Juju Bar',
+    description: `This multitasking bar is designed to effectively cleanse while gently
+     removing dead skin cells from the surface of the skin. Infused with a blend of thermal
+      mud, marula, bamboo, and superfruit, this unique formulation creates a creamy lather
+       that dissolves excess oil, pore-clogging surface debris, and impurities while gently
+        exfoliating dead skin cells. Skin feels softer and smoother with improved clarity.`,
+    ingredients: `Sodium Coco-Sulfate, Disodium Lauryl Sulfosuccinate, Triticum Vulgare (Wheat)
+     Starch, Cetearyl Alcohol, Bambusa Vulgaris Leaf/Stem Extract, Paraffin, Sclerocarya Birrea
+      Seed Oil, Water/Aqua/Eau, Heilmoor Clay, Titanium Dioxide (CI 77891), Helianthus Annuus
+       (Sunflower) Seed Oil, Euterpe Oleracea Fruit Extract, Lycium Barbarum Fruit Extract`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0132/drunk-elephant-juju-bar-1.avif',
+      'assets/product-images/0132/drunk-elephant-juju-bar-2.avif',
+      'assets/product-images/0132/drunk-elephant-juju-bar-3.avif',
+      'assets/product-images/0132/drunk-elephant-juju-bar-4.avif',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 208,
+  },
+  {
+    id: '0133',
+    brandName: 'Drunk Elephant',
+    productName: 'Pekee Bar',
+    description: `Infused with a blend of blueberry extract, marula oil, and honey, Pekee Bar™ tones
+     and promotes moisture retention for skin that feels firmer and more elastic. Pekee Bar™ is
+      totally fragrance- and soap-free and formulated with only skin-friendly ingredients designed
+       to cleanse and calm the skin.`,
+    ingredients: `Sodium Coco-Sulfate, Disodium Lauryl Sulfosuccinate, Triticum Vulgare (Wheat)
+     Starch, Cetearyl Alcohol, Paraffin, Sclerocarya Birrea Seed Oil, Water/Aqua/Eau,
+      Titanium Dioxide (CI 77891), Honey/Mel/Miel, Glycerin, Vaccinium Angustifolium (Blueberry) Fruit Extract`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0133/drunk-elephant-pekee-bar-1.avif',
+      'assets/product-images/0133/drunk-elephant-pekee-bar-2.avif',
+      'assets/product-images/0133/drunk-elephant-pekee-bar-3.avif',
+      'assets/product-images/0133/drunk-elephant-pekee-bar-4.avif',
+    ],
+    price: 28,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 190,
+  },
+  {
+    id: '0200',
     brandName: 'Youth to the People',
     productName: 'Superfood Cleanser',
     description: `The daily green juice cleanse for your face.
@@ -3999,10 +4138,10 @@ export const products: Product[] = [
         Chlorophyllin-Copper Complex (CI 75810)`,
     starIngredient: 'Vitamin C',
     pics: [
-      'assets/product-images/0001/yttp-SuperfoodCleanser-1.jpg',
-      'assets/product-images/0001/yttp-SuperfoodCleanser-2.jpg',
-      'assets/product-images/0001/yttp-SuperfoodCleanser-3.jpg',
-      'assets/product-images/0001/yttp-SuperfoodCleanser-4.jpg',
+      'assets/product-images/0200/yttp-SuperfoodCleanser-1.jpg',
+      'assets/product-images/0200/yttp-SuperfoodCleanser-2.jpg',
+      'assets/product-images/0200/yttp-SuperfoodCleanser-3.jpg',
+      'assets/product-images/0200/yttp-SuperfoodCleanser-4.jpg',
     ],
     price: 36,
     bestseller: true,
