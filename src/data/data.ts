@@ -1733,6 +1733,170 @@ export const products: Product[] = [
     availableAmount: 28,
   },
   {
+    id: '0059',
+    brandName: `Dear, Klairs`,
+    productName: 'Vitamin C Drop',
+    description: `Dear Vitamin C Serum 5%, Klairs Vitamin Drop Hypoallergenic Vitamin C
+     Serum contains Vitamin C to help brighten skin while also providing anti-aging protection.`,
+    ingredients: `Water, Propylen Glycol, Ascorbic Acid, Hydroxyethylcellulose,
+     Centella Asiatica Extract, Citrus Junos Fruit Extract, Illicium Verum(Anise)
+      Fruit Extract, Citrus Paradisi(Grapefruit) Fruit Extract, Nelumbium Speciosum
+       Flower Extract, Paeonia Suffruticosa Root Extract, Scutellaria Baicalensis Root
+        Extract, Polysorbate 60, Brassica Oleracea Italica (Broccoli) Extract, Chaenomeles
+         Sinensis Fruit Extract, Citrus Aurantium Dulcis (Orange) Oil, Sodium Acrylate/Sodium
+          Acryloyldimethyl Taurate Copolymer, Disodium EDTA, Lavandula Angustifolia (Lavender)
+           Oil, Camellia Sinensis Callus Culture Extract, Larix Europaea Wood Extract,
+            Chrysanthellum Indicum Extract, Rheum Palmatum Root Extract, Asarum Sieboldi
+             Root Extract, Quercus Mongolia Leaf Extract, Persicaria Hydropiper Extract,
+              Corydalis Turtschaninovii Root Extract, Coptis Chinensis Root Extract, Magnolia
+               Obovata Bark Extract, Lysine HCL, Proline, Sodium Ascorbyl Phosphate, Acetyl
+                Methionine, Theanine, Lecithin, Acetyl Glutamine, SH-Olgopeptide-1, SH-Olgopeptide-2,
+                 SH-Polypeptide-1, SH-Polypeptide-9, SH-Polypeptide-11, Bacillus/Soybean/Folic
+                  Acid Ferment Extract, Sodium Hyaluronate, Caprylyl Glycol, Butylene Glycol, 1,2-Hexanediol`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0059/dear-klairs-vitamin-c-drop-1.jpg',
+      'assets/product-images/0059/dear-klairs-vitamin-c-drop-2.jpg',
+      'assets/product-images/0059/dear-klairs-vitamin-c-drop-3.jpg',
+      'assets/product-images/0059/dear-klairs-vitamin-c-drop-4.jpg',
+    ],
+    price: 18,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 46,
+  },
+  {
+    id: '0060',
+    brandName: `Dear, Klairs`,
+    productName: 'Fundamental Nourishing Eye Butter',
+    description: `Nourishing eye cream Dear, Klairs Fundamental Nourishing Eye Butter -
+     restores tired skin under the eyes, and also eliminates the signs of sleepless nights.
+    The powerful formula contains peptides that improve skin elasticity and reduce
+     wrinkles. The soft, butter-like texture absorbs quickly, making it ideal even
+      for sensitive and oily skin. In addition, the cream does not roll off if you apply makeup on it.`,
+    ingredients: `Aqua (Water), Glycerin, Stearic Acid, 1,2-Hexanediol, Helianthus Annuus
+     (Sunflower) Seed Oil, Betaine, Caffeine, Phaseolus Angularis Seed Extract, Artemisia
+      Princeps Leaf Extract, Camellia Sinensis Leaf Extract, Chaenomeles Sinensis Fruit
+       Extract, Chrysanthellum Indicum Extract, Cinnamomum Cassia Bark Extract, Corallina
+        Officinalis Extract, Curcuma Longa (Turmeric) Root Extract, Diospyros Kaki Leaf
+         Extract, Melia Azadirachta Flower Extract, Melia Azadirachta Leaf Extract, Ocimum
+          Sanctum Leaf Extract, Acetyl Hexapeptide-8, Copper Tripeptide-1, Oligopeptide-29,
+           Oligopeptide-32, Panthenol, Pantolactone, Hydrogenated Lecithin, Hydroxyethyl
+            Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium Hyaluronate, Glyceryl
+             Stearate, Sorbitan Isostearate, Cetearyl Alcohol, Propanediol, Arachidic Acid,
+              Oleic Acid, Palmitic Acid, Caprylyl/Capryl Glucoside, Ethylhexylglycerin`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0060/dear-klairs-nourishing-eye-butter-1.jpg',
+      'assets/product-images/0060/dear-klairs-nourishing-eye-butter-2.jpg',
+      'assets/product-images/0060/dear-klairs-nourishing-eye-butter-3.jpg',
+    ],
+    price: 30,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 16,
+  },
+  {
+    id: '0061',
+    brandName: `Dear, Klairs`,
+    productName: 'Midnight Blue Youth Activating Drop',
+    description: `Anti-aging night serum Dear, Klairs Midnight Blue Youth Activating Drop -
+     promotes cell renewal and improves skin firmness and elasticity.`,
+    ingredients: `Water, Butylene Glycol, sh-Oligopeptide-1, sh-Polypeptide-1,
+     Vaccinium Angustifolium (Blueberry) Fruit Extract, Lecithin, Sorbitan Sesquioleate,
+      1,2-Hexanediol, Caprylyl Glycol, PEG-60 Hydrogenated Castor Oil, Glycerin,
+       Chlorphenesin, Guaiazulene, Ethylhexylglycerin, Adenosine`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0061/dear-klairs-blue-drop-midnight-youth-1.jpg',
+      'assets/product-images/0061/dear-klairs-blue-drop-midnight-youth-2.jpg',
+    ],
+    price: 44,
+    bestseller: true,
+    segment: 'Korean',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 26,
+  },
+  {
+    id: '0062',
+    brandName: `Dear, Klairs`,
+    productName: 'Fundamental Eye Awakening Gel',
+    description: `Dear, Klairs Fundamental Eye Awakening Gel - Reduces the
+     appearance of dark circles, improves skin tone, reduces puffiness and provides antioxidant protection.`,
+    ingredients: `Water, Glycerin, 1,2-hexanediol, Butylene Glycol, Propanediol, Argania Spinosa
+     Kernel Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Tocopherol, Caffeine, Phaseolus
+      Angularis Seed Extract, Artemisia Princeps Leaf Extract, Camellia Sinensis Leaf
+       Extract, Chaenomeles Sinensis Fruit Extract, Chrysanthellum Indicum Extract,
+        Cinnamomum Cassia Bark Extract, Diospyros Kaki Leaf Extract, Perilla Frutescens
+         Extract, Portulaca Oleracea Extract, Acetyl Hexapeptide-8, Copper Tripeptide-1,
+          Oligopeptide-29, Oligopeptide-32, Carbomer, Hydroxyethylcellulose, Hydroxyethyl
+           Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polyglyceryl-10 Laurate,
+            Sorbitan Isostearate, Caprylyl/Capryl Glucoside, Sodium PCA, Tromethamine, Ethylhexylglycerin`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0062/dear-klairs-eye-awakening-gel-1.jpg',
+      'assets/product-images/0062/dear-klairs-eye-awakening-gel-2.jpg',
+      'assets/product-images/0062/dear-klairs-eye-awakening-gel-3.jpg',
+    ],
+    price: 34,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 116,
+  },
+  {
+    id: '0063',
+    brandName: `Dear, Klairs`,
+    productName: 'Daily Softening Cucumber Water',
+    description: `The Klairs Daily Skin Softening Skin soothing toner-softner with cucumber water
+     perfectly tones the skin, moisturizes and returns comfort after washing. The toner also gently
+      exfoliates the skin and allows further care to penetrate deeper.`,
+    ingredients: `Cucumis Sativus (Cucumber) Fruit Water, Aqua (Water), Propanediol, 1,2-Hexanediol,
+     Pyrus Malus (Apple) Fruit Water, Saccharum Officinarum (Sugarcane) Extract, Glycerin, Betaine,
+      Panthenol, Pantolactone, Citric Acid, Sodium Citrate, Disodium EDTA`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0063/dear-klairs-daily-softening-cucumber-water-1.jpg',
+      'assets/product-images/0063/dear-klairs-daily-softening-cucumber-water-2.jpg',
+      'assets/product-images/0063/dear-klairs-daily-softening-cucumber-water-3.jpg',
+    ],
+    price: 22,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 83,
+  },
+  {
+    id: '0064',
+    brandName: `Dear, Klairs`,
+    productName: 'Daily Hydrating Tea Water',
+    description: `The Klairs Daily Skin Softening Skin soothing toner-softner with cucumber water
+     perfectly tones the skin, moisturizes and returns comfort after washing. The toner also gently
+      exfoliates the skin and allows further care to penetrate deeper.`,
+    ingredients: `Camellia Sinensis Leaf Water, Aqua (Water), Glycerin, Propanediol, 1,2-Hexanediol,
+     Butylene Glycol, Calendula Officinalis Flower Water, Cocos Nucifera (Coconut) Water, Betaine,
+      Panthenol, Pantolactone, Trehalose, Sodium PCA, Sodium Citrate, Disodium EDTA`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0064/dear-klairs-hydrating-tea-water-1.jpg',
+      'assets/product-images/0064/dear-klairs-hydrating-tea-water-2.jpg',
+      'assets/product-images/0064/dear-klairs-hydrating-tea-water-3.jpg',
+    ],
+    price: 22,
+    bestseller: false,
+    segment: 'Korean',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 62,
+  },
+  {
     id: '0100',
     brandName: 'Bioderma',
     productName: 'Sensibio Gel Moussant',
