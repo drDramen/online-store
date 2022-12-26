@@ -22,6 +22,10 @@ export class BaseComponent {
     return this.node;
   }
 
+  getChildren(): BaseComponent[] {
+    return this.children;
+  }
+
   addClass(...className: string[]) {
     this.node.classList.add(...className);
   }
@@ -35,6 +39,14 @@ export class BaseComponent {
       this.children.push(child);
       this.node.append(child.getNode());
     });
+  }
+
+  setContent(content: string): void {
+    this.node.textContent = content;
+  }
+
+  setInnerHTML(html: string): void {
+    this.node.innerHTML = html;
   }
 
   setAttribute(attribute: string, value: string): void {

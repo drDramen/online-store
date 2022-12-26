@@ -1,15 +1,24 @@
 :root {
-  --color-white: #fff;
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-java: #19e2ca;
+  --color-charlotte: #9cf8e7;
+  --color-niagara: #0eaa99;
+  --color-overlay: rgb(41, 41, 41, 60%);
 
-  --font-family: 'Poppins', sans-serif;
+  --font-family-main: 'Roboto', sans-serif;
+  --font-family-logo: 'Satisfy', cursive;
   --font-size: 1rem;
 
   --bg-page-color: var(--color-white);
-  --font-color: var(--color-white);
+  --font-color-primary: var(--color-black);
+  --font-color-secondary: var(--color-white);
+  --font-color-active: var(--color-java);
+  --font-color-hover: var(--color-charlotte);
 
   --transition: 0.3s ease-in-out;
 
-  --content-width: 1200px;
-  --container-offset: 30px;
+  --content-width: 1720px;
+  --container-offset: 20px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 }

@@ -30,7 +30,7 @@ a {
 
 .page {
   height: 100%;
-  font-family: var(--font-family);
+  font-family: var(--font-family-main);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
@@ -40,7 +40,7 @@ a {
   margin: 0;
   font-size: var(--font-size);
   background: var(--bg-page-color);
-  color: var(--font-color);
+  color: var(--font-color-primary);
   line-height: 1.4;
 }
 
@@ -94,6 +94,6 @@ a {
   &--active {
     opacity: 1;
     visibility: visible;
-    background-color: rgb(41 41 41 / 60%);
+    background-color: var(--color-overlay);
   }
 }

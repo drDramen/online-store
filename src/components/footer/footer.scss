@@ -1,0 +1,40 @@
+@import '../../assets/styles/mixins/breakpoint';
+
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 32px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__copy {
+    display: inline-flex;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
+
+    span + span {
+      margin-left: 20px;
+    }
+  }
+
+  &__github {
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+  }
+
+  &__rs {
+    width: 150px;
+  }
+}

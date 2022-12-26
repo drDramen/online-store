@@ -1,0 +1,47 @@
+.logo {
+    width: 294px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+
+    &__image {
+        width: 54px;
+        height: 93px;
+        user-select: none;
+        background-image: url('../../assets/images/logo.png');
+    }
+
+    &__text {
+        width: 220px;
+        height: 92px;
+        font-family: var(--font-family-logo);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 92px;
+        user-select: none;
+        transition: all 0.4s ease-in-out;
+
+        .logo_colour_one {
+            color: var(--color-charlotte);
+        }
+
+        .logo_colour_two {
+            color: var(--color-java);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover > .logo__text > .logo_colour_one {
+        color: var(--color-java);
+    }
+
+    &:hover > .logo__text > .logo_colour_two {
+        color: var(--color-charlotte);
+    }
+}
