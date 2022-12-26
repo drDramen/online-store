@@ -1,10 +1,10 @@
 export class BaseComponent {
-  protected node: HTMLElement;
+  protected node;
   protected children: BaseComponent[] = [];
 
   constructor(
-    tagName: keyof HTMLElementTagNameMap = 'div',
-    props: Partial<HTMLElement> = {},
+    tagName: keyof HTMLElementTagNameMap,
+    props: Partial<HTMLElementTagNameMap[typeof tagName]> = {},
     parentNode?: HTMLElement,
   ) {
     this.node = document.createElement(tagName);
@@ -18,7 +18,7 @@ export class BaseComponent {
     }
   }
 
-  getNode(): HTMLElement {
+  getNode() {
     return this.node;
   }
 
@@ -37,12 +37,8 @@ export class BaseComponent {
     });
   }
 
-  setContent(content: string): void {
-    this.node.textContent = content;
-  }
-
-  setInnerHTML(html: string): void {
-    this.node.innerHTML = html;
+  setAttribute(attribute: string, value: string): void {
+    this.node.setAttribute(attribute, value);
   }
 
   destroy(): void {
