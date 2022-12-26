@@ -5430,9 +5430,274 @@ export const products: Product[] = [
     price: 37,
     bestseller: false,
     segment: 'USA / Canada',
-    category: 'Sunscreen',
+    category: 'Cream',
     for: 'Face',
     availableAmount: 164,
+  },
+  {
+    id: '0181',
+    brandName: `Paula's Choice`,
+    productName: 'Omega Complex Eye Cream',
+    description: `This lightweight eye cream is an instant pick-me-up for dehydrated under-eyes.
+     It nourishes, helps retain moisture and smooths to counteract crepey and dry skin over time.`,
+    ingredients: `Water⁠, Caprylic/Capric Triglyceride⁠, Butylene Glycol⁠, Neopentyl Glycol Diheptanoate⁠,
+     Cetyl Palmitate⁠, Nylon-12⁠, Propanediol⁠, Ammonium Acryloyldimethyltaurate/VP Copolymer⁠, Propylene
+      Glycol Dibenzoate⁠, Persea Gratissima (Avocado) Oil⁠, Borago Officinalis Seed Oil⁠, Sodium Stearoyl
+       Glutamate⁠, Squalane⁠, Niacinamide⁠, Salvia Hispanica (Chia) Seed Oil⁠, Linum Usitatissimum (Linseed)
+        Seed Oil⁠, Limnanthes Alba Seed Oil⁠, Olea Europaea Fruit Oil⁠, Passiflora Edulis Seed Oil⁠, Ceramide
+         EOP⁠, Ceramide NP⁠, Ceramide AP⁠, Sodium Hyaluronate⁠, Cholesterol⁠, Morus Alba (White Mulberry)
+          Root Extract⁠, Arctostaphylos Uva Ursi Leaf Extract⁠, Glycyrrhiza Glabra⁠, Linoleic Acid⁠,
+           Linolenic Acid⁠, Serine⁠, Alanine⁠, Proline⁠, Arginine⁠, Threonine⁠, Phytosphingosine⁠, Phytosterols⁠,
+            Sodium PCA⁠, Glycine⁠, Oleic Acid⁠, Glutamic Acid⁠, Lysine HCI⁠, Lecithin⁠, Adenosine⁠, Sodium
+             Lactate⁠, Hydrogenated Olive Oil⁠, Euterpe Oleracea (Acai) Sterols⁠, Olea Europaea Oil
+              Unsaponifiables⁠, Phytic Acid⁠, Scutellaria Baicalensis Root Extract⁠, Anastatica
+               Hierochuntica Extract⁠, Glycerin⁠, PCA⁠, Betaine⁠, Pullulan⁠, Carbomer⁠, Sclerotium
+                Gum⁠, Sodium Citrate⁠, Citric Acid⁠, Ascorbyl Palmitate⁠, Tocopheryl Acetate⁠, Silica⁠,
+                 Sorbitan Oleate⁠, Xanthan Gum⁠, Sodium Lauroyl Lactylate⁠, Phenoxyethanol⁠,
+                  Ethylhexylglycerin⁠, Chlorphenesin⁠`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0181/paula-choice-eye-omega-1.avif',
+      'assets/product-images/0181/paula-choice-eye-omega-2.avif',
+    ],
+    price: 32,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 16,
+  },
+  {
+    id: '0182',
+    brandName: `Paula's Choice`,
+    productName: 'Ceramide-Enriched Firming Eye Cream',
+    description: `This hydrating eye cream visibly smooths under eye wrinkles with a concentrated blend
+     of five replenishing ceramides, four forms of brightening vitamin C, two peptides and clinically proven retinol.`,
+    ingredients: `Water⁠, Neopentyl Glycol Diheptanoate⁠, Cetyl Alcohol⁠, Butylene Glycol⁠, Glycerin⁠,
+     Glyceryl Stearate⁠, PEG-100 Stearate⁠, Ammonium Acryloyldimethyltaurate/VP Copolymer⁠, Ascorbyl
+      Glucoside⁠, Potassium Cetyl Phosphate⁠, Sodium Ascorbyl Phosphate⁠, Bis-Diglyceryl Polyacyladipate⁠,
+       Polyglyceryl-10 Dioleate⁠, Tetrahexyldecyl Ascorbate⁠, Ceramide NS⁠, Ceramide EOP⁠, Ceramide AP⁠, Ceramide
+        EOS⁠, Ceramide NP⁠, Palmitoyl Tripeptide-5⁠, Acetyl Tetrapeptide-5⁠, Sodium Hyaluronate⁠, Caprooyl
+         Phytosphingosine⁠, Caprooyl Sphingosine⁠, Cholesterol⁠, Squalane⁠, Retinol⁠, Vitis Vinifera (Grape)
+          Seed Extract⁠, Glycyrrhiza Glabra⁠, Punica Granatum Fruit Extract⁠, Dunaliella Salina Extract⁠,
+           Pongamia Glabra Seed Oil⁠, Tocopheryl Acetate⁠, Allantoin⁠, Bisabolol⁠, Carnosine⁠, Panthenol⁠, Sodium
+            PCA⁠, Pullulan⁠, Glyceryl Ascorbate⁠, Behenic Acid⁠, Dimethicone⁠, Sodium Citrate⁠, Sodium Polyacrylate⁠,
+             Caprylyl Glycol⁠, Ethylhexyl Stearate⁠, Ceteareth-25⁠, Sodium Hydroxide⁠, Trideceth-6⁠, Propyl Gallate⁠,
+              Polysorbate 20⁠, Disodium EDTA⁠, Mica⁠, Phenoxyethanol⁠, Chlorphenesin⁠, Sodium Benzoate⁠`,
+    starIngredient: 'Retinol',
+    pics: [
+      'assets/product-images/0182/paula-choice-ceramide-eye-cream-1.avif',
+      'assets/product-images/0182/paula-choice-ceramide-eye-cream-2.avif',
+    ],
+    price: 32,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 16,
+  },
+  {
+    id: '0183',
+    brandName: `Paula's Choice`,
+    productName: 'C5 Super Boost Eye Cream',
+    description: `This hydrating eye cream visibly smooths under eye wrinkles with a concentrated blend
+     of five replenishing ceramides, four forms of brightening vitamin C, two peptides and clinically proven retinol.`,
+    ingredients: `Water⁠, Dicaprylyl Carbonate⁠, Glycerin⁠, Triheptanoin⁠, Ascorbyl Glucoside⁠, 3-O Ethyl Ascorbic
+     Acid⁠, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer⁠, Arachidyl Alcohol⁠, Cetearyl
+      Alcohol⁠, C13-15 Alkane⁠, Ascorbyl Palmitate⁠, Sh-Polypeptide-121⁠, Acetyl Hexapeptide-8⁠, Hyaluronic
+       Acid⁠, Zerumbone⁠, Bacillus Ferment⁠, Tocopherol⁠, Tocopheryl Acetate⁠, Butyrospermum Parkii (Shea Butter)
+        Unsaponifiables⁠, Oryza Sativa (Rice) Bran Extract⁠, Rosmarinus Officinalis (Rosemary) Leaf Extract⁠,
+         Helianthus Annuus Sunflower Seed Extract⁠, Hydrogenated Lecithin⁠, Cetearyl Olivate⁠, Sorbitan Olivate⁠,
+          Behenyl Alcohol⁠, Arachidyl Glucoside⁠, Propanediol⁠, Butylene Glycol⁠, Cetyl Alcohol⁠, Sodium Phytate⁠,
+           Sodium Citrate⁠, Citric Acid⁠, Sodium Metabisulfite⁠, Phenoxyethanol⁠, Caprylyl Glycol⁠, Ethylhexylglycerin⁠,
+            Hexylene Glycol⁠, Sodium Hydroxide⁠`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0183/paula-choice-vit-c-eye-cream-1.avif',
+      'assets/product-images/0183/paula-choice-vit-c-eye-cream-2.avif',
+    ],
+    price: 39,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 4,
+  },
+  {
+    id: '0184',
+    brandName: `Paula's Choice`,
+    productName: 'Anti-Aging Eye Cream',
+    description: `Unique, long-lasting balm-like cream for brightening and overnight hydration,
+     with results you will see and feel the next morning.`,
+    ingredients: `Water⁠, Butyrospermum Parkii Butter⁠, Glycerin⁠, Dimethicone⁠, Ascorbyl Glucoside⁠,
+     Cetearyl Alcohol⁠, Hydrogenated Lecithin⁠, Sodium PCA⁠, Sodium Polyacrylate⁠, Tocopherol⁠,
+      Glucosyl Hesperidin⁠, Copper Gluconate⁠, Resveratrol⁠, Palmitoyl Tripeptide-38⁠, Caprooyl
+       Tetrapeptide-3⁠, Glycyrrhiza Glabra (Licorice) Root Extract⁠, Phytic Acid⁠, Beta-Glucan⁠,
+        Acetyl Glucosamine⁠, Allantoin⁠, Adenosine⁠, Dextran⁠, Arctostaphylos Uva Ursi Leaf Extract⁠,
+         Salix Alba (Willow) Bark Extract⁠, Polyacrylate Crosspolymer-6⁠, Hydroxypropyl Cyclodextrin⁠,
+          Xanthan Gum⁠, Maltodextrin⁠, Ethylhexylglycerin⁠, Benzyl Alcohol⁠, Phenoxyethanol⁠, Benzoic Acid⁠,
+           Dehydroacetic Acid⁠`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0184/paula-choice-anti-age-eye-cream-1.avif',
+      'assets/product-images/0184/paula-choice-anti-age-eye-cream-2.avif',
+    ],
+    price: 37,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 97,
+  },
+  {
+    id: '0185',
+    brandName: `Paula's Choice`,
+    productName: '5% Niacinamide Body Serum',
+    description: `A lightweight body serum made with 5% niacinamide + 5% d-panthenol
+     that targets patchy, uneven tone and rough, flaky texture while restoring a healthy skin barrier.`,
+    ingredients: `Water⁠, Panthenol⁠, Niacinamide⁠, Caprylic/Capric Triglyceride⁠, Coco Caprylate/Caprate⁠,
+     Myristyl Myristate⁠, Pentylene Glycol⁠, Glycerin⁠, C13-15 Alkane⁠, Squalene⁠, Glyceryl Stearate Citrate⁠,
+      Butyrospermum Parkii Butter⁠, Citrullus Lanatus (Watermelon) Seed Oil ⁠, Mangifera Indica (Mango)
+       Seed Butter⁠, Simmondsia Chinensis (Jojoba) Seed Oil⁠, Polyglyceryl-3 Stearate⁠, Propanediol⁠,
+        Saccharide Isomerate⁠, Sodium Polyacrylate⁠, Hydrogenated Lecithin⁠, Caprylyl Glycol⁠, Xanthan Gum⁠,
+         Tocopherol⁠, Ethylhexylglycerin⁠, Hexylene Glycol⁠, Sclerotium Gum⁠, Lecithin⁠, Pullulan⁠,
+          Hydrolyzed Opuntia Ficus-Indica Flower Extract ⁠, Pantolactone⁠, Sodium Phytate⁠, Silica⁠, 1,
+           2-Hexanediol⁠, Citric Acid⁠, Sodium Citrate⁠, Bacillus Ferment⁠, Phenoxyethanol⁠`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0185/paula-choice-niacinamide-body-1.avif',
+      'assets/product-images/0185/paula-choice-niacinamide-body-2.avif',
+    ],
+    price: 29,
+    bestseller: true,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 64,
+  },
+  {
+    id: '0186',
+    brandName: `Paula's Choice`,
+    productName: 'Elasticity Renewal Body Treatment',
+    description: `A potent body treatment that improves the look of elasticity,
+     crepey texture and signs of aging that coincide with estrogen decline.`,
+    ingredients: `Water⁠, Cyclodextrin⁠, Glycerin⁠, Coco Caprylate/Caprate⁠, Squalane⁠,
+     Butylene Glycol⁠, Sodium Acrylates Copolymer⁠, Hydrogenated Polydecene⁠, Glycine Soja
+      (Soybean) Seed Extract ⁠, Equol⁠, Xanthan Gum⁠, Cetyl Alcohol⁠, Tocopherol⁠, Daidzein⁠,
+       Genistein⁠, Linum Usitatissimum (Linseed) Seed Oil⁠, Helianthus Annuus (Sunflower)
+        Seed Oil⁠, Phospholipids⁠, Polyglyceryl-10 Stearate⁠, Citric Acid⁠, Glycine Soja Oil⁠,
+         Sodium Phytate⁠, Ethylhexylglycerin⁠, Phenoxyethanol⁠`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0186/paula-choice-elasticity-body-1.avif',
+      'assets/product-images/0186/paula-choice-elasticity-body-2.avif',
+    ],
+    price: 68,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 10,
+  },
+  {
+    id: '0187',
+    brandName: `Paula's Choice`,
+    productName: 'Retinol Skin-Smoothing Body Treatment',
+    description: `A potent body treatment that improves the look of elasticity,
+     crepey texture and signs of aging that coincide with estrogen decline.`,
+    ingredients: `Water⁠, Cetearyl Alcohol⁠, Cetearyl Ethylhexanoate⁠, Cyclopentasiloxane⁠,
+     Dimethicone⁠, Glycerin⁠, Butylene Glycol⁠, Cetyl Palmitate⁠, Butyrospermum Parkii⁠, Glyceryl
+      Stearate⁠, PEG-100 Stearate⁠, Oenothera Biennis Oil⁠, Vitis Vinifera⁠, Cetyl Alcohol⁠,
+       Retinol⁠, Tetrahexyldecyl Ascorbate⁠, Tocopheryl Acetate⁠, Caprylic/Capric Triglyceride⁠,
+        Panthenol⁠, Carnosine⁠, Dimethiconol⁠, Dimethicone/Vinyl Dimethicone Crosspolymer⁠, Cera
+         Alba⁠, Magnesium Aluminum Silicate⁠, Sodium Hydroxide⁠, Xanthan Gum⁠, Dicaprylyl Carbonate⁠,
+          Decylene Glycol⁠, Disodium EDTA⁠, Chlorphenesin⁠, Phenoxyethanol⁠`,
+    starIngredient: 'Retinol',
+    pics: [
+      'assets/product-images/0187/paula-choice-retinol-body-1.avif',
+      'assets/product-images/0187/paula-choice-retinol-body-2.avif',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 16,
+  },
+  {
+    id: '0188',
+    brandName: `Paula's Choice`,
+    productName: 'Ultra-Rich Soothing Body Butter',
+    description: `This blend of plant oils, emollients, and shea butter softens dry, rough, uncomfortable
+     skin anywhere on the body, leaving it velvety-smooth and silky-feeling. It's
+      exceptionally gentle for sensitive skin, even skin prone to eczema.`,
+    ingredients: `Water⁠, Caprylic/Capric Triglyceride⁠, Glyceryl Stearate SE⁠, Dimethicone⁠,
+     Olea Europaea Fruit Oil⁠, Glyceryl Stearate⁠, Mangifera Indica (Mango) Seed Butter⁠, Stearic
+      Acid⁠, Cetyl Alcohol⁠, Simmondsia Chinensis ⁠, Cocos Nucifera (Coconut) Fruit Extract⁠, Persea
+       Gratissima (Avocado) Oil⁠, Avena Sativa Kernel Extract⁠, Glycine Soja Oil⁠, Oryza Sativa (Rice)
+        Bran Extract⁠, Alpha-Tocopherol⁠, Ascorbyl Palmitate⁠, Squalene⁠, Glycerin⁠, Beta-Sitosterol⁠,
+         Panthenol⁠, Hydrogenated Vegetable Glycerides Citrate⁠, Propylene Glycol⁠, Disodium EDTA⁠,
+          Phenoxyethanol⁠, Ethylhexylglycerin⁠⁠`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0188/paula-choice-body-butter-1.avif',
+      'assets/product-images/0188/paula-choice-body-butter-2.avif',
+    ],
+    price: 22,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Body',
+    availableAmount: 2,
+  },
+  {
+    id: '0189',
+    brandName: `Paula's Choice`,
+    productName: 'Purifying Clay Mask',
+    description: `This multi-action clay mask absorbs excess oil, minimizes the
+     look of enlarged pores, visibly reduces redness and helps prevent future breakouts.`,
+    ingredients: `Salicylic Acid⁠, Water⁠, Kaolin⁠, Bentonite⁠, Titanium Dioxide⁠, Butylene Glycol⁠,
+     C12-15 Alkyl Benzoate⁠, Cetyl Esters⁠, Magnesium Aluminum Silicate⁠, Glycerin⁠, Illite⁠, Tapioca
+      Starch⁠, Cornstarch⁠, Camellia Sinensis Leaf Extract⁠, Pyrus Malus (Apple) Fruit Extract⁠,
+       Chrysanthellum Indicum (Golden Chamomile) Extract⁠, Hydrolyzed Rhodophycea (Red Algae)
+        Extract⁠, Chlorella⁠, Epilobium Fleischeri (Willowherb) Extract⁠, Vaccinium Myrtillus
+         Fruit Extract ⁠, Brassica Campestris (Rapeseed) Seed Oil⁠, Allantoin⁠, Bisabolol⁠,
+          Zinc PCA⁠, Copper PCA⁠, Lauroyl Lysine⁠, Sodium Lauroyl Sarcosinate⁠, Xanthan Gum⁠,
+           Citric Acid⁠, Sodium Citrate⁠, Sodium Chloride⁠, Phenoxyethanol⁠, Ethylhexylglycerin⁠⁠`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0189/paula-choice-purifying-clay-mask-1.avif',
+      'assets/product-images/0189/paula-choice-purifying-clay-mask-2.avif',
+    ],
+    price: 29,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 90,
+  },
+  {
+    id: '0190',
+    brandName: `Paula's Choice`,
+    productName: 'Pore Clarifying Charcoal Gel Mask',
+    description: `Balance oily skin and decongest pores with charcoal and natural
+     clays suspended in a soothing gel mask for a refreshed, shine-free complexion.`,
+    ingredients: `Water⁠, Tapioca Starch⁠, Glycerin⁠, Decyl Glucoside⁠, Sodium Lauroyl Sarcosinate⁠,
+     Butylene Glycol⁠, Cocamidopropyl Betaine⁠, Ammonium Acryloyldimethyltaurate/VP Copolymer⁠,
+      Bentonite⁠, Kaolin⁠, Charcoal Powder⁠, Boerhavia Diffusa Root Extract⁠, Bisabolol⁠, Epilobium
+       Angustifolium Extract⁠, Lactic Acid⁠, Xanthan Gum⁠, Isopropyl Titanium Triisostearate⁠, C12-15
+        Alkyl Benzoate⁠, Iron Oxides⁠, Phenoxyethanol⁠, Caprylyl Glycol⁠, Ethylhexylglycerin⁠, Hexylene Glycol⁠⁠`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0190/paula-chice-pore-charcoal-mask-1.avif',
+      'assets/product-images/0190/paula-chice-pore-charcoal-mask-2.avif',
+    ],
+    price: 26,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 69,
   },
   {
     id: '0200',
