@@ -88,7 +88,13 @@
 
 .icon {
   display: block;
-  fill: var(--color-java);
+  fill: var(--color-charlotte);
+  transition: fill var(--transition);
+
+  &:hover {
+    fill: var(--color-java);
+    cursor: pointer;
+  }
 
   &-wrapper {
     display: flex;
