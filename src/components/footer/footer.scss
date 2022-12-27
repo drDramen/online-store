@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top:58px;
+    padding-bottom: 58px;
     font-size: 32px;
 
     @include tablet {
@@ -30,11 +30,15 @@
     transition: color var(--transition);
 
     &:hover {
-      color: var(--color-link-hover);
+      color: var(--color-java);
     }
   }
 
   &__rs {
     width: 150px;
+
+    &:hover {
+      fill: var(--color-java);
+    }
   }
 }
