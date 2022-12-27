@@ -1,12 +1,16 @@
 import { BaseComponent } from '@/templates/base-component';
+import { Link } from '@/templates/link';
 import { Container } from '@/components/container/container';
 import './home-page.scss';
 import image from '../../../assets/images/flask-home-page.png';
 import sprite from '../../../assets/images/home_page_icons/sprite.svg';
 
 export class HomePage extends BaseComponent {
-  private shopNowButton: BaseComponent;
+  private shopNowButton: Link;
   private container: Container;
+  private content: BaseComponent;
+  private imageWrapper: BaseComponent;
+  private advantages: BaseComponent;
 
   constructor() {
     super('section', {
@@ -14,24 +18,33 @@ export class HomePage extends BaseComponent {
     });
 
     this.container = new Container('home-page__container');
-    this.shopNowButton = new BaseComponent('a', {
+    this.content = new BaseComponent('div', {
+      className: 'home-page__content',
+      innerHTML: `
+      <h2 class="home-page__title">Health and Beauty of your Skin Lives Here</h2>
+      <p class="home-page__moto">Take it Home :)</p>
+      <p class="home-page__description">Explore the best from Cosmetics World of SkinCare products presented by the Brands we Carefully picked for You</p>`,
+    });
+    this.imageWrapper = new BaseComponent('div', {
+      className: 'home-page__image-wrapper',
+      innerHTML: `<img class="home-page__image" src="${image}" alt="TakeCare">`,
+    });
+
+    this.advantages = new BaseComponent('div', { className: 'home-page__advantages advantages' });
+    this.shopNowButton = new Link({
+      href: '/catalog',
       className: 'home-page__button',
       textContent: 'Shop Now',
     });
-    this.shopNowButton.setAttribute('href', '/catalog');
-    this.append(this.container);
 
-    this.container.setInnerHTML(`
-    <div class="home-page__content">
-      <h2 class="home-page__title">Health and Beauty of your Skin Lives Here</h2>
-      <p class="home-page__moto">Take it Home :)</p>
-      <p class="home-page__description">Explore the best from Cosmetics World of SkinCare products presented by the Brands we Carefully picked for You</p>
-      ${this.shopNowButton.getNode().outerHTML}
-    </div>
-    <div class="home-page__image-wrapper">
-      <img class="home-page__image" src="${image}" alt="TakeCare">
-    </div>
-    <div class="home-page__advantages advantages">
+    this.content.append(this.shopNowButton);
+    this.fillAdvantages();
+    this.container.append(this.content, this.imageWrapper, this.advantages);
+    this.append(this.container);
+  }
+
+  fillAdvantages() {
+    this.advantages.setInnerHTML(`
       <figure class="advantages__item">
         <div class="icon-wrapper">
           <svg class="icon icon-flask-science">
@@ -56,7 +69,6 @@ export class HomePage extends BaseComponent {
         </div>
         <figcaption class="advantages__description">testers and gifts with every purchase</figcaption>
       </figure>
-    </div>
     `);
   }
 }
