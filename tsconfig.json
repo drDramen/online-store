@@ -7,7 +7,7 @@
     },
     "outDir": "./dist/",
     "rootDir": "./",
-    "module": "es6",
+    "module": "esnext",
     "target": "es2015",
     "strict": true,
     "noImplicitAny": true,
