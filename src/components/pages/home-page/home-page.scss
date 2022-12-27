@@ -94,6 +94,10 @@
   &:hover {
     fill: var(--color-java);
     cursor: pointer;
+
+    > .icon-planet {
+      transform: rotate(-360deg);
+    }
   }
 
   &-wrapper {

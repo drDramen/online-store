@@ -1,7 +1,4 @@
 .navigation {
-  width: 438px;
-  height: 42px;
-
   &__items {
     display: flex;
     font-size: 36px;
@@ -9,7 +6,9 @@
   }
 
   &__item {
-    margin-left: 57px;
+    &:not(:first-child) {
+      margin-left: 57px;
+    }
 
     &.cart {
       width: 123px;
