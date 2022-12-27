@@ -2,6 +2,7 @@ import { Header } from './../components/header/header';
 import { BaseComponent } from '@/templates/base-component';
 import { Footer } from './../components/footer/footer';
 import { Main } from '@/components/main/main';
+import { Router } from '@/router/router';
 
 export class App {
   private root: HTMLElement;
@@ -11,6 +12,7 @@ export class App {
 
   constructor(element: HTMLElement) {
     this.root = element;
+    Router.init(this.main.getNode());
   }
 
   create() {
