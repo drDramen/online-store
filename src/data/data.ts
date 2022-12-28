@@ -6431,10 +6431,10 @@ export const products: Product[] = [
         Chlorophyllin-Copper Complex (CI 75810)`,
     starIngredient: 'Vitamin C',
     pics: [
-      'assets/product-images/0220/yttp-SuperfoodCleanser-1.jpg',
-      'assets/product-images/0220/yttp-SuperfoodCleanser-2.jpg',
-      'assets/product-images/0220/yttp-SuperfoodCleanser-3.jpg',
-      'assets/product-images/0220/yttp-SuperfoodCleanser-4.jpg',
+      'assets/product-images/0220/yttp-SuperfoodCleanser-1.avif',
+      'assets/product-images/0220/yttp-SuperfoodCleanser-2.avif',
+      'assets/product-images/0220/yttp-SuperfoodCleanser-3.avif',
+      'assets/product-images/0220/yttp-SuperfoodCleanser-4.avif',
     ],
     price: 36,
     bestseller: true,
@@ -6466,10 +6466,10 @@ export const products: Product[] = [
                 Fragrance/Parfum , Limonene`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0221/yttp-superberry-cleansing-balm-1.jpg',
-      'assets/product-images/0221/yttp-superberry-cleansing-balm-2.jpg',
-      'assets/product-images/0221/yttp-superberry-cleansing-balm-3.jpg',
-      'assets/product-images/0221/yttp-superberry-cleansing-balm-4.jpg',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-1.avif',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-2.avif',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-3.avif',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-4.avif',
     ],
     price: 34,
     bestseller: false,
@@ -6498,10 +6498,10 @@ export const products: Product[] = [
                Diheptyl Succinate , Phenoxyethanol , Ethylhexylglycerin , Phytosterols , Propanediol`,
     starIngredient: 'Retinol',
     pics: [
-      'assets/product-images/0222/yttp-retinal-niacinamide-serum-1.jpg',
-      'assets/product-images/0222/yttp-retinal-niacinamide-serum-2.jpg',
-      'assets/product-images/0222/yttp-retinal-niacinamide-serum-3.jpg',
-      'assets/product-images/0222/yttp-retinal-niacinamide-serum-4.jpg',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-1.avif',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-2.avif',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-3.avif',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-4.avif',
     ],
     price: 68,
     bestseller: false,
@@ -6530,10 +6530,10 @@ export const products: Product[] = [
               Sodium Glycolate , Sodium Phosphate , Benzoic Acid`,
     starIngredient: 'Peptide',
     pics: [
-      'assets/product-images/0223/yttp-peptide-cactus-serum-1.jpg',
-      'assets/product-images/0223/yttp-peptide-cactus-serum-2.jpg',
-      'assets/product-images/0223/yttp-peptide-cactus-serum-3.jpg',
-      'assets/product-images/0223/yttp-peptide-cactus-serum-4.jpg',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-1.avif',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-2.avif',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-3.avif',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-4.avif',
     ],
     price: 54,
     bestseller: false,
@@ -6558,10 +6558,10 @@ export const products: Product[] = [
            Phenoxyethanol , Ergothioneine`,
     starIngredient: 'Vitamin C',
     pics: [
-      'assets/product-images/0224/yttp-vit-c-serum-1.jpg',
-      'assets/product-images/0224/yttp-vit-c-serum-2.jpg',
-      'assets/product-images/0224/yttp-vit-c-serum-3.jpg',
-      'assets/product-images/0224/yttp-vit-c-serum-4.jpg',
+      'assets/product-images/0224/yttp-vit-c-serum-1.avif',
+      'assets/product-images/0224/yttp-vit-c-serum-2.avif',
+      'assets/product-images/0224/yttp-vit-c-serum-3.avif',
+      'assets/product-images/0224/yttp-vit-c-serum-4.avif',
     ],
     price: 68,
     bestseller: true,
@@ -6587,10 +6587,10 @@ export const products: Product[] = [
            , Citral , Citronellol , Hexyl Cinnamal , Hydroxycitronellal , Limonene , Linalool`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0225/yttp-superberry-oil-1.jpg',
-      'assets/product-images/0225/yttp-superberry-oil-2.jpg',
-      'assets/product-images/0225/yttp-superberry-oil-3.jpg',
-      'assets/product-images/0225/yttp-superberry-oil-4.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-1.avif',
+      'assets/product-images/0225/yttp-superberry-oil-2.avif',
+      'assets/product-images/0225/yttp-superberry-oil-3.avif',
+      'assets/product-images/0225/yttp-superberry-oil-4.avif',
     ],
     price: 44,
     bestseller: false,
@@ -6602,30 +6602,157 @@ export const products: Product[] = [
   {
     id: '0226',
     brandName: 'Youth to the People',
-    productName: 'Superberry Hydrate Glow Dream Oil',
-    description: `This ultra-enriched, flash-absorbing face oil packed with rare super berry antioxidants that leaves skin velvety
-     soft, hydrated, and glowing. Intensely hydrating prickly pear and squalane oil lock in moisture with
-      the help of omega fatty acids and high levels of vitamin C.`,
-    ingredients: `Helianthus Annuus (Sunflower) Seed Oil* , Dicaprylyl Carbonate , Simmondsia Chinensis (Jojoba)
-     Seed Oil* , Squalane Olive , Tocopherol (Vitamin E) , Natural Fragrance , Aristotelia Chilensis (Maqui)
-      Fruit Extract , Euterpe Oleracea Fruit (Acai) Extract , Lycium Barbarum (Goji) Fruit Extract ,
-       Moringa Oleifera Leaf Extract , Opuntia Tuna (Prickly Pear) Flower/Stem Extract , Borago Officinalis
-        (Borage) Seed Oil* , Linum Usitatissimum (Flaxseed) Seed Oil* , Oenothera Biennis (Evening Primrose)
-         Oil* , Olea Europaea (Olive) Fruit Oil* , Rosa Canina (Rosehip) Fruit Oil* , Punica Granatum
-          (Pomegranate) Seed Oil* , Vaccinium Macrocarpon (Cranberry) Seed Oil* , Amylcinnamyl Alcohol
-           , Citral , Citronellol , Hexyl Cinnamal , Hydroxycitronellal , Limonene , Linalool`,
-    starIngredient: '',
+    productName: 'Yerba Mate Resurfacing Energy Facial',
+    description: `This dual-action microdermabrasion facial breaks down dead skin cells with active
+     enzymes, papaya, and pineapple, while sustainable micro-exfoliants bamboo and diatomaceous earth
+      smooth skin texture. Amplified by highly caffeinated extracts, yerba mate and guayusa, this
+       two-minute facial energizes and invigorates.`,
+    ingredients: `Water/Aqua/Eau , Bambusa Arundinacea (Bamboo) Stem Extract , Diatomaceous Earth ,
+     Carthamus Tinctorius (Safflower) Seed Oil , Propanediol , Aloe Barbadensis (Aloe Vera) Leaf Juice ,
+      Cetyl Alcohol , Glyceryl Stearate Se , Glycerin , Lactic Acid , Sodium Acrylate/Sodium Acryloyldimethyl
+       Taurate Copolymer , Niacinamide , C15-19 Alkane , Ilex Paraguariensis (Yerba Mate) Leaf Extract ,
+        Ilex Guayusa (Guayusa) Leaf Extract , Potassium Sorbate , Polyglyceryl-6 Laurate , Tocopherol ,
+         Ethylhexylglycerin , Bromelain (Pineapple) , Sodium Phytate , Papain (Papaya) , Polyglycerin-6 ,
+          Zingiber Officinale (Ginger) Root Oil , Passiflora Edulis (Passion Fruit) Extract , Xanthan Gum ,
+           Curcuma Longa (Turmeric) Root Powder , Hylocereus Undatus (Dragon Fruit) Fruit Extract ,
+            Sorbitan Oleate , Helianthus Annus (Sunflower) Seed Oil , Sorbitan Isostearate ,
+             Phenoxyethanol , Sodium Benzoate`,
+    starIngredient: 'Enzyme',
     pics: [
-      'assets/product-images/0225/yttp-superberry-oil-1.jpg',
-      'assets/product-images/0225/yttp-superberry-oil-2.jpg',
-      'assets/product-images/0225/yttp-superberry-oil-3.jpg',
-      'assets/product-images/0225/yttp-superberry-oil-4.jpg',
+      'assets/product-images/0226/yttp-yerba-resurfacing-1.avif',
+      'assets/product-images/0226/yttp-yerba-resurfacing-2.avif',
+      'assets/product-images/0226/yttp-yerba-resurfacing-3.avif',
+      'assets/product-images/0226/yttp-yerba-resurfacing-4.avif',
     ],
-    price: 44,
+    price: 54,
     bestseller: false,
     segment: 'USA / Canada',
-    category: 'Oil',
+    category: 'Exfoliant',
     for: 'Face',
-    availableAmount: 12,
+    availableAmount: 81,
+  },
+  {
+    id: '0227',
+    brandName: 'Youth to the People',
+    productName: 'Mandelic Acid Exfoliant',
+    description: `This leave-on liquid exfoliant unites three gentle acids with superfood antioxidants
+     (kale, licorice root, and green tea) to clear pores, smooth texture, even tone, and support
+      skin's protective barrier. It's all of the acids, none of the irritation.`,
+    ingredients: `Water/Aqua/Eau , Rosmarinus Officinalis (Rosemary) Flower/Leaf/Stem Water , Mandelic Acid ,
+     Ethoxydiglycol , Salicylic Acid , Rosa Damascena (Rose) Flower Water , Gluconolactone , Leuconostoc/Radish
+      Root Ferment Lysate Filtrate , Aloe Barbadensis (Aloe Vera) Leaf Juice Powder , Brassica Oleracea
+       Acephala (Kale) Leaf Extract , Camellia Sinensis (Green Tea) Leaf Extract , Chamomilla Recutita
+        (Matricaria) Flower Extract , Medicago Sativa (Alfalfa) Leaf Extract , Spinacia Oleracea (Spinach)
+         Leaf Extract , Glycyrrhiza Glabra (Licorice) Root Extract , Moringa Oleifera Leaf Extract ,
+          Moringa Oleifera Seed Extract , Glucosamine Hcl , Panthenol , Glycerin , Arginine , Sodium
+           Phytate , Sodium Hydroxide , Sodium Ascorbyl Phosphate , Maltodextrin , Citric Acid ,
+            Potassium Sorbate , Phenoxyethanol , Lactic Acid , Sodium Benzoate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0227/yttp-mandelic-exfoliant-1.avif',
+      'assets/product-images/0227/yttp-mandelic-exfoliant-2.avif',
+      'assets/product-images/0227/yttp-mandelic-exfoliant-3.avif',
+      'assets/product-images/0227/yttp-mandelic-exfoliant-4.avif',
+    ],
+    price: 48,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Exfoliant',
+    for: 'Face',
+    availableAmount: 54,
+  },
+  {
+    id: '0228',
+    brandName: 'Youth to the People',
+    productName: 'Combucha AHA Power Exfoliant',
+    description: `This overnight leave-on liquid peel works to reveal brighter-looking skin and smoother-feeling
+     texture, with a potent blend of 7% lactic and 3% glycolic acids. It’s non-sticky, fragrance-free, and
+      boosted with hydrating agents and antioxidant-rich black tea ferment filtrate to help reveal more
+       even-looking skin tone and improve the look of dark spots over time.`,
+    ingredients: `Water/Aqua/Eau , Pentylene Glycol , Lactic Acid , Glycolic Acid , Propanediol ,
+     Butylene Glycol , L-Arginine , Sodium Hydroxide , Betaine , Glycerin , Triethyl Citrate ,
+      Saccharomyces/Xylinum/Black Tea Ferment , Pichia Ferment Lysate Filtrate , Tetrasodium Glutamate Diacetate ,
+       Potassium Sorbate , Ethylhexylglycerin , Phenoxyethanol , Sodium Chloride , Sodium Carbonate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0228/yttp-kombucha-exfoliant-1.avif',
+      'assets/product-images/0228/yttp-kombucha-exfoliant-2.avif',
+      'assets/product-images/0228/yttp-kombucha-exfoliant-3.avif',
+      'assets/product-images/0228/yttp-kombucha-exfoliant-4.avif',
+    ],
+    price: 38,
+    bestseller: true,
+    segment: 'USA / Canada',
+    category: 'Exfoliant',
+    for: 'Face',
+    availableAmount: 212,
+  },
+  {
+    id: '0229',
+    brandName: 'Youth to the People',
+    productName: 'Polypeptide-121 Future Cream',
+    description: `This intensely moisturizing cream with peptides, plant proteins, and ceramides replenishes
+     critical moisture for up to 24 hours and helps visibly firm, reduce the look of fine lines and wrinkles,
+      and strengthen the skin’s moisture barrier.`,
+    ingredients: `Water/Aqua/Eau , Dicaprylyl Carbonate , Hydrolyzed Hyaluronic Acid , Trimethylolpropane
+     Tricaprylate/Tricaprate , Tridecyl Trimellitate , Propanediol , Sh-Polypeptide-121 , Polyglyceryl-3
+      Methylglucose Distearate , Panthenol , Niacinamide , Proline , Tocopheryl Acetate , Aloe Barbadensis
+       Leaf Juice , Hydrolyzed Cannabis Sativa (Hemp) Seed Extract , Hydrolyzed Rice Protein , Hydrolyzed
+        Pea Protein , Salvia Hispanica (Chia) Seed Extract , Acetyl Tetrapeptide-11 , Acetyl Tetrapeptide-9 ,
+         Acetyl Tetrapeptide-2 , Hibiscus Sabdariffa Fruit Extract , Ammonium Acryloyldimethyltaurate/Beheneth-25
+          Methacrylate Crosspolymer , Hydrolyzed Linseed Seed , Castor Oil/IPDI Copolymer , Ceramide AP ,
+           Ceramide NP , Cetearyl Alcohol , Cetearyl Glucoside , Glycerin , Hydrolyzed Sodium Hyaluronate ,
+            Coco-Caprylate/Caprate , Dilinoleic Acid/Propanediol/Pdi Crosspolymer , Benzyl Alcohol ,
+             Zingiber Officinale (Ginger) Root Extract , Bisabolol , Caprylyl Glycol , Carbomer ,
+              Dimethyl Isosorbide , Dipropylene Glycol , Erythritol , Ethylhexylglycerin , Glucose
+               , 1,2-Hexanediol , Trisodium Ethylenediamine Disuccinate , Glyceryl Monostearate ,
+                Phytospingosine , Polyacrylate Crosspolymer-6 , Polysorbate 20 , Caprylhydroxamic
+                 Acid , Potassium Sorbate , Glycine , Hydroxyacetophenone , Sodium Benzoate ,
+                  T-Buty Alcohol , Citric Acid , Sodium Citrate , Sodium Lactate , Triheptanoin , Xanthan Gum`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0229/yttp-polypeptide-cream-1.avif',
+      'assets/product-images/0229/yttp-polypeptide-cream-2.avif',
+      'assets/product-images/0229/yttp-polypeptide-cream-3.avif',
+      'assets/product-images/0229/yttp-polypeptide-cream-4.avif',
+    ],
+    price: 64,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 64,
+  },
+  {
+    id: '0230',
+    brandName: 'Youth to the People',
+    productName: 'Superfood Air-Whip Moisture Cream',
+    description: `This daily moisturizer is formulated with a proprietary superfood-extract blend of kale,
+     spinach, and green tea to help fight free radicals, and with cross-linked hyaluronic acid to replenish
+      and firm the look of the skin. It's lightweight, works well under make-up, and is never greasy. Friendly
+       for all skin types, best for combo/oily.`,
+    ingredients: `Water/Aqua/Eau , Helianthus Annuus (Sunflower) Seed Oil , Glyceryl Stearate , Cetyl Alcohol ,
+     Glycerin , Lecithin , Butylene Glycol , Panthenol (Vitamin B5) , Sodium Hyaluronate Crosspolymer ,
+      Tocopheryl Acetate (Vitamin E) , Phenoxyethanol , Ascorbic Acid (Vitamin C) , Hydroxyethylcellulose
+       , Brassica Oleracea Capitata (Kale) Leaf Extract , Camellia Sinensis (Green Tea) Leaf Extract ,
+        Chamomilla Recutita (Matricaria) Flower Extract , Medicago Sativa (Alfalfa) Leaf Extract ,
+         Spinacia Oleracea (Spinach) Leaf Extract , Hyaluronic Acid , Potassium Sorbate , Pentylene Glycol
+          , Aloe Barbadensis (Aloe Vera) Leaf Extract , Ethylhexylglycerin , Tocopherol , Sodium Acetate
+           , Isopropyl Alcohol , Propylene Glycol , Cellulose , Sodium Hydroxymethylglycinate , Sodium
+            Benzoate , Benzyl Benzoate , Natural Fragrance/Parfum , Citronellol , Hexyl Cinnamal ,
+             Limonene , Linalool , Chlorophyll (CI 75810)`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0230/yttp-superfood-cream-1.avif',
+      'assets/product-images/0230/yttp-superfood-cream-2.avif',
+      'assets/product-images/0230/yttp-superfood-cream-3.avif',
+      'assets/product-images/0230/yttp-superfood-cream-4.avif',
+    ],
+    price: 48,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 126,
   },
 ];
