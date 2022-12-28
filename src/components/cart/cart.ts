@@ -1,37 +1,43 @@
 import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
-import './header-cart.scss';
+import './cart.scss';
 
-const cartLink = [{ textContent: '', href: NameRoute.Cart }];
+const cartLink = [{ textContent: 'Cart', href: NameRoute.Cart }];
 
 export class HeaderCart extends BaseComponent {
   private cartText: BaseComponent;
   private cartImage: BaseComponent;
   private cartProductsCircle: BaseComponent;
   private cartProductsAmount: BaseComponent;
+  private cartLink: Link;
 
   constructor() {
     super('div', {
-      className: 'cart__header',
+      className: 'cart',
     });
 
-    this.cartText = new BaseComponent('div', { className: 'cart__header__text' });
-    this.cartText.setInnerHTML('Cart');
-    this.append(this.cartText);
+    this.cartLink = new Link({ className: 'cart__link' });
+    this.append(this.cartLink);
 
-    this.cartImage = new BaseComponent('span', { className: 'cart__header__image' });
-    this.append(this.cartImage);
+    this.cartText = new BaseComponent('div', { className: 'cart__text' });
+    this.cartText.setInnerHTML('Cart');
+    this.cartLink.append(this.cartText);
+
+    this.cartImage = new BaseComponent('span', { className: 'cart__image' });
+    this.cartLink.append(this.cartImage);
 
     this.cartProductsCircle = new BaseComponent('span', {
-      className: 'cart__header__products_circle',
+      className: 'cart__products_circle',
     });
-    this.append(this.cartProductsCircle);
+    this.cartLink.append(this.cartProductsCircle);
 
     this.cartProductsAmount = new BaseComponent('span', {
-      className: 'cart__header__products_amount',
+      className: 'cart__products_amount',
     });
     this.cartProductsAmount.setContent('0');
     this.cartProductsCircle.append(this.cartProductsAmount);
+
+    Link.addCartLink(cartLink);
   }
 }
