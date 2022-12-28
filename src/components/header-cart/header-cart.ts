@@ -1,5 +1,9 @@
+import { NameRoute } from '@/enums/name-route';
+import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
 import './header-cart.scss';
+
+const cartLink = [{ textContent: '', href: NameRoute.Cart }];
 
 export class HeaderCart extends BaseComponent {
   private cartText: BaseComponent;

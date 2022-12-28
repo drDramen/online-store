@@ -3,6 +3,7 @@ import { BaseComponent } from './base-component';
 
 export class Link extends BaseComponent {
   private static navigationLinks: Link[] = [];
+  private static cartLink: Link[] = [];
 
   constructor(props: Partial<HTMLAnchorElement>) {
     super('a', props);
@@ -32,5 +33,9 @@ export class Link extends BaseComponent {
         link.removeClass('active');
       }
     });
+  }
+
+  static addCartLink(cartLink: Link) {
+    this.cartLink.push(cartLink);
   }
 }
