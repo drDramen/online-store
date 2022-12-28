@@ -6748,11 +6748,181 @@ export const products: Product[] = [
       'assets/product-images/0230/yttp-superfood-cream-3.avif',
       'assets/product-images/0230/yttp-superfood-cream-4.avif',
     ],
-    price: 48,
+    price: 62,
     bestseller: false,
     segment: 'USA / Canada',
     category: 'Cream',
     for: 'Face',
     availableAmount: 126,
+  },
+  {
+    id: '0231',
+    brandName: 'Youth to the People',
+    productName: 'Adaptogen Deep Moisture Cream',
+    description: `A deeply hydrating moisturizer with superior plant extracts and a pro-grade peptide complex
+     formulated for dry, reactive, and sensitive skin. This fragrance-free formula is made with an intelligent
+      hydration trio of Squalane, Jojoba + Shea butter for long-lasting deep hydration that won't clog pores.`,
+    ingredients: `Aqua/Water/Eau , Helianthus Annuus (Sunflower) Seed Oil , Ethylhexyl Palmitate , Propanediol
+     , Glyceryl Stearate , Stearic Acid , Glycerin , Aloe Barbadensis Leaf Juice , Glyceryl Laurate , Squalane
+      , Pentapeptide-59 , Withania Somnifera (Ashwagandha) Leaf Extract , Ganoderma Lucidum (Reishi Mushroom)
+       Extract , Ocimum Tenuiflorum (Holy Basil) Extract , Simmondsia Chinensis (Jojoba) Seed Oil , Prunus
+        Amygdalus (Sweet Almond) Dulcis Oil , Butyrospermum Parkii (Shea) Butter , Borago Officinalis
+         Seed Oil , Hydrogenated Lecithin , Rhodiola Rosea Extract , Phenethyl Alcohol , Xanthan Gum ,
+          Carbomer , Ethylhexylglycerin , Panthenol , Tocopherol , Maltodextrin , Phenoxyethanol ,
+           Potassium Sorbate , Allantoin , Caramel`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0231/yttp-adaptogen-cream-1.avif',
+      'assets/product-images/0231/yttp-adaptogen-cream-2.avif',
+      'assets/product-images/0231/yttp-adaptogen-cream-3.avif',
+      'assets/product-images/0231/yttp-adaptogen-cream-4.avif',
+    ],
+    price: 58,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cream',
+    for: 'Face',
+    availableAmount: 113,
+  },
+  {
+    id: '0232',
+    brandName: 'Youth to the People',
+    productName: 'Adaptogen Soothe Hydrate Activated Mist',
+    description: `An ultra-fine mist that hydrates, calms visible redness, and evens the look of skin
+     tone with antioxidant-rich adaptogens, hyaluronic acid, and soothing peptides—like a serum in a mist.`,
+    ingredients: `Water/Aqua/Eau , Propanediol , Aloe Barbadensis (Aloe Vera) Leaf Juice , Pentapeptide-59 ,
+     Hydrogenated Lecithin , Butyrospermum Parkii (Shea) Butter , Phenethyl Alcohol , Ethylhexylglycerin ,
+      Maltodextrin , Ganoderma Lucidum (Reishi Mushroom) Extract , Xanthan Gum , Betaine , 1,2-Hexanediol ,
+       Caprylyl Glycol , Potassium Sorbate , Glycerin , Withania Somnifera (Ashwagandha) Extract , Ocimum
+        Tenuiflorum (Holy Basil) Extract , Rhodiola Rosea (Arctic Root) Extract , Lactic Acid , Sodium
+         Hyaluronate , Phenoxyethanol , Sodium Benzoate`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0232/yttp-adaptogen-mist-1.avif',
+      'assets/product-images/0232/yttp-adaptogen-mist-2.avif',
+      'assets/product-images/0232/yttp-adaptogen-mist-3.avif',
+      'assets/product-images/0232/yttp-adaptogen-mist-4.avif',
+    ],
+    price: 42,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Toner',
+    for: 'Face',
+    availableAmount: 76,
+  },
+  {
+    id: '0233',
+    brandName: 'Youth to the People',
+    productName: 'Superfood Hydrate Firm Eye Cream',
+    description: `Small but mighty. Introduce your eyes to the power of superfoods and science. This
+     nourishing cream delivers vital nutrients with our proprietary superfood blend, peptides, and an army of restorative vitamins.`,
+    ingredients: `Water/Aqua/Eau (Aqua) , Helianthus Annuus (Sunflower) Seed Oil , Stearic Acid , Glycerin , Glyceryl Stearate ,
+     Cetyl Alcohol , Ascorbic Acid (Vitamin C) , Lecithin , Panthenol (Vitamin B5) , Sodium Hyaluronate Crosspolymer ,
+      Tocopheryl Acetate (Vitamin E) , Phenoxyethanol , Hydroxyethylcellulose , Potassium Sorbate , Aloe Barbadensis
+       (Aloe) Leaf Extract* , Brassica Oleracea Capitata (Kale) Leaf Extract* , Camellia Sinensis (Green Tea) Leaf
+        Extract* , Chamomilla Recutita (Matricaria) Flower Extract* , Medicago Sativa (Alfalfa) Leaf Extract* ,
+         Spinacia Oleracea (Spinach) Leaf Extract* , Natural Fragrance , Pentylene Glycol , Ethylhexylglycerin
+          , Magnesium Chloride , Palmitoyl Dipeptide-5 Diaminobutyroyl Hydroxythreonine , Palmitoyl Tripeptide-5
+           , Tetradecyl Aminobutyroylvalylaminobutyric Urea Trifluoroacetate , Benzyl Benzoate , Citronellol ,
+            Hexyl Cinnamal , Limonene , Linalool`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0233/yttp-firm-eye-cream-1.avif',
+      'assets/product-images/0233/yttp-firm-eye-cream-2.avif',
+      'assets/product-images/0233/yttp-firm-eye-cream-3.avif',
+    ],
+    price: 35,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 25,
+  },
+  {
+    id: '0234',
+    brandName: 'Youth to the People',
+    productName: 'Superberry Dream Eye Cream',
+    description: `This potent, fragrance-free overnight eye cream works to visibly smooth
+     the appearance of fine lines + wrinkles, firm the look of skin, and actively hydrate while you sleep.`,
+    ingredients: `Water/Aqua/Eau , Dicaprylyl Carbonate , Butyrospermum Parkii (Shea) Butter ,
+     Cetearyl Alcohol , Glycerin , Squalane , Glyceryl Stearate , Avena Sativa (Oat) Bran Extract ,
+      Citrus Aurantium Dulcis (Orange) Peel Extract , Moringa Oleifera Seed Oil , Opuntia Ficus-Indica
+       (Prickly Pear) Seed Oil* , Lycium Barbarum (Goji) Callus Culture Extract , Gardenia Jasminoides
+        (Gardenia) Fruit Extract , Sodium Stearoyl Glutamate , Carbomer , Cetearyl Glucoside , Isomalt ,
+         Sodium Benzoate , Tetrahexyldecyl Ascorbate (Vitamin C) , Tocopheryl Acetate , Tetrasodium
+          Glutamate Diacetate , Betaine , Ceramide NP , Phospholipids , Sodium Hyaluronate , Maltodextrin ,
+           Sodium Hydroxide , Phenoxyethanol , Glucose , Lecithin , Tocopherol , Sodium Glycolate ,
+            Sodium Formate , Ethylhexylglycerin , Citric Acid`,
+    starIngredient: 'Ceramide',
+    pics: [
+      'assets/product-images/0234/yttp-suberberry-eye-cream-1.avif',
+      'assets/product-images/0234/yttp-suberberry-eye-cream-2.avif',
+      'assets/product-images/0234/yttp-suberberry-eye-cream-3.avif',
+      'assets/product-images/0234/yttp-suberberry-eye-cream-4.avif',
+    ],
+    price: 48,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Eye Cream',
+    for: 'Face',
+    availableAmount: 37,
+  },
+  {
+    id: '0235',
+    brandName: 'Youth to the People',
+    productName: 'Superberry Hydrate Glow Dream Mask',
+    description: `The ultimate hydrating radiance boost. This overnight mask deeply hydrates, plumps and
+     brightens with powerful, antioxidant-rich superberries and THD ascorbate, the latest clinically-proven
+      form of stable Vitamin C. This formula helps to target dullness and uneven skin tone for brighter, more radiant skin.`,
+    ingredients: `Water/Aqua/Eau , Glycerin , Helianthus Annuus (Sunflower) Seed Oil , Glyceryl Stearate ,
+     Cetyl Alcohol , Betaine , Isopropyl Myristate , Stearic Acid , Opuntia Tuna (Prickly Pear) Extract ,
+      Euterpe Oleracea (Açaí) Fruit Extract , Lycium Barbarum (Goji) Extract , Aristotelia Chilensis (Maqui)
+       Fruit Extract , Moringa Oleifera Leaf Extract , Tetrahexyldecyl Ascorbate (Vitamin C) , Phenoxyethanol ,
+        Glyceryl Stearyl Citrate , Tocopheryl Acetate (Vitamin E) , Glyceryl Laurate , Squalane , Carbomer ,
+         Hyaluronic Acid , Allantoin , Panthenol (Vitamin B5) , Ethylhexylglycerin , Xanthan Gum , Natural
+          Fragrance , Riboflavin (Vitamin B2)`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0235/yttp-superberry-mask-1.avif',
+      'assets/product-images/0235/yttp-superberry-mask-2.avif',
+      'assets/product-images/0235/yttp-superberry-mask-3.avif',
+      'assets/product-images/0235/yttp-superberry-mask-4.avif',
+    ],
+    price: 48,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 16,
+  },
+  {
+    id: '0236',
+    brandName: 'Youth to the People',
+    productName: 'Superclay Purify Mask',
+    description: `Supercharged with 2% niacinamide, this triple-clay mask deep cleans and actively clears
+     pores for skin that functions at its fullest potential. Boosted with exfoliating salicylic acid and
+      balancing kombucha, this pro-grade purifying treatment targets the root of skin issues, evens tone,
+       and absorbs excess oil that can trigger breakouts without disrupting skin's moisture barrier.`,
+    ingredients: `Water/Aqua/Eau , Kaolin , Cetyl Alcohol , Propanediol , Glycerin , Glyceryl Stearate ,
+     Bentonite , Niacinamide , Oryza Sativa (Rice) Starch , Stearyl Alcohol , Magnesium Aluminum Silicate ,
+      Montmorillonite (French Green Clay) , Illite , Calcite , Salicylic Acid , Salix Purpurea (Red Willow) Bark Extract
+       , Saccharomyces/Xylinum/Black Tea Ferment , Allantoin , Carthamus Tinctorius (Safflower) Seed Oil ,
+        Phycocyanin (Blue Algae) , Aloe Barbadensis (Aloe Vera) Leaf Juice Powder , Glyceryl Acrylate/Acrylic
+         Acid Copolymer , Cetearyl Olivate , Sorbitan Olivate , Triticum Aestivum (Wheatgrass) Leaf Powder ,
+          Lactic Acid , Sorbitan Stearate , Caprylhydroxamic Acid , Sodium Citrate , 1,2-Hexanediol ,
+           Charcoal Powder , Maltodextrin , Gardenia Florida Fruit Extract`,
+    starIngredient: 'Niacinamide',
+    pics: [
+      'assets/product-images/0236/yttp-superclay-mask-1.avif',
+      'assets/product-images/0236/yttp-superclay-mask-2.avif',
+      'assets/product-images/0236/yttp-superclay-mask-3.avif',
+      'assets/product-images/0236/yttp-superclay-mask-4.avif',
+    ],
+    price: 36,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Mask',
+    for: 'Face',
+    availableAmount: 49,
   },
 ];
