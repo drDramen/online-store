@@ -6443,4 +6443,189 @@ export const products: Product[] = [
     for: 'Face',
     availableAmount: 200,
   },
+  {
+    id: '0221',
+    brandName: 'Youth to the People',
+    productName: 'Superberry Dream Cleasning Balm',
+    description: `This flash-melting daily cleansing balm and makeup remover rapidly
+     dissolves all traces of long-wear formulas and water-resistant sunscreens while
+      gently removing excess oils and impurities. It's PEG-free, rinses clean, and
+       leaves skin soft and hydrated, never greasy.`,
+    ingredients: `Helianthus Annuus (Sunflower) Seed Oil, Caprylic/Capric Triglyceride,
+     Oryza Sativa (Rice) Bran Wax , Polyglyceryl-2 Sesquicaprylate , Polyglyceryl-6 Distearate ,
+      Water/Aqua/Eau , Polyhydroxystearic Acid , Simmondsia Chinensis (Jojoba) Seed Oil ,
+       Moringa Oleifera Seed Oil , Sorbitan Olivate , Hydrolyzed Sodium Hyaluronate , Sodium Hyaluronate ,
+        Opuntia Ficus-Indica (Prickly Pear) Stem Extract* , Aristotelia Chilensis (Maqui Berry) Fruit
+         Extract , Euterpe Oleracea (Acai) Fruit Extract , Lycium Barbarum (Goji Berry) Fruit Extract ,
+          Moringa Oleifera (Moringa) Leaf Extract , Opuntia Tuna (Prickly Pear) Flower/Stem Extract ,
+           Melia Azadirachta Flower (Neem) Extract , Melia Azadirachta Leaf Extract , Ocimum Sanctum
+            Leaf Extract , Curcuma Longa (Turmeric) Root Extract , Ocimum Basilicum (Holy Basil)
+             Flower/Leaf Extract , Corallina Officinalis (Red Algae) Extract , Ricinus Communis (Castor)
+              Seed Oil , Hydrogenated Castor Oil , Tocopherol , Sodium Laurylglucosides Hydroxypropylsulfonate ,
+               Caprylyl Glycol , Sodium Chloride , Ethylhexylglycerin , Phenoxyethanol , Hexylene Glycol ,
+                Fragrance/Parfum , Limonene`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-1.jpg',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-2.jpg',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-3.jpg',
+      'assets/product-images/0221/yttp-superberry-cleansing-balm-4.jpg',
+    ],
+    price: 34,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Cleanser',
+    for: 'Face',
+    availableAmount: 105,
+  },
+  {
+    id: '0222',
+    brandName: 'Youth to the People',
+    productName: 'Retinal Niacinamide Youth Serum',
+    description: `This multi-effect retinal night serum uses the power of retinaldehyde (the most potent retinoid next
+       to an Rx) to smooth textured and blemished skin, improve the look of fine lines and wrinkles, and brighten uneven skin tone.`,
+    ingredients: `Water/Aqua/Eau , Butylene Glycol , Triethylhexanoin , Niacinamide , Squalane , Cyclodextrin ,
+     Glycerin , Hydrogenated Lecithin , Polyglyceryl-10 Myristate , Grifola Frondosa Fruiting Body Extract ,
+      Rubus Chamaemorus (Cloudberry) Seed Oil , Arginine , Retinal , Withania Somnifera (Ashwagandha) Root
+       Extract , Helianthus Annuus (Sunflower) Seed Oil , Hordeum Vulgare Extract , Ganoderma Lucidum
+        (Reishi Mushroom) Stem Extract , Sodium Hyaluronate Crosspolymer , Cucumis Sativus (Cucumber)
+         Seed Oil , Lonicera Japonica (Honeysuckle) Flower Extract , Ceramide NP , Ceramide AP ,
+          Phytosphingosine , Cholesterol , Letinus Edodes Mycelium Extract , Lonicera Caprifolium
+           (Honeysuckle) Flower Extract , Butyrospermum Parkii (Shea) Oil , Ceramide EOP , Sodium Lauroyl
+            Lactylate , Acrylates/C10-30 Alkyl Acrylate Crosspolymer , Capryloyl Glycerin/Sebacic Acid
+             Copolymer , Xanthan Gum , Tocopherol , Carbomer , Hydrolyzed Glycosaminoglycans , Sodium
+              Hyaluronate , Hyaluronic Acid , Pentylene Glycol , Hydrolyzed Sodium Hyaluronate ,
+               Diheptyl Succinate , Phenoxyethanol , Ethylhexylglycerin , Phytosterols , Propanediol`,
+    starIngredient: 'Retinol',
+    pics: [
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-1.jpg',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-2.jpg',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-3.jpg',
+      'assets/product-images/0222/yttp-retinal-niacinamide-serum-4.jpg',
+    ],
+    price: 68,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 90,
+  },
+  {
+    id: '0223',
+    brandName: 'Youth to the People',
+    productName: 'Triple Peptide Cactus Oasis Serum',
+    description: `This three-in-one intensely hydrating, plumping, and firming serum instantly revitalizes dry,
+     dehydrated skin and plumps the look of fine lines and wrinkles with a moisture-multiplying
+      matrix of peptides, hyaluronic acid, and super replenishing cactus stem.`,
+    ingredients: `Water/Aqua/Eau , Butylene Glycol , Glycerin , Pentylene Glycol , Opuntia Ficus-Indica
+     Stem (Prickly Pear Cactus) Extract* , Palmitoyl Tripeptide-1 , Palmitoyl Tetrapeptide-7 , Palmitoyl
+      Tripeptide-28 , Sodium Hyaluronate , Hydrolyzed Sodium Hyaluronate , Sodium Hyaluronate Crosspolymer ,
+       Sodium Acetylated Hyaluronate , Synthetic Sapphire , Citrullus Lanatus (Watermelon) Fruit Extract ,
+        Lens Esculenta (Lentil) Fruit Extract , Pyrus Malus (Apple) Fruit Extract , Nephelium Lappaceum Peel
+         (Rambutan) Extract , Sodium Pca , Glutathione , Malachite Extract , Citric Acid , Hydroxypropyl
+          Methylcellulose , Tetrasodium Glutamate Diacetate , Polyglutamic Acid , 1,2-Hexandiol , Caprylyl Glycol
+           , Sodium Lactate , Carbomer , Propanediol , Polysorbate 20 , Hydroxyethylcellulose , Xanthan Gum ,
+            Phenoxyethanol , Ethylhexylglycerin , Sodium Benzoate , Potassium Sorbate , Disodium Phosphate ,
+             Polysorbate 60 , Benzyl Alcohol , Sodium Hydroxide , Glyceryl Caprylate , Sodium Formate ,
+              Sodium Glycolate , Sodium Phosphate , Benzoic Acid`,
+    starIngredient: 'Peptide',
+    pics: [
+      'assets/product-images/0223/yttp-peptide-cactus-serum-1.jpg',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-2.jpg',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-3.jpg',
+      'assets/product-images/0223/yttp-peptide-cactus-serum-4.jpg',
+    ],
+    price: 54,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 62,
+  },
+  {
+    id: '0224',
+    brandName: 'Youth to the People',
+    productName: '15% Vitamin C Caffeine Energy Serum',
+    description: `Elevate your morning routine. This first-of-its-kind clinical-grade 15% vitamin C serum is boosted with clean,
+     plant-derived caffeine from superleafs yerba mate and guayusa to immediately brighten, visibly reduce morning puffiness, and hydrate.`,
+    ingredients: `Water/Aqua/Eau , 3-O-Ethyl Ascorbic Acid (Vitamin C) , Tetrahexyldecyl Ascorbate (Vitamin C) ,
+     Propanediol , Glycerin , Pentylene Glycol , Sodium Citrate , Squalane , Triethyl Citrate , Gluconolactone ,
+      Citric Acid , Polyhydroxystearic Acid , Polyglyceryl-6 Polyricinoleate , Xanthan Gum , Sodium Hyaluronate ,
+       Caffeine , Magnesium Ascorbyl Phosphate (Vitamin C) , Sodium Stearoyl Glutamate , Sodium Benzoate , Lauroyl
+        Lysine , Passiflora Edulis (Passionfruit) Extract , Sclerotium Gum , Lecithin , Ilex Guayusa Leaf Extract
+         , Ilex Paraguariensis (Yerba Mate) Leaf Extract , Pullulan , Mannitol , Hylocereus Undatus (Dragon) Fruit
+          Extract , Zingiber Officinale (Ginger) Root Oil , Calcium Gluconate , Silica , Potassium Sorbate ,
+           Phenoxyethanol , Ergothioneine`,
+    starIngredient: 'Vitamin C',
+    pics: [
+      'assets/product-images/0224/yttp-vit-c-serum-1.jpg',
+      'assets/product-images/0224/yttp-vit-c-serum-2.jpg',
+      'assets/product-images/0224/yttp-vit-c-serum-3.jpg',
+      'assets/product-images/0224/yttp-vit-c-serum-4.jpg',
+    ],
+    price: 68,
+    bestseller: true,
+    segment: 'USA / Canada',
+    category: 'Serum',
+    for: 'Face',
+    availableAmount: 46,
+  },
+  {
+    id: '0225',
+    brandName: 'Youth to the People',
+    productName: 'Superberry Hydrate Glow Dream Oil',
+    description: `This ultra-enriched, flash-absorbing face oil packed with rare super berry antioxidants that leaves skin velvety
+     soft, hydrated, and glowing. Intensely hydrating prickly pear and squalane oil lock in moisture with
+      the help of omega fatty acids and high levels of vitamin C.`,
+    ingredients: `Helianthus Annuus (Sunflower) Seed Oil* , Dicaprylyl Carbonate , Simmondsia Chinensis (Jojoba)
+     Seed Oil* , Squalane Olive , Tocopherol (Vitamin E) , Natural Fragrance , Aristotelia Chilensis (Maqui)
+      Fruit Extract , Euterpe Oleracea Fruit (Acai) Extract , Lycium Barbarum (Goji) Fruit Extract ,
+       Moringa Oleifera Leaf Extract , Opuntia Tuna (Prickly Pear) Flower/Stem Extract , Borago Officinalis
+        (Borage) Seed Oil* , Linum Usitatissimum (Flaxseed) Seed Oil* , Oenothera Biennis (Evening Primrose)
+         Oil* , Olea Europaea (Olive) Fruit Oil* , Rosa Canina (Rosehip) Fruit Oil* , Punica Granatum
+          (Pomegranate) Seed Oil* , Vaccinium Macrocarpon (Cranberry) Seed Oil* , Amylcinnamyl Alcohol
+           , Citral , Citronellol , Hexyl Cinnamal , Hydroxycitronellal , Limonene , Linalool`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0225/yttp-superberry-oil-1.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-2.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-3.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-4.jpg',
+    ],
+    price: 44,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Oil',
+    for: 'Face',
+    availableAmount: 12,
+  },
+  {
+    id: '0226',
+    brandName: 'Youth to the People',
+    productName: 'Superberry Hydrate Glow Dream Oil',
+    description: `This ultra-enriched, flash-absorbing face oil packed with rare super berry antioxidants that leaves skin velvety
+     soft, hydrated, and glowing. Intensely hydrating prickly pear and squalane oil lock in moisture with
+      the help of omega fatty acids and high levels of vitamin C.`,
+    ingredients: `Helianthus Annuus (Sunflower) Seed Oil* , Dicaprylyl Carbonate , Simmondsia Chinensis (Jojoba)
+     Seed Oil* , Squalane Olive , Tocopherol (Vitamin E) , Natural Fragrance , Aristotelia Chilensis (Maqui)
+      Fruit Extract , Euterpe Oleracea Fruit (Acai) Extract , Lycium Barbarum (Goji) Fruit Extract ,
+       Moringa Oleifera Leaf Extract , Opuntia Tuna (Prickly Pear) Flower/Stem Extract , Borago Officinalis
+        (Borage) Seed Oil* , Linum Usitatissimum (Flaxseed) Seed Oil* , Oenothera Biennis (Evening Primrose)
+         Oil* , Olea Europaea (Olive) Fruit Oil* , Rosa Canina (Rosehip) Fruit Oil* , Punica Granatum
+          (Pomegranate) Seed Oil* , Vaccinium Macrocarpon (Cranberry) Seed Oil* , Amylcinnamyl Alcohol
+           , Citral , Citronellol , Hexyl Cinnamal , Hydroxycitronellal , Limonene , Linalool`,
+    starIngredient: '',
+    pics: [
+      'assets/product-images/0225/yttp-superberry-oil-1.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-2.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-3.jpg',
+      'assets/product-images/0225/yttp-superberry-oil-4.jpg',
+    ],
+    price: 44,
+    bestseller: false,
+    segment: 'USA / Canada',
+    category: 'Oil',
+    for: 'Face',
+    availableAmount: 12,
+  },
 ];
