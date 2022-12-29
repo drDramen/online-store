@@ -3,7 +3,7 @@ import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
 import './cart.scss';
 
-const cartLink = [{ textContent: 'Cart', href: NameRoute.Cart }];
+const cartLink = { href: NameRoute.Cart };
 
 export class HeaderCart extends BaseComponent {
   private cartText: BaseComponent;
@@ -17,7 +17,7 @@ export class HeaderCart extends BaseComponent {
       className: 'cart',
     });
 
-    this.cartLink = new Link({ className: 'cart__link' });
+    this.cartLink = new Link({ ...cartLink, className: 'cart__link' });
     this.append(this.cartLink);
 
     this.cartText = new BaseComponent('div', { className: 'cart__text' });
@@ -38,6 +38,6 @@ export class HeaderCart extends BaseComponent {
     this.cartProductsAmount.setContent('0');
     this.cartProductsCircle.append(this.cartProductsAmount);
 
-    Link.addCartLink(cartLink);
+    Link.addNavigationLink(this.cartLink);
   }
 }
