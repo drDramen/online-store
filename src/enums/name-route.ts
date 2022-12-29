@@ -6,4 +6,5 @@ export enum NameRoute {
   Product = '/product',
   Cart = '/cart',
   NotFound = '/404',
+  Brands = '/brands',
 }

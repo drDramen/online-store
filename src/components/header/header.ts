@@ -1,5 +1,5 @@
-import { HeaderTotalSum } from './../header-total-sum/header-total-sum';
-import { HeaderCart } from './../header-cart/header-cart';
+import { HeaderTotalSum } from '../total-sum/total-sum';
+import { HeaderCart } from '../cart/cart';
 import { Navigation } from './../navigation/navigation';
 import { Logo } from './../logo/logo';
 import { BaseComponent } from '@/templates/base-component';

@@ -34,4 +34,12 @@ export const routes: Route[] = [
       return new ProductPage();
     },
   },
+  {
+    name: NameRoute.Brands,
+    component: async () => {
+      const { BrandsPage } = await import('@/components/pages/brands-page/brands-page');
+
+      return new BrandsPage();
+    },
+  },
 ];

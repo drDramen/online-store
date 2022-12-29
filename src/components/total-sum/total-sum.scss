@@ -1,4 +1,4 @@
-.header_total_sum {
+.total_sum {
     height: 42px;
     font-family: 'Roboto';
     font-style: normal;
@@ -10,14 +10,9 @@
     align-items: center;
     user-select: none;
 
-    &.text {
-        width: 163px;
-        height: 42px;
-    }
-
     &.amount {
-        width: 81px;
-        height: 42px;
         justify-content: center;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 }

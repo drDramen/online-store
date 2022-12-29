@@ -1,11 +1,17 @@
-.cart__header {
+.cart {
+    &__link {
     width: 123px;
     height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 57px;
     user-select: none;
+
+    &.active {
+        color: var(--color-charlotte);
+    }
+
+    }
 
     &__text {
         width: 68px;
