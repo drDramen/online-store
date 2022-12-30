@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: '0002',
     brandName: 'CeraVe',
-    productName: 'Facial Moisturising Lotion for Normal to Dry Skin SPF25',
+    productName: 'Moisturising Lotion SPF25',
     description: `Cerave SPF25 lotion provides intensive hydration throughout
      the day and protection from UVA and UVB rays. The product contains a
       complex of components that maintain the hydrobalance of the epidermis
@@ -62,7 +62,7 @@ export const products: Product[] = [
   {
     id: '0003',
     brandName: 'CeraVe',
-    productName: 'Moisturising Cream for Dry to Very Dry Skin',
+    productName: 'Moisturising Cream for Dry Skin',
     description: `Thanks to its rich, yet light and non-greasy texture, Cerave Moisturizing
      Cream is quickly absorbed, eliminates discomfort and replenishes the lack of moisture
       in the stratum corneum. MVE technology provides a gradual release of the ingredients
@@ -90,7 +90,7 @@ export const products: Product[] = [
   {
     id: '0004',
     brandName: 'CeraVe',
-    productName: 'SA Skin Smoothing Cleanser For Dry, Rough, Bumpy Skin',
+    productName: 'Smoothing Cleanser For Dry Skin',
     description: `Repair dry, rough and uneven skin with CeraVe SA Skin Smoothing Cleanser.
      The tool forms a thick foam, which perfectly washes away all dirt and make-up residues
       from the epidermis. The salicylic acid included in the composition gently dissolves
@@ -118,7 +118,7 @@ export const products: Product[] = [
   {
     id: '0005',
     brandName: 'CeraVe',
-    productName: 'SA Cream for Rough & Bumpy Skin',
+    productName: 'Cream for Rough & Bumpy Skin',
     description: `An effective way to improve dry, rough and uneven skin is to use CeraVe
      SA Cream for Rough & Bumpy Skin. Components specially selected by dermatologists in
       optimal concentrations provide intensive care for the epidermis, delicately
@@ -150,7 +150,7 @@ export const products: Product[] = [
   {
     id: '0006',
     brandName: 'CeraVe',
-    productName: 'Hydrating Cleanser for Normal to Dry Skin',
+    productName: 'Hydrating Cleanser for Normal Skin',
     description: `Soft hypoallergenic cleansing cream-gel Cerave is suitable for gentle
      cleansing of dehydrated dry sensitive skin. The product effectively removes impurities,
       makeup and sebum, helps to restore the hydrolipidic mantle, and intensively moisturizes.
@@ -179,7 +179,7 @@ export const products: Product[] = [
   {
     id: '0007',
     brandName: 'CeraVe',
-    productName: 'Facial Moisturising Lotion for Normal to Dry Skin',
+    productName: 'Moisturising Lotion for Normal Skin',
     description: `Ultra-light moisturizing lotion Cerave maintains optimal hydrobalance of
      the epidermis throughout the day, and also strengthens the natural protective barrier
       of the skin. Thanks to MVE technology, the active components of the formula are gradually
@@ -352,7 +352,7 @@ export const products: Product[] = [
   {
     id: '0013',
     brandName: 'Skadi',
-    productName: 'Cream with Ceramides, Centella, Prebiotics',
+    productName: 'Ceramides, Centella, Prebiotics Cream',
     description: `The cream maintains an optimal level of skin hydration regardless of environmental
      humidity, and also gradually evens out skin tone with regular use. Strengthens the barrier functions
       of the skin and improves the condition of oily skin. The cream is also suitable for combination
@@ -378,7 +378,7 @@ export const products: Product[] = [
   {
     id: '0014',
     brandName: 'Skadi',
-    productName: 'Antioxidant Cream for Dry to Normal Skin',
+    productName: 'Antioxidant Cream for Dry Skin',
     description: `Deep hydration is achieved through the combination of cascade moisturizers
      (amino acids and hyaluronic acid) and components that enhance the barrier function of
       the skin, with a physiological ratio of fatty acids in vegetable oils. Phytosterols
@@ -636,13 +636,13 @@ export const products: Product[] = [
   {
     id: '0023',
     brandName: 'Manyo',
-    productName: 'Bifida Complex Ampoule Gel Cleanser',
+    productName: 'Bifida Complex Gel Cleanser',
     description: `Manyo Bifida Complex Ampoule Gel Cleanser is a natural, slightly
      acidic foam gel for removing makeup and daily skin cleansing. The formula
       protects the skin barrier, which is easily damaged during cleansing, while
        plant enzymes and micelles remove impurities from deep within the pores.`,
     ingredients: `Water, sodium olefin sulfinate C14-16, lauryl betaine,
-     glycerin, sodium chloride, lactobacilli/ ginseng root enzyme 
+     glycerin, sodium chloride, lactobacilli/ ginseng root enzyme
      filtrate, lactobacilli/ soy milk enzyme filtrate, butylene glycol,
       sodium hyaluronate, hydroxypropyltrimonium hyaluronate, hydrolyzed hyaluronic acid,
        sodium acetyl-hyaluronate, hyaluronic acid, sodium hyaluronate crosspolymer, potassium
@@ -1351,7 +1351,7 @@ export const products: Product[] = [
   {
     id: '0047',
     brandName: `Dear, Klairs`,
-    productName: 'All-Day Airy Sunscreen SPF50+ PA++++',
+    productName: 'All-Day Airy Sunscreen SPF50',
     description: `Light face sunscreen Dear, Klairs All-Day Airy Sunscreen SPF50+ PA++++ -
      airy texture and reliable UV protection in one bottle. The light texture of the
       cream creates a weightless coating.`,
@@ -1440,7 +1440,7 @@ export const products: Product[] = [
   {
     id: '0050',
     brandName: `Dear, Klairs`,
-    productName: 'Gentle Black Fresh Cleansing Oil',
+    productName: 'Gentle Black Cleansing Oil',
     description: `Moisturizing hydrophilic oil Dear, Klairs Gentle Black Fresh Cleansing
      Oil is a high-quality and deep cleansing for every day without skin irritation.
       The oil cleanses all types of dirt: whether it be foundation, dust or sebum.
@@ -1603,7 +1603,7 @@ export const products: Product[] = [
   {
     id: '0055',
     brandName: `Dear, Klairs`,
-    productName: 'Supple Preparation All Over Lotion',
+    productName: 'Supple Preparation Lotion',
     description: `Klairs Supple Preparation All Over Lotion Ceramide Hydrating Lotion deeply
      hydrates dry and sensitive skin by creating a protective barrier that prevents moisture
       from evaporating. The lotion gives the skin a feeling of hydration for the whole
@@ -1705,7 +1705,7 @@ export const products: Product[] = [
   {
     id: '0058',
     brandName: `Dear, Klairs`,
-    productName: 'Supple Preparation Facial Toner',
+    productName: 'Supple Preparation Toner',
     description: `Dear, Klairs Supple Preparation Facial Toner with phyto-oligo complex -
      moisturizes and soothes sensitive skin after cleansing, evens out skin texture,
       maintaining an optimal pH balance, which helps absorption of other products.`,
@@ -1770,7 +1770,7 @@ export const products: Product[] = [
   {
     id: '0060',
     brandName: `Dear, Klairs`,
-    productName: 'Fundamental Nourishing Eye Butter',
+    productName: 'Nourishing Eye Butter',
     description: `Nourishing eye cream Dear, Klairs Fundamental Nourishing Eye Butter -
      restores tired skin under the eyes, and also eliminates the signs of sleepless nights.
     The powerful formula contains peptides that improve skin elasticity and reduce
@@ -2325,7 +2325,7 @@ export const products: Product[] = [
   {
     id: '0079',
     brandName: `MEDI-PEEL`,
-    productName: 'Bio Intense Glutathione White Cream',
+    productName: 'Glutathione White Cream',
     description: `The balanced composition of the product works complexly with the skin, gently brightens
      pigmentation and evens out the tone of the face, and also fights age-related skin changes.
       The cream has a pleasant light texture that is instantly absorbed, nourishes the skin for
@@ -2439,7 +2439,7 @@ export const products: Product[] = [
   {
     id: '0082',
     brandName: `MEDI-PEEL`,
-    productName: 'Peptide 9 Volume Bio Tox Ampoule ',
+    productName: 'Peptide 9 Volume BioTox Ampoule ',
     description: `Anti-aging face serum with peptides MEDI-PEEL Peptide 9 Volume Bio Tox
      Ampoule provides a powerful complex effect on the skin, restores its brightness and
       healthy radiance. Rich in astaxanthin, which is 6,000 times more powerful than
@@ -2544,7 +2544,7 @@ export const products: Product[] = [
   {
     id: '0085',
     brandName: `MEDI-PEEL`,
-    productName: 'Bio-Intense Gluthione 600 White Ampoule',
+    productName: 'Gluthione 600 White Ampoule',
     description: `The complex whitening agent effectively brightens all dark spots and imperfections,
      moreover, deeply moisturizes the skin. Forget about unpleasant whitening procedures,
       get acquainted with the intensive serum.`,
@@ -2574,7 +2574,7 @@ export const products: Product[] = [
   {
     id: '0086',
     brandName: `MEDI-PEEL`,
-    productName: 'Aqua Essence Emulsion Peptide 9',
+    productName: 'Aqua Essence Peptide 9',
     description: `Anti-aging emulsion with peptides for the face MEDI-PEEL Aqua
      Essence Emulsion Peptide 9 - provides intensive skin care. Contains 9 varieties
       of peptides to improve elasticity.
@@ -2650,7 +2650,7 @@ export const products: Product[] = [
   {
     id: '0088',
     brandName: `MEDI-PEEL`,
-    productName: 'Peptide 9 Volume White Cica Essence',
+    productName: 'Peptide 9 White Cica Essence',
     description: `Oxygen essence with centella MEDI-PEEL Peptide 9 Volume White Cica Essence -
      provides soothing care for sensitive skin and visibly evens out its tone. The multifunctional
       essence penetrates deep into the skin and is much more effective than other products.`,
@@ -2730,7 +2730,7 @@ export const products: Product[] = [
   {
     id: '0090',
     brandName: `MEDI-PEEL`,
-    productName: 'Herbal Peel Tox Wash Off Type Cream Mask',
+    productName: 'Herbal Peel Cream Mask',
     description: `MEDI-PEEL Herbal Peel Tox Wash Off Type Cream Mask - A washable creamy peeling mask
      removes dead skin cells and other impurities that cause skin problems, restores bright and smooth
       skin with 41 types of medicinal herbs .`,
@@ -2846,7 +2846,7 @@ export const products: Product[] = [
   {
     id: '0093',
     brandName: `MEDI-PEEL`,
-    productName: 'Volume TOX Cream Peptide 9',
+    productName: 'Volume Cream Peptide 9',
     description: `Cream - lifting MEDI-PEEL Volume TOX Cream Peptide 9 - provides intensive skin
      care with 9 types of peptides to increase skin elasticity. An intensive anti-ageing cream
       that adds radiance to your skin. The product contains not only a complex of 9 types of
@@ -2929,7 +2929,7 @@ export const products: Product[] = [
   {
     id: '0095',
     brandName: `MEDI-PEEL`,
-    productName: 'Collagen Super 10 Sleeping Cream',
+    productName: 'Collagen Super 10 Cream',
     description: `Night face cream with collagen MEDI-PEEL Collagen Super 10 Sleeping Cream
      - fights signs of premature aging and sagging, restores dehydrated skin.`,
     ingredients: `Purified Water, Glycerin, Niacinamide, Dimethicone, Fiji -240 / E.Diicopolymer
@@ -3122,11 +3122,11 @@ export const products: Product[] = [
     brandName: 'Bioderma',
     productName: 'Sensibio Micelle Solution',
     description: `Bioderma Sensibio Micelle solution
-     (Bioderma Sensibio H2O Cleansing Water) for fragile, thin, sensitive 
-     skin prone to skin redness. Micellar solution Sensibio H20 qualitatively 
-     and quickly cleanses the skin of the face and eye contour by microemulsifying 
-     impurities and makeup, while maintaining the hydrolipidic balance of 
-     the stratum corneum of the skin. Soothes and moisturizes the skin. 
+     (Bioderma Sensibio H2O Cleansing Water) for fragile, thin, sensitive
+     skin prone to skin redness. Micellar solution Sensibio H20 qualitatively
+     and quickly cleanses the skin of the face and eye contour by microemulsifying
+     impurities and makeup, while maintaining the hydrolipidic balance of
+     the stratum corneum of the skin. Soothes and moisturizes the skin.
      Does not contain alkali, alcohol, phenoxyethanol and fragrances; pH neutral.`,
     ingredients: `Aqua/water/eau, Peg-6 Caprylic/capric Glycerides,
      Fructooligosaccharides, Mannitol, Xylitol, Rhamnose, Cucumis Sativus
@@ -3147,7 +3147,7 @@ export const products: Product[] = [
     id: '0102',
     brandName: 'Bioderma',
     productName: 'Sébium Gel moussant actif',
-    description: `Especially for the cleansing of oily skin prone to acne, 
+    description: `Especially for the cleansing of oily skin prone to acne,
     the Bioderma laboratory offers a solution with an optimal combination
      of keratolytic effect and good tolerance - Intensive Action Gel Active.
      The soap-free formula with zinc gluconate, salicylic acid and glycolic
@@ -3465,7 +3465,7 @@ export const products: Product[] = [
   {
     id: '0112',
     brandName: 'Bioderma',
-    productName: 'Hydrabio Tonique Moisturising toning lotion',
+    productName: 'Hydrabio Tonique Moisturising lotion',
     description: `Innovation Bioderma, the biological patented Aquagenium complex,
      affects the mechanisms that lead to the accumulation of moisture,
       its retention on the surface, which is necessary to preserve the natural balance.
@@ -3492,7 +3492,7 @@ export const products: Product[] = [
   {
     id: '0113',
     brandName: 'Bioderma',
-    productName: 'Hydrabio Lait Moisturising cleansing milk',
+    productName: 'Hydrabio Lait cleansing milk',
     description: `The unique texture combines the softness of cosmetic milk and the
      freshness of water, making the use of the product as comfortable as possible.
     Due to the content of the patented Aquagenium® complex based on liquid crystals,
@@ -3579,7 +3579,7 @@ export const products: Product[] = [
   {
     id: '0116',
     brandName: 'Bioderma',
-    productName: 'Sébium Sensitive Soin Apaisant anti-imperfections',
+    productName: 'Sébium Sensitive Soin Apaisant',
     description: `Thanks to SeboRestore technology (Patent Fluidactiv ™ - Bakuchiol),
      the product restores the balanced composition of sebum, as a result, the natural
       functions of sebum are strengthened - moisturizing and preventing inflammatory
@@ -3634,7 +3634,7 @@ export const products: Product[] = [
   {
     id: '0118',
     brandName: 'Bioderma',
-    productName: 'Sebium Global intensive purifying care',
+    productName: 'Sebium Global purifying care',
     description: `Bioderma Sebium Global intensive purifying care is a unique
      product that eliminates the causes of inflammation and acne by normalizing the composition of sebum.
     Bioderma Sebium Global intensive healing care formula includes a new generation patented Fluidactiv
@@ -3905,7 +3905,7 @@ export const products: Product[] = [
   {
     id: '0127',
     brandName: 'Bioderma',
-    productName: 'Sensibio Défensive Crème active apaisante légère',
+    productName: 'Sensibio Défensive Crème légère',
     description: `Tingling, burning sensation and tightness, itching - more than 60% of
      the world's population experiences similar signs of skin sensitivity. In addition
       to the natural violation of the biological function of the skin, urban residents
@@ -3938,7 +3938,7 @@ export const products: Product[] = [
   {
     id: '0128',
     brandName: 'Bioderma',
-    productName: 'Sensibio Défensive Crème active apaisante riche',
+    productName: 'Sensibio Défensive Crème riche',
     description: `Tingling, burning sensation and tightness, itching - more than 60% of the
      world's population experiences similar signs of skin sensitivity. In addition to the
       natural violation of the biological function of the skin, urban residents face
@@ -5191,7 +5191,7 @@ export const products: Product[] = [
   {
     id: '0172',
     brandName: `Paula's Choice`,
-    productName: 'Intensive Wrinkle-Repair Retinol Serum',
+    productName: 'Intensive Retinol Serum',
     description: `This extravagantly silky serum blends pure retinol and potent antioxidants to help impart
      firmer-feeling skin, smooth and soften fine lines and wrinkles, and provide
       hydration so skin of any age can look radiant and revitalized.`,
@@ -5215,7 +5215,7 @@ export const products: Product[] = [
   {
     id: '0173',
     brandName: `Paula's Choice`,
-    productName: 'Ceramide-Enriched Firming Moisturizer',
+    productName: 'Ceramide Firming Moisturizer',
     description: `Visibly smooth wrinkles, renew a firmer feel and enhance moisture balance with
      a concentrated blend of ceramides plus a potent blend of vitamin c and retinol that plumps
       skin and fortifies skin’s protective barrier.`,
@@ -5303,7 +5303,7 @@ export const products: Product[] = [
   {
     id: '0176',
     brandName: `Paula's Choice`,
-    productName: 'Rescue & Repair Intensive Moisturizer',
+    productName: 'Repair Intensive Moisturizer',
     description: `This soothing moisturizer for dry skin calms redness and sensitivity with
      antioxidants and emollients to protect skin’s delicate barrier.`,
     ingredients: `Water⁠, C13-15 Alkane⁠, Glycerin⁠, Propanediol⁠, Helianthus Annuus (Sunflower)
@@ -5355,7 +5355,7 @@ export const products: Product[] = [
   {
     id: '0178',
     brandName: `Paula's Choice`,
-    productName: 'Super-Light Wrinkle Defense SPF 30',
+    productName: 'Light Wrinkle Defense SPF 30',
     description: `A lightly tinted mineral-based formula that protects skin from sun damage and fortifies
      it with state-of-the-art antioxidants.`,
     ingredients: `Water⁠, Cyclopentasiloxane⁠, Zinc Oxide⁠, PEG-12 Dimethicone⁠, PEG/PPG-18/18 Dimethicone⁠, Lauroyl Lysine⁠,
@@ -5470,7 +5470,7 @@ export const products: Product[] = [
   {
     id: '0182',
     brandName: `Paula's Choice`,
-    productName: 'Ceramide-Enriched Firming Eye Cream',
+    productName: 'Ceramide Firming Eye Cream',
     description: `This hydrating eye cream visibly smooths under eye wrinkles with a concentrated blend
      of five replenishing ceramides, four forms of brightening vitamin C, two peptides and clinically proven retinol.`,
     ingredients: `Water⁠, Neopentyl Glycol Diheptanoate⁠, Cetyl Alcohol⁠, Butylene Glycol⁠, Glycerin⁠,
@@ -5602,7 +5602,7 @@ export const products: Product[] = [
   {
     id: '0187',
     brandName: `Paula's Choice`,
-    productName: 'Retinol Skin-Smoothing Body Treatment',
+    productName: 'Retinol Body Treatment',
     description: `A potent body treatment that improves the look of elasticity,
      crepey texture and signs of aging that coincide with estrogen decline.`,
     ingredients: `Water⁠, Cetearyl Alcohol⁠, Cetearyl Ethylhexanoate⁠, Cyclopentasiloxane⁠,
@@ -5627,7 +5627,7 @@ export const products: Product[] = [
   {
     id: '0188',
     brandName: `Paula's Choice`,
-    productName: 'Ultra-Rich Soothing Body Butter',
+    productName: 'Rich Soothing Body Butter',
     description: `This blend of plant oils, emollients, and shea butter softens dry, rough, uncomfortable
      skin anywhere on the body, leaving it velvety-smooth and silky-feeling. It's
       exceptionally gentle for sensitive skin, even skin prone to eczema.`,
@@ -5902,7 +5902,7 @@ export const products: Product[] = [
   {
     id: '0199',
     brandName: `Paula's Choice`,
-    productName: 'Ultra-Sheer Daily Defense Broad Spectrum SPF 30',
+    productName: 'Daily Defense Broad Spectrum SPF 30',
     description: `A superlight daytime moisturizer that helps protect skin
      against premature aging with synthetic, broad-spectrum SPF 30 protection.`,
     ingredients: `Water⁠, Homosalate⁠, Butylene Glycol⁠, Oxybenzone⁠, Avobenzone⁠, Silica⁠, Octocrylene⁠,
