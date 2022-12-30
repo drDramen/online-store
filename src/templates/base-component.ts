@@ -34,6 +34,10 @@ export class BaseComponent {
     this.node.classList.remove(...className);
   }
 
+  toggleClass(className: string) {
+    this.node.classList.toggle(className);
+  }
+
   append(...rest: BaseComponent[]): void {
     rest.forEach((child) => {
       this.children.push(child);
