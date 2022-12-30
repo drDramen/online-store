@@ -23,6 +23,10 @@ export class CardFull extends BaseComponent {
   private minusItem: BaseComponent;
   private amountOfAddedProduct: BaseComponent;
   private plusItem: BaseComponent;
+  private productPriceHolder: BaseComponent;
+  private productPrice: BaseComponent;
+  private productCurrency: BaseComponent;
+  private heartPrice: BaseComponent;
 
   constructor() {
     super('div', {
@@ -32,8 +36,24 @@ export class CardFull extends BaseComponent {
     this.cardFrame = new BaseComponent('div', { className: 'card__frame' });
     this.append(this.cardFrame);
 
+    this.heartPrice = new BaseComponent('div', { className: 'card__product_price_heart' });
+    this.cardFrame.append(this.heartPrice);
+
+    this.productPriceHolder = new BaseComponent('div', {
+      className: 'card__product_price_holder',
+    });
+    this.heartPrice.append(this.productPriceHolder);
+
+    this.productPrice = new BaseComponent('span', { className: 'card__product_price' });
+    this.productPrice.setContent('20');
+    this.productPriceHolder.append(this.productPrice);
+
+    this.productCurrency = new BaseComponent('span', { className: 'card__product_currency' });
+    this.productCurrency.setContent('$');
+    this.productPriceHolder.append(this.productCurrency);
+
     this.heartToCart = new BaseComponent('span', { className: 'card__heart' });
-    this.cardFrame.append(this.heartToCart);
+    this.heartPrice.append(this.heartToCart);
     this.heartToCart.getNode().addEventListener('click', () => {
       this.heartToCart.toggleClass('active');
     });

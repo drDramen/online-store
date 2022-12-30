@@ -23,12 +23,24 @@
     }
   }
 
+  &__product_price_heart {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  &__product_price_holder {
+    font-size: 24px;
+    color: var(--font-color-primary);
+    font-family: var(--font-family-main);
+    display: inline-block;
+    user-select: none;
+  }
+
   &__heart {
     width: 36px;
     height: 36px;
-    display: inline-block;
     background-image: url('../../../assets/images/icons/heart.svg');
-    transform: translateX(120px);
     transition: background-image var(--transition);
 
     &:hover {
@@ -99,6 +111,7 @@
           text-align: center;
           line-height: 36px;
           transition: background-color var(--transition);
+          user-select: none;
 
           &:hover {
             cursor: pointer;
@@ -129,6 +142,7 @@
           line-height: 36px;
           transition: background-color var(--transition);
           border-radius: 0px 10px 10px 0px;
+          user-select: none;
 
           &:hover {
             cursor: pointer;
@@ -142,6 +156,7 @@
         align-items: center;
         line-height: 36px;
         font-size: 20px;
+        user-select: none;
 
         &:hover {
           cursor: pointer;
@@ -155,15 +170,14 @@
       font-size: 24px;
 
       &.sum {
-        font-size: 24px;
-        padding-right: 10px;
         justify-content: flex-end;
         flex-grow: 3;
       }
 
       &.currency {
-        font-size: 24px;
         flex-grow: 1;
+        max-width: 20px;
+        justify-content: flex-start;
       }
     }
   }
