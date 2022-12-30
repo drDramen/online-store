@@ -1,5 +1,9 @@
+import { NameRoute } from '@/enums/name-route';
+import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
 import './card-full.scss';
+
+const detailsLink = { href: NameRoute.Product };
 
 export class CardFull extends BaseComponent {
   private cardFrame: BaseComponent;
@@ -9,6 +13,7 @@ export class CardFull extends BaseComponent {
   private brandName: BaseComponent;
   private productName: BaseComponent;
   private cardTitle: BaseComponent;
+  private detailsLink: Link;
 
   constructor() {
     super('div', {
@@ -27,9 +32,12 @@ export class CardFull extends BaseComponent {
     this.productImage = new BaseComponent('span', { className: 'card__product_image' });
     this.cardFrame.append(this.productImage);
 
+    this.detailsLink = new Link({ ...detailsLink, className: 'details_link' });
+    this.cardFrame.append(this.detailsLink);
+
     this.productDetails = new BaseComponent('span', { className: 'card__details' });
     this.productDetails.setContent('Details');
-    this.cardFrame.append(this.productDetails);
+    this.detailsLink.append(this.productDetails);
 
     this.cardTitle = new BaseComponent('div', { className: 'card title' });
     this.append(this.cardTitle);
@@ -41,5 +49,7 @@ export class CardFull extends BaseComponent {
     this.productName = new BaseComponent('div', { className: 'card title product_name' });
     this.productName.setContent('product name');
     this.cardTitle.append(this.productName);
+
+    Link.addNavigationLink(this.detailsLink);
   }
 }
