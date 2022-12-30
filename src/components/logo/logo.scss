@@ -1,9 +1,12 @@
 .logo {
-  width: 294px;
-  height: 93px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  &__link {
+    width: 294px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__image {
     width: 54px;
@@ -13,8 +16,6 @@
   }
 
   &__text {
-    width: 220px;
-    height: 92px;
     font-family: var(--font-family-logo);
     font-style: normal;
     font-weight: 400;
