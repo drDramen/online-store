@@ -14,6 +14,11 @@ export class CardFull extends BaseComponent {
   private productName: BaseComponent;
   private cardTitle: BaseComponent;
   private detailsLink: Link;
+  private cardButtonAmount: BaseComponent;
+  private buttonsHolder: BaseComponent;
+  private cardButtonAddToCart: BaseComponent;
+  private cardButtonPrice: BaseComponent;
+  private cardButtonCurrency: BaseComponent;
 
   constructor() {
     super('div', {
@@ -39,16 +44,37 @@ export class CardFull extends BaseComponent {
     this.productDetails.setContent('Details');
     this.detailsLink.append(this.productDetails);
 
-    this.cardTitle = new BaseComponent('div', { className: 'card title' });
+    this.cardTitle = new BaseComponent('div', { className: 'card__title' });
     this.append(this.cardTitle);
 
-    this.brandName = new BaseComponent('div', { className: 'card title brand_name' });
+    this.brandName = new BaseComponent('div', { className: 'card__title brand_name' });
     this.brandName.setContent('brand name');
     this.cardTitle.append(this.brandName);
 
-    this.productName = new BaseComponent('div', { className: 'card title product_name' });
+    this.productName = new BaseComponent('div', { className: 'card__title product_name' });
     this.productName.setContent('product name');
     this.cardTitle.append(this.productName);
+
+    this.buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
+    this.append(this.buttonsHolder);
+
+    this.cardButtonAmount = new BaseComponent('div', { className: 'card__buttons_holder button' });
+    this.buttonsHolder.append(this.cardButtonAmount);
+
+    this.cardButtonPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
+    this.cardButtonPrice.setContent('0');
+    this.buttonsHolder.append(this.cardButtonPrice);
+
+    this.cardButtonCurrency = new BaseComponent('div', {
+      className: 'card__buttons_holder currency',
+    });
+    this.cardButtonCurrency.setContent('$');
+    this.buttonsHolder.append(this.cardButtonCurrency);
+
+    this.cardButtonAddToCart = new BaseComponent('div', {
+      className: 'card__buttons_holder button',
+    });
+    this.buttonsHolder.append(this.cardButtonAddToCart);
 
     Link.addNavigationLink(this.detailsLink);
   }

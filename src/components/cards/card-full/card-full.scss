@@ -56,8 +56,9 @@
     }
   }
 
-  &.title {
+  &__title {
     height: 23px;
+    display: flex;
     flex-direction: row;
     justify-content: center;
 
@@ -69,5 +70,34 @@
     &.product_name {
         justify-content: flex-start;
       }
+  }
+
+  &__buttons_holder {
+    width: 359px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.button {
+      width: 120px;
+      background-color: var(--color-charlotte);
+      border-radius: 10px;
+      transition: background-color var(--transition);
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--color-java);
+      }
+    }
+
+    &.currency {
+      font-size: 24px;
+    }
+
+    &.price {
+      font-size: 24px;
+      padding: 0px 10px 0px 10px;
+    }
   }
 }
