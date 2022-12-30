@@ -1,0 +1,27 @@
+.wrapper {
+  height: 634px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .left_block {
+    width: 700px;
+    border: solid 2px var(--color-charlotte);
+    border-radius: 46px;
+    display: grid;
+    grid-template-columns: 22% 70% 8%;
+
+    .products_pics {
+      display: grid;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .product_image {
+      width: 454px;
+      height: 454px;
+      background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+      background-size: contain;
+    }
+  }
+}
