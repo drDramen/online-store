@@ -17,8 +17,12 @@ export class CardFull extends BaseComponent {
   private cardButtonAmount: BaseComponent;
   private buttonsHolder: BaseComponent;
   private cardButtonAddToCart: BaseComponent;
-  private cardButtonPrice: BaseComponent;
-  private cardButtonCurrency: BaseComponent;
+  private cardPrice: BaseComponent;
+  private cardCurrency: BaseComponent;
+  private cardSum: BaseComponent;
+  private minusItem: BaseComponent;
+  private amountOfAddedProduct: BaseComponent;
+  private plusItem: BaseComponent;
 
   constructor() {
     super('div', {
@@ -58,22 +62,42 @@ export class CardFull extends BaseComponent {
     this.buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     this.append(this.buttonsHolder);
 
-    this.cardButtonAmount = new BaseComponent('div', { className: 'card__buttons_holder button' });
+    this.cardButtonAmount = new BaseComponent('div', {
+      className: 'card__buttons_holder button amount',
+    });
     this.buttonsHolder.append(this.cardButtonAmount);
 
-    this.cardButtonPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
-    this.cardButtonPrice.setContent('0');
-    this.buttonsHolder.append(this.cardButtonPrice);
+    this.minusItem = new BaseComponent('span', { className: 'minus' });
+    this.minusItem.setContent('-');
+    this.cardButtonAmount.append(this.minusItem);
 
-    this.cardButtonCurrency = new BaseComponent('div', {
+    this.amountOfAddedProduct = new BaseComponent('span', {
+      className: 'added_number',
+    });
+    this.amountOfAddedProduct.setContent('0');
+    this.cardButtonAmount.append(this.amountOfAddedProduct);
+
+    this.plusItem = new BaseComponent('span', { className: 'plus' });
+    this.plusItem.setContent('+');
+    this.cardButtonAmount.append(this.plusItem);
+
+    this.cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
+    this.buttonsHolder.append(this.cardPrice);
+
+    this.cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
+    this.cardSum.setContent('0');
+    this.cardPrice.append(this.cardSum);
+
+    this.cardCurrency = new BaseComponent('div', {
       className: 'card__buttons_holder currency',
     });
-    this.cardButtonCurrency.setContent('$');
-    this.buttonsHolder.append(this.cardButtonCurrency);
+    this.cardCurrency.setContent('$');
+    this.cardPrice.append(this.cardCurrency);
 
     this.cardButtonAddToCart = new BaseComponent('div', {
-      className: 'card__buttons_holder button',
+      className: 'card__buttons_holder button add',
     });
+    this.cardButtonAddToCart.setContent('Add to Cart');
     this.buttonsHolder.append(this.cardButtonAddToCart);
 
     Link.addNavigationLink(this.detailsLink);

@@ -3,6 +3,7 @@
   height: 511px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   &__frame {
@@ -78,6 +79,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 3fr auto;
 
     &.button {
       width: 120px;
@@ -85,19 +87,84 @@
       border-radius: 10px;
       transition: background-color var(--transition);
 
-      &:hover {
-        cursor: pointer;
-        background-color: var(--color-java);
+      &.amount {
+        display: flex;
+
+        .minus {
+          display: inline-block;
+          height: 36px;
+          font-size: 36px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+            border-radius: 10px 0px 0px 10px;
+          }
+        }
+
+        .added_number {
+          display: inline-block;
+          height: 36px;
+          font-size: 28px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          user-select: none;
+        }
+
+        .plus {
+          display: inline-block;
+          height: 36px;
+          font-size: 28px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          border-radius: 0px 10px 10px 0px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+          }
+        }
+      }
+
+      &.add {
+        justify-content: center;
+        align-items: center;
+        line-height: 36px;
+        font-size: 20px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--color-java);
+        }
       }
     }
 
-    &.currency {
-      font-size: 24px;
-    }
-
     &.price {
+      width: 100px;
       font-size: 24px;
-      padding: 0px 10px 0px 10px;
+
+      &.sum {
+        font-size: 24px;
+        padding-right: 10px;
+        justify-content: flex-end;
+        flex-grow: 3;
+      }
+
+      &.currency {
+        font-size: 24px;
+        flex-grow: 1;
+      }
     }
   }
 }
