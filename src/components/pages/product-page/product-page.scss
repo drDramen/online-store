@@ -22,6 +22,47 @@
       height: 454px;
       background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
       background-size: contain;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .popup {
+        width: 600px;
+        height: 600px;
+        background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+        z-index: 10;
+      }
+    }
+
+    .price_heart {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .heart {
+            width: 36px;
+            height: 36px;
+            background-image: url('../../../assets/images/icons/heart.svg');
+            margin-top: 20px;
+            transition: background-image var(--transition);
+
+            &:hover {
+                cursor: pointer;
+                background-image: url('../../../assets/images/icons/heart_hover.svg');
+            }
+
+            &.active {
+                background-image: url('../../../assets/images/icons/heart_picked.svg');
+            }
+        }
+
+        .price {
+            font-family: var(--font-family-main);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
     }
   }
 }

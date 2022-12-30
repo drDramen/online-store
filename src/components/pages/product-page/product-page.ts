@@ -10,6 +10,8 @@ export class ProductPage extends BaseComponent {
   private productPics: BaseComponent;
   private productImage: BaseComponent;
   private priceHeart: BaseComponent;
+  private heart: BaseComponent;
+  private price: BaseComponent;
 
   constructor() {
     super('div', { className: 'product' });
@@ -29,9 +31,22 @@ export class ProductPage extends BaseComponent {
 
     this.productImage = new BaseComponent('div', { className: 'product_image' });
     this.leftBlock.append(this.productImage);
+    this.productImage.getNode().addEventListener('click', () => {
+      this.productImage.toggleClass('popup');
+    });
 
     this.priceHeart = new BaseComponent('div', { className: 'price_heart' });
     this.leftBlock.append(this.priceHeart);
+
+    this.heart = new BaseComponent('span', { className: 'heart' });
+    this.priceHeart.append(this.heart);
+    this.heart.getNode().addEventListener('click', () => {
+      this.heart.toggleClass('active');
+    });
+
+    this.price = new BaseComponent('div', { className: 'price' });
+    this.price.setContent('20');
+    this.priceHeart.append(this.price);
 
     this.rightBlock = new BaseComponent('div', { className: 'right_block' });
     this.wrapper.append(this.rightBlock);
