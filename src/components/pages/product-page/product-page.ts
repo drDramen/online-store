@@ -12,6 +12,11 @@ export class ProductPage extends BaseComponent {
   private priceHeart: BaseComponent;
   private heart: BaseComponent;
   private price: BaseComponent;
+  private pathToProduct: BaseComponent;
+  private productTitle: BaseComponent;
+  private productMenu: BaseComponent;
+  private selectedMenuInfo: BaseComponent;
+  private buttons: BaseComponent;
 
   constructor() {
     super('div', { className: 'product' });
@@ -50,5 +55,20 @@ export class ProductPage extends BaseComponent {
 
     this.rightBlock = new BaseComponent('div', { className: 'right_block' });
     this.wrapper.append(this.rightBlock);
+
+    this.productTitle = new BaseComponent('div', { className: 'title' });
+    this.rightBlock.append(this.productTitle);
+
+    this.pathToProduct = new BaseComponent('div', { className: 'path' });
+    this.rightBlock.append(this.pathToProduct);
+
+    this.productMenu = new BaseComponent('div', { className: 'menu' });
+    this.rightBlock.append(this.productMenu);
+
+    this.selectedMenuInfo = new BaseComponent('div', { className: 'selected_menu_info' });
+    this.rightBlock.append(this.selectedMenuInfo);
+
+    this.buttons = new BaseComponent('div', { className: 'buttons' });
+    this.rightBlock.append(this.buttons);
   }
 }
