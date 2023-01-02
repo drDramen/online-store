@@ -143,21 +143,22 @@
     }
 
     .selected_menu_info {
-      height: 336px;
+      height: 280px;
       font-family: var(--font-family-main);
       font-size: 16px;
       line-height: 19px;
-      padding: 0px 20px 0px 20px;
+      padding: 5px 20px 0px 20px;
       text-align: center;
     }
 
-    &__buttons_holder {
+    .card__buttons_holder {
       width: 660px;
       height: 36px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex: 3fr auto;
+      margin: 15px 0px 15px 0px;
 
       &.button {
         width: 120px;
