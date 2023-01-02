@@ -1,0 +1,252 @@
+.wrapper {
+  height: 634px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .left_block {
+    width: 700px;
+    border: solid 2px var(--color-charlotte);
+    border-radius: 46px;
+    display: grid;
+    grid-template-columns: 22% 70% 8%;
+    font-family: var(--font-family-main);
+
+    .products_pics {
+      display: grid;
+      grid-template-rows: 25% 25% 25% 25%;
+
+      .small_pic {
+        width: 128px;
+        height: 128px;
+      }
+    }
+
+    .product_image {
+      width: 454px;
+      height: 454px;
+      background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+      background-size: contain;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .popup {
+        width: 600px;
+        height: 600px;
+        background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+        z-index: 10;
+      }
+    }
+
+    .price_heart {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .heart {
+        width: 36px;
+        height: 36px;
+        background-image: url('../../../assets/images/icons/heart.svg');
+        margin-top: 20px;
+        transition: background-image var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          background-image: url('../../../assets/images/icons/heart_hover.svg');
+        }
+
+        &.active {
+          background-image: url('../../../assets/images/icons/heart_picked.svg');
+        }
+      }
+
+      .price {
+        font-family: var(--font-family-main);
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .right_block {
+    width: 700px;
+    border: solid 2px var(--color-charlotte);
+    border-radius: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      height: 40px;
+      font-family: var(--font-family-main);
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .path {
+      height: 29px;
+      font-family: var(--font-family-main);
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    .menu {
+      width: 660px;
+      height: 36px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &__description {
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        line-height: 22px;
+        transition: color var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          color: var(--color-charlotte);
+        }
+      }
+
+      &__ingredients {
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        line-height: 22px;
+        transition: color var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          color: var(--color-charlotte);
+        }
+      }
+
+      &__quick_buy {
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        line-height: 22px;
+        padding: 4px 7px 4px 7px;
+        background-color: var(--color-charlotte);
+        border-radius: 10px;
+        transition: background-color var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--color-java);
+        }
+      }
+    }
+
+    .selected_menu_info {
+      height: 280px;
+      font-family: var(--font-family-main);
+      font-size: 16px;
+      line-height: 19px;
+      padding: 5px 20px 0px 20px;
+      text-align: center;
+    }
+
+    .card__buttons_holder {
+      width: 660px;
+      height: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 3fr auto;
+      margin: 15px 0px 15px 0px;
+
+      &.button {
+        width: 120px;
+        background-color: var(--color-charlotte);
+        border-radius: 10px;
+        transition: background-color var(--transition);
+
+        &.amount {
+          display: flex;
+
+          .minus {
+            display: inline-block;
+            height: 36px;
+            font-size: 36px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            user-select: none;
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--color-java);
+              border-radius: 10px 0px 0px 10px;
+            }
+          }
+
+          .added_number {
+            display: inline-block;
+            height: 36px;
+            font-size: 28px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            user-select: none;
+          }
+
+          .plus {
+            display: inline-block;
+            height: 36px;
+            font-size: 28px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            border-radius: 0px 10px 10px 0px;
+            user-select: none;
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--color-java);
+            }
+          }
+        }
+
+        &.add {
+          justify-content: center;
+          align-items: center;
+          line-height: 36px;
+          font-size: 20px;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+          }
+        }
+      }
+
+      &.price {
+        width: 100px;
+        font-size: 24px;
+
+        &.sum {
+          justify-content: flex-end;
+          flex-grow: 3;
+        }
+
+        &.currency {
+          flex-grow: 1;
+          max-width: 20px;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
