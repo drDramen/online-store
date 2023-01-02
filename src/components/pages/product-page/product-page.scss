@@ -11,10 +11,16 @@
     border-radius: 46px;
     display: grid;
     grid-template-columns: 22% 70% 8%;
+    font-family: var(--font-family-main);
 
     .products_pics {
       display: grid;
       grid-template-rows: 25% 25% 25% 25%;
+
+      .small_pic {
+        width: 128px;
+        height: 128px;
+      }
     }
 
     .product_image {
@@ -72,58 +78,174 @@
     border-radius: 46px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .title {
-        height: 40px;
-        font-family: var(--font-family-main);
-        font-size: 34px;
-        line-height: 40px;
+      height: 40px;
+      font-family: var(--font-family-main);
+      font-size: 30px;
+      line-height: 36px;
     }
 
     .path {
-        height: 29px;
-        font-family: var(--font-family-main);
-        font-size: 24px;
-        line-height: 29px;
+      height: 29px;
+      font-family: var(--font-family-main);
+      font-size: 20px;
+      line-height: 29px;
     }
 
     .menu {
-        height: 36px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      width: 660px;
+      height: 36px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
 
-        &__description {
-            font-family: var(--font-family-main);
-            font-size: 24px;
-            line-height: 29px;
-        }
+      &__description {
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        line-height: 22px;
+        transition: color var(--transition);
 
-        &__ingredients {
-            font-family: var(--font-family-main);
-            font-size: 24px;
-            line-height: 29px;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-charlotte);
         }
+      }
 
-        &__quick_buy {
-            font-family: var(--font-family-main);
-            font-size: 24px;
-            line-height: 29px;
+      &__ingredients {
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        line-height: 22px;
+        transition: color var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          color: var(--color-charlotte);
         }
+      }
+
+      &__quick_buy {
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        line-height: 22px;
+        padding: 4px 7px 4px 7px;
+        background-color: var(--color-charlotte);
+        border-radius: 10px;
+        transition: background-color var(--transition);
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--color-java);
+        }
+      }
     }
 
     .selected_menu_info {
-        height: 336px;
-        font-family: var(--font-family-main);
-        font-size: 20px;
-        line-height: 23px;
+      height: 336px;
+      font-family: var(--font-family-main);
+      font-size: 16px;
+      line-height: 19px;
+      padding: 0px 20px 0px 20px;
+      text-align: center;
     }
 
-    .buttons {
-        height: 36px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    &__buttons_holder {
+      width: 660px;
+      height: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 3fr auto;
+
+      &.button {
+        width: 120px;
+        background-color: var(--color-charlotte);
+        border-radius: 10px;
+        transition: background-color var(--transition);
+
+        &.amount {
+          display: flex;
+
+          .minus {
+            display: inline-block;
+            height: 36px;
+            font-size: 36px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            user-select: none;
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--color-java);
+              border-radius: 10px 0px 0px 10px;
+            }
+          }
+
+          .added_number {
+            display: inline-block;
+            height: 36px;
+            font-size: 28px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            user-select: none;
+          }
+
+          .plus {
+            display: inline-block;
+            height: 36px;
+            font-size: 28px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            border-radius: 0px 10px 10px 0px;
+            user-select: none;
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--color-java);
+            }
+          }
+        }
+
+        &.add {
+          justify-content: center;
+          align-items: center;
+          line-height: 36px;
+          font-size: 20px;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+          }
+        }
+      }
+
+      &.price {
+        width: 100px;
+        font-size: 24px;
+
+        &.sum {
+          justify-content: flex-end;
+          flex-grow: 3;
+        }
+
+        &.currency {
+          flex-grow: 1;
+          max-width: 20px;
+          justify-content: flex-start;
+        }
+      }
     }
   }
 }
