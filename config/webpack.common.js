@@ -8,6 +8,7 @@ module.exports = {
   entry: [paths.src + '/index.ts'],
   output: {
     path: paths.build,
+    publicPath: '/',
     filename: '[name].bundle.js',
     assetModuleFilename: 'assets/[hash][ext]',
   },
