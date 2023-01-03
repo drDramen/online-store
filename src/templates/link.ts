@@ -1,7 +1,7 @@
 import { Router } from '@/router/router';
 import { BaseComponent } from './base-component';
 
-export class Link extends BaseComponent {
+export class Link extends BaseComponent<'a'> {
   private static navigationLinks: Link[] = [];
 
   constructor(props: Partial<HTMLAnchorElement>) {
@@ -21,6 +21,7 @@ export class Link extends BaseComponent {
 
   static addNavigationLink(navigationLink: Link) {
     this.navigationLinks.push(navigationLink);
+    Link.changeActive();
   }
 
   static changeActive() {
