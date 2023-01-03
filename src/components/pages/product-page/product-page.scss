@@ -20,7 +20,6 @@
       .small_pic {
         width: 128px;
         height: 128px;
-        background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
         background-size: contain;
       }
     }
@@ -28,8 +27,19 @@
     .product_image {
       width: 454px;
       height: 454px;
-      background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+      background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
       background-size: contain;
+
+      &__popup {
+        width: 120%;
+        height: 120%;
+        background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+        background-size: contain;
+        position: absolute;
+        cursor: pointer;
+        z-index: 1000;
+        transform: translate(50%, 50%);
+      }
 
       &:hover {
         cursor: pointer;
@@ -38,7 +48,7 @@
       .popup {
         width: 600px;
         height: 600px;
-        background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+        background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
         z-index: 10;
       }
     }
