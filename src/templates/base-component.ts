@@ -1,9 +1,9 @@
-export class BaseComponent {
-  protected node;
+export class BaseComponent<T extends keyof HTMLElementTagNameMap = keyof HTMLElementTagNameMap> {
+  protected node: HTMLElementTagNameMap[T];
   protected children: BaseComponent[] = [];
 
   constructor(
-    tagName: keyof HTMLElementTagNameMap,
+    tagName: T,
     props: Partial<HTMLElementTagNameMap[typeof tagName]> = {},
     parentNode?: HTMLElement,
   ) {
