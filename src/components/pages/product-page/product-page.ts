@@ -1,6 +1,8 @@
+import { Overlay } from './../../overlay/overlay';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './product-page.scss';
+import { TopMenu } from '@/components/top-menu/top-menu';
 
 export class ProductPage extends BaseComponent {
   container: Container;
@@ -30,12 +32,18 @@ export class ProductPage extends BaseComponent {
   private minusItem: BaseComponent;
   private amountOfAddedProduct: BaseComponent;
   private plusItem: BaseComponent;
+  private counter: number;
+  private overlay: Overlay = new Overlay();
+  private topMenu: TopMenu = new TopMenu();
 
   constructor() {
     super('div', { className: 'product' });
 
+    this.append(this.overlay);
+
+    this.append(this.topMenu);
+
     this.container = new Container('product__container');
-    this.container.setInnerHTML('ProductPage'); // TEMPORARY
     this.append(this.container);
 
     this.wrapper = new BaseComponent('div', { className: 'wrapper' });
@@ -121,12 +129,18 @@ export class ProductPage extends BaseComponent {
     this.amountOfAddedProduct = new BaseComponent('span', {
       className: 'added_number',
     });
-    this.amountOfAddedProduct.setContent('0');
+    this.amountOfAddedProduct.setInnerHTML('0');
     this.cardButtonAmount.append(this.amountOfAddedProduct);
 
     this.plusItem = new BaseComponent('span', { className: 'plus' });
     this.plusItem.setContent('+');
     this.cardButtonAmount.append(this.plusItem);
+
+    this.counter = 0;
+    this.plusItem.getNode().addEventListener('click', () => {
+      this.counter++;
+      this.amountOfAddedProduct.setInnerHTML = '0';
+    });
 
     this.cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
     this.buttonsHolder.append(this.cardPrice);
@@ -150,7 +164,8 @@ export class ProductPage extends BaseComponent {
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
   }
 
-  createSmallPics() {
+  loadSmallPics() {
+    this.smallPic = new BaseComponent('div', { className: 'small_pic' });
     for (let i = 0; i <= 4; i++) {
       this.productPics.append(this.smallPic);
     }
