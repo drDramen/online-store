@@ -1,3 +1,4 @@
+import { products } from './../../../data/data';
 import { FiltersChain } from './../../filters-chain/filters-chain';
 import { Overlay } from './../../overlay/overlay';
 import { Container } from '@/components/container/container';
@@ -14,6 +15,7 @@ export class ProductPage extends BaseComponent {
   private productImagePopup: BaseComponent;
   private productPics: BaseComponent;
   private filtersChain: FiltersChain = new FiltersChain();
+  private counter = 0;
 
   constructor() {
     super('div', { className: 'product' });
@@ -117,18 +119,20 @@ export class ProductPage extends BaseComponent {
     plusItem.setContent('+');
     cardButtonAmount.append(plusItem);
 
-    let counter = 0;
     plusItem.getNode().addEventListener('click', () => {
-      counter++;
-      amountOfAddedProduct.setInnerHTML(counter.toString());
-      localStorage.setItem('counter', 'counter');
+      const temp = products.find((element) => element.id === '0220');
+      if (temp) {
+        if (temp && this.counter < temp.availableAmount) {
+          this.counter++;
+          amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        }
+      }
     });
 
     minusItem.getNode().addEventListener('click', (e) => {
-      if (counter > 0) {
-        counter--;
-        amountOfAddedProduct.setInnerHTML(counter.toString());
-        localStorage.setItem('counter', 'counter');
+      if (this.counter > 0) {
+        this.counter--;
+        amountOfAddedProduct.setInnerHTML(this.counter.toString());
       }
       minusItem.removeAttribute('click');
       e.stopPropagation();
