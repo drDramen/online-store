@@ -1,5 +1,6 @@
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
+import './brands-page.scss';
 
 export class BrandsPage extends BaseComponent {
   private container: Container;
