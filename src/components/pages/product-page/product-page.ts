@@ -117,16 +117,19 @@ export class ProductPage extends BaseComponent {
     plusItem.getNode().addEventListener('click', () => {
       counter++;
       amountOfAddedProduct.setInnerHTML(counter.toString());
+      localStorage.setItem('counter', 'counter');
     });
 
     minusItem.getNode().addEventListener('click', (e) => {
       if (counter > 0) {
         counter--;
         amountOfAddedProduct.setInnerHTML(counter.toString());
-        localStorage['counter'] = counter;
+        localStorage.setItem('counter', 'counter');
       }
       minusItem.removeAttribute('click');
       e.stopPropagation();
+      e.preventDefault();
+      minusItem.removeClass('hover');
     });
 
     const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });

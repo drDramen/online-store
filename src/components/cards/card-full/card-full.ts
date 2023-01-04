@@ -6,119 +6,119 @@ import './card-full.scss';
 const detailsLink = { href: NameRoute.Product };
 
 export class CardFull extends BaseComponent {
-  private cardFrame: BaseComponent;
   private heartToCart: BaseComponent;
-  private productImage: BaseComponent;
-  private productDetails: BaseComponent;
-  private brandName: BaseComponent;
-  private productName: BaseComponent;
-  private cardTitle: BaseComponent;
   private detailsLink: Link;
-  private cardButtonAmount: BaseComponent;
-  private buttonsHolder: BaseComponent;
-  private cardButtonAddToCart: BaseComponent;
-  private cardPrice: BaseComponent;
-  private cardCurrency: BaseComponent;
-  private cardSum: BaseComponent;
-  private minusItem: BaseComponent;
-  private amountOfAddedProduct: BaseComponent;
-  private plusItem: BaseComponent;
-  private productPriceHolder: BaseComponent;
-  private productPrice: BaseComponent;
-  private productCurrency: BaseComponent;
-  private heartPrice: BaseComponent;
 
   constructor() {
     super('div', {
       className: 'card',
     });
 
-    this.cardFrame = new BaseComponent('div', { className: 'card__frame' });
-    this.append(this.cardFrame);
+    const cardFrame = new BaseComponent('div', { className: 'card__frame' });
+    this.append(cardFrame);
 
-    this.heartPrice = new BaseComponent('div', { className: 'card__product_price_heart' });
-    this.cardFrame.append(this.heartPrice);
+    const heartPrice = new BaseComponent('div', { className: 'card__product_price_heart' });
+    cardFrame.append(heartPrice);
 
-    this.productPriceHolder = new BaseComponent('div', {
+    const productPriceHolder = new BaseComponent('div', {
       className: 'card__product_price_holder',
     });
-    this.heartPrice.append(this.productPriceHolder);
+    heartPrice.append(productPriceHolder);
 
-    this.productPrice = new BaseComponent('span', { className: 'card__product_price' });
-    this.productPrice.setContent('20');
-    this.productPriceHolder.append(this.productPrice);
+    const productPrice = new BaseComponent('span', { className: 'card__product_price' });
+    productPrice.setContent('20');
+    productPriceHolder.append(productPrice);
 
-    this.productCurrency = new BaseComponent('span', { className: 'card__product_currency' });
-    this.productCurrency.setContent('$');
-    this.productPriceHolder.append(this.productCurrency);
+    const productCurrency = new BaseComponent('span', { className: 'card__product_currency' });
+    productCurrency.setContent('$');
+    productPriceHolder.append(productCurrency);
 
     this.heartToCart = new BaseComponent('span', { className: 'card__heart' });
-    this.heartPrice.append(this.heartToCart);
+    heartPrice.append(this.heartToCart);
     this.heartToCart.getNode().addEventListener('click', () => {
       this.heartToCart.toggleClass('active');
     });
 
-    this.productImage = new BaseComponent('span', { className: 'card__product_image' });
-    this.cardFrame.append(this.productImage);
+    const productImage = new BaseComponent('span', { className: 'card__product_image' });
+    cardFrame.append(productImage);
 
     this.detailsLink = new Link({ ...detailsLink, className: 'details_link' });
-    this.cardFrame.append(this.detailsLink);
+    cardFrame.append(this.detailsLink);
 
-    this.productDetails = new BaseComponent('span', { className: 'card__details' });
-    this.productDetails.setContent('Details');
-    this.detailsLink.append(this.productDetails);
+    const productDetails = new BaseComponent('span', { className: 'card__details' });
+    productDetails.setContent('Details');
+    this.detailsLink.append(productDetails);
 
-    this.cardTitle = new BaseComponent('div', { className: 'card__title' });
-    this.append(this.cardTitle);
+    const cardTitle = new BaseComponent('div', { className: 'card__title' });
+    this.append(cardTitle);
 
-    this.brandName = new BaseComponent('div', { className: 'card__title brand_name' });
-    this.brandName.setContent('brand name');
-    this.cardTitle.append(this.brandName);
+    const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
+    brandName.setContent('brand name');
+    cardTitle.append(brandName);
 
-    this.productName = new BaseComponent('div', { className: 'card__title product_name' });
-    this.productName.setContent('product name');
-    this.cardTitle.append(this.productName);
+    const productName = new BaseComponent('div', { className: 'card__title product_name' });
+    productName.setContent('product name');
+    cardTitle.append(productName);
 
-    this.buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
-    this.append(this.buttonsHolder);
+    const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
+    this.append(buttonsHolder);
 
-    this.cardButtonAmount = new BaseComponent('div', {
+    const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
     });
-    this.buttonsHolder.append(this.cardButtonAmount);
+    buttonsHolder.append(cardButtonAmount);
 
-    this.minusItem = new BaseComponent('span', { className: 'minus' });
-    this.minusItem.setContent('-');
-    this.cardButtonAmount.append(this.minusItem);
+    const minusItem = new BaseComponent('span', { className: 'minus' });
+    minusItem.setContent('-');
+    cardButtonAmount.append(minusItem);
 
-    this.amountOfAddedProduct = new BaseComponent('span', {
+    const amountOfAddedProduct = new BaseComponent('span', {
       className: 'added_number',
     });
-    this.amountOfAddedProduct.setContent('0');
-    this.cardButtonAmount.append(this.amountOfAddedProduct);
+    amountOfAddedProduct.setContent('0');
+    cardButtonAmount.append(amountOfAddedProduct);
 
-    this.plusItem = new BaseComponent('span', { className: 'plus' });
-    this.plusItem.setContent('+');
-    this.cardButtonAmount.append(this.plusItem);
+    const plusItem = new BaseComponent('span', { className: 'plus' });
+    plusItem.setContent('+');
+    cardButtonAmount.append(plusItem);
 
-    this.cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
-    this.buttonsHolder.append(this.cardPrice);
+    let counter = 0;
+    plusItem.getNode().addEventListener('click', () => {
+      counter++;
+      amountOfAddedProduct.setInnerHTML(counter.toString());
+      localStorage.setItem('counter', 'counter');
+    });
 
-    this.cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
-    this.cardSum.setContent('0');
-    this.cardPrice.append(this.cardSum);
+    minusItem.getNode().addEventListener('click', (e) => {
+      if (counter > 0) {
+        counter--;
+        amountOfAddedProduct.setInnerHTML(counter.toString());
+        localStorage.setItem('counter', 'counter');
+      }
+      minusItem.removeAttribute('click');
+      e.stopPropagation();
+      e.preventDefault();
+      minusItem.removeClass('hover');
+    });
 
-    this.cardCurrency = new BaseComponent('div', {
+    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
+    buttonsHolder.append(cardPrice);
+
+    const cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
+    cardSum.setContent('0');
+    cardPrice.append(cardSum);
+
+    const cardCurrency = new BaseComponent('div', {
       className: 'card__buttons_holder currency',
     });
-    this.cardCurrency.setContent('$');
-    this.cardPrice.append(this.cardCurrency);
+    cardCurrency.setContent('$');
+    cardPrice.append(cardCurrency);
 
-    this.cardButtonAddToCart = new BaseComponent('div', {
+    const cardButtonAddToCart = new BaseComponent('div', {
       className: 'card__buttons_holder button add',
     });
-    this.cardButtonAddToCart.setContent('Add to Cart');
-    this.buttonsHolder.append(this.cardButtonAddToCart);
+    cardButtonAddToCart.setContent('Add to Cart');
+    buttonsHolder.append(cardButtonAddToCart);
 
     Link.addNavigationLink(this.detailsLink);
   }

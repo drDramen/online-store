@@ -55,9 +55,10 @@
   &__product_image {
     width: 285px;
     height: 285px;
-    background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+    background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
     display: inline-block;
     background-size: contain;
+    border-radius: 46px;
 
     &:hover {
       cursor: pointer;
@@ -71,6 +72,10 @@
     &:hover {
         cursor: pointer;
         color: var(--color-charlotte);
+    }
+
+    &:active {
+      color: var(--color-java);
     }
   }
 

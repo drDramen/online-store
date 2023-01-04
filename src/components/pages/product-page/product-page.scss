@@ -31,7 +31,7 @@
       height: 454px;
       background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
       background-size: contain;
-      border-radius: 50px;
+      border-radius: 46px;
 
       &__popup {
         width: 120%;
@@ -194,11 +194,11 @@
             line-height: 36px;
             transition: background-color var(--transition);
             user-select: none;
+            border-radius: 10px 0px 0px 10px;
 
             &:hover {
               cursor: pointer;
               background-color: var(--color-java);
-              border-radius: 10px 0px 0px 10px;
             }
           }
 
