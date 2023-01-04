@@ -51,9 +51,12 @@ export class TopMenu extends BaseComponent {
     this.favourites.setContent('Favourites');
     this.topMenuRight.append(this.favourites);
 
-    this.sort = new BaseComponent('div', { className: 'top_menu__right__item' });
+    this.sort = new BaseComponent('div', { className: 'top_menu__right__item sort' });
     this.sort.setContent('Sort');
     this.topMenuRight.append(this.sort);
+
+    this.dropDown = new BaseComponent('span', { className: 'drop_down' });
+    this.sort.append(this.dropDown);
 
     this.search = new BaseComponent('div', { className: 'top_menu__right__item search' });
     this.search.setContent('Search');

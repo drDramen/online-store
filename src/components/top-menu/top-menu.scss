@@ -59,6 +59,19 @@
         color: var(--color-charlotte);
       }
 
+      .drop_down {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        background-image: url('../../assets/images/icons/drop_down_black.svg');
+        transform: translate(5px, 5px);
+        transition: color var(--transition);
+
+        &:hover {
+          background-image: url('../../assets/images/icons/drop_down_green.svg');
+        }
+      }
+
       .magnifying_glass {
         width: 27px;
         height: 27px;

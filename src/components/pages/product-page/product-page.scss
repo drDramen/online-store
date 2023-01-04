@@ -16,24 +16,27 @@
     .products_pics {
       display: grid;
       grid-template-rows: 25% 25% 25% 25%;
+      justify-items: center;
 
       .small_pic {
-        width: 128px;
-        height: 128px;
+        width: 110px;
+        height: 110px;
         background-size: contain;
+        border-radius: 10px;
       }
     }
 
     .product_image {
       width: 454px;
       height: 454px;
-      background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+      background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
       background-size: contain;
+      border-radius: 50px;
 
       &__popup {
         width: 120%;
         height: 120%;
-        background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+        background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
         background-size: contain;
         position: absolute;
         cursor: pointer;
@@ -48,7 +51,7 @@
       .popup {
         width: 600px;
         height: 600px;
-        background-image: url('public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+        background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
         z-index: 10;
       }
     }

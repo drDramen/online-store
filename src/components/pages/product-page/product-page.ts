@@ -3,38 +3,15 @@ import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './product-page.scss';
 import { TopMenu } from '@/components/top-menu/top-menu';
+import { Product } from '@/interfaces/product';
 
 export class ProductPage extends BaseComponent {
   container: Container;
-  private wrapper: BaseComponent;
-  private leftBlock: BaseComponent;
-  private rightBlock: BaseComponent;
-  private productPics: BaseComponent;
-  private productImage: BaseComponent;
-  private priceHeart: BaseComponent;
-  private heart: BaseComponent;
-  private price: BaseComponent;
-  private pathToProduct: BaseComponent;
-  private productTitle: BaseComponent;
-  private productMenu: BaseComponent;
-  private selectedMenuInfo: BaseComponent;
-  private buttons: BaseComponent;
-  private smallPic: BaseComponent;
-  private menuDescription: BaseComponent;
-  private menuIngredients: BaseComponent;
-  private quickBuy: BaseComponent;
-  private cardButtonAmount: BaseComponent;
-  private buttonsHolder: BaseComponent;
-  private cardButtonAddToCart: BaseComponent;
-  private cardPrice: BaseComponent;
-  private cardCurrency: BaseComponent;
-  private cardSum: BaseComponent;
-  private minusItem: BaseComponent;
-  private amountOfAddedProduct: BaseComponent;
-  private plusItem: BaseComponent;
-  private counter: number;
   private overlay: Overlay = new Overlay();
   private topMenu: TopMenu = new TopMenu();
+  private smallPic: BaseComponent;
+  private productImagePopup: BaseComponent;
+  private productPics: BaseComponent;
 
   constructor() {
     super('div', { className: 'product' });
@@ -46,62 +23,62 @@ export class ProductPage extends BaseComponent {
     this.container = new Container('product__container');
     this.append(this.container);
 
-    this.wrapper = new BaseComponent('div', { className: 'wrapper' });
-    this.container.append(this.wrapper);
+    const wrapper = new BaseComponent('div', { className: 'wrapper' });
+    this.container.append(wrapper);
 
-    this.leftBlock = new BaseComponent('div', { className: 'left_block' });
-    this.wrapper.append(this.leftBlock);
+    const leftBlock = new BaseComponent('div', { className: 'left_block' });
+    wrapper.append(leftBlock);
 
     this.productPics = new BaseComponent('div', { className: 'products_pics' });
-    this.leftBlock.append(this.productPics);
+    leftBlock.append(this.productPics);
 
-    this.productImage = new BaseComponent('div', { className: 'product_image' });
-    this.leftBlock.append(this.productImage);
-    this.productImage.getNode().addEventListener('click', () => {
-      this.productImage.toggleClass('popup');
+    const productImage = new BaseComponent('div', { className: 'product_image' });
+    leftBlock.append(productImage);
+    productImage.getNode().addEventListener('click', () => {
+      this.toggleClass('overlay');
     });
 
-    this.priceHeart = new BaseComponent('div', { className: 'price_heart' });
-    this.leftBlock.append(this.priceHeart);
+    const priceHeart = new BaseComponent('div', { className: 'price_heart' });
+    leftBlock.append(priceHeart);
 
-    this.heart = new BaseComponent('span', { className: 'heart' });
-    this.priceHeart.append(this.heart);
-    this.heart.getNode().addEventListener('click', () => {
-      this.heart.toggleClass('active');
+    const heart = new BaseComponent('span', { className: 'heart' });
+    priceHeart.append(heart);
+    heart.getNode().addEventListener('click', () => {
+      heart.toggleClass('active');
     });
 
-    this.price = new BaseComponent('div', { className: 'price' });
-    this.price.setContent('20');
-    this.priceHeart.append(this.price);
+    const price = new BaseComponent('div', { className: 'price' });
+    price.setContent('20');
+    priceHeart.append(price);
 
-    this.rightBlock = new BaseComponent('div', { className: 'right_block' });
-    this.wrapper.append(this.rightBlock);
+    const rightBlock = new BaseComponent('div', { className: 'right_block' });
+    wrapper.append(rightBlock);
 
-    this.productTitle = new BaseComponent('div', { className: 'title' });
-    this.productTitle.setContent('Brand name Product name');
-    this.rightBlock.append(this.productTitle);
+    const productTitle = new BaseComponent('div', { className: 'title' });
+    productTitle.setContent('Brand name Product name');
+    rightBlock.append(productTitle);
 
-    this.pathToProduct = new BaseComponent('div', { className: 'path' });
-    this.pathToProduct.setContent('path here like CeraVe > Cleanser > Micellar');
-    this.rightBlock.append(this.pathToProduct);
+    const pathToProduct = new BaseComponent('div', { className: 'path' });
+    pathToProduct.setContent('path here like CeraVe > Cleanser > Micellar');
+    rightBlock.append(pathToProduct);
 
-    this.productMenu = new BaseComponent('div', { className: 'menu' });
-    this.rightBlock.append(this.productMenu);
+    const productMenu = new BaseComponent('div', { className: 'menu' });
+    rightBlock.append(productMenu);
 
-    this.menuDescription = new BaseComponent('div', { className: 'menu__description' });
-    this.menuDescription.setContent('Description');
-    this.productMenu.append(this.menuDescription);
+    const menuDescription = new BaseComponent('div', { className: 'menu__description' });
+    menuDescription.setContent('Description');
+    productMenu.append(menuDescription);
 
-    this.menuIngredients = new BaseComponent('div', { className: 'menu__ingredients' });
-    this.menuIngredients.setContent('Ingredients');
-    this.productMenu.append(this.menuIngredients);
+    const menuIngredients = new BaseComponent('div', { className: 'menu__ingredients' });
+    menuIngredients.setContent('Ingredients');
+    productMenu.append(menuIngredients);
 
-    this.quickBuy = new BaseComponent('div', { className: 'menu__quick_buy' });
-    this.quickBuy.setContent('Quick Buy');
-    this.productMenu.append(this.quickBuy);
+    const quickBuy = new BaseComponent('div', { className: 'menu__quick_buy' });
+    quickBuy.setContent('Quick Buy');
+    productMenu.append(quickBuy);
 
-    this.selectedMenuInfo = new BaseComponent('div', { className: 'selected_menu_info' });
-    this.selectedMenuInfo.setContent(`Lorem Ipsum is simply dummy text of the printing and
+    const selectedMenuInfo = new BaseComponent('div', { className: 'selected_menu_info' });
+    selectedMenuInfo.setContent(`Lorem Ipsum is simply dummy text of the printing and
      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
       since the 1500s, when an unknown printer took a galley of type and scrambled it
        to make a type specimen book. It has survived not only five centuries, but also
@@ -109,65 +86,94 @@ export class ProductPage extends BaseComponent {
          popularised in the 1960s with the release of Letraset sheets containing Lorem
           Ipsum passages, and more recently with desktop publishing software like Aldus
            PageMaker including versions of Lorem Ipsum.`);
-    this.rightBlock.append(this.selectedMenuInfo);
+    rightBlock.append(selectedMenuInfo);
 
-    this.buttons = new BaseComponent('div', { className: 'buttons' });
-    this.rightBlock.append(this.buttons);
+    const buttons = new BaseComponent('div', { className: 'buttons' });
+    rightBlock.append(buttons);
 
-    this.buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
-    this.rightBlock.append(this.buttonsHolder);
+    const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
+    rightBlock.append(buttonsHolder);
 
-    this.cardButtonAmount = new BaseComponent('div', {
+    const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
     });
-    this.buttonsHolder.append(this.cardButtonAmount);
+    buttonsHolder.append(cardButtonAmount);
 
-    this.minusItem = new BaseComponent('span', { className: 'minus' });
-    this.minusItem.setContent('-');
-    this.cardButtonAmount.append(this.minusItem);
+    const minusItem = new BaseComponent('span', { className: 'minus' });
+    minusItem.setContent('-');
+    cardButtonAmount.append(minusItem);
 
-    this.amountOfAddedProduct = new BaseComponent('span', {
+    const amountOfAddedProduct = new BaseComponent('span', {
       className: 'added_number',
     });
-    this.amountOfAddedProduct.setInnerHTML('0');
-    this.cardButtonAmount.append(this.amountOfAddedProduct);
+    amountOfAddedProduct.setInnerHTML('0');
+    cardButtonAmount.append(amountOfAddedProduct);
 
-    this.plusItem = new BaseComponent('span', { className: 'plus' });
-    this.plusItem.setContent('+');
-    this.cardButtonAmount.append(this.plusItem);
+    const plusItem = new BaseComponent('span', { className: 'plus' });
+    plusItem.setContent('+');
+    cardButtonAmount.append(plusItem);
 
-    this.counter = 0;
-    this.plusItem.getNode().addEventListener('click', () => {
-      this.counter++;
-      this.amountOfAddedProduct.setInnerHTML = '0';
+    let counter = 0;
+    plusItem.getNode().addEventListener('click', () => {
+      counter++;
+      amountOfAddedProduct.setInnerHTML(counter.toString());
     });
 
-    this.cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
-    this.buttonsHolder.append(this.cardPrice);
+    minusItem.getNode().addEventListener('click', (e) => {
+      if (counter > 0) {
+        counter--;
+        amountOfAddedProduct.setInnerHTML(counter.toString());
+        localStorage['counter'] = counter;
+      }
+      minusItem.removeAttribute('click');
+      e.stopPropagation();
+    });
 
-    this.cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
-    this.cardSum.setContent('0');
-    this.cardPrice.append(this.cardSum);
+    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
+    buttonsHolder.append(cardPrice);
 
-    this.cardCurrency = new BaseComponent('div', {
+    const cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
+    cardSum.setContent('0');
+    cardPrice.append(cardSum);
+
+    const cardCurrency = new BaseComponent('div', {
       className: 'card__buttons_holder currency',
     });
-    this.cardCurrency.setContent('$');
-    this.cardPrice.append(this.cardCurrency);
+    cardCurrency.setContent('$');
+    cardPrice.append(cardCurrency);
 
-    this.cardButtonAddToCart = new BaseComponent('div', {
+    const cardButtonAddToCart = new BaseComponent('div', {
       className: 'card__buttons_holder button add',
     });
-    this.cardButtonAddToCart.setContent('Add to Cart');
-    this.buttonsHolder.append(this.cardButtonAddToCart);
+    cardButtonAddToCart.setContent('Add to Cart');
+    buttonsHolder.append(cardButtonAddToCart);
+
+    productImage.getNode().addEventListener('click', () => {
+      this.createPopup();
+    });
+
+    this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
 
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
+
+    this.loadSmallPics([
+      'public/product-images/0220/yttp-superfood-cleanser-1.avif',
+      'public/product-images/0220/yttp-superfood-cleanser-2.avif',
+      'public/product-images/0220/yttp-superfood-cleanser-3.avif',
+      'public/product-images/0220/yttp-superfood-cleanser-4.avif',
+    ]);
   }
 
-  loadSmallPics() {
-    this.smallPic = new BaseComponent('div', { className: 'small_pic' });
-    for (let i = 0; i <= 4; i++) {
+  loadSmallPics(pics: Product['pics']) {
+    for (let i = 0; i < pics.length; i++) {
+      this.smallPic = new BaseComponent('div', { className: 'small_pic' });
+      this.smallPic.getNode().style.backgroundImage = `url(${pics[i]})`;
       this.productPics.append(this.smallPic);
     }
+  }
+
+  createPopup() {
+    this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
+    this.append(this.productImagePopup);
   }
 }

@@ -57,6 +57,10 @@ export class BaseComponent<T extends keyof HTMLElementTagNameMap = keyof HTMLEle
     this.node.setAttribute(attribute, value);
   }
 
+  removeAttribute(attribute: string): void {
+    this.node.removeAttribute(attribute);
+  }
+
   destroy(): void {
     this.children.forEach((child) => child.destroy());
     this.node.remove();
