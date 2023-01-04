@@ -1,0 +1,67 @@
+.filters_chain {
+  margin-bottom: 20px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    font-family: 'Pacifico';
+    font-size: 22px;
+    padding: 2px 5px 2px 5px;
+    background-color: var(--color-charlotte);
+    border-radius: 5px;
+    transition: color var(--transition);
+    user-select: none;
+
+    &:hover {
+      background-color: var(--color-charlotte);
+    }
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    .cross {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+      padding-top: 10px;
+      display: inline-block;
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          transform: rotate(180deg);
+          background-color: var(--color-white);
+          transition: var(--transition);
+        }
+
+        &::before {
+          transform: rotate(-180deg);
+          background-color: var(--color-white);
+          transition: var(--transition);
+        }
+      }
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: ' ';
+        width: 20px;
+        height: 2px;
+        background-color: var(--color-black);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
