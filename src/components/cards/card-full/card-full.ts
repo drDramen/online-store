@@ -1,3 +1,4 @@
+import { products } from './../../../data/data';
 import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
@@ -8,6 +9,7 @@ const detailsLink = { href: NameRoute.Product };
 export class CardFull extends BaseComponent {
   private heartToCart: BaseComponent;
   private detailsLink: Link;
+  private counter = 0;
 
   constructor() {
     super('div', {
@@ -85,18 +87,20 @@ export class CardFull extends BaseComponent {
     plusItem.setContent('+');
     cardButtonAmount.append(plusItem);
 
-    let counter = 0;
     plusItem.getNode().addEventListener('click', () => {
-      counter++;
-      amountOfAddedProduct.setInnerHTML(counter.toString());
-      localStorage.setItem('counter', 'counter');
+      const temp = products.find((element) => element.id === '0220');
+      if (temp) {
+        if (temp && this.counter < temp.availableAmount) {
+          this.counter++;
+          amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        }
+      }
     });
 
     minusItem.getNode().addEventListener('click', (e) => {
-      if (counter > 0) {
-        counter--;
-        amountOfAddedProduct.setInnerHTML(counter.toString());
-        localStorage.setItem('counter', 'counter');
+      if (this.counter > 0) {
+        this.counter--;
+        amountOfAddedProduct.setInnerHTML(this.counter.toString());
       }
       minusItem.removeAttribute('click');
       e.stopPropagation();
