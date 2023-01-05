@@ -1,11 +1,16 @@
+import { NameRoute } from '@/enums/name-route';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
+import { Link } from '@/templates/link';
 import './top-menu.scss';
+
+const favouritesLink = { href: NameRoute.Favourites };
 
 export class TopMenu extends BaseComponent {
   container: Container;
   private dropDown: BaseComponent;
   private changeView: BaseComponent;
+  private favouritesLink: Link;
 
   constructor() {
     super('div', { className: 'top_menu' });
@@ -38,9 +43,15 @@ export class TopMenu extends BaseComponent {
     //changeView.setContent('cards view');
     topMenuRight.append(this.changeView);
 
+    this.favouritesLink = new Link({
+      ...favouritesLink,
+      className: 'top_menu__right__item favourites_link',
+    });
+    topMenuRight.append(this.favouritesLink);
+
     const favourites = new BaseComponent('div', { className: 'top_menu__right__item' });
     favourites.setContent('Favourites');
-    topMenuRight.append(favourites);
+    this.favouritesLink.append(favourites);
 
     const sort = new BaseComponent('div', { className: 'top_menu__right__item sort' });
     sort.setContent('Sort');
@@ -57,6 +68,8 @@ export class TopMenu extends BaseComponent {
     search.append(magnifyingGlass);
 
     this.changeViewButton();
+
+    Link.addNavigationLink(this.favouritesLink);
   }
 
   changeViewButton() {

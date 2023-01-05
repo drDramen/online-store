@@ -55,9 +55,13 @@
         margin-left: 57px;
       }
 
-      &:hover {
+      &:hover(:not):nth-child(2) {
         cursor: pointer;
         color: var(--color-charlotte);
+      }
+
+      &:nth-child(2):hover {
+        color: #ff5b8c;
       }
 
       .drop_down {
