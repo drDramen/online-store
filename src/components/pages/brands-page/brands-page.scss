@@ -1,0 +1,36 @@
+.brands {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__letter {
+    font-family: 'Pacifico';
+    color: var(--color-black);
+    font-size: 36px;
+    transition: color var(--transition);
+    user-select: none;
+  }
+
+  &__holder {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__name {
+    font-family: var(--font-family-main);
+    color: var(--color-black);
+    font-size: 24px;
+    transition: color var(--transition);
+
+    &:not(:first-child) {
+        margin-left: 57px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: var(--color-charlotte);
+    }
+  }
+}

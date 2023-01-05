@@ -13,7 +13,87 @@ export class BrandsPage extends BaseComponent {
     this.append(this.topMenu);
 
     this.container = new Container('brands__container');
-    this.container.setInnerHTML('BrandsPage'); // TEMPORARY
     this.append(this.container);
+
+    const brandLetterB = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterB.setContent('B');
+    this.container.append(brandLetterB);
+
+    const brandsHolderB = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderB);
+
+    const bioderma = new BaseComponent('div', { className: 'brands__name' });
+    bioderma.setContent('Bioderma');
+    brandsHolderB.append(bioderma);
+
+    const biossance = new BaseComponent('div', { className: 'brands__name' });
+    biossance.setContent('Biossance');
+    brandsHolderB.append(biossance);
+
+    const brandLetterC = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterC.setContent('C');
+    this.container.append(brandLetterC);
+
+    const brandsHolderC = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderC);
+
+    const cerave = new BaseComponent('div', { className: 'brands__name' });
+    cerave.setContent('CeraVe');
+    brandsHolderC.append(cerave);
+
+    const brandLetterD = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterD.setContent('D');
+    this.container.append(brandLetterD);
+
+    const brandsHolderD = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderD);
+
+    const dearKlairs = new BaseComponent('div', { className: 'brands__name' });
+    dearKlairs.setContent('Dear, Klairs');
+    brandsHolderD.append(dearKlairs);
+
+    const brandLetterI = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterI.setContent('I');
+    this.container.append(brandLetterI);
+
+    const brandsHolderI = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderI);
+
+    const iamfrom = new BaseComponent('div', { className: 'brands__name' });
+    iamfrom.setContent(`I'm From`);
+    brandsHolderI.append(iamfrom);
+
+    const brandLetterM = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterM.setContent('M');
+    this.container.append(brandLetterM);
+
+    const brandsHolderM = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderM);
+
+    const manyo = new BaseComponent('div', { className: 'brands__name' });
+    manyo.setContent('Manyo');
+    brandsHolderM.append(manyo);
+
+    const brandLetterS = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterS.setContent('S');
+    this.container.append(brandLetterS);
+
+    const brandsHolderS = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderS);
+
+    const skadi = new BaseComponent('div', { className: 'brands__name' });
+    skadi.setContent('Skadi');
+    brandsHolderS.append(skadi);
+
+    const brandLetterP = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterP.setContent('P');
+    this.container.append(brandLetterP);
+
+    const brandsHolderP = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderP);
+
+    const purito = new BaseComponent('div', { className: 'brands__name' });
+    skadi.setContent('Purito');
+    brandsHolderD.append(purito);
   }
 }
