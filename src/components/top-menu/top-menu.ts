@@ -1,20 +1,18 @@
+import { NameRoute } from '@/enums/name-route';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
+import { Link } from '@/templates/link';
 import './top-menu.scss';
+
+const favouritesLink = { href: NameRoute.Favourites };
+const brandsLink = { href: NameRoute.Brands };
 
 export class TopMenu extends BaseComponent {
   container: Container;
-  private topMenuLeft: BaseComponent;
-  private topMenuRight: BaseComponent;
-  private all: BaseComponent;
-  private brands: BaseComponent;
-  private category: BaseComponent;
   private dropDown: BaseComponent;
   private changeView: BaseComponent;
-  private favourites: BaseComponent;
-  private sort: BaseComponent;
-  private search: BaseComponent;
-  private magnifyingGlass: BaseComponent;
+  private favouritesLink: Link;
+  private brandsLink: Link;
 
   constructor() {
     super('div', { className: 'top_menu' });
@@ -22,44 +20,70 @@ export class TopMenu extends BaseComponent {
     this.container = new Container('top_menu__container');
     this.append(this.container);
 
-    this.topMenuLeft = new BaseComponent('div', { className: 'top_menu__left' });
-    this.container.append(this.topMenuLeft);
+    const topMenuLeft = new BaseComponent('div', { className: 'top_menu__left' });
+    this.container.append(topMenuLeft);
 
-    this.all = new BaseComponent('div', { className: 'top_menu__left__item' });
-    this.all.setContent('All');
-    this.topMenuLeft.append(this.all);
+    const all = new BaseComponent('div', { className: 'top_menu__left__item' });
+    all.setContent('All');
+    topMenuLeft.append(all);
 
-    this.brands = new BaseComponent('div', { className: 'top_menu__left__item' });
-    this.brands.setContent('Brands');
-    this.topMenuLeft.append(this.brands);
+    this.brandsLink = new Link({ ...brandsLink, className: 'top_menu__left__item brands_link' });
+    topMenuLeft.append(this.brandsLink);
 
-    this.category = new BaseComponent('div', { className: 'top_menu__left__item category' });
-    this.category.setContent('Category');
-    this.topMenuLeft.append(this.category);
+    const brands = new BaseComponent('div', { className: 'top_menu__left__item' });
+    brands.setContent('Brands');
+    this.brandsLink.append(brands);
+
+    const category = new BaseComponent('div', { className: 'top_menu__left__item category' });
+    category.setContent('Category');
+    topMenuLeft.append(category);
 
     this.dropDown = new BaseComponent('span', { className: 'drop_down' });
-    this.category.append(this.dropDown);
+    category.append(this.dropDown);
 
-    this.topMenuRight = new BaseComponent('div', { className: 'top_menu__right' });
-    this.container.append(this.topMenuRight);
+    const topMenuRight = new BaseComponent('div', { className: 'top_menu__right' });
+    this.container.append(topMenuRight);
 
     this.changeView = new BaseComponent('div', { className: 'top_menu__right__item view' });
-    this.changeView.setContent('cards view');
-    this.topMenuRight.append(this.changeView);
+    //changeView.setContent('cards view');
+    topMenuRight.append(this.changeView);
 
-    this.favourites = new BaseComponent('div', { className: 'top_menu__right__item' });
-    this.favourites.setContent('Favourites');
-    this.topMenuRight.append(this.favourites);
+    this.favouritesLink = new Link({
+      ...favouritesLink,
+      className: 'top_menu__right__item favourites_link',
+    });
+    topMenuRight.append(this.favouritesLink);
 
-    this.sort = new BaseComponent('div', { className: 'top_menu__right__item' });
-    this.sort.setContent('Sort');
-    this.topMenuRight.append(this.sort);
+    const favourites = new BaseComponent('div', { className: 'top_menu__right__item' });
+    favourites.setContent('Favourites');
+    this.favouritesLink.append(favourites);
 
-    this.search = new BaseComponent('div', { className: 'top_menu__right__item search' });
-    this.search.setContent('Search');
-    this.topMenuRight.append(this.search);
+    const sort = new BaseComponent('div', { className: 'top_menu__right__item sort' });
+    sort.setContent('Sort');
+    topMenuRight.append(sort);
 
-    this.magnifyingGlass = new BaseComponent('span', { className: 'magnifying_glass' });
-    this.search.append(this.magnifyingGlass);
+    this.dropDown = new BaseComponent('span', { className: 'drop_down' });
+    sort.append(this.dropDown);
+
+    const search = new BaseComponent('div', { className: 'top_menu__right__item search' });
+    search.setContent('Search');
+    topMenuRight.append(search);
+
+    const magnifyingGlass = new BaseComponent('span', { className: 'magnifying_glass' });
+    search.append(magnifyingGlass);
+
+    this.changeViewButton();
+
+    Link.addNavigationLink(this.favouritesLink);
+  }
+
+  changeViewButton() {
+    for (let i = 0; i < 8; i++) {
+      const changeViewElement = new BaseComponent('span', { className: 'element' });
+      this.changeView.append(changeViewElement);
+      this.changeView.getNode().addEventListener('click', () => {
+        changeViewElement.toggleClass('active');
+      });
+    }
   }
 }

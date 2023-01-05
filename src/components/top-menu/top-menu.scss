@@ -1,6 +1,6 @@
 .top_menu {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 32px;
+  line-height: 38px;
   font-family: var(--font-family-main);
   user-select: none;
 
@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   &__left {
@@ -48,15 +49,40 @@
     align-items: center;
 
     &__item {
-      transition: color var(--transition);
+      transition: color 0.14s ease-in-out;
 
       &:not(:first-child) {
         margin-left: 57px;
       }
 
-      &:hover {
+      &:hover:nth-child(1) {
+        cursor: pointer;
+      }
+
+      &:hover:nth-child(3), &:hover:nth-child(4) {
         cursor: pointer;
         color: var(--color-charlotte);
+      }
+
+      &:nth-child(2):hover {
+        color: #ff5b8c;
+      }
+
+      &:nth-child(2):active {
+        color: #ff5b8c;
+      }
+
+      .drop_down {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        background-image: url('../../assets/images/icons/drop_down_black.svg');
+        transform: translate(5px, 5px);
+        transition: color var(--transition);
+
+        &:hover {
+          background-image: url('../../assets/images/icons/drop_down_green.svg');
+        }
       }
 
       .magnifying_glass {
@@ -74,14 +100,121 @@
         }
       }
 
-      &.view {
-        padding: 4px;
-        background-color: var(--color-charlotte);
-        border-radius: 10px;
+      $from-r: 255;
+      $from-g: 188;
+      $from-b: 167;
+      $to-r: 245;
+      $to-g: 183;
+      $to-b: 255;
+      $from: rgba($from-r, $from-g, $from-b, 1);
+      $to: rgba($to-r, $to-g, $to-b, 1);
+      $number: 8;
 
-        &:hover {
-            background-color: var(--color-java);
-            color: var(--color-white);
+      @function calcGradient($index, $leftSide) {
+        $add: $index + 1;
+        @if $leftSide == true {
+          $add: $index - 1;
+        }
+        @return rgba(
+          $from-r + $add * ($to-r - $from-r) / $number,
+          $from-g + $add * ($to-g - $from-g) / $number,
+          $from-b + $add * ($to-b - $from-b) / $number,
+          1
+        );
+      }
+      @for $i from 1 through $number {
+        &.view > .element:nth-child(#{$i}) {
+          background: -webkit-linear-gradient(
+            to right,
+            calcGradient($i, true),
+            calcGradient($i, false)
+          );
+          background: linear-gradient(
+            to right,
+            calcGradient($i, true),
+            calcGradient($i, false)
+          );
+        }
+      }
+
+      &.view {
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-size: cover;
+        //background-image: linear-gradient(90deg, #ffbca7, #f5b7ff);
+
+        .element {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          transition: all var(--transition);
+
+          &:not(:first-child) {
+            margin-left: 5px;
+          }
+
+          &:nth-child(2) {
+            height: 15px;
+          }
+
+          &:nth-child(3) {
+            height: 20px;
+          }
+
+          &:nth-child(4) {
+            height: 25px;
+          }
+
+          &:nth-child(5) {
+            height: 30px;
+          }
+
+          &:nth-child(6) {
+            height: 35px;
+          }
+
+          &:nth-child(7) {
+            height: 40px;
+          }
+
+          &:nth-child(8) {
+            height: 45px;
+          }
+
+          &:nth-child(8).active {
+            height: 10px;
+          }
+
+          &:nth-child(7).active {
+            height: 15px;
+          }
+
+          &:nth-child(6).active {
+            height: 20px;
+          }
+
+          &:nth-child(5).active {
+            height: 25px;
+          }
+
+          &:nth-child(4).active {
+            height: 30px;
+          }
+
+          &:nth-child(3).active {
+            height: 35px;
+          }
+
+          &:nth-child(2).active {
+            height: 40px;
+          }
+
+          &:nth-child(1).active {
+            height: 45px;
+          }
         }
       }
     }

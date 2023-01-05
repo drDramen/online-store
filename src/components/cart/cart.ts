@@ -6,10 +6,6 @@ import './cart.scss';
 const cartLink = { href: NameRoute.Cart };
 
 export class HeaderCart extends BaseComponent {
-  private cartText: BaseComponent;
-  private cartImage: BaseComponent;
-  private cartProductsCircle: BaseComponent;
-  private cartProductsAmount: BaseComponent;
   private cartLink: Link;
 
   constructor() {
@@ -20,23 +16,23 @@ export class HeaderCart extends BaseComponent {
     this.cartLink = new Link({ ...cartLink, className: 'cart__link' });
     this.append(this.cartLink);
 
-    this.cartText = new BaseComponent('div', { className: 'cart__text' });
-    this.cartText.setInnerHTML('Cart');
-    this.cartLink.append(this.cartText);
+    const cartText = new BaseComponent('div', { className: 'cart__text' });
+    cartText.setInnerHTML('Cart');
+    this.cartLink.append(cartText);
 
-    this.cartImage = new BaseComponent('span', { className: 'cart__image' });
-    this.cartLink.append(this.cartImage);
+    const cartImage = new BaseComponent('span', { className: 'cart__image' });
+    this.cartLink.append(cartImage);
 
-    this.cartProductsCircle = new BaseComponent('span', {
+    const cartProductsCircle = new BaseComponent('span', {
       className: 'cart__products_circle',
     });
-    this.cartLink.append(this.cartProductsCircle);
+    this.cartLink.append(cartProductsCircle);
 
-    this.cartProductsAmount = new BaseComponent('span', {
+    const cartProductsAmount = new BaseComponent('span', {
       className: 'cart__products_amount',
     });
-    this.cartProductsAmount.setContent('0');
-    this.cartProductsCircle.append(this.cartProductsAmount);
+    cartProductsAmount.setContent('0');
+    cartProductsCircle.append(cartProductsAmount);
 
     Link.addNavigationLink(this.cartLink);
   }

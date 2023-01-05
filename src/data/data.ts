@@ -6441,7 +6441,7 @@ export const products: Product[] = [
     segment: 'USA / Canada',
     category: 'Cleanser',
     for: 'Face',
-    availableAmount: 200,
+    availableAmount: 20,
   },
   {
     id: '0221',

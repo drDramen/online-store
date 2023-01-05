@@ -1,9 +1,9 @@
-export class BaseComponent {
-  protected node;
+export class BaseComponent<T extends keyof HTMLElementTagNameMap = keyof HTMLElementTagNameMap> {
+  protected node: HTMLElementTagNameMap[T];
   protected children: BaseComponent[] = [];
 
   constructor(
-    tagName: keyof HTMLElementTagNameMap,
+    tagName: T,
     props: Partial<HTMLElementTagNameMap[typeof tagName]> = {},
     parentNode?: HTMLElement,
   ) {
@@ -55,6 +55,14 @@ export class BaseComponent {
 
   setAttribute(attribute: string, value: string): void {
     this.node.setAttribute(attribute, value);
+  }
+
+  removeAttribute(attribute: string): void {
+    this.node.removeAttribute(attribute);
+  }
+
+  remove() {
+    this.node.remove();
   }
 
   destroy(): void {

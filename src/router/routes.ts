@@ -42,4 +42,12 @@ export const routes: Route[] = [
       return new BrandsPage();
     },
   },
+  {
+    name: NameRoute.Favourites,
+    component: async () => {
+      const { FavouritesPage } = await import('@/components/pages/favourites-page/favourites-page');
+
+      return new FavouritesPage();
+    },
+  },
 ];

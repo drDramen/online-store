@@ -1,183 +1,200 @@
-.card {
-  width: 359px;
-  height: 511px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-template-rows: auto;
 
-  &__frame {
+  .card {
     width: 359px;
-    height: 419px;
-    border: 2px solid var(--color-charlotte);
-    border-radius: 46px;
+    height: 511px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    transition: border var(--transition);
 
-    &:hover {
-        cursor: pointer;
+    &__frame {
+      width: 359px;
+      height: 419px;
+      border: 2px solid var(--color-charlotte);
+      border-radius: 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: border var(--transition);
+
+      &:hover {
         border: 2px solid var(--color-java);
-    }
-  }
-
-  &__product_price_heart {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-  }
-
-  &__product_price_holder {
-    font-size: 24px;
-    color: var(--font-color-primary);
-    font-family: var(--font-family-main);
-    display: inline-block;
-    user-select: none;
-  }
-
-  &__heart {
-    width: 36px;
-    height: 36px;
-    background-image: url('../../../assets/images/icons/heart.svg');
-    transition: background-image var(--transition);
-
-    &:hover {
-        background-image: url('../../../assets/images/icons/heart_hover.svg');
-    }
-
-    &.active {
-        background-image: url('../../../assets/images/icons/heart_picked.svg');
-    }
-  }
-
-  &__product_image {
-    width: 285px;
-    height: 285px;
-    background-image: url('../../../assets/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
-    display: inline-block;
-    background-size: contain;
-  }
-
-  &__details {
-    font-size: 24px;
-    transition: color var(--transition);
-
-    &:hover {
-        color: var(--color-charlotte);
-    }
-  }
-
-  &__title {
-    height: 23px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    &.brand_name {
-      padding-right: 10px;
-      justify-content: flex-end;
-    }
-
-    &.product_name {
-        justify-content: flex-start;
-      }
-  }
-
-  &__buttons_holder {
-    width: 359px;
-    height: 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 3fr auto;
-
-    &.button {
-      width: 120px;
-      background-color: var(--color-charlotte);
-      border-radius: 10px;
-      transition: background-color var(--transition);
-
-      &.amount {
-        display: flex;
-
-        .minus {
-          display: inline-block;
-          height: 36px;
-          font-size: 36px;
-          color: var(--font-color-primary);
-          flex-grow: 1;
-          text-align: center;
-          line-height: 36px;
-          transition: background-color var(--transition);
-          user-select: none;
-
-          &:hover {
-            cursor: pointer;
-            background-color: var(--color-java);
-            border-radius: 10px 0px 0px 10px;
-          }
-        }
-
-        .added_number {
-          display: inline-block;
-          height: 36px;
-          font-size: 28px;
-          color: var(--font-color-primary);
-          flex-grow: 1;
-          text-align: center;
-          line-height: 36px;
-          transition: background-color var(--transition);
-          user-select: none;
-        }
-
-        .plus {
-          display: inline-block;
-          height: 36px;
-          font-size: 28px;
-          color: var(--font-color-primary);
-          flex-grow: 1;
-          text-align: center;
-          line-height: 36px;
-          transition: background-color var(--transition);
-          border-radius: 0px 10px 10px 0px;
-          user-select: none;
-
-          &:hover {
-            cursor: pointer;
-            background-color: var(--color-java);
-          }
-        }
-      }
-
-      &.add {
-        justify-content: center;
-        align-items: center;
-        line-height: 36px;
-        font-size: 20px;
-        user-select: none;
-
-        &:hover {
-          cursor: pointer;
-          background-color: var(--color-java);
-        }
       }
     }
 
-    &.price {
-      width: 100px;
+    &__product_price_heart {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+
+    &__product_price_holder {
       font-size: 24px;
+      color: var(--font-color-primary);
+      font-family: var(--font-family-main);
+      display: inline-block;
+      user-select: none;
+    }
 
-      &.sum {
-        justify-content: flex-end;
-        flex-grow: 3;
+    &__heart {
+      width: 36px;
+      height: 36px;
+      background-image: url('../../../assets/images/icons/heart.svg');
+      transition: background-image var(--transition);
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('../../../assets/images/icons/heart_hover.svg');
       }
 
-      &.currency {
-        flex-grow: 1;
-        max-width: 20px;
+      &.active {
+        background-image: url('../../../assets/images/icons/heart_picked.svg');
+      }
+    }
+
+    &__product_image {
+      width: 285px;
+      height: 285px;
+      background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
+      display: inline-block;
+      background-size: contain;
+      border-radius: 46px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__details {
+      font-size: 24px;
+      transition: color var(--transition);
+
+      &:hover {
+        cursor: pointer;
+        color: var(--color-charlotte);
+      }
+
+      &:active {
+        color: var(--color-java);
+      }
+    }
+
+    &__title {
+      height: 23px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      &.brand_name {
+        padding-right: 10px;
+        justify-content: flex-end;
+      }
+
+      &.product_name {
         justify-content: flex-start;
+      }
+    }
+
+    &__buttons_holder {
+      width: 359px;
+      height: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 3fr auto;
+
+      &.button {
+        width: 120px;
+        background-color: var(--color-charlotte);
+        border-radius: 10px;
+        transition: background-color var(--transition);
+
+        &.amount {
+          display: flex;
+
+          .minus {
+            display: inline-block;
+            height: 36px;
+            font-size: 36px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            user-select: none;
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--color-java);
+              border-radius: 10px 0px 0px 10px;
+            }
+          }
+
+          .added_number {
+            display: inline-block;
+            height: 36px;
+            font-size: 28px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            user-select: none;
+          }
+
+          .plus {
+            display: inline-block;
+            height: 36px;
+            font-size: 28px;
+            color: var(--font-color-primary);
+            flex-grow: 1;
+            text-align: center;
+            line-height: 36px;
+            transition: background-color var(--transition);
+            border-radius: 0px 10px 10px 0px;
+            user-select: none;
+
+            &:hover {
+              cursor: pointer;
+              background-color: var(--color-java);
+            }
+          }
+        }
+
+        &.add {
+          justify-content: center;
+          align-items: center;
+          line-height: 36px;
+          font-size: 20px;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+          }
+        }
+      }
+
+      &.price {
+        width: 100px;
+        font-size: 24px;
+
+        &.sum {
+          justify-content: flex-end;
+          flex-grow: 3;
+        }
+
+        &.currency {
+          flex-grow: 1;
+          max-width: 20px;
+          justify-content: flex-start;
+        }
       }
     }
   }
