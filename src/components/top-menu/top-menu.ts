@@ -5,6 +5,7 @@ import './top-menu.scss';
 export class TopMenu extends BaseComponent {
   container: Container;
   private dropDown: BaseComponent;
+  private changeView: BaseComponent;
 
   constructor() {
     super('div', { className: 'top_menu' });
@@ -33,9 +34,9 @@ export class TopMenu extends BaseComponent {
     const topMenuRight = new BaseComponent('div', { className: 'top_menu__right' });
     this.container.append(topMenuRight);
 
-    const changeView = new BaseComponent('div', { className: 'top_menu__right__item view' });
-    changeView.setContent('cards view');
-    topMenuRight.append(changeView);
+    this.changeView = new BaseComponent('div', { className: 'top_menu__right__item view' });
+    //changeView.setContent('cards view');
+    topMenuRight.append(this.changeView);
 
     const favourites = new BaseComponent('div', { className: 'top_menu__right__item' });
     favourites.setContent('Favourites');
@@ -54,5 +55,17 @@ export class TopMenu extends BaseComponent {
 
     const magnifyingGlass = new BaseComponent('span', { className: 'magnifying_glass' });
     search.append(magnifyingGlass);
+
+    this.changeViewButton();
+  }
+
+  changeViewButton() {
+    for (let i = 0; i < 8; i++) {
+      const changeViewElement = new BaseComponent('span', { className: 'element' });
+      this.changeView.append(changeViewElement);
+      this.changeView.getNode().addEventListener('click', () => {
+        changeViewElement.toggleClass('active');
+      });
+    }
   }
 }
