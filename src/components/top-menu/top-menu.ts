@@ -5,12 +5,14 @@ import { Link } from '@/templates/link';
 import './top-menu.scss';
 
 const favouritesLink = { href: NameRoute.Favourites };
+const brandsLink = { href: NameRoute.Brands };
 
 export class TopMenu extends BaseComponent {
   container: Container;
   private dropDown: BaseComponent;
   private changeView: BaseComponent;
   private favouritesLink: Link;
+  private brandsLink: Link;
 
   constructor() {
     super('div', { className: 'top_menu' });
@@ -25,9 +27,12 @@ export class TopMenu extends BaseComponent {
     all.setContent('All');
     topMenuLeft.append(all);
 
+    this.brandsLink = new Link({ ...brandsLink, className: 'top_menu__left__item brands_link' });
+    topMenuLeft.append(this.brandsLink);
+
     const brands = new BaseComponent('div', { className: 'top_menu__left__item' });
     brands.setContent('Brands');
-    topMenuLeft.append(brands);
+    this.brandsLink.append(brands);
 
     const category = new BaseComponent('div', { className: 'top_menu__left__item category' });
     category.setContent('Category');
