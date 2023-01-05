@@ -52,6 +52,10 @@ export class BrandsPage extends BaseComponent {
     dearKlairs.setContent('Dear, Klairs');
     brandsHolderD.append(dearKlairs);
 
+    const drunkElephant = new BaseComponent('div', { className: 'brands__name' });
+    drunkElephant.setContent('Drunk Elephant');
+    brandsHolderD.append(drunkElephant);
+
     const brandLetterI = new BaseComponent('div', { className: 'brands__letter' });
     brandLetterI.setContent('I');
     this.container.append(brandLetterI);
@@ -74,6 +78,29 @@ export class BrandsPage extends BaseComponent {
     manyo.setContent('Manyo');
     brandsHolderM.append(manyo);
 
+    const mediPeel = new BaseComponent('div', { className: 'brands__name' });
+    mediPeel.setContent('Medi-Peel');
+    brandsHolderM.append(mediPeel);
+
+    const brandLetterP = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterP.setContent('P');
+    this.container.append(brandLetterP);
+
+    const brandsHolderP = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderP);
+
+    const paulaChoice = new BaseComponent('div', { className: 'brands__name' });
+    paulaChoice.setContent(`Paula's Choice`);
+    brandsHolderP.append(paulaChoice);
+
+    const pyunkangYul = new BaseComponent('div', { className: 'brands__name' });
+    pyunkangYul.setContent('Pyunkang Yul');
+    brandsHolderP.append(pyunkangYul);
+
+    const purito = new BaseComponent('div', { className: 'brands__name' });
+    purito.setContent('Purito');
+    brandsHolderP.append(purito);
+
     const brandLetterS = new BaseComponent('div', { className: 'brands__letter' });
     brandLetterS.setContent('S');
     this.container.append(brandLetterS);
@@ -85,15 +112,15 @@ export class BrandsPage extends BaseComponent {
     skadi.setContent('Skadi');
     brandsHolderS.append(skadi);
 
-    const brandLetterP = new BaseComponent('div', { className: 'brands__letter' });
-    brandLetterP.setContent('P');
-    this.container.append(brandLetterP);
+    const brandLetterY = new BaseComponent('div', { className: 'brands__letter' });
+    brandLetterY.setContent('Y');
+    this.container.append(brandLetterY);
 
-    const brandsHolderP = new BaseComponent('div', { className: 'brands__holder' });
-    this.container.append(brandsHolderP);
+    const brandsHolderY = new BaseComponent('div', { className: 'brands__holder' });
+    this.container.append(brandsHolderY);
 
-    const purito = new BaseComponent('div', { className: 'brands__name' });
-    skadi.setContent('Purito');
-    brandsHolderD.append(purito);
+    const yttp = new BaseComponent('div', { className: 'brands__name' });
+    yttp.setContent('Youth to the People');
+    brandsHolderY.append(yttp);
   }
 }
