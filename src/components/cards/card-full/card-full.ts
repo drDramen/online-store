@@ -11,11 +11,14 @@ export class CardFull extends BaseComponent {
 
   constructor() {
     super('div', {
-      className: 'card',
+      className: 'cards_wrapper',
     });
 
+    const card = new BaseComponent('div', { className: 'card' });
+    this.append(card);
+
     const cardFrame = new BaseComponent('div', { className: 'card__frame' });
-    this.append(cardFrame);
+    card.append(cardFrame);
 
     const heartPrice = new BaseComponent('div', { className: 'card__product_price_heart' });
     cardFrame.append(heartPrice);
@@ -50,7 +53,7 @@ export class CardFull extends BaseComponent {
     this.detailsLink.append(productDetails);
 
     const cardTitle = new BaseComponent('div', { className: 'card__title' });
-    this.append(cardTitle);
+    card.append(cardTitle);
 
     const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
     brandName.setContent('brand name');
@@ -61,7 +64,7 @@ export class CardFull extends BaseComponent {
     cardTitle.append(productName);
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
-    this.append(buttonsHolder);
+    card.append(buttonsHolder);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',

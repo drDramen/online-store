@@ -1,5 +1,4 @@
 import { products } from './../../../data/data';
-import { FiltersChain } from './../../filters-chain/filters-chain';
 import { Overlay } from './../../overlay/overlay';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
@@ -14,7 +13,6 @@ export class ProductPage extends BaseComponent {
   private smallPic: BaseComponent;
   private productImagePopup: BaseComponent;
   private productPics: BaseComponent;
-  private filtersChain: FiltersChain = new FiltersChain();
   private counter = 0;
 
   constructor() {
@@ -23,8 +21,6 @@ export class ProductPage extends BaseComponent {
     this.append(this.overlay);
 
     this.append(this.topMenu);
-
-    this.append(this.filtersChain);
 
     this.container = new Container('product__container');
     this.append(this.container);
