@@ -111,13 +111,13 @@
         );
       }
       @for $i from 1 through $number {
-        &.view > .element ~ &:nth-child(#{$i}) {
-          background-color: -webkit-linear-gradient(
+        &.view > .element:nth-child(#{$i}) {
+          background: -webkit-linear-gradient(
             to right,
             calcGradient($i, true),
             calcGradient($i, false)
           );
-          background-color: linear-gradient(
+          background: linear-gradient(
             to right,
             calcGradient($i, true),
             calcGradient($i, false)
@@ -126,18 +126,18 @@
       }
 
       &.view {
+        height: 45px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         background-size: cover;
-        background-image: linear-gradient(90deg, #ffbca7, #f5b7ff);
+        //background-image: linear-gradient(90deg, #ffbca7, #f5b7ff);
 
         .element {
           display: inline-block;
           width: 10px;
           height: 10px;
           border-radius: 5px;
-          background-color: var(--color-charlotte);
           transition: all var(--transition);
 
           &:not(:first-child) {
