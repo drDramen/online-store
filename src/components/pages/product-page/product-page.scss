@@ -9,6 +9,35 @@
   border-radius: 46px;
 }
 
+.cross_line {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before, &::after {
+    content: ' ';
+    transform: rotate(45deg);
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    background-color: var(--color-java);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;

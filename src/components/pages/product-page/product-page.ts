@@ -15,6 +15,7 @@ export class ProductPage extends BaseComponent {
   private overlay: Overlay = new Overlay();
   private productImagePopup: BaseComponent;
   private counter = 0;
+  private cross: BaseComponent;
 
   constructor() {
     super('div', { className: 'product' });
@@ -152,6 +153,7 @@ export class ProductPage extends BaseComponent {
     });
 
     this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
+    this.cross = new BaseComponent('span', { className: 'cross_line' });
 
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
 
@@ -174,6 +176,7 @@ export class ProductPage extends BaseComponent {
   createImagePopup() {
     this.append(this.overlay);
     this.append(this.productImagePopup);
+    this.productImagePopup.append(this.cross);
     this.overlay.addClass('overlay--active');
 
     this.overlay.getNode().addEventListener('click', () => {
@@ -183,6 +186,12 @@ export class ProductPage extends BaseComponent {
         this.productImagePopup.remove();
         document.body.removeAttribute('style');
       }
+    });
+
+    this.cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      this.productImagePopup.remove();
+      document.body.removeAttribute('style');
     });
 
     return this.productImagePopup;
