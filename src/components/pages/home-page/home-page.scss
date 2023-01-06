@@ -45,6 +45,12 @@
     font-size: 48px;
     line-height: 1.2;
     color: var(--color-niagara);
+    transition: font-family var(--transition);
+
+    &:hover {
+      cursor: pointer;
+      font-family: 'Rubik Gemstones';
+    }
   }
 
   &__description {

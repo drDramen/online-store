@@ -1,5 +1,5 @@
-import { products } from './../../../data/data';
 import { Overlay } from './../../overlay/overlay';
+import { products } from './../../../data/data';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './product-page.scss';
@@ -8,17 +8,16 @@ import { Product } from '@/interfaces/product';
 
 export class ProductPage extends BaseComponent {
   container: Container;
-  private overlay: Overlay = new Overlay();
   private topMenu: TopMenu = new TopMenu();
   private smallPic: BaseComponent;
   private productImagePopup: BaseComponent;
   private productPics: BaseComponent;
+  private productImage: BaseComponent;
+  private overlay: Overlay = new Overlay();
   private counter = 0;
 
   constructor(private props: Record<string, string>) {
     super('div', { className: 'product' });
-
-    this.append(this.overlay);
 
     this.append(this.topMenu);
 
@@ -34,11 +33,8 @@ export class ProductPage extends BaseComponent {
     this.productPics = new BaseComponent('div', { className: 'products_pics' });
     leftBlock.append(this.productPics);
 
-    const productImage = new BaseComponent('div', { className: 'product_image' });
-    leftBlock.append(productImage);
-    productImage.getNode().addEventListener('click', () => {
-      this.toggleClass('overlay');
-    });
+    this.productImage = new BaseComponent('div', { className: 'product_image' });
+    leftBlock.append(this.productImage);
 
     const priceHeart = new BaseComponent('div', { className: 'price_heart' });
     leftBlock.append(priceHeart);
@@ -125,15 +121,11 @@ export class ProductPage extends BaseComponent {
       }
     });
 
-    minusItem.getNode().addEventListener('click', (e) => {
+    minusItem.getNode().addEventListener('click', () => {
       if (this.counter > 0) {
         this.counter--;
         amountOfAddedProduct.setInnerHTML(this.counter.toString());
       }
-      minusItem.removeAttribute('click');
-      e.stopPropagation();
-      e.preventDefault();
-      minusItem.removeClass('hover');
     });
 
     const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
@@ -155,7 +147,7 @@ export class ProductPage extends BaseComponent {
     cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(cardButtonAddToCart);
 
-    productImage.getNode().addEventListener('click', () => {
+    this.productImage.getNode().addEventListener('click', () => {
       this.createPopup();
     });
 
@@ -180,7 +172,18 @@ export class ProductPage extends BaseComponent {
   }
 
   createPopup() {
-    this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
+    this.append(this.overlay);
     this.append(this.productImagePopup);
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        this.productImagePopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    return this.productImagePopup;
   }
 }
