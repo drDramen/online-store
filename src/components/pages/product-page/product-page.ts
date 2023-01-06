@@ -10,11 +10,12 @@ export class ProductPage extends BaseComponent {
   container: Container;
   private topMenu: TopMenu = new TopMenu();
   private smallPic: BaseComponent;
-  private productImagePopup: BaseComponent;
   private productPics: BaseComponent;
   private productImage: BaseComponent;
   private overlay: Overlay = new Overlay();
+  private productImagePopup: BaseComponent;
   private counter = 0;
+  private cross: BaseComponent;
 
   constructor(private props: Record<string, string>) {
     super('div', { className: 'product' });
@@ -44,10 +45,6 @@ export class ProductPage extends BaseComponent {
     heart.getNode().addEventListener('click', () => {
       heart.toggleClass('active');
     });
-
-    const price = new BaseComponent('div', { className: 'price' });
-    price.setContent('20');
-    priceHeart.append(price);
 
     const rightBlock = new BaseComponent('div', { className: 'right_block' });
     wrapper.append(rightBlock);
@@ -91,6 +88,10 @@ export class ProductPage extends BaseComponent {
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     rightBlock.append(buttonsHolder);
+
+    const price = new BaseComponent('div', { className: 'price' });
+    price.setContent('20$');
+    buttonsHolder.append(price);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
@@ -148,10 +149,11 @@ export class ProductPage extends BaseComponent {
     buttonsHolder.append(cardButtonAddToCart);
 
     this.productImage.getNode().addEventListener('click', () => {
-      this.createPopup();
+      this.createImagePopup();
     });
 
     this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
+    this.cross = new BaseComponent('span', { className: 'cross_line' });
 
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
 
@@ -171,9 +173,11 @@ export class ProductPage extends BaseComponent {
     }
   }
 
-  createPopup() {
+  createImagePopup() {
     this.append(this.overlay);
-    this.append(this.productImagePopup);
+    this.overlay.append(this.productImagePopup);
+    this.productImagePopup.append(this.cross);
+    this.overlay.addClass('overlay--active');
 
     this.overlay.getNode().addEventListener('click', () => {
       if (!this.overlay) return;
@@ -182,6 +186,12 @@ export class ProductPage extends BaseComponent {
         this.productImagePopup.remove();
         document.body.removeAttribute('style');
       }
+    });
+
+    this.cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      this.productImagePopup.remove();
+      document.body.removeAttribute('style');
     });
 
     return this.productImagePopup;
