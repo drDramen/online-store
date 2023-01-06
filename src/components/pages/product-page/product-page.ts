@@ -13,12 +13,11 @@ export class ProductPage extends BaseComponent {
   private smallPic: BaseComponent;
   private productImagePopup: BaseComponent;
   private productPics: BaseComponent;
+  private productImage: BaseComponent;
   private counter = 0;
 
   constructor() {
     super('div', { className: 'product' });
-
-    this.append(this.overlay);
 
     this.append(this.topMenu);
 
@@ -34,9 +33,9 @@ export class ProductPage extends BaseComponent {
     this.productPics = new BaseComponent('div', { className: 'products_pics' });
     leftBlock.append(this.productPics);
 
-    const productImage = new BaseComponent('div', { className: 'product_image' });
-    leftBlock.append(productImage);
-    productImage.getNode().addEventListener('click', () => {
+    this.productImage = new BaseComponent('div', { className: 'product_image' });
+    leftBlock.append(this.productImage);
+    this.productImage.getNode().addEventListener('click', () => {
       this.toggleClass('overlay');
     });
 
@@ -155,7 +154,7 @@ export class ProductPage extends BaseComponent {
     cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(cardButtonAddToCart);
 
-    productImage.getNode().addEventListener('click', () => {
+    this.productImage.getNode().addEventListener('click', () => {
       this.createPopup();
     });
 
@@ -180,6 +179,7 @@ export class ProductPage extends BaseComponent {
   }
 
   createPopup() {
+    this.append(this.overlay);
     this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
     this.append(this.productImagePopup);
   }
