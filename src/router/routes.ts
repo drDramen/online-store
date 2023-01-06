@@ -4,42 +4,42 @@ import { Route } from '@/interfaces/route';
 export const routes: Route[] = [
   {
     name: NameRoute.Home,
-    component: async () => {
+    component: async (props) => {
       const { HomePage } = await import('@/components/pages/home-page/home-page');
 
-      return new HomePage();
+      return new HomePage(props);
     },
   },
   {
     name: NameRoute.Cart,
-    component: async () => {
+    component: async (props) => {
       const { CartPage } = await import('@/components/pages/cart-page/cart-page');
 
-      return new CartPage();
+      return new CartPage(props);
     },
   },
   {
     name: NameRoute.Catalog,
-    component: async () => {
+    component: async (props) => {
       const { CatalogPage } = await import('@/components/pages/catalog-page/catalog-page');
 
-      return new CatalogPage();
+      return new CatalogPage(props);
     },
   },
   {
     name: NameRoute.Product,
-    component: async () => {
+    component: async (props) => {
       const { ProductPage } = await import('@/components/pages/product-page/product-page');
 
-      return new ProductPage();
+      return new ProductPage(props);
     },
   },
   {
     name: NameRoute.Brands,
-    component: async () => {
+    component: async (props: Record<string, string>) => {
       const { BrandsPage } = await import('@/components/pages/brands-page/brands-page');
 
-      return new BrandsPage();
+      return new BrandsPage(props);
     },
   },
   {

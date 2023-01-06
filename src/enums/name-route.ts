@@ -3,7 +3,7 @@ export enum NameRoute {
   Home = '/',
   Catalog = '/catalog',
   Contacts = '/contacts',
-  Product = '/product',
+  Product = '/product/:id',
   Cart = '/cart',
   NotFound = '/404',
   Brands = '/brands',

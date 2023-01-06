@@ -15,7 +15,7 @@ export class ProductPage extends BaseComponent {
   private productPics: BaseComponent;
   private counter = 0;
 
-  constructor() {
+  constructor(private props: Record<string, string>) {
     super('div', { className: 'product' });
 
     this.append(this.overlay);
