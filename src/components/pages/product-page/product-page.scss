@@ -16,12 +16,10 @@
   position: absolute;
   right: 0;
   transform: translate(40px, -20px);
-  opacity: 0.8;
   transition: all var(--transition);
 
   &:hover {
     cursor: pointer;
-    opacity: 1;
 
     &::before,
     &::after {
