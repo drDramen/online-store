@@ -174,6 +174,7 @@ export class ProductPage extends BaseComponent {
   createPopup() {
     this.append(this.overlay);
     this.append(this.productImagePopup);
+    this.overlay.addClass('overlay--active');
 
     this.overlay.getNode().addEventListener('click', () => {
       if (!this.overlay) return;
