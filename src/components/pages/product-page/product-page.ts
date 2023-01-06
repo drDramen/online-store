@@ -46,10 +46,6 @@ export class ProductPage extends BaseComponent {
       heart.toggleClass('active');
     });
 
-    const price = new BaseComponent('div', { className: 'price' });
-    price.setContent('20');
-    priceHeart.append(price);
-
     const rightBlock = new BaseComponent('div', { className: 'right_block' });
     wrapper.append(rightBlock);
 
@@ -92,6 +88,10 @@ export class ProductPage extends BaseComponent {
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     rightBlock.append(buttonsHolder);
+
+    const price = new BaseComponent('div', { className: 'price' });
+    price.setContent('20$');
+    buttonsHolder.append(price);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
@@ -175,7 +175,7 @@ export class ProductPage extends BaseComponent {
 
   createImagePopup() {
     this.append(this.overlay);
-    this.append(this.productImagePopup);
+    this.overlay.append(this.productImagePopup);
     this.productImagePopup.append(this.cross);
     this.overlay.addClass('overlay--active');
 

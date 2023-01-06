@@ -1,10 +1,11 @@
 .product_image__popup {
-  position: fixed;
+  position: relative;
   width: 600px;
   height: 600px;
   background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
   z-index: 1000;
-  transform: translate(50%, -50%);
+  margin: 0 auto;
+  top: 25%;
   background-size: contain;
   border-radius: 46px;
 }
@@ -12,21 +13,35 @@
 .cross_line {
   width: 30px;
   height: 30px;
-  position: fixed;
-  top: 0;
+  position: absolute;
   right: 0;
+  transform: translate(40px, -20px);
+  opacity: 0.8;
+  transition: all var(--transition);
 
   &:hover {
     cursor: pointer;
+    opacity: 1;
   }
 
-  &::before, &::after {
+  &:hover > &::before, &::after{
+    cursor: pointer;
+    opacity: 1;
+    background-color: var(--color-white);
+  }
+
+  &::before,
+  &::after {
     content: ' ';
     transform: rotate(45deg);
     position: absolute;
     height: 30px;
     width: 2px;
     background-color: var(--color-java);
+
+    &:hover {
+      background-color: var(--color-charlotte);
+    }
   }
 
   &::before {
@@ -98,12 +113,6 @@
         &.active {
           background-image: url('../../../assets/images/icons/heart_picked.svg');
         }
-      }
-
-      .price {
-        font-family: var(--font-family-main);
-        font-size: 24px;
-        margin-bottom: 20px;
       }
     }
   }
@@ -191,10 +200,15 @@
       width: 660px;
       height: 36px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
       flex: 3fr auto;
       margin: 15px 0px 15px 0px;
+
+      .price {
+        font-family: var(--font-family-main);
+        font-size: 24px;
+      }
 
       &.button {
         width: 120px;
