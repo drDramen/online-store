@@ -11,11 +11,15 @@ export class HomePage extends BaseComponent {
   private content: BaseComponent;
   private imageWrapper: BaseComponent;
   private advantages: BaseComponent;
+  private canvas: BaseComponent;
 
   constructor() {
     super('section', {
       className: 'home-page',
     });
+
+    this.canvas = new BaseComponent('canvas', { className: 'canvas' });
+    this.append(this.canvas);
 
     this.container = new Container('home-page__container');
     this.content = new BaseComponent('div', {
