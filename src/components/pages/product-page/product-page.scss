@@ -35,23 +35,13 @@
       &__popup {
         width: 120%;
         height: 120%;
-        background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
-        background-size: contain;
         position: absolute;
-        cursor: pointer;
         z-index: 1000;
-        transform: translate(50%, 50%);
+        margin: 0 auto;
       }
 
       &:hover {
         cursor: pointer;
-      }
-
-      .popup {
-        width: 600px;
-        height: 600px;
-        background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
-        z-index: 10;
       }
     }
 

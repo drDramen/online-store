@@ -1,5 +1,5 @@
-import { products } from './../../../data/data';
 import { Overlay } from './../../overlay/overlay';
+import { products } from './../../../data/data';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './product-page.scss';
@@ -8,12 +8,12 @@ import { Product } from '@/interfaces/product';
 
 export class ProductPage extends BaseComponent {
   container: Container;
-  private overlay: Overlay = new Overlay();
   private topMenu: TopMenu = new TopMenu();
   private smallPic: BaseComponent;
   private productImagePopup: BaseComponent;
   private productPics: BaseComponent;
   private productImage: BaseComponent;
+  private overlay: Overlay = new Overlay();
   private counter = 0;
 
   constructor() {
@@ -35,9 +35,6 @@ export class ProductPage extends BaseComponent {
 
     this.productImage = new BaseComponent('div', { className: 'product_image' });
     leftBlock.append(this.productImage);
-    this.productImage.getNode().addEventListener('click', () => {
-      this.toggleClass('overlay');
-    });
 
     const priceHeart = new BaseComponent('div', { className: 'price_heart' });
     leftBlock.append(priceHeart);
@@ -180,7 +177,17 @@ export class ProductPage extends BaseComponent {
 
   createPopup() {
     this.append(this.overlay);
-    this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
     this.append(this.productImagePopup);
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        this.productImagePopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    return this.productImagePopup;
   }
 }
