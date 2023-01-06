@@ -175,12 +175,13 @@ export class ProductPage extends BaseComponent {
     this.append(this.overlay);
     this.append(this.productImagePopup);
     this.overlay.addClass('overlay--active');
+    this.productImage.addClass('product_image__popup');
 
     this.overlay.getNode().addEventListener('click', () => {
       if (!this.overlay) return;
       else {
         this.overlay.remove();
-        this.productImagePopup.remove();
+        this.productImage.removeClass('product_image__popup');
         document.body.removeAttribute('style');
       }
     });

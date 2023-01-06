@@ -38,12 +38,12 @@
     }
 
     .product_image__popup {
+      position: fixed;
       width: 600px;
       height: 600px;
-      position: absolute;
       background-image: url('public/product-images/0220/yttp-superfood-cleanser-1.avif');
       z-index: 1000;
-      margin: 0 auto;
+      transform: translate(50%, 0);
     }
 
     .price_heart {
