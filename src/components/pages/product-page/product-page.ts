@@ -15,7 +15,7 @@ export class ProductPage extends BaseComponent {
   private productPics: BaseComponent;
   private counter = 0;
 
-  constructor() {
+  constructor(private props: Record<string, string>) {
     super('div', { className: 'product' });
 
     this.append(this.overlay);
@@ -164,17 +164,17 @@ export class ProductPage extends BaseComponent {
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
 
     this.loadSmallPics([
-      'public/product-images/0220/yttp-superfood-cleanser-1.avif',
-      'public/product-images/0220/yttp-superfood-cleanser-2.avif',
-      'public/product-images/0220/yttp-superfood-cleanser-3.avif',
-      'public/product-images/0220/yttp-superfood-cleanser-4.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-1.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-2.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-3.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-4.avif',
     ]);
   }
 
   loadSmallPics(pics: Product['pics']) {
     for (let i = 0; i < pics.length; i++) {
       this.smallPic = new BaseComponent('div', { className: 'small_pic' });
-      this.smallPic.getNode().style.backgroundImage = `url(${pics[i]})`;
+      this.smallPic.getNode().style.backgroundImage = `url(${location.origin}/${pics[i]})`;
       this.productPics.append(this.smallPic);
     }
   }

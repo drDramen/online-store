@@ -10,7 +10,7 @@ export class CatalogPage extends BaseComponent {
   private topMenu: TopMenu = new TopMenu();
   private filtersChain: FiltersChain = new FiltersChain();
 
-  constructor() {
+  constructor(private props: Record<string, string>) {
     super('div', { className: 'catalog' });
 
     this.container = new Container('catalog__container');
