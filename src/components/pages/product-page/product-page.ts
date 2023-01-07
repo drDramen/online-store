@@ -1,3 +1,5 @@
+import { NameRoute } from './../../../enums/name-route';
+import { Link } from './../../../templates/link';
 import { Overlay } from './../../overlay/overlay';
 import { products } from './../../../data/data';
 import { Container } from '@/components/container/container';
@@ -5,6 +7,9 @@ import { BaseComponent } from '@/templates/base-component';
 import './product-page.scss';
 import { TopMenu } from '@/components/top-menu/top-menu';
 import { Product } from '@/interfaces/product';
+
+const continueShoppingLink = { href: NameRoute.Catalog };
+const goToCartLink = { href: NameRoute.Cart };
 
 export class ProductPage extends BaseComponent {
   container: Container;
@@ -17,6 +22,10 @@ export class ProductPage extends BaseComponent {
   private counter = 0;
   private cross: BaseComponent;
   private addToCartPopup: BaseComponent;
+  private continueShopping: BaseComponent;
+  private continueShoppingLink: Link;
+  private goToCartLink: Link;
+
   private body = document.querySelectorAll('.page__body');
 
   constructor() {
@@ -39,8 +48,8 @@ export class ProductPage extends BaseComponent {
     this.productImage = new BaseComponent('div', { className: 'product_image' });
     leftBlock.append(this.productImage);
 
-    const createImage = (image: Product) => {
-      this.productImage.getNode().style.backgroundImage = image.pics[0];
+    const createImage = (image: Product[]) => {
+      this.productImage.getNode().style.backgroundImage = image[0].pics[0];
       return this.productImage;
     };
 
@@ -162,26 +171,36 @@ export class ProductPage extends BaseComponent {
     this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
     this.cross = new BaseComponent('span', { className: 'cross_line' });
 
-    products.map((item) => {
-      const image = createImage(item);
-      image.getNode().addEventListener('click', () => {
-        this.createImagePopup(item);
-      });
-    });
+    // products.map((item) => {
+    //   const image = createImage(item);
+    //   image.getNode().addEventListener('click', () => {
+    //     this.createImagePopup(item);
+    //   });
+    // });
 
     this.addToCartPopup = new BaseComponent('div', { className: 'add_to_card__popup' });
     const itemAdded = new BaseComponent('div', { className: 'item_added' });
     itemAdded.setContent('Item is added to Cart');
     this.addToCartPopup.append(itemAdded);
-    const continueShopping = new BaseComponent('div', { className: 'add_to_card__button' });
-    continueShopping.setContent('Continue Shopping');
-    this.addToCartPopup.append(continueShopping);
+    this.continueShoppingLink = new Link({
+      ...continueShoppingLink,
+      className: 'continue_shopping_link',
+    });
+    this.addToCartPopup.append(this.continueShoppingLink);
+    this.continueShopping = new BaseComponent('div', { className: 'add_to_card__button' });
+    this.continueShopping.setContent('Continue Shopping');
+    this.continueShoppingLink.append(this.continueShopping);
+    this.goToCartLink = new Link({ ...goToCartLink, className: 'go_to_cart_link' });
+    this.addToCartPopup.append(this.goToCartLink);
     const goToCart = new BaseComponent('div', { className: 'add_to_card__button' });
     goToCart.setContent('Go to Cart');
-    this.addToCartPopup.append(goToCart);
+    this.goToCartLink.append(goToCart);
     cardButtonAddToCart.getNode().addEventListener('click', () => {
       this.createAddToCartPopup();
     });
+
+    Link.addNavigationLink(this.continueShoppingLink);
+    Link.addNavigationLink(this.goToCartLink);
 
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
 
@@ -201,10 +220,10 @@ export class ProductPage extends BaseComponent {
     }
   }
 
-  createImagePopup(image: Product) {
+  createImagePopup(image: Product[]) {
     this.append(this.overlay);
     this.append(this.productImagePopup);
-    this.productImagePopup.getNode().style.backgroundImage = image.pics[0];
+    this.productImagePopup.getNode().style.backgroundImage = image[0].pics[0];
     this.productImagePopup.append(this.cross);
     this.overlay.addClass('overlay--active');
 
@@ -242,6 +261,12 @@ export class ProductPage extends BaseComponent {
     });
 
     this.cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      this.addToCartPopup.remove();
+      document.body.removeAttribute('style');
+    });
+
+    this.continueShopping.getNode().addEventListener('click', () => {
       this.overlay.remove();
       this.addToCartPopup.remove();
       document.body.removeAttribute('style');
