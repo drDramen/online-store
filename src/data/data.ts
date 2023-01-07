@@ -465,7 +465,7 @@ export const products: Product[] = [
     productName: 'Vitamin C Serum',
     description: `The serum has a complex rejuvenating effect due to the synthesis of
      collagen, evening out skin tone, tightening the skin and accelerated regeneration.`,
-    ingredients: `Aqua (water), Sodium Ascorbyl Phosphate, Cordyceps Sinensis (Mushroom) 
+    ingredients: `Aqua (water), Sodium Ascorbyl Phosphate, Cordyceps Sinensis (Mushroom)
     Extract/Lentinus Edods (Mushroom) Extract/Tremella Fuciformis (Mushroom) Extract/Ganoderma
      Lucidum (Mushroom) Extract, Ecogel (Lysolecithin (and) Sclerotiumgum (and) Xanthan gum
       (and) Pullulan), Taurine, Sorbitol, Glycerin, SC-CO2 Vanilla Tahitensis (Vanilla) Extract,
@@ -943,7 +943,7 @@ export const products: Product[] = [
     id: '0033',
     brandName: `I'm From`,
     productName: 'Beet Energy Ampoule',
-    description: `I'm From Beet Energy Ampoule, a beet-based radiance serum, 
+    description: `I'm From Beet Energy Ampoule, a beet-based radiance serum,
     restores skin tone, evens out tone and deeply moisturizes in an instant.
     The composition of the serum includes beetroot extract (81.5%), grown
      in the picturesque county in South Korea - Tamyang. This extract is
@@ -6431,10 +6431,10 @@ export const products: Product[] = [
         Chlorophyllin-Copper Complex (CI 75810)`,
     starIngredient: 'Vitamin C',
     pics: [
-      'assets/product-images/0220/yttp-SuperfoodCleanser-1.avif',
-      'assets/product-images/0220/yttp-SuperfoodCleanser-2.avif',
-      'assets/product-images/0220/yttp-SuperfoodCleanser-3.avif',
-      'assets/product-images/0220/yttp-SuperfoodCleanser-4.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-1.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-2.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-3.avif',
+      'assets/product-images/0220/yttp-superfood-cleanser-4.avif',
     ],
     price: 36,
     bestseller: true,
