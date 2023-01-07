@@ -12,7 +12,7 @@ export class HomePage extends BaseComponent {
   private imageWrapper: BaseComponent;
   private advantages: BaseComponent;
 
-  constructor() {
+  constructor(private props: Record<string, string>) {
     super('section', {
       className: 'home-page',
     });

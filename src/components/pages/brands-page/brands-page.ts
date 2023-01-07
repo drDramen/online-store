@@ -7,7 +7,7 @@ export class BrandsPage extends BaseComponent {
   private container: Container;
   private topMenu: TopMenu = new TopMenu();
 
-  constructor() {
+  constructor(private props: Record<string, string>) {
     super('div', { className: 'brands' });
 
     this.append(this.topMenu);

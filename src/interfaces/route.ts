@@ -3,5 +3,5 @@ import { BaseComponent } from '@/templates/base-component';
 
 export interface Route {
   name: NameRoute;
-  component: () => Promise<BaseComponent>;
+  component: (props: Record<string, string>) => Promise<BaseComponent>;
 }
