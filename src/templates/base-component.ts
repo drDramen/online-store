@@ -18,8 +18,8 @@ export class BaseComponent<T extends keyof HTMLElementTagNameMap = keyof HTMLEle
     }
   }
 
-  getNode() {
-    return this.node;
+  getNode<K extends HTMLElementTagNameMap[T]>(): K {
+    return this.node as K;
   }
 
   getChildren(): BaseComponent[] {
