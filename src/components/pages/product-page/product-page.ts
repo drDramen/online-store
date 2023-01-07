@@ -16,6 +16,8 @@ export class ProductPage extends BaseComponent {
   private productImagePopup: BaseComponent;
   private counter = 0;
   private cross: BaseComponent;
+  private addToCartPopup: BaseComponent;
+  private body = document.querySelectorAll('.page__body');
 
   constructor() {
     super('div', { className: 'product' });
@@ -36,6 +38,11 @@ export class ProductPage extends BaseComponent {
 
     this.productImage = new BaseComponent('div', { className: 'product_image' });
     leftBlock.append(this.productImage);
+
+    const createImage = (image: Product) => {
+      this.productImage.getNode().style.backgroundImage = image.pics[0];
+      return this.productImage;
+    };
 
     const priceHeart = new BaseComponent('div', { className: 'price_heart' });
     leftBlock.append(priceHeart);
@@ -148,12 +155,33 @@ export class ProductPage extends BaseComponent {
     cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(cardButtonAddToCart);
 
-    this.productImage.getNode().addEventListener('click', () => {
-      this.createImagePopup();
-    });
+    // this.productImage.getNode().addEventListener('click', () => {
+    //   this.createImagePopup();
+    // });
 
     this.productImagePopup = new BaseComponent('div', { className: 'product_image__popup' });
     this.cross = new BaseComponent('span', { className: 'cross_line' });
+
+    products.map((item) => {
+      const image = createImage(item);
+      image.getNode().addEventListener('click', () => {
+        this.createImagePopup(item);
+      });
+    });
+
+    this.addToCartPopup = new BaseComponent('div', { className: 'add_to_card__popup' });
+    const itemAdded = new BaseComponent('div', { className: 'item_added' });
+    itemAdded.setContent('Item is added to Cart');
+    this.addToCartPopup.append(itemAdded);
+    const continueShopping = new BaseComponent('div', { className: 'add_to_card__button' });
+    continueShopping.setContent('Continue Shopping');
+    this.addToCartPopup.append(continueShopping);
+    const goToCart = new BaseComponent('div', { className: 'add_to_card__button' });
+    goToCart.setContent('Go to Cart');
+    this.addToCartPopup.append(goToCart);
+    cardButtonAddToCart.getNode().addEventListener('click', () => {
+      this.createAddToCartPopup();
+    });
 
     this.smallPic = new BaseComponent('div', { className: 'small_pic' });
 
@@ -173,9 +201,10 @@ export class ProductPage extends BaseComponent {
     }
   }
 
-  createImagePopup() {
+  createImagePopup(image: Product) {
     this.append(this.overlay);
-    this.overlay.append(this.productImagePopup);
+    this.append(this.productImagePopup);
+    this.productImagePopup.getNode().style.backgroundImage = image.pics[0];
     this.productImagePopup.append(this.cross);
     this.overlay.addClass('overlay--active');
 
@@ -195,5 +224,29 @@ export class ProductPage extends BaseComponent {
     });
 
     return this.productImagePopup;
+  }
+
+  createAddToCartPopup() {
+    this.append(this.overlay);
+    this.append(this.addToCartPopup);
+    this.addToCartPopup.append(this.cross);
+    this.overlay.addClass('overlay--active');
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        this.addToCartPopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    this.cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      this.addToCartPopup.remove();
+      document.body.removeAttribute('style');
+    });
+
+    return this.addToCartPopup;
   }
 }

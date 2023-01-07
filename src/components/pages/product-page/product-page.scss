@@ -7,16 +7,16 @@
   margin: 0 auto;
   top: 25%;
   background-size: contain;
-  border-radius: 46px;
+  border-radius: 10px;
 }
 
 .cross_line {
   width: 30px;
   height: 30px;
   position: absolute;
+  top: 0;
   right: 0;
-  transform: translate(40px, -20px);
-  transition: all var(--transition);
+  transform: translate(10px, 0px);
 
   &:hover {
     cursor: pointer;
@@ -35,6 +35,7 @@
     height: 30px;
     width: 2px;
     background-color: var(--color-java);
+    transition: all var(--transition);
   }
 
   &::before {
@@ -43,6 +44,38 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.add_to_card__popup {
+  width: 60%;
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  position: relative;
+  z-index: 1500;
+  margin: 0 auto;
+  top: 35%;
+  font-family: var(--font-family-main);
+  color: var(--color-black);
+  font-size: 20px;
+}
+
+.add_to_card__button {
+  padding: 15px 20px;
+  background-color: var(--color-charlotte);
+  border-radius: 10px;
+  transition: all var(--transition);
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-java);
+    cursor: pointer;
   }
 }
 
