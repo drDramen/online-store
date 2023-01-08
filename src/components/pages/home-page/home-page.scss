@@ -81,54 +81,170 @@
   justify-content: center;
   align-self: end;
   column-gap: 145px;
+  text-align: center;
 
   &__item {
-    max-width: 180px;
-  }
+    width: 180px;
 
-  &__description {
-    font-size: 18px;
-    text-align: center;
-  }
-}
+    &.planet:hover {
+      cursor: pointer;
 
-.icon {
-  display: block;
-  fill: var(--color-charlotte);
-  transition: fill var(--transition);
+      > .icon-wrapper > .icon-echo {
+        &.one {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+        }
+        &.two {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 0.8s;
+        }
+        &.three {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1.6s;
+        }
+        &.four {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 2.4s;
+        }
+      }
 
-  &:hover {
-    fill: var(--color-java);
-    cursor: pointer;
+      > .icon-wrapper > .icon-planet {
+        display: block;
+        fill: var(--color-java);
+        transition: fill var(--transition);
 
-    > .icon-planet {
-      transform: rotate(-360deg);
+        animation-name: planet_anim;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+
+      > .icon-wrapper > .icon-sputnik {
+        display: block;
+        background: var(--gradient-sunrise);
+        transition: background-color var(--transition);
+
+        animation-name: sputnik_anim;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+    }
+
+    &__description {
+      font-size: 18px;
+      text-align: center;
     }
   }
 
-  &-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 180px;
-    border: 2px solid var(--color-java);
-    border-radius: 50%;
-    background: var(--color-white);
-  }
+  .icon {
+    display: block;
+    fill: var(--color-charlotte);
+    transition: fill var(--transition);
 
-  &-flask-science {
-    width: 114px;
-    height: 114px;
-  }
+    &:hover {
+      fill: var(--color-java);
+    }
 
-  &-planet {
-    width: 130px;
-    height: 130px;
-  }
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      height: 180px;
+      border: 2px solid var(--color-java);
+      border-radius: 50%;
+      background: var(--color-white);
+    }
 
-  &-package {
-    width: 116px;
-    height: 116px;
+    &-flask-science {
+      width: 114px;
+      height: 114px;
+    }
+
+    &-echo {
+      position: absolute;
+      width: 182px;
+      height: 182px;
+      border-radius: 50%;
+      border: solid 2px var(--color-white);
+      opacity: 0;
+    }
+
+    @keyframes echo_anim {
+      0% {
+        width: 180px;
+        height: 180px;
+        opacity: 0;
+      }
+      1% {
+        width: 180px;
+        height: 180px;
+        opacity: 1;
+      }
+      100% {
+        width: 360px;
+        height: 360px;
+        opacity: 0;
+      }
+    }
+
+    &-planet {
+      width: 130px;
+      height: 130px;
+      transition: all var(--transition);
+      position: absolute;
+      display: inline-block;
+    }
+
+    @keyframes planet_anim {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes sputnik_anim {
+      0% {
+        transform: rotate(0deg) translate(75px);
+      }
+      100% {
+        transform: rotate(-360deg) translate(75px);
+      }
+    }
+
+    &-sputnik {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: absolute;
+      background: var(--color-charlotte);
+      border-radius: 50%;
+      transform: translate(75px);
+    }
+
+    &-package {
+      width: 116px;
+      height: 116px;
+    }
   }
 }
