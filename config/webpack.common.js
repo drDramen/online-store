@@ -50,7 +50,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg|svg|avif)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg|avif|glb)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/img/[hash][ext]',

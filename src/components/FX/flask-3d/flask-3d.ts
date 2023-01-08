@@ -2,8 +2,8 @@
 import './flask-3d.scss';
 import checker from '.flask-prop/checker.jpg';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/example/jsm/controls/OrbitControls';
-import { GLTFLoader } from 'three/exmaples/jsm/loaders/GLTFLoader';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import flaskGLB from './flask-prop/flask.glb';
 
 function main() {
