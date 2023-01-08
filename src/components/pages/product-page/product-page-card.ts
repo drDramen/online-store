@@ -1,14 +1,21 @@
+import { ModalProductImage } from './../../modal-product-image/modal-product-image';
 import { Product } from '@/interfaces/product';
 import { BaseComponent } from '@/templates/base-component';
+import { Link } from './../../../templates/link';
+import './product-page.scss';
+import { NameRoute } from '@/enums/name-route';
+import { Overlay } from '@/components/overlay/overlay';
 
 export class ProductPageCard extends BaseComponent {
-  private productImage: BaseComponent;
+  private overlay: Overlay = new Overlay();
+  private productImage: ModalProductImage;
   private counter = 0;
 
   constructor(private data: Product) {
     super('div', { className: 'wrapper' });
-    this.productImage = new BaseComponent('div', { className: 'product_image' });
-    this.productImage.getNode().style.backgroundImage = `url('${location.origin}/${data.pics[0]}')`;
+    this.productImage = new ModalProductImage(data.pics[0], (src) => {
+      this.createImagePopup(src);
+    });
     this.renderCard(data);
   }
 
@@ -18,7 +25,7 @@ export class ProductPageCard extends BaseComponent {
       smallPic.getNode().style.backgroundImage = `url('${location.origin}/${pic}')`;
 
       smallPic.getNode().addEventListener('click', () => {
-        this.productImage.getNode().style.backgroundImage = `url('${location.origin}/${pic}')`;
+        this.productImage.setSRC(pic);
       });
       return smallPic;
     });
@@ -33,9 +40,6 @@ export class ProductPageCard extends BaseComponent {
     leftBlock.append(productPics);
 
     leftBlock.append(this.productImage);
-    this.productImage.getNode().addEventListener('click', () => {
-      this.toggleClass('overlay');
-    });
 
     const priceHeart = new BaseComponent('div', { className: 'price_heart' });
     leftBlock.append(priceHeart);
@@ -136,9 +140,92 @@ export class ProductPageCard extends BaseComponent {
       className: 'card__buttons_holder button add',
     });
     cardButtonAddToCart.setContent('Add to Cart');
+    cardButtonAddToCart.getNode().addEventListener('click', () => {
+      this.createAddToCartPopup();
+    });
     buttonsHolder.append(cardButtonAddToCart);
 
     const smallPics = this.loadSmallPics(data.pics);
     productPics.append(...smallPics);
+  }
+
+  createImagePopup(src: string) {
+    const wrapperImage = new BaseComponent('div', { className: 'wrapper_image' });
+    this.append(wrapperImage);
+    const productImagePopup = new BaseComponent<'img'>('img', {
+      className: 'product_image__popup',
+    });
+    this.append(this.overlay);
+    productImagePopup.getNode<HTMLImageElement>().src = `${location.origin}/${src}`;
+    this.append(productImagePopup);
+    const cross = new BaseComponent('span', { className: 'cross_line' });
+    wrapperImage.append(productImagePopup);
+    wrapperImage.append(cross);
+    this.overlay.addClass('overlay--active');
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        wrapperImage.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      wrapperImage.remove();
+      document.body.removeAttribute('style');
+    });
+
+    return productImagePopup;
+  }
+
+  createAddToCartPopup() {
+    const addToCartPopup = new BaseComponent('div', { className: 'add_to_card__popup' });
+    const itemAdded = new BaseComponent('div', { className: 'item_added' });
+    itemAdded.setContent('Item is added to Cart');
+    addToCartPopup.append(itemAdded);
+    const cross = new BaseComponent('span', { className: 'cross_line' });
+    const continueShoppingLink = new Link({
+      href: NameRoute.Catalog,
+      className: 'continue_shopping_link',
+    });
+    addToCartPopup.append(continueShoppingLink);
+    const continueShopping = new BaseComponent('div', { className: 'add_to_card__button' });
+    continueShopping.setContent('Continue Shopping');
+    continueShoppingLink.append(continueShopping);
+    const goToCartLink = new Link({ href: NameRoute.Cart, className: 'go_to_cart_link' });
+    addToCartPopup.append(goToCartLink);
+    const goToCart = new BaseComponent('div', { className: 'add_to_card__button' });
+    goToCart.setContent('Go to Cart');
+    goToCartLink.append(goToCart);
+    this.append(this.overlay);
+    this.append(addToCartPopup);
+    addToCartPopup.append(cross);
+    this.overlay.addClass('overlay--active');
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        addToCartPopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      addToCartPopup.remove();
+      document.body.removeAttribute('style');
+    });
+
+    continueShopping.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      addToCartPopup.remove();
+      document.body.removeAttribute('style');
+    });
+
+    return addToCartPopup;
   }
 }
