@@ -3,15 +3,14 @@ import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
 import './card-full.scss';
-
-const detailsLink = { href: NameRoute.Product };
+import { Product } from '@/interfaces/product';
 
 export class CardFull extends BaseComponent {
   private heartToCart: BaseComponent;
   private detailsLink: Link;
   private counter = 0;
 
-  constructor() {
+  constructor(private data: Product) {
     super('div', {
       className: 'cards_wrapper',
     });
@@ -47,7 +46,10 @@ export class CardFull extends BaseComponent {
     const productImage = new BaseComponent('span', { className: 'card__product_image' });
     cardFrame.append(productImage);
 
-    this.detailsLink = new Link({ ...detailsLink, className: 'details_link' });
+    this.detailsLink = new Link({
+      href: NameRoute.Product.replace(':id', data.id),
+      className: 'details_link',
+    });
     cardFrame.append(this.detailsLink);
 
     const productDetails = new BaseComponent('span', { className: 'card__details' });
