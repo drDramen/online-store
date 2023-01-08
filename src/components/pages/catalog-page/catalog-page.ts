@@ -36,6 +36,7 @@ export class CatalogPage extends BaseComponent {
   });
   private topMenu: TopMenu = new TopMenu();
   private filtersChain: FiltersChain = new FiltersChain();
+  private cardsWrapper: BaseComponent;
 
   constructor(private props: Record<string, string>) {
     super('div', { className: 'catalog' });
@@ -47,6 +48,10 @@ export class CatalogPage extends BaseComponent {
 
     this.container.append(this.filtersChain);
 
-    this.container.append(this.cardFull);
+    this.cardsWrapper = new BaseComponent('div', { className: 'cards_wrapper' });
+
+    this.container.append(this.cardsWrapper);
+
+    this.cardsWrapper.append(this.cardFull);
   }
 }

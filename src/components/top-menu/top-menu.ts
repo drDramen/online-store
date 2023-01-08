@@ -45,7 +45,6 @@ export class TopMenu extends BaseComponent {
     this.container.append(topMenuRight);
 
     this.changeView = new BaseComponent('div', { className: 'top_menu__right__item view' });
-    //changeView.setContent('cards view');
     topMenuRight.append(this.changeView);
 
     this.favouritesLink = new Link({

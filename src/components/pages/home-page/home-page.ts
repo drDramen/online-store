@@ -1,4 +1,4 @@
-//import { NameRoute } from '@/enums/name-route';
+import { NameRoute } from '@/enums/name-route';
 import { BaseComponent } from '@/templates/base-component';
 import { Link } from '@/templates/link';
 import { Container } from '@/components/container/container';
@@ -12,8 +12,6 @@ export class HomePage extends BaseComponent {
   private content: BaseComponent;
   private imageWrapper: BaseComponent;
   private advantages: BaseComponent;
-  // private planetToBrands;
-  // private planetToBrandsLink: Link;
 
   constructor(private props: Record<string, string>) {
     super('section', {
@@ -44,43 +42,59 @@ export class HomePage extends BaseComponent {
     this.fillAdvantages();
     this.container.append(this.content, this.imageWrapper, this.advantages);
     this.append(this.container);
-
-    // this.planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_cart' });
-    // this.planetToBrands = document.querySelectorAll('.advantages__item planet');
-    // this.planetToBrandsLink.append(this.planetToBrands);
   }
 
   fillAdvantages() {
-    this.advantages.setInnerHTML(`
-      <figure class="advantages__item">
-        <div class="icon-wrapper">
-          <svg class="icon icon-flask-science">
-            <use href="${sprite}#flask-science"></use>
-          </svg>
-        </div>
-        <figcaption class="advantages__description">science-based recipes and ingredients</figcaption>
-      </figure>
-      <figure class="advantages__item planet">
-        <div class="icon-wrapper">
-          <div class='icon-echo one'></div>
-          <div class='icon-echo two'></div>
-          <div class='icon-echo three'></div>
-          <div class='icon-echo four'></div>
-          <svg class="icon icon-planet">
-            <use href="${sprite}#planet"></use>
-          </svg>
-          <span class='icon icon-sputnik'></span>
-        </div>
-        <figcaption class="advantages__description">best brands from all over the world</figcaption>
-      </figure>
-      <figure class="advantages__item">
-        <div class="icon-wrapper">
-          <svg class="icon icon-package">
-            <use href="${sprite}#package"></use>
-          </svg>
-        </div>
-        <figcaption class="advantages__description">testers and gifts with every purchase</figcaption>
-      </figure>
-    `);
+    const figureOne = `
+    <div class="icon-wrapper">
+      <svg class="icon icon-flask-science">
+        <use href="${sprite}#flask-science"></use>
+      </svg>
+    </div>
+    <figcaption class="advantages__description">science-based recipes and ingredients</figcaption>
+  `;
+
+    const flaskComponent = new BaseComponent('figure', {
+      className: 'advantages__item',
+      innerHTML: figureOne,
+    });
+
+    const figureTwo = `
+  <div class="icon-wrapper">
+    <div class='icon-echo one'></div>
+    <div class='icon-echo two'></div>
+    <div class='icon-echo three'></div>
+    <div class='icon-echo four'></div>
+    <svg class="icon icon-planet">
+      <use href="${sprite}#planet"></use>
+    </svg>
+    <span class='icon icon-sputnik'></span>
+  </div>
+  <figcaption class="advantages__description">best brands from all over the world</figcaption>
+`;
+
+    const planetComponent = new BaseComponent('figure', { className: 'advantages__item planet' });
+    planetComponent.setInnerHTML(figureTwo);
+
+    const planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_cart' });
+    if (planetComponent) {
+      planetToBrandsLink.append(planetComponent);
+    }
+
+    const figureThree = `
+<div class="icon-wrapper">
+  <svg class="icon icon-package">
+    <use href="${sprite}#package"></use>
+  </svg>
+</div>
+<figcaption class="advantages__description">testers and gifts with every purchase</figcaption>
+`;
+
+    const packageComponent = new BaseComponent('figure', {
+      className: 'advantages__item',
+      innerHTML: figureThree,
+    });
+
+    this.advantages.append(flaskComponent, planetToBrandsLink, packageComponent);
   }
 }
