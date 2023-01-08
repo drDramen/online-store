@@ -1,3 +1,4 @@
+//import { NameRoute } from '@/enums/name-route';
 import { BaseComponent } from '@/templates/base-component';
 import { Link } from '@/templates/link';
 import { Container } from '@/components/container/container';
@@ -41,6 +42,10 @@ export class HomePage extends BaseComponent {
     this.fillAdvantages();
     this.container.append(this.content, this.imageWrapper, this.advantages);
     this.append(this.container);
+
+    // const planetToBrands = document.querySelectorAll('advantages__item planet');
+    // const planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_cart' });
+    // planetToBrandsLink.append(planetToBrands);
   }
 
   fillAdvantages() {
@@ -55,7 +60,10 @@ export class HomePage extends BaseComponent {
       </figure>
       <figure class="advantages__item planet">
         <div class="icon-wrapper">
-          <div class='icon-echo'></div>
+          <div class='icon-echo one'></div>
+          <div class='icon-echo two'></div>
+          <div class='icon-echo three'></div>
+          <div class='icon-echo four'></div>
           <svg class="icon icon-planet">
             <use href="${sprite}#planet"></use>
           </svg>

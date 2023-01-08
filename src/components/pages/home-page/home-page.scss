@@ -90,11 +90,37 @@
       cursor: pointer;
 
       > .icon-wrapper > .icon-echo {
-        animation-name: echo_anim;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
+        &.one {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+        }
+        &.two {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 0.8s;
+        }
+        &.three {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1.6s;
+        }
+        &.four {
+          animation-name: echo_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 2.4s;
+        }
       }
 
       > .icon-wrapper > .icon-planet {
