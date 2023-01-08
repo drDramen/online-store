@@ -84,10 +84,18 @@
   text-align: center;
 
   &__item {
-    max-width: 180px;
+    width: 180px;
 
     &.planet:hover {
       cursor: pointer;
+
+      > .icon-wrapper > .icon-echo {
+        animation-name: echo_anim;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
 
       > .icon-wrapper > .icon-planet {
         display: block;
@@ -145,10 +153,39 @@
       height: 114px;
     }
 
+    &-echo {
+      position: absolute;
+      width: 182px;
+      height: 182px;
+      border-radius: 50%;
+      border: solid 2px var(--color-white);
+      opacity: 0;
+    }
+
+    @keyframes echo_anim {
+      0% {
+        width: 180px;
+        height: 180px;
+        opacity: 0;
+      }
+      1% {
+        width: 180px;
+        height: 180px;
+        opacity: 1;
+      }
+      100% {
+        width: 360px;
+        height: 360px;
+        opacity: 0;
+      }
+    }
+
     &-planet {
       width: 130px;
       height: 130px;
       transition: all var(--transition);
+      position: absolute;
+      display: inline-block;
     }
 
     @keyframes planet_anim {

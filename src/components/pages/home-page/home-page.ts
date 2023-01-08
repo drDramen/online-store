@@ -55,6 +55,7 @@ export class HomePage extends BaseComponent {
       </figure>
       <figure class="advantages__item planet">
         <div class="icon-wrapper">
+          <div class='icon-echo'></div>
           <svg class="icon icon-planet">
             <use href="${sprite}#planet"></use>
           </svg>
