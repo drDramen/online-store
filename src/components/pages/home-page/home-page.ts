@@ -58,6 +58,7 @@ export class HomePage extends BaseComponent {
           <svg class="icon icon-planet">
             <use href="${sprite}#planet"></use>
           </svg>
+          <span class='icon icon-sputnik'></span>
         </div>
         <figcaption class="advantages__description">best brands from all over the world</figcaption>
       </figure>

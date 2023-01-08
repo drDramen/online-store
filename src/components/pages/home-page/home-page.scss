@@ -125,6 +125,38 @@
   &-planet {
     width: 130px;
     height: 130px;
+    transition: all var(--transition);
+  }
+
+  &-planet:hover {
+    animation-name: planet_anim;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    + .icon-sputnik {
+      background-color: var(--color-java);
+    }
+  }
+
+  @keyframes planet_anim {
+    0% {
+      transform: translate(360deg);
+    }
+    100% {
+      transform: translate(360deg);
+    }
+  }
+
+  &-sputnik {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    background-color: var(--color-charlotte);
+    border-radius: 50%;
+    transform: translate(75px);
   }
 
   &-package {
