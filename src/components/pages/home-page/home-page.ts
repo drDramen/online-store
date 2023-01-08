@@ -12,6 +12,8 @@ export class HomePage extends BaseComponent {
   private content: BaseComponent;
   private imageWrapper: BaseComponent;
   private advantages: BaseComponent;
+  // private planetToBrands;
+  // private planetToBrandsLink: Link;
 
   constructor(private props: Record<string, string>) {
     super('section', {
@@ -43,9 +45,9 @@ export class HomePage extends BaseComponent {
     this.container.append(this.content, this.imageWrapper, this.advantages);
     this.append(this.container);
 
-    // const planetToBrands = document.querySelectorAll('advantages__item planet');
-    // const planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_cart' });
-    // planetToBrandsLink.append(planetToBrands);
+    // this.planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_cart' });
+    // this.planetToBrands = document.querySelectorAll('.advantages__item planet');
+    // this.planetToBrandsLink.append(this.planetToBrands);
   }
 
   fillAdvantages() {
