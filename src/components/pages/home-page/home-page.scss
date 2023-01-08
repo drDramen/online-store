@@ -84,83 +84,103 @@
 
   &__item {
     max-width: 180px;
-  }
 
-  &__description {
-    font-size: 18px;
-    text-align: center;
-  }
-}
+    &.planet:hover {
+      cursor: pointer;
 
-.icon {
-  display: block;
-  fill: var(--color-charlotte);
-  transition: fill var(--transition);
+      > .icon-wrapper > .icon-planet {
+        display: block;
+        fill: var(--color-java);
+        transition: fill var(--transition);
 
-  &:hover {
-    fill: var(--color-java);
-    cursor: pointer;
+        animation-name: planet_anim;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
 
-    > .icon-planet {
-      transform: rotate(-360deg);
+      > .icon-wrapper > .icon-sputnik {
+        display: block;
+        background-color: var(--color-java);
+        transition: background-color var(--transition);
+
+        animation-name: sputnik_anim;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+      }
+    }
+
+    &__description {
+      font-size: 18px;
+      text-align: center;
     }
   }
 
-  &-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 180px;
-    border: 2px solid var(--color-java);
-    border-radius: 50%;
-    background: var(--color-white);
-  }
+  .icon {
+    display: block;
+    fill: var(--color-charlotte);
+    transition: fill var(--transition);
 
-  &-flask-science {
-    width: 114px;
-    height: 114px;
-  }
-
-  &-planet {
-    width: 130px;
-    height: 130px;
-    transition: all var(--transition);
-  }
-
-  &-planet:hover {
-    animation-name: planet_anim;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-
-    + .icon-sputnik {
-      background-color: var(--color-java);
+    &:hover {
+      fill: var(--color-java);
     }
-  }
 
-  @keyframes planet_anim {
-    0% {
-      transform: translate(360deg);
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      height: 180px;
+      border: 2px solid var(--color-java);
+      border-radius: 50%;
+      background: var(--color-white);
     }
-    100% {
-      transform: translate(360deg);
+
+    &-flask-science {
+      width: 114px;
+      height: 114px;
     }
-  }
 
-  &-sputnik {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    position: absolute;
-    background-color: var(--color-charlotte);
-    border-radius: 50%;
-    transform: translate(75px);
-  }
+    &-planet {
+      width: 130px;
+      height: 130px;
+      transition: all var(--transition);
+    }
 
-  &-package {
-    width: 116px;
-    height: 116px;
+    @keyframes planet_anim {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes sputnik_anim {
+      0% {
+        transform: rotate(0deg) translate(75px);
+      }
+      100% {
+        transform: rotate(-360deg) translate(75px);
+      }
+    }
+
+    &-sputnik {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      position: absolute;
+      background-color: var(--color-charlotte);
+      border-radius: 50%;
+      transform: translate(75px);
+    }
+
+    &-package {
+      width: 116px;
+      height: 116px;
+    }
   }
 }

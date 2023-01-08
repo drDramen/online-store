@@ -53,7 +53,7 @@ export class HomePage extends BaseComponent {
         </div>
         <figcaption class="advantages__description">science-based recipes and ingredients</figcaption>
       </figure>
-      <figure class="advantages__item">
+      <figure class="advantages__item planet">
         <div class="icon-wrapper">
           <svg class="icon icon-planet">
             <use href="${sprite}#planet"></use>
