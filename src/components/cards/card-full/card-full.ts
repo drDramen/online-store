@@ -1,4 +1,4 @@
-import { products } from './../../../data/data';
+import { products } from './../../../data/product-data';
 import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
@@ -12,14 +12,11 @@ export class CardFull extends BaseComponent {
 
   constructor(private data: Product) {
     super('div', {
-      className: 'cards_wrapper',
+      className: 'card',
     });
 
-    const card = new BaseComponent('div', { className: 'card' });
-    this.append(card);
-
     const cardFrame = new BaseComponent('div', { className: 'card__frame' });
-    card.append(cardFrame);
+    this.append(cardFrame);
 
     const heartPrice = new BaseComponent('div', { className: 'card__product_price_heart' });
     cardFrame.append(heartPrice);
@@ -30,7 +27,7 @@ export class CardFull extends BaseComponent {
     heartPrice.append(productPriceHolder);
 
     const productPrice = new BaseComponent('span', { className: 'card__product_price' });
-    productPrice.setContent('20');
+    productPrice.setContent(`${data.price}`);
     productPriceHolder.append(productPrice);
 
     const productCurrency = new BaseComponent('span', { className: 'card__product_currency' });
@@ -44,6 +41,7 @@ export class CardFull extends BaseComponent {
     });
 
     const productImage = new BaseComponent('span', { className: 'card__product_image' });
+    productImage.getNode().style.backgroundImage = `url('${location.origin}/${data.pics[0]}')`;
     cardFrame.append(productImage);
 
     this.detailsLink = new Link({
@@ -57,18 +55,18 @@ export class CardFull extends BaseComponent {
     this.detailsLink.append(productDetails);
 
     const cardTitle = new BaseComponent('div', { className: 'card__title' });
-    card.append(cardTitle);
+    this.append(cardTitle);
 
     const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
-    brandName.setContent('brand name');
+    brandName.setContent(`${data.brandName}`);
     cardTitle.append(brandName);
 
     const productName = new BaseComponent('div', { className: 'card__title product_name' });
-    productName.setContent('product name');
+    productName.setContent(`${data.productName}`);
     cardTitle.append(productName);
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
-    card.append(buttonsHolder);
+    this.append(buttonsHolder);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
@@ -128,7 +126,5 @@ export class CardFull extends BaseComponent {
     });
     cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(cardButtonAddToCart);
-
-    Link.addNavigationLink(this.detailsLink);
   }
 }
