@@ -1,4 +1,4 @@
-import { products } from '@/data/data';
+import { products } from '@/data/product-data';
 import { Product } from '@/interfaces/product';
 
 export class ProductService {
