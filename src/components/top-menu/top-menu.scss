@@ -118,9 +118,9 @@
           $add: $index - 1;
         }
         @return rgba(
-          $from-r + $add * ($to-r - $from-r) / $number,
-          $from-g + $add * ($to-g - $from-g) / $number,
-          $from-b + $add * ($to-b - $from-b) / $number,
+          $from-r + calc($add * ($to-r - $from-r) / $number),
+          $from-g + calc($add * ($to-g - $from-g) / $number),
+          $from-b + calc($add * ($to-b - $from-b) / $number),
           1
         );
       }

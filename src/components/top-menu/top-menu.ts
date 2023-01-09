@@ -15,7 +15,7 @@ export class TopMenu extends BaseComponent {
   private brandsLink: Link;
 
   constructor() {
-    super('div', { className: 'top_menu' });
+    super('div', { className: 'catalog__top_menu top_menu' });
 
     this.container = new Container('top_menu__container');
     this.append(this.container);
