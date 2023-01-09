@@ -13,6 +13,7 @@ export class TopMenu extends BaseComponent {
   private changeView: BaseComponent;
   private favouritesLink: Link;
   private brandsLink: Link;
+  private changeColumnsView: BaseComponent;
 
   constructor(private onclick?: () => void) {
     super('div', { className: 'top_menu' });
@@ -44,6 +45,11 @@ export class TopMenu extends BaseComponent {
     const topMenuRight = new BaseComponent('div', { className: 'top_menu__right' });
     this.container.append(topMenuRight);
 
+    this.changeColumnsView = new BaseComponent('div', {
+      className: 'top_menu__right__item columns_view',
+    });
+    topMenuRight.append(this.changeColumnsView);
+
     this.changeView = new BaseComponent('div', { className: 'top_menu__right__item view' });
     topMenuRight.append(this.changeView);
 
@@ -73,6 +79,8 @@ export class TopMenu extends BaseComponent {
 
     this.changeViewButton();
 
+    this.changeColumnsViewButton();
+
     Link.addNavigationLink(this.favouritesLink);
   }
 
@@ -86,6 +94,23 @@ export class TopMenu extends BaseComponent {
     }
     this.changeView.getNode().addEventListener('click', () => {
       this.onclick?.();
+    });
+  }
+
+  changeColumnsViewButton() {
+    for (let i = 0; i < 12; i++) {
+      const changeViewElement = new BaseComponent('span', { className: 'element' });
+      this.changeColumnsView.append(changeViewElement);
+      this.changeColumnsView.getNode().addEventListener('click', () => {
+        changeViewElement.toggleClass('active');
+      });
+    }
+    this.changeColumnsView.getNode().addEventListener('click', () => {
+      this.onclick?.();
+      this.changeColumnsView.toggleClass('active_one');
+      // if (this.changeColumnsView.classListContains('active_one')) {
+      //   this.changeColumnsView.toggleClass('active_two');
+      // }
     });
   }
 }

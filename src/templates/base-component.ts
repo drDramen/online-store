@@ -69,4 +69,8 @@ export class BaseComponent<T extends keyof HTMLElementTagNameMap = keyof HTMLEle
     this.children.forEach((child) => child.destroy());
     this.node.remove();
   }
+
+  classListContains(className: string) {
+    this.node.classList.contains(className);
+  }
 }
