@@ -1,4 +1,4 @@
-import { Product } from './../interfaces/product';
+import { Product } from '../interfaces/product';
 
 export const products: Product[] = [
   {
@@ -3191,8 +3191,8 @@ export const products: Product[] = [
          Propylene Glycol, Sodium Methylparaben, Sodium Propylparaben, Fragrance (Parfum)`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0103/bioderma-sébium-gel-moussant-actif-1.jpg',
-      'assets/product-images/0103/bioderma-sébium-gel-moussant-actif-2.jpg',
+      'assets/product-images/0103/bioderma-sebium-purifying-foaming-gel-1.jpg',
+      'assets/product-images/0103/bioderma-sebium-purifying-foaming-gel-2.jpg',
     ],
     price: 23,
     bestseller: false,
@@ -3621,7 +3621,7 @@ export const products: Product[] = [
        Cetrimonium Bromide, Fragrance`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0117/bioderma-sebium-solution-micellaire-1.jgp',
+      'assets/product-images/0117/bioderma-sebium-solution-micellaire-1.jpg',
       'assets/product-images/0117/bioderma-sebium-solution-micellaire-2.jpg',
     ],
     price: 18,
@@ -3651,7 +3651,7 @@ export const products: Product[] = [
            Polysorbate 60, Caprylic/Capric Triglyceride, Bakuchiol, Squalane, Fragrance (Parfum)`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0118/bioderma-sebium-global-intensive-purifying-care-1.jgp',
+      'assets/product-images/0118/bioderma-sebium-global-intensive-purifying-care-1.jpg',
       'assets/product-images/0118/bioderma-sebium-global-intensive-purifying-care-2.jpg',
     ],
     price: 20,
@@ -3678,7 +3678,7 @@ export const products: Product[] = [
         Phenoxyethanol, Fragrance (Parfum)`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0119/bioderma-sebium-lotion-1.jgp',
+      'assets/product-images/0119/bioderma-sebium-lotion-1.jpg',
       'assets/product-images/0119/bioderma-sebium-lotion-2.jpg',
     ],
     price: 27,
@@ -3709,7 +3709,7 @@ export const products: Product[] = [
          Methylparaben, Fragrance (Parfum)`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0120/bioderma-sebium-hydra-1.jgp',
+      'assets/product-images/0120/bioderma-sebium-hydra-1.jpg',
       'assets/product-images/0120/bioderma-sebium-hydra-2.jpg',
     ],
     price: 20,
@@ -3742,7 +3742,7 @@ export const products: Product[] = [
             Sodium Hydroxide, Citric Acid, Disodium Edta, Fragrance (Parfum)`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0121/bioderma-sebium-pore-refiner-1.jgp',
+      'assets/product-images/0121/bioderma-sebium-pore-refiner-1.jpg',
       'assets/product-images/0121/bioderma-sebium-pore-refiner-2.jpg',
     ],
     price: 24,
@@ -3776,7 +3776,7 @@ export const products: Product[] = [
           (Mushroom) Extract, PEG-40 Hydrogenated Castor Oil, Phenoxyethanol, Fragrance`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0122/bioderma-sebium-mat-control-1.jgp',
+      'assets/product-images/0122/bioderma-sebium-mat-control-1.jpg',
       'assets/product-images/0122/bioderma-sebium-mat-control-2.jpg',
     ],
     price: 26,
@@ -3806,7 +3806,7 @@ export const products: Product[] = [
          Laminaria Ochroleuca Extract, Rhamnose, Ginkgo Biloba Leaf Extract, Sodium Hydroxide, Camellia Sinensis Leaf Extract, Citric Acid`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0123/bioderma-sensibio-ar-cream-1.jgp',
+      'assets/product-images/0123/bioderma-sensibio-ar-cream-1.jpg',
       'assets/product-images/0123/bioderma-sensibio-ar-cream-2.jpg',
     ],
     price: 27,
@@ -3833,8 +3833,8 @@ export const products: Product[] = [
         Caprylyl Glycol, 1,2-Hexanediol, Disodium EDTA, Xanthan Gum, Sodium Hydroxide, Alumina, Stearic Acid`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0124/bioderma-sensibio-mask-1.jgp',
-      'assets/product-images/0124/bioderma-sensibio-ar-cream-2.jpg',
+      'assets/product-images/0124/bioderma-sensibio-mask-1.jpg',
+      'assets/product-images/0124/bioderma-sensibio-mask-2.jpg',
     ],
     price: 25,
     bestseller: false,
@@ -3865,7 +3865,7 @@ export const products: Product[] = [
             Pentylene Glycol, Iron Oxides (Ci 77491), Xanthan Gum, Sodium Hydroxide, Lecithin, Citric Acid, Fragrance (Parfum)`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0125/bioderma-sensibio-ar-bb-1.jgp',
+      'assets/product-images/0125/bioderma-sensibio-ar-bb-1.jpg',
       'assets/product-images/0125/bioderma-sensibio-ar-bb-2.jpg',
     ],
     price: 35,
@@ -3892,7 +3892,7 @@ export const products: Product[] = [
         1,2-Hexanediol, Disodium Edta, Sodium Hydroxide, Ethylcellulose`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0126/bioderma-sensibio-eye-cream-1.jgp',
+      'assets/product-images/0126/bioderma-sensibio-eye-cream-1.jpg',
       'assets/product-images/0126/bioderma-sensibio-eye-cream-2.jpg',
     ],
     price: 24,
@@ -3925,7 +3925,7 @@ export const products: Product[] = [
          Oil, Polysorbate 60, Sorbitan Isostearate, Palmitoyl Tetrapeptide-10`,
     starIngredient: 'Peptide',
     pics: [
-      'assets/product-images/0127/bioderma-sensibio-defensive-1.jgp',
+      'assets/product-images/0127/bioderma-sensibio-defensive-1.jpg',
       'assets/product-images/0127/bioderma-sensibio-defensive-2.jpg',
     ],
     price: 18,
@@ -3960,7 +3960,7 @@ export const products: Product[] = [
           Isostearate, Sodium Hydroxide, Palmitoyl Tetrapeptide-10`,
     starIngredient: 'Peptide',
     pics: [
-      'assets/product-images/0128/bioderma-sensibio-defensive-riche-1.jgp',
+      'assets/product-images/0128/bioderma-sensibio-defensive-riche-1.jpg',
       'assets/product-images/0128/bioderma-sensibio-defensive-riche-2.avif',
     ],
     price: 19,
@@ -3984,7 +3984,7 @@ export const products: Product[] = [
          Sodium Chloride, Polylysine`,
     starIngredient: '',
     pics: [
-      'assets/product-images/0129/drunk-elephant-jelly-cleanser-1.jgp',
+      'assets/product-images/0129/drunk-elephant-jelly-cleanser-1.avif',
       'assets/product-images/0129/drunk-elephant-jelly-cleanser-2.avif',
     ],
     price: 32,
@@ -5261,8 +5261,8 @@ export const products: Product[] = [
                Potassium Sorbate⁠`,
     starIngredient: 'Vitamin C',
     pics: [
-      'assets/product-images/0175/paula-choice-super-boost-cream-1.avif',
-      'assets/product-images/0175/paula-choice-super-boost-cream-2.avif',
+      'assets/product-images/0175/paula-choice-natural-moist-1.avif',
+      'assets/product-images/0175/paula-choice-natural-moist-2.avif',
     ],
     price: 45,
     bestseller: true,

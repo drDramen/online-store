@@ -3,6 +3,7 @@
   --color-white: rgb(255, 255, 255);
   --color-java: #19e2ca;
   --color-charlotte: #9cf8e7;
+  --color-wild-watermelon: #ff5b8c;
   --color-niagara: #0eaa99;
   --color-overlay: rgb(41, 41, 41, 60%);
   --gradient-sunrise: linear-gradient(#ffbca7, #f5b7ff);
@@ -22,4 +23,6 @@
   --content-width: 1720px;
   --container-offset: 20px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --product-column: 4;
 }

@@ -1,0 +1,25 @@
+.catalog {
+  &__container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+    'catalog-header catalog-header'
+    'catalog-filter catalog-products';
+    gap: 30px 50px;
+  }
+
+  &__top_menu {
+    grid-area: catalog-header;
+  }
+
+  &__filter {
+    grid-area: catalog-filter;
+  }
+
+  &__products {
+    grid-area: catalog-products;
+    display: grid;
+    grid-template-columns: repeat(var(--product-column), 1fr);
+    gap: 30px;
+  }
+}

@@ -9,7 +9,7 @@ export class ProductPage extends BaseComponent {
   private topMenu: TopMenu = new TopMenu();
   private data: Product | undefined;
   private content: BaseComponent;
-  container: Container;
+  private container: Container;
   constructor({ id }: Record<string, string>) {
     super('div', { className: 'product' });
 
