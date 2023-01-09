@@ -4,7 +4,7 @@ import { Link } from '@/templates/link';
 import { Container } from '@/components/container/container';
 import './home-page.scss';
 import image from '../../../assets/images/flask-home-page.png';
-import sprite from '../../../assets/images/home_page_icons/sprite.svg';
+import sprite from '../../../assets/images/sprite.svg';
 
 export class HomePage extends BaseComponent {
   private shopNowButton: Link;
