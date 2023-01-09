@@ -28,7 +28,10 @@ export class HomePage extends BaseComponent {
     });
     this.imageWrapper = new BaseComponent('div', {
       className: 'home-page__image-wrapper',
-      innerHTML: `<img class="home-page__image" src="${image}" alt="TakeCare">`,
+      innerHTML: `
+      <img class="home-page__image" src="${image}" alt="TakeCare">
+      <div class='home-page__circle'></div>
+      `,
     });
 
     this.advantages = new BaseComponent('div', { className: 'home-page__advantages advantages' });
@@ -54,7 +57,7 @@ export class HomePage extends BaseComponent {
     <figcaption class="advantages__description">science-based recipes and ingredients</figcaption>
   `;
 
-    const flaskComponent = new BaseComponent('figure', {
+    const flaskScienceComponent = new BaseComponent('figure', {
       className: 'advantages__item',
       innerHTML: figureOne,
     });
@@ -95,6 +98,6 @@ export class HomePage extends BaseComponent {
       innerHTML: figureThree,
     });
 
-    this.advantages.append(flaskComponent, planetToBrandsLink, packageComponent);
+    this.advantages.append(flaskScienceComponent, planetToBrandsLink, packageComponent);
   }
 }

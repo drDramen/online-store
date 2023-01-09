@@ -8,18 +8,19 @@ import { Product } from '@/interfaces/product';
 export class CardFull extends BaseComponent {
   private heartToCart: BaseComponent;
   private detailsLink: Link;
+  private card: BaseComponent;
   private counter = 0;
 
   constructor(private data: Product) {
     super('div', {
-      className: 'cards_wrapper',
+      className: 'card',
     });
 
-    const card = new BaseComponent('div', { className: 'card' });
-    this.append(card);
+    this.card = new BaseComponent('div', { className: 'card' });
+    this.append(this.card);
 
     const cardFrame = new BaseComponent('div', { className: 'card__frame' });
-    card.append(cardFrame);
+    this.card.append(cardFrame);
 
     const heartPrice = new BaseComponent('div', { className: 'card__product_price_heart' });
     cardFrame.append(heartPrice);
@@ -57,7 +58,7 @@ export class CardFull extends BaseComponent {
     this.detailsLink.append(productDetails);
 
     const cardTitle = new BaseComponent('div', { className: 'card__title' });
-    card.append(cardTitle);
+    this.card.append(cardTitle);
 
     const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
     brandName.setContent('brand name');
@@ -68,7 +69,7 @@ export class CardFull extends BaseComponent {
     cardTitle.append(productName);
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
-    card.append(buttonsHolder);
+    this.card.append(buttonsHolder);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
@@ -130,5 +131,9 @@ export class CardFull extends BaseComponent {
     buttonsHolder.append(cardButtonAddToCart);
 
     Link.addNavigationLink(this.detailsLink);
+  }
+
+  changeCardView() {
+    this.card.toggleClass('card--active');
   }
 }

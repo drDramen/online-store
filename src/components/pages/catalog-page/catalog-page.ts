@@ -3,6 +3,7 @@ import { TopMenu } from '@/components/top-menu/top-menu';
 import { CardFull } from './../../cards/card-full/card-full';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
+import './catalog-page.scss';
 
 export class CatalogPage extends BaseComponent {
   container: Container;
@@ -34,7 +35,10 @@ export class CatalogPage extends BaseComponent {
     for: 'Face',
     availableAmount: 230,
   });
-  private topMenu: TopMenu = new TopMenu();
+  private topMenu: TopMenu = new TopMenu(() => {
+    this.changeWrapperDivisions();
+    this.cardFull.changeCardView();
+  });
   private filtersChain: FiltersChain = new FiltersChain();
   private cardsWrapper: BaseComponent;
 
@@ -53,5 +57,9 @@ export class CatalogPage extends BaseComponent {
     this.container.append(this.cardsWrapper);
 
     this.cardsWrapper.append(this.cardFull);
+  }
+
+  changeWrapperDivisions() {
+    this.cardsWrapper.toggleClass('cards_wrapper--active');
   }
 }

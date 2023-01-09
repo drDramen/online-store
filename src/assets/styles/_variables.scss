@@ -23,5 +23,6 @@
   --container-offset: 20px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  --wrapper-divisions: 1;
+  --wrapper-divisions-three: 3;
+  --wrapper-divisions-one: 1;
 }

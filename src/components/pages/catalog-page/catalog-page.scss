@@ -1,6 +1,13 @@
 .cards_wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--wrapper-divisions-three), 1fr);
   justify-items: center;
   grid-template-rows: auto;
+}
+
+.cards_wrapper--active {
+    display: grid;
+    grid-template-columns: repeat(var(--wrapper-divisions-one), 1fr);
+    justify-items: center;
+    grid-template-rows: auto;
 }

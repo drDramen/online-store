@@ -14,7 +14,7 @@ export class TopMenu extends BaseComponent {
   private favouritesLink: Link;
   private brandsLink: Link;
 
-  constructor() {
+  constructor(private onclick?: () => void) {
     super('div', { className: 'top_menu' });
 
     this.container = new Container('top_menu__container');
@@ -84,5 +84,8 @@ export class TopMenu extends BaseComponent {
         changeViewElement.toggleClass('active');
       });
     }
+    this.changeView.getNode().addEventListener('click', () => {
+      this.onclick?.();
+    });
   }
 }
