@@ -2,11 +2,14 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .added_item {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 24px;
     color: var(--font-color-primary);
   }
@@ -33,6 +36,21 @@
 
     &:active {
       background-image: url('../../../assets/images/icons/trash_click.svg');
+    }
+  }
+
+  .buy_button {
+    font-size: 40px;
+    font-family: var(--font-family-logo);
+    padding: 4px 60px;
+    background-color: var(--color-charlotte);
+    border-radius: 10px;
+    transition: all var(--transition);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-java);
+      color: var(--color-white);
     }
   }
 }
