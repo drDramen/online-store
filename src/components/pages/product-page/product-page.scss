@@ -153,7 +153,8 @@
   }
 
   .right_block {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     border: solid 2px var(--color-charlotte);
     border-radius: 46px;
     display: flex;
@@ -163,8 +164,10 @@
     .title {
       height: 40px;
       font-family: var(--font-family-main);
-      font-size: 30px;
+      font-size: 22px;
       line-height: 36px;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .path {

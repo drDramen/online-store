@@ -78,7 +78,7 @@ export const products: Product[] = [
     starIngredient: 'Ceramide',
     pics: [
       'assets/product-images/0003/cerave-moisture-cream-1.avif',
-      'assets/product-images/0003/cerave-facial-moisture-lotion-spf-2.jpg',
+      'assets/product-images/0003/cerave-moisture-cream-2.avif',
     ],
     price: 22,
     bestseller: true,
