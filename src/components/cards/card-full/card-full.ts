@@ -27,12 +27,8 @@ export class CardFull extends BaseComponent {
     heartPrice.append(productPriceHolder);
 
     const productPrice = new BaseComponent('span', { className: 'card__product_price' });
-    productPrice.setContent(`${data.price}`);
+    productPrice.setContent(`${data.price}$`);
     productPriceHolder.append(productPrice);
-
-    const productCurrency = new BaseComponent('span', { className: 'card__product_currency' });
-    productCurrency.setContent('$');
-    productPriceHolder.append(productCurrency);
 
     this.heartToCart = new BaseComponent('span', { className: 'card__heart' });
     heartPrice.append(this.heartToCart);
@@ -108,14 +104,8 @@ export class CardFull extends BaseComponent {
     buttonsHolder.append(cardPrice);
 
     const cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
-    cardSum.setContent('0');
+    cardSum.setContent(`${'0'}$`);
     cardPrice.append(cardSum);
-
-    const cardCurrency = new BaseComponent('div', {
-      className: 'card__buttons_holder currency',
-    });
-    cardCurrency.setContent('$');
-    cardPrice.append(cardCurrency);
 
     const cardButtonAddToCart = new BaseComponent('div', {
       className: 'card__buttons_holder button add',

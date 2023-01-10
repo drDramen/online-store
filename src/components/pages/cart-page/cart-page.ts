@@ -36,10 +36,9 @@ export class CartPage extends BaseComponent {
     finalSum.append(finalSumAllProducts);
 
     const removeItem = new BaseComponent('span', { className: 'remove_item' });
-    // removeItem.getNode().addEventListener('click', () => {
-    //   CartService.removeFromCart(product);
-    //   this.renderCards(CartService.getDataCart());
-    // });
+    removeItem.getNode().addEventListener('click', () => {
+      finalSumAllProducts.setContent('0');
+    });
     finalSum.append(removeItem);
 
     return finalSum;

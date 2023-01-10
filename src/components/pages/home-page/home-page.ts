@@ -22,7 +22,7 @@ export class HomePage extends BaseComponent {
     this.content = new BaseComponent('div', {
       className: 'home-page__content',
       innerHTML: `
-      <h2 class="home-page__title">Health and Beauty of your Skin Lives Here</h2>
+      <h1 class="home-page__title">Health and Beauty of your Skin Lives Here</h1>
       <p class="home-page__moto">Take it Home :)</p>
       <p class="home-page__description">Explore the best from Cosmetics World of SkinCare products presented by the Brands we Carefully picked for You</p>`,
     });
