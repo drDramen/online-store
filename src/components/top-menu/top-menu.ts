@@ -6,6 +6,7 @@ import './top-menu.scss';
 
 const favouritesLink = { href: NameRoute.Favourites };
 const brandsLink = { href: NameRoute.Brands };
+const allLink = { href: NameRoute.Catalog };
 
 export class TopMenu extends BaseComponent {
   container: Container;
@@ -14,6 +15,7 @@ export class TopMenu extends BaseComponent {
   private changeView: BaseComponent;
   private favouritesLink: Link;
   private brandsLink: Link;
+  private allLink: Link;
   private changeColumnsView: BaseComponent;
 
   constructor(private onclick?: () => void) {
@@ -25,9 +27,12 @@ export class TopMenu extends BaseComponent {
     const topMenuLeft = new BaseComponent('div', { className: 'top_menu__left' });
     this.container.append(topMenuLeft);
 
+    this.allLink = new Link({ ...allLink, className: 'top_menu__left__item all_link' });
+    topMenuLeft.append(this.allLink);
+
     const all = new BaseComponent('div', { className: 'top_menu__left__item' });
     all.setContent('All');
-    topMenuLeft.append(all);
+    this.allLink.append(all);
 
     this.brandsLink = new Link({ ...brandsLink, className: 'top_menu__left__item brands_link' });
     topMenuLeft.append(this.brandsLink);
@@ -158,6 +163,7 @@ export class TopMenu extends BaseComponent {
     this.changeColumnsViewButton();
 
     Link.addNavigationLink(this.favouritesLink);
+    Link.addNavigationLink(this.allLink);
   }
 
   changeViewButton() {
