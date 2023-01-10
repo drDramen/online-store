@@ -191,8 +191,8 @@ export class TopMenu extends BaseComponent {
       );
       if (oldValue !== 1) {
         newValue = oldValue - 1;
-        document.documentElement.style.setProperty('--product-column', newValue.toString());
       }
+      document.documentElement.style.setProperty('--product-column', newValue.toString());
     });
   }
 }
