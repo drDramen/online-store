@@ -134,10 +134,10 @@ export class TopMenu extends BaseComponent {
     this.dropDownSort.append(dropDownMenuSort);
 
     const menuItemPriceDown = new BaseComponent('li', { className: 'menu_item price_down' });
-    menuItemPriceDown.setContent('Price down');
+    menuItemPriceDown.setContent('by Price Down');
     dropDownMenuSort.append(menuItemPriceDown);
     const menuItemPriceUp = new BaseComponent('li', { className: 'menu_item price_up' });
-    menuItemPriceUp.setContent('Toner');
+    menuItemPriceUp.setContent('by Price Up');
     dropDownMenuSort.append(menuItemPriceUp);
 
     this.dropDownSort.getNode().addEventListener('click', () => {
