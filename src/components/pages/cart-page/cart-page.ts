@@ -16,6 +16,7 @@ export class CartPage extends BaseComponent {
     this.renderCards(CartService.getDataCart());
 
     const buyButton = new BaseComponent('div', { className: 'buy_button' });
+    buyButton.setContent('Buy');
     this.container.append(buyButton);
   }
 
@@ -47,7 +48,7 @@ export class CartPage extends BaseComponent {
     addedItem.append(productCounter);
 
     const quantity = new BaseComponent('div', { className: 'product_quantity' });
-    quantity.setContent(`${count}$`);
+    quantity.setContent(`${count}`);
     addedItem.append(quantity);
 
     const removeItem = new BaseComponent('span', { className: 'remove_item' });
