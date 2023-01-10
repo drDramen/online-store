@@ -5,11 +5,14 @@ import { FilterSideBar } from '@/components/filter-side-bar/filter-side-bar';
 import { FilterService } from '@/services/filter-service';
 import { ProductService } from '@/services/product-services';
 import { ProductContainer } from '@/components/container-product/container-product';
+//import { CardFull } from './../../cards/card-full/card-full';
 import './catalog-page.scss';
 
 export class CatalogPage extends BaseComponent {
   container: Container;
-  private topMenu: TopMenu = new TopMenu();
+  private topMenu: TopMenu = new TopMenu(() => {
+    this.changeCardsView();
+  });
   private filterSideBar: FilterSideBar;
   private productContainer: ProductContainer;
 
@@ -28,5 +31,10 @@ export class CatalogPage extends BaseComponent {
     this.productContainer = new ProductContainer();
     this.productContainer.updateProduct(ProductService.getAllProducts());
     this.container.append(this.filterSideBar, this.productContainer);
+  }
+
+  changeCardsView() {
+    //document.documentElement.style.setProperty('--product-column', '1');
+    this.productContainer.getChildren().forEach((children) => children.toggleClass('card--active'));
   }
 }

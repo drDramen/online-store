@@ -13,4 +13,15 @@ export class ProductContainer extends BaseComponent {
       this.append(card);
     });
   }
+
+  changeWrapperDivisions() {
+    let newValue = 4;
+    const oldValue = +getComputedStyle(document.documentElement).getPropertyValue(
+      '--product-column',
+    );
+    if (oldValue !== 1) {
+      newValue = oldValue - 1;
+      document.documentElement.style.setProperty('--product-column', newValue.toString());
+    }
+  }
 }
