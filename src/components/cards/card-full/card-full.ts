@@ -100,12 +100,9 @@ export class CardFull extends BaseComponent {
       }
     });
 
-    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
+    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder sum' });
+    cardPrice.setContent(`${'0'}$`);
     buttonsHolder.append(cardPrice);
-
-    const cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
-    cardSum.setContent(`${'0'}$`);
-    cardPrice.append(cardSum);
 
     const cardButtonAddToCart = new BaseComponent('div', {
       className: 'card__buttons_holder button add',
