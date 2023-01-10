@@ -5,6 +5,92 @@
     align-items: center;
   }
 
+  .card__buttons_holder {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.button {
+      max-width: 120px;
+      background-color: var(--color-charlotte);
+      border-radius: 10px;
+      transition: background-color var(--transition);
+
+      &.amount {
+        display: flex;
+
+        .minus {
+          display: inline-block;
+          height: 36px;
+          font-size: 36px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+            border-radius: 10px 0px 0px 10px;
+          }
+        }
+
+        .added_number {
+          display: inline-block;
+          height: 36px;
+          font-size: 28px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          user-select: none;
+        }
+
+        .plus {
+          display: inline-block;
+          height: 36px;
+          font-size: 28px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          border-radius: 0px 10px 10px 0px;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+          }
+        }
+      }
+    }
+  }
+
+  .final_sum {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    color: var(--font-color-primary);
+    margin-bottom: 50px;
+    margin-top: 80px;
+
+    &__all_products {
+      margin-left: 60px;
+    }
+
+    .remove_item {
+      margin-left: 60px;
+    }
+  }
+
   .added_item {
     width: 100%;
     display: flex;
