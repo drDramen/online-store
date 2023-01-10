@@ -10,10 +10,8 @@ import './catalog-page.scss';
 
 export class CatalogPage extends BaseComponent {
   container: Container;
-  //private cardFull: CardFull = new CardFull(products);
   private topMenu: TopMenu = new TopMenu(() => {
-    this.changeWrapperDivisions();
-    //this.cardFull.changeCardView();
+    this.changeCardsView();
   });
   private filterSideBar: FilterSideBar;
   private productContainer: ProductContainer;
@@ -35,19 +33,8 @@ export class CatalogPage extends BaseComponent {
     this.container.append(this.filterSideBar, this.productContainer);
   }
 
-  changeWrapperDivisions() {
-    let newValue = 4;
-    const oldValue = getComputedStyle(document.documentElement).getPropertyValue(
-      '--product-column',
-    );
-    const numberOldValue = +oldValue;
-    if (numberOldValue !== 1) {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      newValue = numberOldValue - 1;
-      document.documentElement.style.setProperty('--product-column', 'newValue');
-    } else if (numberOldValue === 1) {
-      document.documentElement.style.setProperty('--product-column', 'numberOldValue');
-    }
-    //this.productContainer.toggleClass('products--active');
+  changeCardsView() {
+    //document.documentElement.style.setProperty('--product-column', '1');
+    this.productContainer.getChildren().forEach((children) => children.toggleClass('card--active'));
   }
 }

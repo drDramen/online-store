@@ -183,24 +183,16 @@ export class TopMenu extends BaseComponent {
     for (let i = 0; i < 12; i++) {
       const changeViewElement = new BaseComponent('span', { className: 'element' });
       this.changeColumnsView.append(changeViewElement);
-      this.changeColumnsView.getNode().addEventListener('click', () => {
-        changeViewElement.toggleClass('active');
-      });
     }
     this.changeColumnsView.getNode().addEventListener('click', () => {
-      this.onclick?.();
-      //this.changeColumnsView.toggleClass('active');
       let newValue = 4;
-      const oldValue = getComputedStyle(document.documentElement).getPropertyValue(
+      const oldValue = +getComputedStyle(document.documentElement).getPropertyValue(
         '--product-column',
       );
-      const numberOldValue = +oldValue;
-      if (numberOldValue !== 1) {
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        newValue = numberOldValue - 1;
-        document.documentElement.style.setProperty('--product-column', 'newValue');
+      if (oldValue !== 1) {
+        newValue = oldValue - 1;
+        document.documentElement.style.setProperty('--product-column', newValue.toString());
       }
-      document.documentElement.style.setProperty('--product-column', 'newValue');
     });
   }
 }

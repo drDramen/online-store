@@ -1,3 +1,4 @@
+import { CartService } from './../../../services/cart-service';
 import { ModalProductImage } from './../../modal-product-image/modal-product-image';
 import { Product } from '@/interfaces/product';
 import { BaseComponent } from '@/templates/base-component';
@@ -141,6 +142,7 @@ export class ProductPageCard extends BaseComponent {
     });
     cardButtonAddToCart.setContent('Add to Cart');
     cardButtonAddToCart.getNode().addEventListener('click', () => {
+      CartService.addToCart(this.data);
       this.createAddToCartPopup();
     });
     buttonsHolder.append(cardButtonAddToCart);
