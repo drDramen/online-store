@@ -51,10 +51,6 @@ export class ProductPageCard extends BaseComponent {
       heart.toggleClass('active');
     });
 
-    const price = new BaseComponent('div', { className: 'price' });
-    price.setContent(`${data.price}$`);
-    priceHeart.append(price);
-
     const rightBlock = new BaseComponent('div', { className: 'right_block' });
     this.append(rightBlock);
 
@@ -90,6 +86,10 @@ export class ProductPageCard extends BaseComponent {
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     rightBlock.append(buttonsHolder);
+
+    const price = new BaseComponent('div', { className: 'price' });
+    price.setContent(`${data.price}$`);
+    buttonsHolder.append(price);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',

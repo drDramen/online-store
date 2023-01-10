@@ -5,7 +5,6 @@ import { FilterSideBar } from '@/components/filter-side-bar/filter-side-bar';
 import { FilterService } from '@/services/filter-service';
 import { ProductService } from '@/services/product-services';
 import { ProductContainer } from '@/components/container-product/container-product';
-//import { CardFull } from './../../cards/card-full/card-full';
 import './catalog-page.scss';
 
 export class CatalogPage extends BaseComponent {
@@ -34,7 +33,6 @@ export class CatalogPage extends BaseComponent {
   }
 
   changeCardsView() {
-    //document.documentElement.style.setProperty('--product-column', '1');
     this.productContainer.getChildren().forEach((children) => children.toggleClass('card--active'));
   }
 }
