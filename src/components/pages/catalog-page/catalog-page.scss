@@ -22,4 +22,11 @@
     grid-template-columns: repeat(var(--product-column), 1fr);
     gap: 30px;
   }
+
+  // .products--active {
+  //   grid-area: catalog-products;
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   gap: 30px;
+  // }
 }

@@ -191,3 +191,12 @@
     }
   }
 }
+
+.card--active {
+  width: 359px;
+  height: 511px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

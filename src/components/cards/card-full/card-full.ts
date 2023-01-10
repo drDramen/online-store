@@ -97,15 +97,11 @@ export class CardFull extends BaseComponent {
       }
     });
 
-    minusItem.getNode().addEventListener('click', (e) => {
+    minusItem.getNode().addEventListener('click', () => {
       if (this.counter > 0) {
         this.counter--;
         amountOfAddedProduct.setInnerHTML(this.counter.toString());
       }
-      minusItem.removeAttribute('click');
-      e.stopPropagation();
-      e.preventDefault();
-      minusItem.removeClass('hover');
     });
 
     const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
@@ -126,5 +122,9 @@ export class CardFull extends BaseComponent {
     });
     cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(cardButtonAddToCart);
+  }
+
+  changeCardView() {
+    this.toggleClass('card--active');
   }
 }

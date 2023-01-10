@@ -9,12 +9,14 @@ const brandsLink = { href: NameRoute.Brands };
 
 export class TopMenu extends BaseComponent {
   container: Container;
-  private dropDown: BaseComponent;
+  private dropDownCategory: BaseComponent;
+  private dropDownSort: BaseComponent;
   private changeView: BaseComponent;
   private favouritesLink: Link;
   private brandsLink: Link;
+  private changeColumnsView: BaseComponent;
 
-  constructor() {
+  constructor(private onclick?: () => void) {
     super('div', { className: 'catalog__top_menu top_menu' });
 
     this.container = new Container('top_menu__container');
@@ -38,14 +40,77 @@ export class TopMenu extends BaseComponent {
     category.setContent('Category');
     topMenuLeft.append(category);
 
-    this.dropDown = new BaseComponent('span', { className: 'drop_down' });
-    category.append(this.dropDown);
+    this.dropDownCategory = new BaseComponent('span', { className: 'drop_down' });
+    category.append(this.dropDownCategory);
+
+    const dropDownMenuCategory = new BaseComponent('ul', { className: 'drop_down_menu category' });
+    this.dropDownCategory.append(dropDownMenuCategory);
+
+    // const menuItem = new BaseComponent('li', { className: 'menu_item' });
+
+    // for (let i = 0; i <= 11; i++) {
+    //   menuItem.setContent('Toner');
+    //   dropDownMenu.append(menuItem);
+    // }
+
+    const menuItemCleanser = new BaseComponent('li', { className: 'menu_item cleanser' });
+    menuItemCleanser.setContent('Cleanser');
+    dropDownMenuCategory.append(menuItemCleanser);
+    const menuItemToner = new BaseComponent('li', { className: 'menu_item toner' });
+    menuItemToner.setContent('Toner');
+    dropDownMenuCategory.append(menuItemToner);
+    const menuItemEssence = new BaseComponent('li', { className: 'menu_item essence' });
+    menuItemEssence.setContent('Essence');
+    dropDownMenuCategory.append(menuItemEssence);
+    const menuItemSerum = new BaseComponent('li', { className: 'menu_item serum' });
+    menuItemSerum.setContent('Serum');
+    dropDownMenuCategory.append(menuItemSerum);
+    const menuItemCream = new BaseComponent('li', { className: 'menu_item cream' });
+    menuItemCream.setContent('Cream');
+    dropDownMenuCategory.append(menuItemCream);
+    const menuItemExfoliant = new BaseComponent('li', { className: 'menu_item exfoliant' });
+    menuItemExfoliant.setContent('Exfoliant');
+    dropDownMenuCategory.append(menuItemExfoliant);
+    const menuItemEyeCream = new BaseComponent('li', { className: 'menu_item cleanser' });
+    menuItemEyeCream.setContent('Eyes');
+    dropDownMenuCategory.append(menuItemEyeCream);
+    const menuItemMask = new BaseComponent('li', { className: 'menu_item cleanser' });
+    menuItemMask.setContent('Mask');
+    dropDownMenuCategory.append(menuItemMask);
+    const menuItemOil = new BaseComponent('li', { className: 'menu_item cleanser' });
+    menuItemOil.setContent('Oil');
+    dropDownMenuCategory.append(menuItemOil);
+    const menuItemLipCare = new BaseComponent('li', { className: 'menu_item cleanser' });
+    menuItemLipCare.setContent('Lips');
+    dropDownMenuCategory.append(menuItemLipCare);
+    const menuItemSunscreen = new BaseComponent('li', { className: 'menu_item cleanser' });
+    menuItemSunscreen.setContent('Sunscreen');
+    dropDownMenuCategory.append(menuItemSunscreen);
+
+    this.dropDownCategory.getNode().addEventListener('click', () => {
+      dropDownMenuCategory.toggleClass('active');
+      menuItemCleanser.toggleClass('active');
+      menuItemToner.toggleClass('active');
+      menuItemEssence.toggleClass('active');
+      menuItemSerum.toggleClass('active');
+      menuItemCream.toggleClass('active');
+      menuItemExfoliant.toggleClass('active');
+      menuItemEyeCream.toggleClass('active');
+      menuItemMask.toggleClass('active');
+      menuItemOil.toggleClass('active');
+      menuItemLipCare.toggleClass('active');
+      menuItemSunscreen.toggleClass('active');
+    });
 
     const topMenuRight = new BaseComponent('div', { className: 'top_menu__right' });
     this.container.append(topMenuRight);
 
+    this.changeColumnsView = new BaseComponent('div', {
+      className: 'top_menu__right__item columns_view',
+    });
+    topMenuRight.append(this.changeColumnsView);
+
     this.changeView = new BaseComponent('div', { className: 'top_menu__right__item view' });
-    //changeView.setContent('cards view');
     topMenuRight.append(this.changeView);
 
     this.favouritesLink = new Link({
@@ -62,8 +127,24 @@ export class TopMenu extends BaseComponent {
     sort.setContent('Sort');
     topMenuRight.append(sort);
 
-    this.dropDown = new BaseComponent('span', { className: 'drop_down' });
-    sort.append(this.dropDown);
+    this.dropDownSort = new BaseComponent('span', { className: 'drop_down' });
+    sort.append(this.dropDownSort);
+
+    const dropDownMenuSort = new BaseComponent('ul', { className: 'drop_down_menu sort' });
+    this.dropDownSort.append(dropDownMenuSort);
+
+    const menuItemPriceDown = new BaseComponent('li', { className: 'menu_item price_down' });
+    menuItemPriceDown.setContent('Price down');
+    dropDownMenuSort.append(menuItemPriceDown);
+    const menuItemPriceUp = new BaseComponent('li', { className: 'menu_item price_up' });
+    menuItemPriceUp.setContent('Toner');
+    dropDownMenuSort.append(menuItemPriceUp);
+
+    this.dropDownSort.getNode().addEventListener('click', () => {
+      dropDownMenuSort.toggleClass('active');
+      menuItemPriceDown.toggleClass('active');
+      menuItemPriceUp.toggleClass('active');
+    });
 
     const search = new BaseComponent('div', { className: 'top_menu__right__item search' });
     search.setContent('Search');
@@ -73,6 +154,8 @@ export class TopMenu extends BaseComponent {
     search.append(magnifyingGlass);
 
     this.changeViewButton();
+
+    this.changeColumnsViewButton();
 
     Link.addNavigationLink(this.favouritesLink);
   }
@@ -85,5 +168,33 @@ export class TopMenu extends BaseComponent {
         changeViewElement.toggleClass('active');
       });
     }
+    this.changeView.getNode().addEventListener('click', () => {
+      this.onclick?.();
+    });
+  }
+
+  changeColumnsViewButton() {
+    for (let i = 0; i < 12; i++) {
+      const changeViewElement = new BaseComponent('span', { className: 'element' });
+      this.changeColumnsView.append(changeViewElement);
+      this.changeColumnsView.getNode().addEventListener('click', () => {
+        changeViewElement.toggleClass('active');
+      });
+    }
+    this.changeColumnsView.getNode().addEventListener('click', () => {
+      this.onclick?.();
+      //this.changeColumnsView.toggleClass('active');
+      let newValue = 4;
+      const oldValue = getComputedStyle(document.documentElement).getPropertyValue(
+        '--product-column',
+      );
+      const numberOldValue = +oldValue;
+      if (numberOldValue !== 1) {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        newValue = numberOldValue - 1;
+        document.documentElement.style.setProperty('--product-column', 'newValue');
+      }
+      document.documentElement.style.setProperty('--product-column', 'newValue');
+    });
   }
 }

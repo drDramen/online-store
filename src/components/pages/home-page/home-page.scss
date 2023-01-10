@@ -20,7 +20,6 @@
 
   &__image-wrapper {
     grid-area: image;
-    justify-self: end;
   }
 
   &__advantages {
@@ -28,8 +27,18 @@
   }
 
   &__image {
-    display: block;
+    position: absolute;
     max-width: 100%;
+    z-index: 200;
+  }
+
+  &__circle {
+    position: absolute;
+    width: 28%;
+    height: 46%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    filter: blur(80px);
   }
 
   &__title {
