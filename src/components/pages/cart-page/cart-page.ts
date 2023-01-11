@@ -4,8 +4,10 @@ import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './cart-page.scss';
 import { products } from './../../../data/product-data';
+import { Overlay } from '@/components/overlay/overlay';
 
 export class CartPage extends BaseComponent {
+  private overlay: Overlay = new Overlay();
   private container: Container;
   private counter = 0;
 
@@ -23,6 +25,10 @@ export class CartPage extends BaseComponent {
     const buyButton = new BaseComponent('div', { className: 'buy_button' });
     buyButton.setContent('Buy');
     this.container.append(buyButton);
+
+    buyButton.getNode().addEventListener('click', () => {
+      this.buyPopup();
+    });
   }
 
   promocodes() {
@@ -177,5 +183,32 @@ export class CartPage extends BaseComponent {
       const card = this.createItem(item);
       this.container.append(card);
     });
+  }
+
+  buyPopup() {
+    const buyPopup = new BaseComponent('div', { className: 'buy_popup' });
+    this.container.append(buyPopup);
+
+    const cross = new BaseComponent('span', { className: 'cross_line' });
+    buyPopup.append(cross);
+
+    this.overlay.addClass('overlay--active');
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        buyPopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      buyPopup.remove();
+      document.body.removeAttribute('style');
+    });
+
+    return buyPopup;
   }
 }
