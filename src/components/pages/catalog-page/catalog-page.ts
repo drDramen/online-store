@@ -50,6 +50,10 @@ export class CatalogPage extends BaseComponent {
     const toTopButton = new BaseComponent('div', { className: 'to_top_button' });
     bottomButtons.append(toTopButton);
 
+    toTopButton.getNode().addEventListener('click', () => {
+      window.scrollTo(0, 0);
+    });
+
     const arrowUp = new BaseComponent('span', { className: 'arrow_up' });
     toTopButton.append(arrowUp);
   }
