@@ -202,15 +202,15 @@ export class CartPage extends BaseComponent {
     title.setContent('Please fill all the required info');
     buyPopup.append(title);
 
-    const nameHolder = new BaseComponent('div', { className: 'holder' });
-    buyPopup.append(nameHolder);
+    const nameSurnameHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(nameSurnameHolder);
 
-    const name = new BaseComponent('span', { className: 'item name' });
-    name.setContent('Name');
-    nameHolder.append(name);
+    const nameSurname = new BaseComponent('span', { className: 'item name' });
+    nameSurname.setContent('Name Surname');
+    nameSurnameHolder.append(nameSurname);
 
-    const nameInput = new BaseComponent('input', { className: 'input' });
-    nameHolder.append(nameInput);
+    const nameSurnameInput = new BaseComponent('input', { className: 'input' });
+    nameSurnameHolder.append(nameSurnameInput);
 
     const surnameHolder = new BaseComponent('div', { className: 'holder' });
     buyPopup.append(surnameHolder);
@@ -327,6 +327,13 @@ export class CartPage extends BaseComponent {
     submitButton.setContent('Submit');
     buyPopup.append(submitButton);
 
+    submitButton.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      buyPopup.remove();
+      document.body.removeAttribute('style');
+      this.thanksForPurchase();
+    });
+
     this.append(this.overlay);
     this.append(buyPopup);
     buyPopup.append(cross);
@@ -350,4 +357,59 @@ export class CartPage extends BaseComponent {
 
     return buyPopup;
   }
+
+  thanksForPurchase() {
+    const thanksPopup = new BaseComponent('div', { className: 'thanks_popup' });
+    this.append(thanksPopup);
+
+    const thanksText = new BaseComponent('div', { className: 'thanks_text' });
+    thanksPopup.append(thanksText);
+
+    const title = new BaseComponent('div', {
+      className: 'title',
+    });
+    title.setContent('Thanks for the purchase!');
+    thanksText.append(title);
+
+    const takeCare = new BaseComponent('div', { className: 'take_care' });
+    takeCare.setContent('Take Care');
+    thanksText.append(takeCare);
+
+    const hearts = new BaseComponent('span', { className: 'hearts' });
+    thanksPopup.append(hearts);
+
+    this.append(this.overlay);
+    this.append(thanksPopup);
+
+    this.overlay.addClass('overlay--active');
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        thanksPopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    return thanksPopup;
+  }
+
+  // validateName(text: string) {
+  //   if (+text >= 3) return true;
+  //   else {
+  //     alert('Not enough characters');
+  //   }
+  // }
+
+  // validateEmail(text: string) {
+  //   const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  //   if (text.match.emailFormat);
+  //   {
+  //     alert('Valid email address!');
+  //     return true;
+  //   }
+  //   alert('You have entered an invalid email address!');
+  //   return false;
+  // }
 }
