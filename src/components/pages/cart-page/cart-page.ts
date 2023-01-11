@@ -238,6 +238,20 @@ export class CartPage extends BaseComponent {
     const phoneInput = new BaseComponent('input', { className: 'input' });
     phoneHolder.append(phoneInput);
 
+    phoneInput.getNode().addEventListener('input', (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        const { value } = e.target;
+        const valuesArray = value.split('');
+        const isLengthMoreThree = valuesArray.every((word: string) => word.length >= 9);
+        const isValidate = valuesArray.length >= 2 && isLengthMoreThree && valuesArray[0] === '+';
+        if (isValidate) {
+          phoneInput.getNode().style.borderColor = 'green';
+        } else {
+          phoneInput.getNode().style.borderColor = 'red';
+        }
+      }
+    });
+
     const emailHolder = new BaseComponent('div', { className: 'holder' });
     buyPopup.append(emailHolder);
 
@@ -268,46 +282,6 @@ export class CartPage extends BaseComponent {
         }
       }
     });
-
-    // const cityHolder = new BaseComponent('div', { className: 'holder' });
-    // buyPopup.append(cityHolder);
-
-    // const city = new BaseComponent('span', { className: 'item city' });
-    // city.setContent('City');
-    // cityHolder.append(city);
-
-    // const cityInput = new BaseComponent('input', { className: 'input' });
-    // cityHolder.append(cityInput);
-
-    // const streetHolder = new BaseComponent('div', { className: 'holder' });
-    // buyPopup.append(streetHolder);
-
-    // const street = new BaseComponent('span', { className: 'item street' });
-    // street.setContent('Street');
-    // streetHolder.append(street);
-
-    // const streetInput = new BaseComponent('input', { className: 'input' });
-    // streetHolder.append(streetInput);
-
-    // const houseHolder = new BaseComponent('div', { className: 'holder' });
-    // buyPopup.append(houseHolder);
-
-    // const house = new BaseComponent('span', { className: 'item house' });
-    // house.setContent('House');
-    // houseHolder.append(house);
-
-    // const houseInput = new BaseComponent('input', { className: 'input' });
-    // houseHolder.append(houseInput);
-
-    // const apartmentHolder = new BaseComponent('div', { className: 'holder' });
-    // buyPopup.append(apartmentHolder);
-
-    // const apartment = new BaseComponent('span', { className: 'item apartment' });
-    // apartment.setContent('Apartment');
-    // apartmentHolder.append(apartment);
-
-    // const apartmentInput = new BaseComponent('input', { className: 'input' });
-    // apartmentHolder.append(apartmentInput);
 
     const paymentDetails = new BaseComponent('span', { className: 'title payment_details' });
     paymentDetails.setContent('Payment Details');
@@ -345,6 +319,20 @@ export class CartPage extends BaseComponent {
 
     const cvvInput = new BaseComponent('input', { className: 'input' });
     cvvHolder.append(cvvInput);
+
+    cvvInput.getNode().addEventListener('input', (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        const { value } = e.target;
+        const valuesArray = value.split('');
+        const isValidate = valuesArray.length;
+        const regex = /^[a-zA-Z]+$/;
+        if (isValidate === 3 && !value.match(regex)) {
+          cvvInput.getNode().style.borderColor = 'green';
+        } else {
+          cvvInput.getNode().style.borderColor = 'red';
+        }
+      }
+    });
 
     const submitButton = new BaseComponent('span', { className: 'submit_button' });
     submitButton.setContent('Submit');
@@ -415,22 +403,4 @@ export class CartPage extends BaseComponent {
 
     return thanksPopup;
   }
-
-  // validateName(text: string) {
-  //   if (+text >= 3) return true;
-  //   else {
-  //     alert('Not enough characters');
-  //   }
-  // }
-
-  // validateEmail(text: string) {
-  //   const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  //   if (text.match.emailFormat);
-  //   {
-  //     alert('Valid email address!');
-  //     return true;
-  //   }
-  //   alert('You have entered an invalid email address!');
-  //   return false;
-  // }
 }
