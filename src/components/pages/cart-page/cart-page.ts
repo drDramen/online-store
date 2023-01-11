@@ -325,7 +325,8 @@ export class CartPage extends BaseComponent {
         const { value } = e.target;
         const valuesArray = value.split('');
         const isValidate = valuesArray.length;
-        if (isValidate === 3) {
+        const regex = /^[a-zA-Z]+$/;
+        if (isValidate === 3 && !value.match(regex)) {
           cvvInput.getNode().style.borderColor = 'green';
         } else {
           cvvInput.getNode().style.borderColor = 'red';
