@@ -24,13 +24,16 @@
   }
 
   .bottom_buttons {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .show_less_more {
-    width: 50%;
     padding: 8px 12px 8px 12px;
     background-color: var(--color-charlotte);
     border-radius: 10px;
@@ -42,6 +45,17 @@
       cursor: pointer;
       background-color: var(--color-java);
       color: var(--color-white);
+    }
+  }
+
+  .go_to_cart {
+    font-family: 'Shadows Into Light';
+    font-size: 38px;
+    transition: color var(--transition);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--color-java);
     }
   }
 

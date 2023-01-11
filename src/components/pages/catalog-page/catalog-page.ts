@@ -1,3 +1,5 @@
+import { NameRoute } from '@/enums/name-route';
+import { Link } from './../../../templates/link';
 import { TopMenu } from '@/components/top-menu/top-menu';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
@@ -32,11 +34,18 @@ export class CatalogPage extends BaseComponent {
     this.container.append(this.filterSideBar, this.productContainer);
 
     const bottomButtons = new BaseComponent('div', { className: 'bottom_buttons' });
-    this.productContainer.append(bottomButtons);
+    this.append(bottomButtons);
 
     const showLessMoreButton = new BaseComponent('div', { className: 'show_less_more' });
     showLessMoreButton.setContent('Show Less');
     bottomButtons.append(showLessMoreButton);
+
+    const goToCartLink = new Link({ href: NameRoute.Cart });
+    bottomButtons.append(goToCartLink);
+
+    const goToCartButton = new BaseComponent('div', { className: 'go_to_cart' });
+    goToCartButton.setContent('Go to Cart');
+    goToCartLink.append(goToCartButton);
 
     const toTopButton = new BaseComponent('div', { className: 'to_top_button' });
     bottomButtons.append(toTopButton);
