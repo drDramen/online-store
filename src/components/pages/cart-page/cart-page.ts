@@ -242,9 +242,9 @@ export class CartPage extends BaseComponent {
       if (e.target instanceof HTMLInputElement) {
         const { value } = e.target;
         const valuesArray = value.split('');
-        const isLengthMoreThree = valuesArray.every((word: string) => word.length >= 9);
-        const isValidate = valuesArray.length >= 2 && isLengthMoreThree && valuesArray[0] === '+';
-        if (isValidate) {
+        const isValidate = valuesArray.length;
+        const regex = /^[a-zA-Z]+$/;
+        if (isValidate >= 9 && !value.match(regex) && valuesArray[0] === '+') {
           phoneInput.getNode().style.borderColor = 'green';
         } else {
           phoneInput.getNode().style.borderColor = 'red';
