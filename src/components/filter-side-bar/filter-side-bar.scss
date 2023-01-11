@@ -17,7 +17,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background-color: #C6C6C6;
+    background-color: #c6c6c6;
     pointer-events: none;
     transform: translateY(-50%);
 
@@ -61,8 +61,6 @@
   padding-top: 0px;
 }
 
-
-
 .filter {
   &-block {
     padding: 15px 0 15px 10px;
@@ -102,7 +100,7 @@
       }
 
       & > .filter-block__toggle {
-         margin-bottom: 0;
+        margin-bottom: 0;
       }
     }
   }
@@ -122,7 +120,6 @@
     }
   }
 
-
   &__item-wrapper {
     display: flex;
     align-items: center;
@@ -133,14 +130,14 @@
   &__quantity {
     margin-left: 10px;
     font-size: 12px;
-    color: var(--color-silver-chalice)
+    color: var(--color-silver-chalice);
   }
 
   &__icon {
     margin-left: auto;
     width: 18px;
     height: 18px;
-    border: 2px solid #9CF8E7;
+    border: 2px solid #9cf8e7;
     border-radius: 5px;
 
     .checkbox-filter__input:checked + & {
@@ -160,5 +157,5 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: linear-gradient(180deg, var(--color-java) 0%, var(--color-charlotte) 100%);;
+  background: linear-gradient(180deg, var(--color-java) 0%, var(--color-charlotte) 100%);
 }

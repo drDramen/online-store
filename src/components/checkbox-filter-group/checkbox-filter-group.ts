@@ -13,11 +13,14 @@ export class CheckboxFilterGroup extends BaseComponent {
       values: any[];
     },
   ) {
-    super('div', { className: 'filter-block' });
+    super('div', { className: 'filter-block filter__multy-choice' });
     this.toggle = new BaseComponent('button', {
       className: 'filter-block__toggle btn-reset',
       type: 'button',
       innerHTML: this.setToggleContent(),
+    });
+    this.toggle.getNode().addEventListener('click', () => {
+      this.toggleClass('close');
     });
     this.checkboxFilter = new BaseComponent('ul', {
       className: 'checkbox-filter list-reset',
