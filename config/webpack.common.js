@@ -24,6 +24,9 @@ module.exports = {
           },
           noErrorOnMissing: true,
         },
+        {
+          from: paths.src + '/_redirects',
+        },
       ],
     }),
     new HtmlWebpackPlugin({
