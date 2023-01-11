@@ -1,70 +1,65 @@
 .cart {
-    &__link {
+  &__link {
     width: 131px;
     height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     user-select: none;
-    transition: color var(--transition);
-
-    &.active {
-        color: var(--color-java);
-    }
+    transition: all var(--transition);
 
     &:hover {
-        color: var(--color-charlotte);
+      color: var(--color-charlotte);
+    }
+
+    &.active {
+      color: var(--color-charlotte);
     }
 
     &:hover > .cart__products_circle {
-        background-color: var(--color-charlotte);
+      background-color: var(--color-wild-watermelon);
     }
+  }
 
-    &:hover > .cart__products_amount {
-        color: var(--font-family-main);
+  &__text {
+    width: 68px;
+    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--font-family-main);
+  }
+
+  &__image {
+    width: 36px;
+    height: 36px;
+    background-image: url('../../assets/images/icons/shopping-cart.svg');
+    display: inline-block;
+    transform: translateX(11px);
+  }
+
+  &__products_circle {
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-java);
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateY(-10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &__products_amount {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--font-family-main);
     }
-
-    }
-
-    &__text {
-        width: 68px;
-        height: 42px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        color: var(--font-family-main);
-    }
-
-    &__image {
-        width: 36px;
-        height: 36px;
-        background-image: url('../../assets/images/icons/shopping-cart.svg');
-        display: inline-block;
-        transform: translateX(11px);
-    }
-
-    &__products_circle {
-        width: 28px;
-        height: 28px;
-        background-color: var(--color-java);
-        border-radius: 50%;
-        display: inline-block;
-        transform: translateY(-10px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-
-        &__products_amount {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: var(--font-family-main);
-        }
-    }
+  }
 }

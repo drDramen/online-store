@@ -95,6 +95,113 @@
   &__item {
     width: 180px;
 
+    &.flask_science:hover {
+      cursor: pointer;
+    }
+
+    &.package:hover {
+      cursor: pointer;
+      transition: all var(--transition);
+
+      > .icon-wrapper > .heart {
+        &.one {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-20px, -200px);
+          animation-name: package_heart_one_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          opacity: 0;
+        }
+        &.two {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-10px, -200px);
+          animation-name: package_heart_two_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1s;
+          opacity: 0;
+        }
+        &.three {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(0px, -200px);
+          animation-name: package_heart_three_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1.8s;
+          opacity: 0;
+        }
+        &.four {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-5px, -200px);
+          animation-name: package_heart_four_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 2.4s;
+          opacity: 0;
+        }
+        &.five {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(8px, -200px);
+          animation-name: package_heart_five_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 3.2s;
+          opacity: 0;
+        }
+        &.six {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-12px, -200px);
+          animation-name: package_heart_six_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 4s;
+          opacity: 0;
+        }
+      }
+    }
+
     &.planet:hover {
       cursor: pointer;
 
@@ -254,6 +361,102 @@
     &-package {
       width: 116px;
       height: 116px;
+    }
+
+    @keyframes package_heart_one_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-20px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_two_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(10px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_three_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(20px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_four_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(8px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_five_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-6px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_six_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(12px, -10px) scale(2);
+      }
     }
   }
 }
