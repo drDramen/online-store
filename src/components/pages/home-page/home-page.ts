@@ -116,6 +116,6 @@ export class HomePage extends BaseComponent {
       packageToCartLink.append(packageComponent);
     }
 
-    this.advantages.append(flaskScienceComponent, planetToBrandsLink, packageComponent);
+    this.advantages.append(flaskScienceToCatalogLink, planetToBrandsLink, packageToCartLink);
   }
 }
