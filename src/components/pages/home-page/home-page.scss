@@ -97,6 +97,115 @@
 
     &.flask_science:hover {
       cursor: pointer;
+
+      > .icon-wrapper > .icon-flask-science {
+        fill: var(--color-java);
+        transition: fill var(--transition);
+      }
+
+      > .icon-wrapper > .circle {
+        &.one {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(-20px, 10px);
+          animation-name: flask_science_circle_one_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          opacity: 0;
+        }
+        &.two {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(0px, -10px);
+          animation-name: flask_science_circle_two_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 0.8s;
+          opacity: 0;
+        }
+        &.three {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(10px, 5px);
+          animation-name: flask_science_circle_three_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1.6s;
+          opacity: 0;
+        }
+        &.four {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(-10px, 20px);
+          animation-name: flask_science_circle_four_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 2.4s;
+          opacity: 0;
+        }
+        &.five {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(15px, -15px);
+          animation-name: flask_science_circle_five_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 3.2s;
+          opacity: 0;
+        }
+        &.six {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(5px, 0px);
+          animation-name: flask_science_circle_six_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 4s;
+          opacity: 0;
+        }
+      }
     }
 
     &.package:hover {
@@ -503,6 +612,108 @@
       100% {
         opacity: 0;
         transform: translate(12px, -10px) scale(2);
+      }
+    }
+
+    @keyframes flask_science_circle_one_anim {
+      0% {
+        opacity: 0;
+        transform: translate(-20px, 10px) scale(0.8);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(12px, -200px) scale(4);
+      }
+    }
+
+    @keyframes flask_science_circle_two_anim {
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-20px, -200px) scale(5);
+      }
+    }
+
+    @keyframes flask_science_circle_three_anim {
+      0% {
+        opacity: 0;
+        transform: scale(3);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(50px, -200px) scale(1);
+      }
+    }
+
+    @keyframes flask_science_circle_four_anim {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(30px, -200px) scale(6);
+      }
+    }
+
+    @keyframes flask_science_circle_five_anim {
+      0% {
+        opacity: 0;
+        transform: scale(3);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-30px, -200px) scale(2);
+      }
+    }
+
+    @keyframes flask_science_circle_six_anim {
+      0% {
+        opacity: 0;
+        transform: scale(2);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-20px, -200px) scale(8);
       }
     }
   }

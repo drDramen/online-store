@@ -22,7 +22,7 @@ export class HomePage extends BaseComponent {
     this.content = new BaseComponent('div', {
       className: 'home-page__content',
       innerHTML: `
-      <h1 class="home-page__title">Health and Beauty of your Skin Lives Here</h1>
+      <h2 class="home-page__title">Health and Beauty of your Skin Lives Here</h2>
       <p class="home-page__moto">Take it Home :)</p>
       <p class="home-page__description">Explore the best from Cosmetics World of SkinCare products presented by the Brands we Carefully picked for You</p>`,
     });
@@ -50,6 +50,12 @@ export class HomePage extends BaseComponent {
   fillAdvantages() {
     const figureOne = `
     <div class="icon-wrapper">
+      <span class='circle one'></span>
+      <span class='circle two'></span>
+      <span class='circle three'></span>
+      <span class='circle four'></span>
+      <span class='circle five'></span>
+      <span class='circle six'></span>
       <svg class="icon icon-flask-science">
         <use href="${sprite}#flask-science"></use>
       </svg>
@@ -116,6 +122,6 @@ export class HomePage extends BaseComponent {
       packageToCartLink.append(packageComponent);
     }
 
-    this.advantages.append(flaskScienceComponent, planetToBrandsLink, packageComponent);
+    this.advantages.append(flaskScienceToCatalogLink, planetToBrandsLink, packageToCartLink);
   }
 }
