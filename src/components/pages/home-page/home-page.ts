@@ -58,9 +58,17 @@ export class HomePage extends BaseComponent {
   `;
 
     const flaskScienceComponent = new BaseComponent('figure', {
-      className: 'advantages__item',
+      className: 'advantages__item flask_science',
       innerHTML: figureOne,
     });
+
+    const flaskScienceToCatalogLink = new Link({
+      href: NameRoute.Catalog,
+      className: 'go_to_shop',
+    });
+    if (flaskScienceComponent) {
+      flaskScienceToCatalogLink.append(flaskScienceComponent);
+    }
 
     const figureTwo = `
   <div class="icon-wrapper">
@@ -79,13 +87,20 @@ export class HomePage extends BaseComponent {
     const planetComponent = new BaseComponent('figure', { className: 'advantages__item planet' });
     planetComponent.setInnerHTML(figureTwo);
 
-    const planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_cart' });
+    const planetToBrandsLink = new Link({ href: NameRoute.Brands, className: 'go_to_brands' });
     if (planetComponent) {
       planetToBrandsLink.append(planetComponent);
     }
 
     const figureThree = `
 <div class="icon-wrapper">
+  <span class='heart one'></span>
+  <span class='heart two'></span>
+  <span class='heart three'></span>
+  <span class='heart four'></span>
+  <span class='heart five'></span>
+  <span class='heart six'></span>
+  <span class='flask_white'></span>
   <svg class="icon icon-package">
     <use href="${sprite}#package"></use>
   </svg>
@@ -93,10 +108,13 @@ export class HomePage extends BaseComponent {
 <figcaption class="advantages__description">testers and gifts with every purchase</figcaption>
 `;
 
-    const packageComponent = new BaseComponent('figure', {
-      className: 'advantages__item',
-      innerHTML: figureThree,
-    });
+    const packageComponent = new BaseComponent('figure', { className: 'advantages__item package' });
+    packageComponent.setInnerHTML(figureThree);
+
+    const packageToCartLink = new Link({ href: NameRoute.Cart, className: 'go_to_cart' });
+    if (packageComponent) {
+      packageToCartLink.append(packageComponent);
+    }
 
     this.advantages.append(flaskScienceComponent, planetToBrandsLink, packageComponent);
   }
