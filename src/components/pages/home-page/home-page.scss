@@ -103,6 +103,53 @@
       cursor: pointer;
       transition: all var(--transition);
 
+      > .icon-wrapper > .icon-package {
+        fill: var(--color-java);
+        transition: fill var(--transition);
+      }
+
+      > .icon-wrapper > .flask_white {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url('../../../assets/images/home-page-icons/package/package_flask_white.svg');
+        transform: translate(0px, 30px);
+        opacity: 0;
+        animation-name: package_flask_anim;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom center;
+        animation-timing-function: linear;
+        animation-play-state: running;
+      }
+
+      @keyframes package_flask_anim {
+        0% {
+          opacity: 0;
+          transform: rotate(0deg) translate(0px, 30px);
+        }
+        15% {
+          transform: rotate(-30deg) translate(0px, 30px);
+        }
+        30% {
+          opacity: 1;
+          transform: rotate(0deg) translate(0px, 30px);
+        }
+        75% {
+          transform: rotate(30deg) translate(0px, 30px);
+        }
+        85% {
+          transform: rotate(-10deg) translate(0px, 30px);
+        }
+        95% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 0;
+          transform: rotate(0deg) translate(0px, 30px);
+        }
+      }
+
       > .icon-wrapper > .heart {
         &.one {
           position: absolute;
