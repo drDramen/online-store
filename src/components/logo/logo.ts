@@ -21,7 +21,7 @@ export class Logo extends BaseComponent {
     this.logoImage = new BaseComponent('span', { className: 'logo__image' });
     this.logoLink.append(this.logoImage);
 
-    this.logoText = new BaseComponent('div', { className: 'logo__text' });
+    this.logoText = new BaseComponent('h1', { className: 'logo__text' });
     this.logoText.setInnerHTML('TakeCare');
     this.logoLink.append(this.logoText);
 
