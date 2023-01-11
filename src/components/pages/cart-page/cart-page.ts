@@ -266,6 +266,22 @@ export class CartPage extends BaseComponent {
     const emailInput = new BaseComponent('input', { className: 'input' });
     emailHolder.append(emailInput);
 
+    emailInput.getNode().addEventListener('input', (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        const { value } = e.target;
+        //const valuesArray = value.split('');
+        //const isValidate = valuesArray.length;
+        const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+        if (value.match(regex)) {
+          emailInput.getNode().style.borderColor = 'green';
+          email.getNode().style.color = 'green';
+        } else {
+          emailInput.getNode().style.borderColor = 'red';
+          email.getNode().style.color = 'red';
+        }
+      }
+    });
+
     const deliveryAddress = new BaseComponent('span', { className: 'title delivery_address' });
     deliveryAddress.setContent('Delivery Address');
     buyPopup.append(deliveryAddress);
