@@ -97,6 +97,29 @@
 
     &.flask_science:hover {
       cursor: pointer;
+
+      > .icon-wrapper > .icon-flask-science {
+        fill: var(--color-java);
+        transition: fill var(--transition);
+      }
+
+      > .icon-wrapper > .circle {
+        &.one {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-20px, -200px);
+          animation-name: package_heart_one_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          opacity: 0;
+        }
+      }
     }
 
     &.package:hover {
