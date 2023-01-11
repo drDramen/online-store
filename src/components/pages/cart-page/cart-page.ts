@@ -22,6 +22,10 @@ export class CartPage extends BaseComponent {
 
     this.finalSum();
 
+    this.buy();
+  }
+
+  buy() {
     const buyButton = new BaseComponent('div', { className: 'buy_button' });
     buyButton.setContent('Buy');
     this.container.append(buyButton);
@@ -192,11 +196,11 @@ export class CartPage extends BaseComponent {
     const cross = new BaseComponent('span', { className: 'cross_line' });
     buyPopup.append(cross);
 
-    const brandNameProductName = new BaseComponent('div', {
-      className: 'title brand_product_name',
+    const title = new BaseComponent('div', {
+      className: 'title',
     });
-    brandNameProductName.setContent('Brand Name Product Name');
-    buyPopup.append(brandNameProductName);
+    title.setContent('Please fill all the required info');
+    buyPopup.append(title);
 
     const nameHolder = new BaseComponent('div', { className: 'holder' });
     buyPopup.append(nameHolder);
@@ -323,9 +327,9 @@ export class CartPage extends BaseComponent {
     submitButton.setContent('Submit');
     buyPopup.append(submitButton);
 
+    this.append(this.overlay);
     this.append(buyPopup);
     buyPopup.append(cross);
-    this.append(this.overlay);
 
     this.overlay.addClass('overlay--active');
 
