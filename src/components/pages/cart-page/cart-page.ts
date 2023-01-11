@@ -297,6 +297,20 @@ export class CartPage extends BaseComponent {
     const cardNumberInput = new BaseComponent('input', { className: 'input' });
     cardNumberHolder.append(cardNumberInput);
 
+    cardNumberInput.getNode().addEventListener('input', (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        const { value } = e.target;
+        const valuesArray = value.split('');
+        const isValidate = valuesArray.length;
+        const regex = /^[a-zA-Z]+$/;
+        if (isValidate === 16 && !value.match(regex)) {
+          cardNumberInput.getNode().style.borderColor = 'green';
+        } else {
+          cardNumberInput.getNode().style.borderColor = 'red';
+        }
+      }
+    });
+
     const paymentSystem = new BaseComponent('div', { className: 'payment_system' });
     buyPopup.append(paymentSystem);
 
