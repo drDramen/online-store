@@ -4,8 +4,10 @@ import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './cart-page.scss';
 import { products } from './../../../data/product-data';
+import { Overlay } from '@/components/overlay/overlay';
 
 export class CartPage extends BaseComponent {
+  private overlay: Overlay = new Overlay();
   private container: Container;
   private counter = 0;
 
@@ -20,9 +22,17 @@ export class CartPage extends BaseComponent {
 
     this.finalSum();
 
+    this.buy();
+  }
+
+  buy() {
     const buyButton = new BaseComponent('div', { className: 'buy_button' });
     buyButton.setContent('Buy');
     this.container.append(buyButton);
+
+    buyButton.getNode().addEventListener('click', () => {
+      this.buyCartPopup();
+    });
   }
 
   promocodes() {
@@ -177,5 +187,167 @@ export class CartPage extends BaseComponent {
       const card = this.createItem(item);
       this.container.append(card);
     });
+  }
+
+  buyCartPopup() {
+    const buyPopup = new BaseComponent('div', { className: 'buy_popup' });
+    this.append(buyPopup);
+
+    const cross = new BaseComponent('span', { className: 'cross_line' });
+    buyPopup.append(cross);
+
+    const title = new BaseComponent('div', {
+      className: 'title',
+    });
+    title.setContent('Please fill all the required info');
+    buyPopup.append(title);
+
+    const nameHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(nameHolder);
+
+    const name = new BaseComponent('span', { className: 'item name' });
+    name.setContent('Name');
+    nameHolder.append(name);
+
+    const nameInput = new BaseComponent('input', { className: 'input' });
+    nameHolder.append(nameInput);
+
+    const surnameHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(surnameHolder);
+
+    const surname = new BaseComponent('span', { className: 'item surname' });
+    surname.setContent('Surname');
+    surnameHolder.append(surname);
+
+    const surnameInput = new BaseComponent('input', { className: 'input' });
+    surnameHolder.append(surnameInput);
+
+    const phoneHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(phoneHolder);
+
+    const phone = new BaseComponent('span', { className: 'item phone' });
+    phone.setContent('Phone');
+    phoneHolder.append(phone);
+
+    const phoneInput = new BaseComponent('input', { className: 'input' });
+    phoneHolder.append(phoneInput);
+
+    const emailHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(emailHolder);
+
+    const email = new BaseComponent('span', { className: 'item phone' });
+    email.setContent('Email');
+    emailHolder.append(email);
+
+    const emailInput = new BaseComponent('input', { className: 'input' });
+    emailHolder.append(emailInput);
+
+    const deliveryAddress = new BaseComponent('span', { className: 'title delivery_address' });
+    deliveryAddress.setContent('Delivery Address');
+    buyPopup.append(deliveryAddress);
+
+    const cityHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(cityHolder);
+
+    const city = new BaseComponent('span', { className: 'item city' });
+    city.setContent('City');
+    cityHolder.append(city);
+
+    const cityInput = new BaseComponent('input', { className: 'input' });
+    cityHolder.append(cityInput);
+
+    const streetHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(streetHolder);
+
+    const street = new BaseComponent('span', { className: 'item street' });
+    street.setContent('Street');
+    streetHolder.append(street);
+
+    const streetInput = new BaseComponent('input', { className: 'input' });
+    streetHolder.append(streetInput);
+
+    const houseHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(houseHolder);
+
+    const house = new BaseComponent('span', { className: 'item house' });
+    house.setContent('House');
+    houseHolder.append(house);
+
+    const houseInput = new BaseComponent('input', { className: 'input' });
+    houseHolder.append(houseInput);
+
+    const apartmentHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(apartmentHolder);
+
+    const apartment = new BaseComponent('span', { className: 'item apartment' });
+    apartment.setContent('Apartment');
+    apartmentHolder.append(apartment);
+
+    const apartmentInput = new BaseComponent('input', { className: 'input' });
+    apartmentHolder.append(apartmentInput);
+
+    const paymentDetails = new BaseComponent('span', { className: 'title payment_details' });
+    paymentDetails.setContent('Payment Details');
+    buyPopup.append(paymentDetails);
+
+    const cardNumberHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(cardNumberHolder);
+
+    const cardNumber = new BaseComponent('span', { className: 'card_number' });
+    cardNumber.setContent('Card Number');
+    cardNumberHolder.append(cardNumber);
+
+    const cardNumberInput = new BaseComponent('input', { className: 'input' });
+    cardNumberHolder.append(cardNumberInput);
+
+    const paymentSystem = new BaseComponent('div', { className: 'payment_system' });
+    buyPopup.append(paymentSystem);
+
+    const validThruHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(validThruHolder);
+
+    const validThru = new BaseComponent('span', { className: 'valid_thru' });
+    validThru.setContent('Valid Thru');
+    validThruHolder.append(validThru);
+
+    const validThruInput = new BaseComponent('input', { className: 'input' });
+    validThruHolder.append(validThruInput);
+
+    const cvvHolder = new BaseComponent('div', { className: 'holder' });
+    buyPopup.append(cvvHolder);
+
+    const cvv = new BaseComponent('span', { className: 'cvv' });
+    cvv.setContent('CVV');
+    cvvHolder.append(cvv);
+
+    const cvvInput = new BaseComponent('input', { className: 'input' });
+    cvvHolder.append(cvvInput);
+
+    const submitButton = new BaseComponent('span', { className: 'submit_button' });
+    submitButton.setContent('Submit');
+    buyPopup.append(submitButton);
+
+    this.append(this.overlay);
+    this.append(buyPopup);
+    buyPopup.append(cross);
+
+    this.overlay.addClass('overlay--active');
+
+    this.overlay.getNode().addEventListener('click', () => {
+      if (!this.overlay) return;
+      else {
+        this.overlay.remove();
+        buyPopup.remove();
+        document.body.removeAttribute('style');
+      }
+    });
+
+    cross.getNode().addEventListener('click', () => {
+      this.overlay.remove();
+      buyPopup.remove();
+      document.body.removeAttribute('style');
+    });
+
+    return buyPopup;
   }
 }
