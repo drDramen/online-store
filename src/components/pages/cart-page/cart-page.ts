@@ -269,8 +269,6 @@ export class CartPage extends BaseComponent {
     emailInput.getNode().addEventListener('input', (e) => {
       if (e.target instanceof HTMLInputElement) {
         const { value } = e.target;
-        //const valuesArray = value.split('');
-        //const isValidate = valuesArray.length;
         const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
         if (value.match(regex)) {
           emailInput.getNode().style.borderColor = 'green';
@@ -347,6 +345,28 @@ export class CartPage extends BaseComponent {
 
     const validThruInput = new BaseComponent('input', { className: 'input' });
     validThruHolder.append(validThruInput);
+
+    validThruInput.getNode().addEventListener('input', (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        const { value } = e.target;
+        const regex = /^[a-zA-Z]+$/;
+        //const numChars = value.length;
+        const firstNumber = +value.slice(0, 2);
+        const secondNumber = +value.slice(-2);
+        if (!value.match(regex) && value.length === 4 && firstNumber <= 31 && secondNumber <= 12) {
+          // if (numChars === 2) {
+          //   const thisVal = value;
+          //   thisVal + '/';
+          //   value = thisVal;
+          // }
+          validThruInput.getNode().style.borderColor = 'green';
+          validThru.getNode().style.color = 'green';
+        } else {
+          validThruInput.getNode().style.borderColor = 'red';
+          validThru.getNode().style.color = 'red';
+        }
+      }
+    });
 
     const cvvHolder = new BaseComponent('div', { className: 'holder' });
     buyPopup.append(cvvHolder);
