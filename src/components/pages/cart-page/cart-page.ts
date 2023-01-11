@@ -16,11 +16,56 @@ export class CartPage extends BaseComponent {
     this.append(this.container);
     this.renderCards(CartService.getDataCart());
 
+    this.promocodes();
+
     this.finalSum();
 
     const buyButton = new BaseComponent('div', { className: 'buy_button' });
     buyButton.setContent('Buy');
     this.container.append(buyButton);
+  }
+
+  promocodes() {
+    const promocodesHolder = new BaseComponent('div', { className: 'promo_holder' });
+    this.container.append(promocodesHolder);
+
+    const promoText = new BaseComponent('p', { className: 'promo_holder__text' });
+    promoText.setContent('If you wanna discount - we have one time offer');
+    promocodesHolder.append(promoText);
+
+    const promoOne = new BaseComponent('p', { className: 'promo_holder__one' });
+    promoOne.setContent('Cherry 10%');
+    promocodesHolder.append(promoOne);
+
+    promoOne.getNode().addEventListener('click', () => {
+      promoOne.remove();
+    });
+
+    const promoTwo = new BaseComponent('p', { className: 'promo_holder__two' });
+    promoTwo.setContent('Dramen 20%');
+    promocodesHolder.append(promoTwo);
+
+    promoTwo.getNode().addEventListener('click', () => {
+      promoTwo.remove();
+    });
+
+    const promoThree = new BaseComponent('p', { className: 'promo_holder__three' });
+    promoThree.setContent('Pashabn 30%');
+    promocodesHolder.append(promoThree);
+
+    promoThree.getNode().addEventListener('click', () => {
+      promoThree.remove();
+    });
+
+    const promoFour = new BaseComponent('p', { className: 'promo_holder__four' });
+    promoFour.setContent('801 50%');
+    promocodesHolder.append(promoFour);
+
+    promoFour.getNode().addEventListener('click', () => {
+      promoFour.remove();
+    });
+
+    return promocodesHolder;
   }
 
   finalSum() {

@@ -80,7 +80,7 @@
     font-size: 24px;
     color: var(--font-color-primary);
     margin-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 30px;
 
     &__all_products {
       margin-left: 60px;
@@ -88,6 +88,32 @@
 
     .remove_item {
       margin-left: 60px;
+    }
+  }
+
+  .promo_holder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &__one,
+    &__two,
+    &__three,
+    &__four {
+      margin-left: 30px;
+      transition: color var(--transition);
+
+      &:hover {
+        color: var(--color-wild-watermelon);
+      }
     }
   }
 
