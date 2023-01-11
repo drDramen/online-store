@@ -222,8 +222,10 @@ export class CartPage extends BaseComponent {
         const isValidate = valuesArray.length >= 2 && isLengthMoreThree;
         if (isValidate) {
           nameSurnameInput.getNode().style.borderColor = 'green';
+          nameSurname.getNode().style.color = 'green';
         } else {
           nameSurnameInput.getNode().style.borderColor = 'red';
+          nameSurname.getNode().style.color = 'red';
         }
       }
     });
@@ -232,7 +234,7 @@ export class CartPage extends BaseComponent {
     buyPopup.append(phoneHolder);
 
     const phone = new BaseComponent('span', { className: 'item phone' });
-    phone.setContent('Phone');
+    phone.setContent('Phone (start with +)');
     phoneHolder.append(phone);
 
     const phoneInput = new BaseComponent('input', { className: 'input' });
@@ -246,8 +248,10 @@ export class CartPage extends BaseComponent {
         const regex = /^[a-zA-Z]+$/;
         if (isValidate >= 9 && !value.match(regex) && valuesArray[0] === '+') {
           phoneInput.getNode().style.borderColor = 'green';
+          phone.getNode().style.color = 'green';
         } else {
           phoneInput.getNode().style.borderColor = 'red';
+          phone.getNode().style.color = 'red';
         }
       }
     });
@@ -277,8 +281,10 @@ export class CartPage extends BaseComponent {
         const isValidate = valuesArray.length >= 3 && isLengthMoreThree;
         if (isValidate) {
           deliveryAddressInput.getNode().style.borderColor = 'green';
+          deliveryAddress.getNode().style.color = 'green';
         } else {
           deliveryAddressInput.getNode().style.borderColor = 'red';
+          deliveryAddress.getNode().style.color = 'red';
         }
       }
     });
@@ -305,8 +311,10 @@ export class CartPage extends BaseComponent {
         const regex = /^[a-zA-Z]+$/;
         if (isValidate === 16 && !value.match(regex)) {
           cardNumberInput.getNode().style.borderColor = 'green';
+          cardNumber.getNode().style.color = 'green';
         } else {
           cardNumberInput.getNode().style.borderColor = 'red';
+          cardNumber.getNode().style.color = 'red';
         }
       }
     });
@@ -342,8 +350,10 @@ export class CartPage extends BaseComponent {
         const regex = /^[a-zA-Z]+$/;
         if (isValidate === 3 && !value.match(regex)) {
           cvvInput.getNode().style.borderColor = 'green';
+          cvv.getNode().style.color = 'green';
         } else {
           cvvInput.getNode().style.borderColor = 'red';
+          cvv.getNode().style.color = 'red';
         }
       }
     });
