@@ -30,6 +30,19 @@ export class CatalogPage extends BaseComponent {
     this.productContainer = new ProductContainer();
     this.productContainer.updateProduct(ProductService.getAllProducts());
     this.container.append(this.filterSideBar, this.productContainer);
+
+    const bottomButtons = new BaseComponent('div', { className: 'bottom_buttons' });
+    this.productContainer.append(bottomButtons);
+
+    const showLessMoreButton = new BaseComponent('div', { className: 'show_less_more' });
+    showLessMoreButton.setContent('Show Less');
+    bottomButtons.append(showLessMoreButton);
+
+    const toTopButton = new BaseComponent('div', { className: 'to_top_button' });
+    bottomButtons.append(toTopButton);
+
+    const arrowUp = new BaseComponent('span', { className: 'arrow_up' });
+    toTopButton.append(arrowUp);
   }
 
   changeCardsView() {
