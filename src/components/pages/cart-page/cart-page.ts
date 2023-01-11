@@ -27,7 +27,7 @@ export class CartPage extends BaseComponent {
     this.container.append(buyButton);
 
     buyButton.getNode().addEventListener('click', () => {
-      this.buyPopup();
+      this.buyCartPopup();
     });
   }
 
@@ -185,14 +185,16 @@ export class CartPage extends BaseComponent {
     });
   }
 
-  buyPopup() {
+  buyCartPopup() {
     const buyPopup = new BaseComponent('div', { className: 'buy_popup' });
     this.append(buyPopup);
 
     const cross = new BaseComponent('span', { className: 'cross_line' });
     buyPopup.append(cross);
 
-    const brandNameProductName = new BaseComponent('div', { className: 'brand_product_name' });
+    const brandNameProductName = new BaseComponent('div', {
+      className: 'title brand_product_name',
+    });
     brandNameProductName.setContent('Brand Name Product Name');
     buyPopup.append(brandNameProductName);
 
@@ -236,7 +238,7 @@ export class CartPage extends BaseComponent {
     const emailInput = new BaseComponent('input', { className: 'input' });
     emailHolder.append(emailInput);
 
-    const deliveryAddress = new BaseComponent('span', { className: 'delivery_address' });
+    const deliveryAddress = new BaseComponent('span', { className: 'title delivery_address' });
     deliveryAddress.setContent('Delivery Address');
     buyPopup.append(deliveryAddress);
 
@@ -280,7 +282,7 @@ export class CartPage extends BaseComponent {
     const apartmentInput = new BaseComponent('input', { className: 'input' });
     apartmentHolder.append(apartmentInput);
 
-    const paymentDetails = new BaseComponent('span', { className: 'payment_details' });
+    const paymentDetails = new BaseComponent('span', { className: 'title payment_details' });
     paymentDetails.setContent('Payment Details');
     buyPopup.append(paymentDetails);
 
@@ -320,6 +322,10 @@ export class CartPage extends BaseComponent {
     const submitButton = new BaseComponent('span', { className: 'submit_button' });
     submitButton.setContent('Submit');
     buyPopup.append(submitButton);
+
+    this.append(buyPopup);
+    buyPopup.append(cross);
+    this.append(this.overlay);
 
     this.overlay.addClass('overlay--active');
 
