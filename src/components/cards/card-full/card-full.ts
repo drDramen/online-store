@@ -1,4 +1,4 @@
-import { products } from './../../../data/product-data';
+import { products } from '../../../data/product-data';
 import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';

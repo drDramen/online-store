@@ -87,3 +87,10 @@
     margin-top: 3px;
   }
 }
+
+.tooltip {
+  z-index: 100;
+  border-radius: 10px;
+  border: dotted;
+  border-color: var(--color-charlotte);
+}

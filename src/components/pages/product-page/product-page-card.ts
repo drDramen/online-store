@@ -18,6 +18,10 @@ export class ProductPageCard extends BaseComponent {
       this.createImagePopup(src);
     });
     this.renderCard(data);
+    this.productImage.getNode().addEventListener('mouseover', () => {
+      const tooltip = new BaseComponent('div', { className: 'tooltip' });
+      tooltip.setContent('Click on me');
+    });
   }
 
   loadSmallPics(pics: Product['pics']) {
@@ -144,6 +148,9 @@ export class ProductPageCard extends BaseComponent {
     cardButtonAddToCart.getNode().addEventListener('click', () => {
       CartService.addToCart(this.data);
       this.createAddToCartPopup();
+      cardButtonAddToCart.toggleClass('active');
+      cardButtonAddToCart.setContent('Remove');
+      amountOfAddedProduct.setInnerHTML('1');
     });
     buttonsHolder.append(cardButtonAddToCart);
 
