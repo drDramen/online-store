@@ -37,13 +37,14 @@ export class CartPage extends BaseComponent {
     promoOne.setContent('Cherry 10%');
     promocodesHolder.append(promoOne);
 
-    promoOne.getNode().addEventListener('click', () => {
-      promoOne.remove();
-    });
-
     const promoTwo = new BaseComponent('p', { className: 'promo_holder__two' });
     promoTwo.setContent('Dramen 20%');
     promocodesHolder.append(promoTwo);
+
+    promoOne.getNode().addEventListener('click', () => {
+      promoOne.remove();
+      //promoTwo.setAttribute('disabled', 'true');
+    });
 
     promoTwo.getNode().addEventListener('click', () => {
       promoTwo.remove();
@@ -58,12 +59,16 @@ export class CartPage extends BaseComponent {
     });
 
     const promoFour = new BaseComponent('p', { className: 'promo_holder__four' });
-    promoFour.setContent('801 50%');
+    promoFour.setContent('801 40%');
     promocodesHolder.append(promoFour);
 
     promoFour.getNode().addEventListener('click', () => {
       promoFour.remove();
     });
+
+    if (!promoOne && !promoTwo && !promoThree && !promoFour) {
+      promoText.remove();
+    }
 
     return promocodesHolder;
   }
