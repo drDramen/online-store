@@ -20,7 +20,6 @@
 
   &__image-wrapper {
     grid-area: image;
-    justify-self: end;
   }
 
   &__advantages {
@@ -28,8 +27,18 @@
   }
 
   &__image {
-    display: block;
+    position: absolute;
     max-width: 100%;
+    z-index: 200;
+  }
+
+  &__circle {
+    position: absolute;
+    width: 28%;
+    height: 46%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    filter: blur(80px);
   }
 
   &__title {
@@ -85,6 +94,269 @@
 
   &__item {
     width: 180px;
+
+    &.flask_science:hover {
+      cursor: pointer;
+
+      > .icon-wrapper > .icon-flask-science {
+        fill: var(--color-java);
+        transition: fill var(--transition);
+      }
+
+      > .icon-wrapper > .circle {
+        &.one {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(-20px, 10px);
+          animation-name: flask_science_circle_one_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          opacity: 0;
+        }
+        &.two {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(0px, -10px);
+          animation-name: flask_science_circle_two_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 0.8s;
+          opacity: 0;
+        }
+        &.three {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(10px, 5px);
+          animation-name: flask_science_circle_three_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1.6s;
+          opacity: 0;
+        }
+        &.four {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(-10px, 20px);
+          animation-name: flask_science_circle_four_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 2.4s;
+          opacity: 0;
+        }
+        &.five {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(15px, -15px);
+          animation-name: flask_science_circle_five_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 3.2s;
+          opacity: 0;
+        }
+        &.six {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: var(--color-white);
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          z-index: 200;
+          transform: translate(5px, 0px);
+          animation-name: flask_science_circle_six_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 4s;
+          opacity: 0;
+        }
+      }
+    }
+
+    &.package:hover {
+      cursor: pointer;
+      transition: all var(--transition);
+
+      > .icon-wrapper > .icon-package {
+        fill: var(--color-java);
+        transition: fill var(--transition);
+      }
+
+      > .icon-wrapper > .flask_white {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url('../../../assets/images/home-page-icons/package/package_flask_white.svg');
+        transform: translate(0px, 30px);
+        opacity: 0;
+        animation-name: package_flask_anim;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom center;
+        animation-timing-function: linear;
+        animation-play-state: running;
+      }
+
+      @keyframes package_flask_anim {
+        0% {
+          opacity: 0;
+          transform: rotate(0deg) translate(0px, 30px);
+        }
+        15% {
+          transform: rotate(-30deg) translate(0px, 30px);
+        }
+        30% {
+          opacity: 1;
+          transform: rotate(0deg) translate(0px, 30px);
+        }
+        75% {
+          transform: rotate(30deg) translate(0px, 30px);
+        }
+        85% {
+          transform: rotate(-10deg) translate(0px, 30px);
+        }
+        95% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 0;
+          transform: rotate(0deg) translate(0px, 30px);
+        }
+      }
+
+      > .icon-wrapper > .heart {
+        &.one {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-20px, -200px);
+          animation-name: package_heart_one_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          opacity: 0;
+        }
+        &.two {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-10px, -200px);
+          animation-name: package_heart_two_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1s;
+          opacity: 0;
+        }
+        &.three {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(0px, -200px);
+          animation-name: package_heart_three_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 1.8s;
+          opacity: 0;
+        }
+        &.four {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-5px, -200px);
+          animation-name: package_heart_four_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 2.4s;
+          opacity: 0;
+        }
+        &.five {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(8px, -200px);
+          animation-name: package_heart_five_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 3.2s;
+          opacity: 0;
+        }
+        &.six {
+          position: absolute;
+          width: 19px;
+          height: 19px;
+          background-image: url('../../../assets/images/home-page-icons/package/package_white_heart.svg');
+          background-repeat: no-repeat;
+          z-index: 200;
+          transform: translate(-12px, -200px);
+          animation-name: package_heart_six_anim;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-play-state: running;
+          animation-delay: 4s;
+          opacity: 0;
+        }
+      }
+    }
 
     &.planet:hover {
       cursor: pointer;
@@ -245,6 +517,204 @@
     &-package {
       width: 116px;
       height: 116px;
+    }
+
+    @keyframes package_heart_one_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-20px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_two_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(10px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_three_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(20px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_four_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(8px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_five_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-6px, -10px) scale(2);
+      }
+    }
+
+    @keyframes package_heart_six_anim {
+      0% {
+        opacity: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(12px, -10px) scale(2);
+      }
+    }
+
+    @keyframes flask_science_circle_one_anim {
+      0% {
+        opacity: 0;
+        transform: translate(-20px, 10px) scale(0.8);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(12px, -200px) scale(4);
+      }
+    }
+
+    @keyframes flask_science_circle_two_anim {
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-20px, -200px) scale(5);
+      }
+    }
+
+    @keyframes flask_science_circle_three_anim {
+      0% {
+        opacity: 0;
+        transform: scale(3);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(50px, -200px) scale(1);
+      }
+    }
+
+    @keyframes flask_science_circle_four_anim {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(30px, -200px) scale(6);
+      }
+    }
+
+    @keyframes flask_science_circle_five_anim {
+      0% {
+        opacity: 0;
+        transform: scale(3);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-30px, -200px) scale(2);
+      }
+    }
+
+    @keyframes flask_science_circle_six_anim {
+      0% {
+        opacity: 0;
+        transform: scale(2);
+      }
+      5% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-20px, -200px) scale(8);
+      }
     }
   }
 }

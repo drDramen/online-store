@@ -78,7 +78,7 @@ export const products: Product[] = [
     starIngredient: 'Ceramide',
     pics: [
       'assets/product-images/0003/cerave-moisture-cream-1.avif',
-      'assets/product-images/0003/cerave-facial-moisture-lotion-spf-2.jpg',
+      'assets/product-images/0003/cerave-moisture-cream-2.avif',
     ],
     price: 22,
     bestseller: true,
@@ -6513,7 +6513,7 @@ export const products: Product[] = [
   {
     id: '0223',
     brandName: 'Youth to the People',
-    productName: 'Triple Peptide Cactus Oasis Serum',
+    productName: 'Peptide Cactus Serum',
     description: `This three-in-one intensely hydrating, plumping, and firming serum instantly revitalizes dry,
      dehydrated skin and plumps the look of fine lines and wrinkles with a moisture-multiplying
       matrix of peptides, hyaluronic acid, and super replenishing cactus stem.`,
@@ -6545,7 +6545,7 @@ export const products: Product[] = [
   {
     id: '0224',
     brandName: 'Youth to the People',
-    productName: '15% Vitamin C Caffeine Energy Serum',
+    productName: 'Vitamin C Energy Serum',
     description: `Elevate your morning routine. This first-of-its-kind clinical-grade 15% vitamin C serum is boosted with clean,
      plant-derived caffeine from superleafs yerba mate and guayusa to immediately brighten, visibly reduce morning puffiness, and hydrate.`,
     ingredients: `Water/Aqua/Eau , 3-O-Ethyl Ascorbic Acid (Vitamin C) , Tetrahexyldecyl Ascorbate (Vitamin C) ,
@@ -6573,7 +6573,7 @@ export const products: Product[] = [
   {
     id: '0225',
     brandName: 'Youth to the People',
-    productName: 'Superberry Hydrate Glow Dream Oil',
+    productName: 'Superberry Glow Dream Oil',
     description: `This ultra-enriched, flash-absorbing face oil packed with rare super berry antioxidants that leaves skin velvety
      soft, hydrated, and glowing. Intensely hydrating prickly pear and squalane oil lock in moisture with
       the help of omega fatty acids and high levels of vitamin C.`,
@@ -6602,7 +6602,7 @@ export const products: Product[] = [
   {
     id: '0226',
     brandName: 'Youth to the People',
-    productName: 'Yerba Mate Resurfacing Energy Facial',
+    productName: 'Yerba Mate Resurfacing',
     description: `This dual-action microdermabrasion facial breaks down dead skin cells with active
      enzymes, papaya, and pineapple, while sustainable micro-exfoliants bamboo and diatomaceous earth
       smooth skin texture. Amplified by highly caffeinated extracts, yerba mate and guayusa, this
@@ -6726,7 +6726,7 @@ export const products: Product[] = [
   {
     id: '0230',
     brandName: 'Youth to the People',
-    productName: 'Superfood Air-Whip Moisture Cream',
+    productName: 'Superfood Moisture Cream',
     description: `This daily moisturizer is formulated with a proprietary superfood-extract blend of kale,
      spinach, and green tea to help fight free radicals, and with cross-linked hyaluronic acid to replenish
       and firm the look of the skin. It's lightweight, works well under make-up, and is never greasy. Friendly
@@ -6787,7 +6787,7 @@ export const products: Product[] = [
   {
     id: '0232',
     brandName: 'Youth to the People',
-    productName: 'Adaptogen Soothe Hydrate Activated Mist',
+    productName: 'Adaptogen Activated Mist',
     description: `An ultra-fine mist that hydrates, calms visible redness, and evens the look of skin
      tone with antioxidant-rich adaptogens, hyaluronic acid, and soothing peptides—like a serum in a mist.`,
     ingredients: `Water/Aqua/Eau , Propanediol , Aloe Barbadensis (Aloe Vera) Leaf Juice , Pentapeptide-59 ,
@@ -6813,7 +6813,7 @@ export const products: Product[] = [
   {
     id: '0233',
     brandName: 'Youth to the People',
-    productName: 'Superfood Hydrate Firm Eye Cream',
+    productName: 'Superfood Firm Eye Cream',
     description: `Small but mighty. Introduce your eyes to the power of superfoods and science. This
      nourishing cream delivers vital nutrients with our proprietary superfood blend, peptides, and an army of restorative vitamins.`,
     ingredients: `Water/Aqua/Eau (Aqua) , Helianthus Annuus (Sunflower) Seed Oil , Stearic Acid , Glycerin , Glyceryl Stearate ,
@@ -6870,7 +6870,7 @@ export const products: Product[] = [
   {
     id: '0235',
     brandName: 'Youth to the People',
-    productName: 'Superberry Hydrate Glow Dream Mask',
+    productName: 'Superberry Dream Mask',
     description: `The ultimate hydrating radiance boost. This overnight mask deeply hydrates, plumps and
      brightens with powerful, antioxidant-rich superberries and THD ascorbate, the latest clinically-proven
       form of stable Vitamin C. This formula helps to target dullness and uneven skin tone for brighter, more radiant skin.`,

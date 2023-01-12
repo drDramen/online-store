@@ -1,0 +1,312 @@
+.cart {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__buttons_holder {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.button {
+      max-width: 120px;
+      background-color: var(--color-charlotte);
+      border-radius: 10px;
+      transition: background-color var(--transition);
+
+      &.amount {
+        display: flex;
+
+        .minus {
+          display: inline-block;
+          height: 36px;
+          font-size: 36px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+            border-radius: 10px 0px 0px 10px;
+          }
+        }
+
+        .added_number {
+          display: inline-block;
+          height: 36px;
+          font-size: 28px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          user-select: none;
+        }
+
+        .plus {
+          display: inline-block;
+          height: 36px;
+          font-size: 28px;
+          color: var(--font-color-primary);
+          flex-grow: 1;
+          text-align: center;
+          line-height: 36px;
+          transition: background-color var(--transition);
+          border-radius: 0px 10px 10px 0px;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--color-java);
+          }
+        }
+      }
+    }
+  }
+
+  .final_sum {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    color: var(--font-color-primary);
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+    &__all_products {
+      margin-left: 60px;
+    }
+
+    .remove_item {
+      margin-left: 60px;
+    }
+  }
+
+  .promo_holder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &__one,
+    &__two,
+    &__three,
+    &__four {
+      margin-left: 30px;
+      transition: color var(--transition);
+
+      &:hover {
+        color: var(--color-wild-watermelon);
+      }
+    }
+  }
+
+  .added_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: var(--font-color-primary);
+  }
+
+  .product_pic {
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../public/product-images/0001/cerave-hydrating-micellair-water-1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .remove_item {
+    width: 36px;
+    height: 36px;
+    background-image: url('../../../assets/images/icons/trash.svg');
+    background-repeat: no-repeat;
+    transition: all var(--transition);
+
+    &:hover {
+      cursor: pointer;
+      background-image: url('../../../assets/images/icons/trash_hover.svg');
+    }
+
+    &:active {
+      background-image: url('../../../assets/images/icons/trash_click.svg');
+    }
+  }
+
+  .buy_button {
+    font-size: 40px;
+    font-family: var(--font-family-logo);
+    padding: 4px 60px;
+    background-color: var(--color-charlotte);
+    border-radius: 10px;
+    transition: all var(--transition);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-java);
+      color: var(--color-white);
+    }
+  }
+}
+
+.buy_popup {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  margin: auto;
+  font-family: var(--font-family-main);
+  color: var(--color-black);
+  font-size: 20px;
+  z-index: 2000;
+  position: absolute;
+}
+
+.cross_line {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+
+  &:hover {
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      background-color: var(--color-charlotte);
+    }
+  }
+
+  &::before,
+  &::after {
+    content: ' ';
+    transform-origin: center;
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    background-color: var(--color-java);
+    transition: all var(--transition);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.title {
+  margin: 10px 0px;
+}
+
+.holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.input {
+  display: inline-block;
+  margin-left: 20px;
+  outline: none;
+}
+
+.payment_system {
+  width: 90px;
+  height: 90px;
+  background-image: url('../../../assets/images/payment_systems/visa-svgrepo-com\ 1.png');
+  background-repeat: no-repeat;
+}
+
+.submit_button {
+  background-color: var(--color-charlotte);
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: all var(--transition);
+  border-radius: 5px;
+  margin-top: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-java);
+    color: var(--color-white);
+  }
+}
+
+.thanks_popup {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  margin: auto;
+  font-family: var(--font-family-main);
+  color: var(--color-black);
+  font-size: 20px;
+  z-index: 2500;
+  position: absolute;
+}
+
+.thanks_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.take_care {
+  font-family: 'Passions Conflict';
+  font-size: 64px;
+}
+
+.hearts {
+  background-image: url('../../../assets/images/hearts/hearts_2.png');
+  width: 284px;
+  height: 147px;
+  display: inline-block;
+}

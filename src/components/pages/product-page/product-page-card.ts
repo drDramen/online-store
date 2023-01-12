@@ -1,3 +1,4 @@
+import { CartService } from './../../../services/cart-service';
 import { ModalProductImage } from './../../modal-product-image/modal-product-image';
 import { Product } from '@/interfaces/product';
 import { BaseComponent } from '@/templates/base-component';
@@ -17,6 +18,10 @@ export class ProductPageCard extends BaseComponent {
       this.createImagePopup(src);
     });
     this.renderCard(data);
+    this.productImage.getNode().addEventListener('mouseover', () => {
+      const tooltip = new BaseComponent('div', { className: 'tooltip' });
+      tooltip.setContent('Click on me');
+    });
   }
 
   loadSmallPics(pics: Product['pics']) {
@@ -49,10 +54,6 @@ export class ProductPageCard extends BaseComponent {
     heart.getNode().addEventListener('click', () => {
       heart.toggleClass('active');
     });
-
-    const price = new BaseComponent('div', { className: 'price' });
-    price.setContent(`${data.price}$`);
-    priceHeart.append(price);
 
     const rightBlock = new BaseComponent('div', { className: 'right_block' });
     this.append(rightBlock);
@@ -89,6 +90,10 @@ export class ProductPageCard extends BaseComponent {
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     rightBlock.append(buttonsHolder);
+
+    const price = new BaseComponent('div', { className: 'price' });
+    price.setContent(`${data.price}$`);
+    buttonsHolder.append(price);
 
     const cardButtonAmount = new BaseComponent('div', {
       className: 'card__buttons_holder button amount',
@@ -141,7 +146,11 @@ export class ProductPageCard extends BaseComponent {
     });
     cardButtonAddToCart.setContent('Add to Cart');
     cardButtonAddToCart.getNode().addEventListener('click', () => {
+      CartService.addToCart(this.data);
       this.createAddToCartPopup();
+      cardButtonAddToCart.toggleClass('active');
+      cardButtonAddToCart.setContent('Remove');
+      amountOfAddedProduct.setInnerHTML('1');
     });
     buttonsHolder.append(cardButtonAddToCart);
 

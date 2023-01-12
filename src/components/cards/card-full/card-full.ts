@@ -1,4 +1,4 @@
-import { products } from './../../../data/product-data';
+import { products } from '../../../data/product-data';
 import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
@@ -27,12 +27,8 @@ export class CardFull extends BaseComponent {
     heartPrice.append(productPriceHolder);
 
     const productPrice = new BaseComponent('span', { className: 'card__product_price' });
-    productPrice.setContent(`${data.price}`);
+    productPrice.setContent(`${data.price}$`);
     productPriceHolder.append(productPrice);
-
-    const productCurrency = new BaseComponent('span', { className: 'card__product_currency' });
-    productCurrency.setContent('$');
-    productPriceHolder.append(productCurrency);
 
     this.heartToCart = new BaseComponent('span', { className: 'card__heart' });
     heartPrice.append(this.heartToCart);
@@ -97,34 +93,25 @@ export class CardFull extends BaseComponent {
       }
     });
 
-    minusItem.getNode().addEventListener('click', (e) => {
+    minusItem.getNode().addEventListener('click', () => {
       if (this.counter > 0) {
         this.counter--;
         amountOfAddedProduct.setInnerHTML(this.counter.toString());
       }
-      minusItem.removeAttribute('click');
-      e.stopPropagation();
-      e.preventDefault();
-      minusItem.removeClass('hover');
     });
 
-    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder price' });
+    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder sum' });
+    cardPrice.setContent(`${'0'}$`);
     buttonsHolder.append(cardPrice);
-
-    const cardSum = new BaseComponent('div', { className: 'card__buttons_holder sum' });
-    cardSum.setContent('0');
-    cardPrice.append(cardSum);
-
-    const cardCurrency = new BaseComponent('div', {
-      className: 'card__buttons_holder currency',
-    });
-    cardCurrency.setContent('$');
-    cardPrice.append(cardCurrency);
 
     const cardButtonAddToCart = new BaseComponent('div', {
       className: 'card__buttons_holder button add',
     });
     cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(cardButtonAddToCart);
+  }
+
+  changeCardView() {
+    this.toggleClass('card--active');
   }
 }

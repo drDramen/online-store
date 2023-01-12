@@ -20,4 +20,8 @@ export class CartService {
   static calculateAmount() {
     return this.cart.reduce((acc, crnt) => acc + crnt.count, 0);
   }
+
+  static getDataCart() {
+    return this.cart;
+  }
 }
