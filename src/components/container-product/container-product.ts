@@ -8,9 +8,15 @@ export class ProductContainer extends BaseComponent {
   }
 
   updateProduct(data: Product[]) {
+    this.clear();
     data.forEach((product) => {
       const card = new CardFull(product);
       this.append(card);
     });
+  }
+
+  private clear() {
+    this.children = [];
+    this.setInnerHTML('');
   }
 }

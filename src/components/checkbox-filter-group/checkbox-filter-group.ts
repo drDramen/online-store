@@ -2,7 +2,15 @@
 import { BaseComponent } from '@/templates/base-component';
 import { CheckboxInner } from '../checkbox-inner/checkbox-inner';
 import sprite from '../../assets/images/sprite.svg';
+import { FilterGroup } from '@/enums/filter-name';
+import { Product } from '@/interfaces/product';
 
+export type value = {
+  quantityTotal: number;
+  value: string;
+  name: FilterGroup;
+  // name: keyof Pick<Product, 'brandName' | 'category' | 'for'>;
+};
 export class CheckboxFilterGroup extends BaseComponent {
   private toggle: BaseComponent<'button'>;
   private checkboxFilter: BaseComponent<'ul'>;
@@ -10,8 +18,12 @@ export class CheckboxFilterGroup extends BaseComponent {
     private props: {
       title: string;
       name: string;
-      values: any[];
+      valuesAll: value[];
+      valuesFiltered: value[];
+      currentFilters: string[];
     },
+    private cbGetValues: (filterName: string) => string[],
+    private cbRenderProducts: (products: Product[]) => void,
   ) {
     super('div', { className: 'filter-block filter__multy-choice' });
     this.toggle = new BaseComponent('button', {
@@ -26,9 +38,22 @@ export class CheckboxFilterGroup extends BaseComponent {
       className: 'checkbox-filter list-reset',
     });
 
-    this.props.values.forEach((value) => {
+    this.props.valuesAll.forEach((data) => {
+      const { value } = data;
+      const checked = props.currentFilters.includes(value);
+      const outputData = { ...data, quantityFiltered: 0, checked };
+      const filteredDatabyValue = props.valuesFiltered.find((f) => f.value === value);
+
+      if (filteredDatabyValue) {
+        outputData.quantityFiltered = filteredDatabyValue.quantityTotal;
+      }
+
       const listItem = new BaseComponent('li', { className: 'checkbox-filter__item' });
-      const checkboxWrapper = new CheckboxInner(value);
+      const checkboxWrapper = new CheckboxInner(
+        outputData,
+        this.cbGetValues,
+        this.cbRenderProducts,
+      );
       listItem.append(checkboxWrapper);
       this.checkboxFilter.append(listItem);
     });
