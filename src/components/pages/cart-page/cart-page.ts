@@ -192,6 +192,14 @@ export class CartPage extends BaseComponent {
   }
 
   buyCartPopup() {
+    let isCVVValid = false;
+    let nameValid = false;
+    let phoneValid = false;
+    let emailValid = false;
+    let delivery = false;
+    let card = false;
+    let thru = false;
+
     const buyPopup = new BaseComponent('div', { className: 'buy_popup' });
     this.append(buyPopup);
 
@@ -223,10 +231,13 @@ export class CartPage extends BaseComponent {
         if (isValidate) {
           nameSurnameInput.getNode().style.borderColor = 'green';
           nameSurname.getNode().style.color = 'green';
+          nameValid = true;
         } else {
           nameSurnameInput.getNode().style.borderColor = 'red';
           nameSurname.getNode().style.color = 'red';
+          nameValid = false;
         }
+        isFormValid();
       }
     });
 
@@ -249,10 +260,13 @@ export class CartPage extends BaseComponent {
         if (isValidate >= 9 && !value.match(regex) && valuesArray[0] === '+') {
           phoneInput.getNode().style.borderColor = 'green';
           phone.getNode().style.color = 'green';
+          phoneValid = true;
         } else {
           phoneInput.getNode().style.borderColor = 'red';
           phone.getNode().style.color = 'red';
+          phoneValid = false;
         }
+        isFormValid();
       }
     });
 
@@ -273,10 +287,13 @@ export class CartPage extends BaseComponent {
         if (value.match(regex)) {
           emailInput.getNode().style.borderColor = 'green';
           email.getNode().style.color = 'green';
+          emailValid = true;
         } else {
           emailInput.getNode().style.borderColor = 'red';
           email.getNode().style.color = 'red';
+          emailValid = false;
         }
+        isFormValid();
       }
     });
 
@@ -296,10 +313,13 @@ export class CartPage extends BaseComponent {
         if (isValidate) {
           deliveryAddressInput.getNode().style.borderColor = 'green';
           deliveryAddress.getNode().style.color = 'green';
+          delivery = true;
         } else {
           deliveryAddressInput.getNode().style.borderColor = 'red';
           deliveryAddress.getNode().style.color = 'red';
+          delivery = false;
         }
+        isFormValid();
       }
     });
 
@@ -358,10 +378,13 @@ export class CartPage extends BaseComponent {
         if (isValidate === 16 && !value.match(regex)) {
           cardNumberInput.getNode().style.borderColor = 'green';
           cardNumber.getNode().style.color = 'green';
+          card = true;
         } else {
           cardNumberInput.getNode().style.borderColor = 'red';
           cardNumber.getNode().style.color = 'red';
+          card = false;
         }
+        isFormValid();
       }
     });
 
@@ -389,20 +412,23 @@ export class CartPage extends BaseComponent {
 
     validThruInput.getNode().addEventListener('input', (e) => {
       if (e.target instanceof HTMLInputElement) {
-        let { value } = e.target;
+        const { value } = e.target;
         const regex = /^[a-zA-Z]+$/;
         const firstNumber = +value.slice(0, 2);
         const secondNumber = +value.slice(-2);
+        // if (value.length % 2 === 0) {
+        //   value = value + '/';
+        // }
         if (!value.match(regex) && value.length === 4 && firstNumber <= 12 && secondNumber <= 31) {
-          if (value.length % 2 === 0) {
-            value += '/';
-            validThruInput.getNode().style.borderColor = 'green';
-            validThru.getNode().style.color = 'green';
-          }
+          validThruInput.getNode().style.borderColor = 'green';
+          validThru.getNode().style.color = 'green';
+          thru = true;
         } else {
           validThruInput.getNode().style.borderColor = 'red';
           validThru.getNode().style.color = 'red';
+          thru = false;
         }
+        isFormValid();
       }
     });
 
@@ -424,16 +450,26 @@ export class CartPage extends BaseComponent {
         if (value.length === 3 && !value.match(regex) && valueToNumber <= 999) {
           cvvInput.getNode().style.borderColor = 'green';
           cvv.getNode().style.color = 'green';
+          isCVVValid = true;
         } else {
           cvvInput.getNode().style.borderColor = 'red';
           cvv.getNode().style.color = 'red';
+          isCVVValid = false;
         }
+        isFormValid();
       }
     });
 
-    const submitButton = new BaseComponent('span', { className: 'submit_button' });
+    const submitButton = new BaseComponent('button', { className: 'submit_button' });
     submitButton.setContent('Submit');
     buyPopup.append(submitButton);
+    submitButton.getNode().disabled = true;
+
+    function isFormValid() {
+      const isValid =
+        isCVVValid && nameValid && phoneValid && emailValid && delivery && card && thru;
+      submitButton.getNode().disabled = !isValid;
+    }
 
     submitButton.getNode().addEventListener('click', () => {
       this.overlay.remove();
