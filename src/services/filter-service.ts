@@ -64,7 +64,7 @@ export class FilterService {
       case FilterGroup.Category:
         return values.length ? this.filterByCategory(values) : () => true;
       case FilterGroup.For:
-        return values.length ? this.filterByBrandName(values) : () => true;
+        return values.length ? this.filterByFor(values) : () => true;
       case FilterMinMax.Price:
         return values.length ? this.filterByMinMax(values) : () => true;
       case FilterMinMax.AvailableAmount:
