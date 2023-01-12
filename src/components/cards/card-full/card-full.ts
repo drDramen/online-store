@@ -1,14 +1,18 @@
-import { products } from '../../../data/product-data';
 import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
 import './card-full.scss';
 import { Product } from '@/interfaces/product';
+import { CartService } from '@/services/cart-service';
 
 export class CardFull extends BaseComponent {
   private heartToCart: BaseComponent;
   private detailsLink: Link;
-  private counter = 0;
+  private counter =
+    CartService.cartData.getValue().find((item) => item.product.id === this.data.id)?.count ?? 0;
+  cardButtonAddToCart: BaseComponent<'div'>;
+  amountOfAddedProduct: BaseComponent<'span'>;
+  cardPrice: BaseComponent<'div'>;
 
   constructor(private data: Product) {
     super('div', {
@@ -27,7 +31,7 @@ export class CardFull extends BaseComponent {
     heartPrice.append(productPriceHolder);
 
     const productPrice = new BaseComponent('span', { className: 'card__product_price' });
-    productPrice.setContent(`${data.price}$`);
+    productPrice.setContent(`${this.data.price}$`);
     productPriceHolder.append(productPrice);
 
     this.heartToCart = new BaseComponent('span', { className: 'card__heart' });
@@ -37,11 +41,11 @@ export class CardFull extends BaseComponent {
     });
 
     const productImage = new BaseComponent('span', { className: 'card__product_image' });
-    productImage.getNode().style.backgroundImage = `url('${location.origin}/${data.pics[0]}')`;
+    productImage.getNode().style.backgroundImage = `url('${location.origin}/${this.data.pics[0]}')`;
     cardFrame.append(productImage);
 
     this.detailsLink = new Link({
-      href: NameRoute.Product.replace(':id', data.id),
+      href: NameRoute.Product.replace(':id', this.data.id),
       className: 'details_link',
     });
     cardFrame.append(this.detailsLink);
@@ -54,11 +58,11 @@ export class CardFull extends BaseComponent {
     this.append(cardTitle);
 
     const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
-    brandName.setContent(`${data.brandName}`);
+    brandName.setContent(`${this.data.brandName}`);
     cardTitle.append(brandName);
 
     const productName = new BaseComponent('div', { className: 'card__title product_name' });
-    productName.setContent(`${data.productName}`);
+    productName.setContent(`${this.data.productName}`);
     cardTitle.append(productName);
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
@@ -73,42 +77,69 @@ export class CardFull extends BaseComponent {
     minusItem.setContent('-');
     cardButtonAmount.append(minusItem);
 
-    const amountOfAddedProduct = new BaseComponent('span', {
+    this.amountOfAddedProduct = new BaseComponent('span', {
       className: 'added_number',
     });
-    amountOfAddedProduct.setContent('0');
-    cardButtonAmount.append(amountOfAddedProduct);
+
+    this.amountOfAddedProduct.setContent(`${this.counter}`);
+    cardButtonAmount.append(this.amountOfAddedProduct);
 
     const plusItem = new BaseComponent('span', { className: 'plus' });
     plusItem.setContent('+');
     cardButtonAmount.append(plusItem);
 
     plusItem.getNode().addEventListener('click', () => {
-      const temp = products.find((element) => element.id === '0220');
-      if (temp) {
-        if (temp && this.counter < temp.availableAmount) {
-          this.counter++;
-          amountOfAddedProduct.setInnerHTML(this.counter.toString());
+      if (this.counter < this.data.availableAmount) {
+        if (this.counter === 0) {
+          this.cardButtonAddToCart.setContent('Remove');
         }
+        this.counter++;
+        this.amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        this.cardPrice.setContent(`${this.counter * this.data.price}$`);
+        CartService.addToCart(this.data);
       }
     });
 
     minusItem.getNode().addEventListener('click', () => {
       if (this.counter > 0) {
+        if (this.counter === 1) {
+          this.cardButtonAddToCart.setContent('Add to Cart');
+        }
         this.counter--;
-        amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        this.amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        this.cardPrice.setContent(`${this.counter * this.data.price}$`);
+        CartService.decreaseByOne(this.data);
       }
     });
 
-    const cardPrice = new BaseComponent('div', { className: 'card__buttons_holder sum' });
-    cardPrice.setContent(`${'0'}$`);
-    buttonsHolder.append(cardPrice);
+    this.cardPrice = new BaseComponent('div', { className: 'card__buttons_holder sum' });
+    this.cardPrice.setContent(`${this.counter * this.data.price}$`);
+    buttonsHolder.append(this.cardPrice);
 
-    const cardButtonAddToCart = new BaseComponent('div', {
+    this.cardButtonAddToCart = new BaseComponent('div', {
       className: 'card__buttons_holder button add',
     });
-    cardButtonAddToCart.setContent('Add to Cart');
-    buttonsHolder.append(cardButtonAddToCart);
+    this.cardButtonAddToCart.setContent(`${this.counter ? 'Remove' : 'Add to Cart'}`);
+    this.cardButtonAddToCart
+      .getNode()
+      .addEventListener('click', this.setCartButtonListener.bind(this));
+
+    buttonsHolder.append(this.cardButtonAddToCart);
+  }
+
+  setCartButtonListener() {
+    if (this.counter > 0) {
+      this.counter = 0;
+      CartService.removeFromCart(this.data);
+      this.cardButtonAddToCart.setContent('Add to Cart');
+    } else {
+      this.counter += 1;
+      CartService.addToCart(this.data);
+      this.cardButtonAddToCart.setContent('Remove');
+    }
+
+    this.amountOfAddedProduct.setContent(`${this.counter}`);
+    this.cardPrice.setContent(`${this.counter * this.data.price}$`);
   }
 
   changeCardView() {

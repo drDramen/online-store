@@ -1,3 +1,4 @@
+import { CartService } from '@/services/cart-service';
 import { BaseComponent } from '@/templates/base-component';
 import './total-sum.scss';
 
@@ -22,5 +23,16 @@ export class HeaderTotalSum extends BaseComponent {
     this.totalSumCurrency = new BaseComponent('span', { className: 'total_sum currency' });
     this.totalSumCurrency.setContent('$');
     this.append(this.totalSumCurrency);
+
+    CartService.sumInCart.subscribe(this.updateSum);
+  }
+
+  updateSum = (value: number) => {
+    this.totalSumAmount.setContent(`${value}`);
+  };
+
+  destroy() {
+    CartService.sumInCart.unsubscribe(this.updateSum);
+    super.destroy();
   }
 }

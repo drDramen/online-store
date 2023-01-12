@@ -39,19 +39,3 @@ class Observable<ListenerType> {
 }
 
 export default Observable;
-
-export class Singleton {
-  count = new Observable<number>(0);
-
-  getCounter() {
-    return this.count;
-  }
-
-  incCounter() {
-    this.count.notify((prev) => prev + 1);
-  }
-
-  resetCounter() {
-    this.count.notify(0);
-  }
-}
