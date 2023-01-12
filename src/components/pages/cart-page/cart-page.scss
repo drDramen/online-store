@@ -229,7 +229,7 @@
 }
 
 .title {
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 
 .holder {
@@ -246,10 +246,30 @@
   outline: none;
 }
 
-.payment_system {
-  width: 90px;
-  height: 90px;
-  background-image: url('../../../assets/images/payment_systems/visa-svgrepo-com\ 1.png');
+.payment_systems {
+  display: flex;
+}
+
+.payment_system_1 {
+  width: 100px;
+  height: 80px;
+  background-image: url('../../../assets/images/payment_systems/visa.png');
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+
+.payment_system_2 {
+  width: 100px;
+  height: 80px;
+  background-image: url('../../../assets/images/payment_systems/mastercard.png');
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+
+.payment_system_3 {
+  width: 100px;
+  height: 80px;
+  background-image: url('../../../assets/images/payment_systems/paypal.png');
   background-repeat: no-repeat;
   visibility: hidden;
 }

@@ -323,11 +323,39 @@ export class CartPage extends BaseComponent {
         const valuesArray = value.split('');
         const isValidate = valuesArray.length;
         const regex = /^[a-zA-Z]+$/;
+        if (value.charAt(0) === '4') {
+          paymentSystemOne.getNode().style.backgroundImage =
+            '../../../assets/images/payment_systems/visa.png';
+          paymentSystemOne.getNode().style.visibility = 'visible';
+          paymentSystemTwo.getNode().style.visibility = 'hidden';
+          paymentSystemThree.getNode().style.visibility = 'hidden';
+          paymentSystemOne.getNode().style.transform = 'translate(100px, 0px)';
+        }
+        if (valuesArray[0] === '5') {
+          paymentSystemTwo.getNode().style.backgroundImage =
+            '../../../assets/images/payment_systems/mastercard.png';
+          paymentSystemTwo.getNode().style.visibility = 'visible';
+          paymentSystemThree.getNode().style.visibility = 'hidden';
+          paymentSystemOne.getNode().style.visibility = 'hidden';
+        }
+        if (
+          valuesArray[0] === '0' ||
+          valuesArray[0] === '1' ||
+          valuesArray[0] === '2' ||
+          valuesArray[0] === '3' ||
+          valuesArray[0] === '6' ||
+          valuesArray[0] === '7' ||
+          valuesArray[0] === '8' ||
+          valuesArray[0] === '9'
+        ) {
+          paymentSystemThree.getNode().style.backgroundImage =
+            '../../../assets/images/payment_systems/paypal.png';
+          paymentSystemThree.getNode().style.visibility = 'visible';
+          paymentSystemTwo.getNode().style.visibility = 'hidden';
+          paymentSystemOne.getNode().style.visibility = 'hidden';
+          paymentSystemThree.getNode().style.transform = 'translate(-100px, 0px)';
+        }
         if (isValidate === 16 && !value.match(regex)) {
-          if (valuesArray[0] === '4') {
-            paymentSystem.getNode().style.backgroundImage =
-              '../../../assets/images/payment_systems/visa-svgrepo-com 1.png';
-          }
           cardNumberInput.getNode().style.borderColor = 'green';
           cardNumber.getNode().style.color = 'green';
         } else {
@@ -337,8 +365,17 @@ export class CartPage extends BaseComponent {
       }
     });
 
-    const paymentSystem = new BaseComponent('div', { className: 'payment_system' });
-    buyPopup.append(paymentSystem);
+    const paymentSystems = new BaseComponent('div', { className: 'payment_systems' });
+    buyPopup.append(paymentSystems);
+
+    const paymentSystemOne = new BaseComponent('div', { className: 'payment_system_1' });
+    paymentSystems.append(paymentSystemOne);
+
+    const paymentSystemTwo = new BaseComponent('div', { className: 'payment_system_2' });
+    paymentSystems.append(paymentSystemTwo);
+
+    const paymentSystemThree = new BaseComponent('div', { className: 'payment_system_3' });
+    paymentSystems.append(paymentSystemThree);
 
     const validThruHolder = new BaseComponent('div', { className: 'holder' });
     buyPopup.append(validThruHolder);
@@ -356,15 +393,12 @@ export class CartPage extends BaseComponent {
         const regex = /^[a-zA-Z]+$/;
         const firstNumber = +value.slice(0, 2);
         const secondNumber = +value.slice(-2);
-        if (value.length > 4) {
-          value.substring(0, 4);
-        }
         if (!value.match(regex) && value.length === 4 && firstNumber <= 12 && secondNumber <= 31) {
-          if (firstNumber.toString().length === 2) {
-            value = value + '/';
+          if (value.length % 2 === 0) {
+            value += '/';
+            validThruInput.getNode().style.borderColor = 'green';
+            validThru.getNode().style.color = 'green';
           }
-          validThruInput.getNode().style.borderColor = 'green';
-          validThru.getNode().style.color = 'green';
         } else {
           validThruInput.getNode().style.borderColor = 'red';
           validThru.getNode().style.color = 'red';
@@ -385,10 +419,9 @@ export class CartPage extends BaseComponent {
     cvvInput.getNode().addEventListener('input', (e) => {
       if (e.target instanceof HTMLInputElement) {
         const { value } = e.target;
-        const valuesArray = value.split('');
-        const isValidate = valuesArray.length;
         const regex = /^[a-zA-Z]+$/;
-        if (isValidate === 3 && !value.match(regex)) {
+        const valueToNumber = +value;
+        if (value.length === 3 && !value.match(regex) && valueToNumber <= 999) {
           cvvInput.getNode().style.borderColor = 'green';
           cvv.getNode().style.color = 'green';
         } else {
