@@ -269,8 +269,6 @@ export class CartPage extends BaseComponent {
     emailInput.getNode().addEventListener('input', (e) => {
       if (e.target instanceof HTMLInputElement) {
         const { value } = e.target;
-        //const valuesArray = value.split('');
-        //const isValidate = valuesArray.length;
         const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
         if (value.match(regex)) {
           emailInput.getNode().style.borderColor = 'green';
@@ -326,6 +324,10 @@ export class CartPage extends BaseComponent {
         const isValidate = valuesArray.length;
         const regex = /^[a-zA-Z]+$/;
         if (isValidate === 16 && !value.match(regex)) {
+          if (valuesArray[0] === '4') {
+            paymentSystem.getNode().style.backgroundImage =
+              '../../../assets/images/payment_systems/visa-svgrepo-com 1.png';
+          }
           cardNumberInput.getNode().style.borderColor = 'green';
           cardNumber.getNode().style.color = 'green';
         } else {
@@ -345,8 +347,30 @@ export class CartPage extends BaseComponent {
     validThru.setContent('Valid Thru');
     validThruHolder.append(validThru);
 
-    const validThruInput = new BaseComponent('input', { className: 'input' });
+    const validThruInput = new BaseComponent('input', { maxLength: 4, className: 'input' });
     validThruHolder.append(validThruInput);
+
+    validThruInput.getNode().addEventListener('input', (e) => {
+      if (e.target instanceof HTMLInputElement) {
+        let { value } = e.target;
+        const regex = /^[a-zA-Z]+$/;
+        const firstNumber = +value.slice(0, 2);
+        const secondNumber = +value.slice(-2);
+        if (value.length > 4) {
+          value.substring(0, 4);
+        }
+        if (!value.match(regex) && value.length === 4 && firstNumber <= 12 && secondNumber <= 31) {
+          if (firstNumber.toString().length === 2) {
+            value = value + '/';
+          }
+          validThruInput.getNode().style.borderColor = 'green';
+          validThru.getNode().style.color = 'green';
+        } else {
+          validThruInput.getNode().style.borderColor = 'red';
+          validThru.getNode().style.color = 'red';
+        }
+      }
+    });
 
     const cvvHolder = new BaseComponent('div', { className: 'holder' });
     buyPopup.append(cvvHolder);
@@ -355,7 +379,7 @@ export class CartPage extends BaseComponent {
     cvv.setContent('CVV');
     cvvHolder.append(cvv);
 
-    const cvvInput = new BaseComponent('input', { className: 'input' });
+    const cvvInput = new BaseComponent('input', { maxLength: 3, className: 'input' });
     cvvHolder.append(cvvInput);
 
     cvvInput.getNode().addEventListener('input', (e) => {

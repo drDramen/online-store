@@ -51,13 +51,6 @@ export class TopMenu extends BaseComponent {
     const dropDownMenuCategory = new BaseComponent('ul', { className: 'drop_down_menu category' });
     this.dropDownCategory.append(dropDownMenuCategory);
 
-    // const menuItem = new BaseComponent('li', { className: 'menu_item' });
-
-    // for (let i = 0; i <= 11; i++) {
-    //   menuItem.setContent('Toner');
-    //   dropDownMenu.append(menuItem);
-    // }
-
     const menuItemCleanser = new BaseComponent('li', { className: 'menu_item cleanser' });
     menuItemCleanser.setContent('Cleanser');
     dropDownMenuCategory.append(menuItemCleanser);
@@ -106,6 +99,10 @@ export class TopMenu extends BaseComponent {
       menuItemLipCare.toggleClass('active');
       menuItemSunscreen.toggleClass('active');
     });
+
+    const found = new BaseComponent('div', { className: 'top_menu__left__item found' });
+    found.setContent('Found: 0');
+    topMenuLeft.append(found);
 
     const topMenuRight = new BaseComponent('div', { className: 'top_menu__right' });
     this.container.append(topMenuRight);

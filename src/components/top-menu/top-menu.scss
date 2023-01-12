@@ -1,5 +1,5 @@
 .top_menu {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 38px;
   font-family: var(--font-family-main);
   user-select: none;
@@ -20,7 +20,7 @@
       transition: color var(--transition);
 
       &:not(:first-child) {
-        margin-left: 57px;
+        margin-left: 50px;
       }
 
       &:hover {
@@ -96,7 +96,7 @@
       transition: color 0.14s ease-in-out;
 
       &:not(:first-child) {
-        margin-left: 57px;
+        margin-left: 50px;
       }
 
       &:hover:nth-child(1),

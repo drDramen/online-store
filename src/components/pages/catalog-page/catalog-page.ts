@@ -47,6 +47,14 @@ export class CatalogPage extends BaseComponent {
     showLessMoreButton.setContent('Show Less');
     bottomButtons.append(showLessMoreButton);
 
+    const paginationButtons = new BaseComponent('div', { className: 'pagination_buttons' });
+    bottomButtons.append(paginationButtons);
+
+    for (let i = 1; i <= 5; i++) {
+      const paginationCircle = new BaseComponent('span', { className: 'pagination_circle' });
+      paginationButtons.append(paginationCircle);
+    }
+
     const goToCartLink = new Link({ href: NameRoute.Cart });
     bottomButtons.append(goToCartLink);
 
