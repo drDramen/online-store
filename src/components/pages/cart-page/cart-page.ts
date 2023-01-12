@@ -3,28 +3,36 @@ import { Product } from './../../../interfaces/product';
 import { Container } from '@/components/container/container';
 import { BaseComponent } from '@/templates/base-component';
 import './cart-page.scss';
-import { products } from './../../../data/product-data';
 import { Overlay } from '@/components/overlay/overlay';
 import { NameRoute } from '@/enums/name-route';
 import { Router } from '@/router/router';
+import { CartItem } from '@/interfaces/cartData';
 
 export class CartPage extends BaseComponent {
   private overlay: Overlay = new Overlay();
   private container: Container;
-  private counter = 0;
+  private productContainer: BaseComponent<'div'>;
+  private finalSumAllProducts: BaseComponent<'div'> = new BaseComponent('div', {
+    className: 'final_sum__all_products',
+  });
 
   constructor(private props: Record<string, string>) {
     super('div', { className: 'cart' });
 
     this.container = new Container('cart__container');
     this.append(this.container);
-    this.renderCards(CartService.getDataCart());
+    this.productContainer = new BaseComponent('div', { className: 'cart__product-container' });
+    this.container.append(this.productContainer);
+    this.renderCards(CartService.cartData.getValue());
 
     this.promocodes();
 
     this.finalSum();
 
     this.buy();
+
+    CartService.cartData.subscribe(this.renderCards);
+    CartService.sumInCart.subscribe(this.updateSum);
   }
 
   buy() {
@@ -93,13 +101,12 @@ export class CartPage extends BaseComponent {
     finalSumText.setContent('Final sum of your purchase');
     finalSum.append(finalSumText);
 
-    const finalSumAllProducts = new BaseComponent('div', { className: 'final_sum__all_products' });
-    finalSumAllProducts.setContent('sum here');
-    finalSum.append(finalSumAllProducts);
+    this.finalSumAllProducts.setContent(`${CartService.sumInCart.getValue()}$`);
+    finalSum.append(this.finalSumAllProducts);
 
     const removeItem = new BaseComponent('span', { className: 'remove_item' });
     removeItem.getNode().addEventListener('click', () => {
-      finalSumAllProducts.setContent('0');
+      CartService.removeAllFromCart();
     });
     finalSum.append(removeItem);
 
@@ -108,6 +115,7 @@ export class CartPage extends BaseComponent {
 
   createItem(cartItem: { product: Product; count: number }) {
     const { product, count } = cartItem;
+    let counter = count;
     const addedItem = new BaseComponent('div', { className: 'added_item' });
     this.container.append(addedItem);
 
@@ -145,51 +153,51 @@ export class CartPage extends BaseComponent {
     const amountOfAddedProduct = new BaseComponent('span', {
       className: 'added_number',
     });
-    amountOfAddedProduct.setContent('0');
+    amountOfAddedProduct.setContent(counter.toString());
     cardButtonAmount.append(amountOfAddedProduct);
 
     const plusItem = new BaseComponent('span', { className: 'plus' });
     plusItem.setContent('+');
     cardButtonAmount.append(plusItem);
 
-    plusItem.getNode().addEventListener('click', () => {
-      const temp = products.find((element) => element.id === '0220');
-      if (temp) {
-        if (temp && this.counter < temp.availableAmount) {
-          this.counter++;
-          amountOfAddedProduct.setInnerHTML(this.counter.toString());
-        }
-      }
-    });
-
-    minusItem.getNode().addEventListener('click', () => {
-      if (this.counter > 0) {
-        this.counter--;
-        amountOfAddedProduct.setInnerHTML(this.counter.toString());
-      }
-    });
-
     const quantity = new BaseComponent('div', { className: 'product_quantity' });
-    quantity.setContent(`${count}`);
+    quantity.setContent(`${count * product.price}$`);
     addedItem.append(quantity);
 
     const removeItem = new BaseComponent('span', { className: 'remove_item' });
     removeItem.getNode().addEventListener('click', () => {
       CartService.removeFromCart(product);
-      this.renderCards(CartService.getDataCart());
+    });
+
+    plusItem.getNode().addEventListener('click', () => {
+      if (counter < product.availableAmount) {
+        counter++;
+        amountOfAddedProduct.setContent(counter.toString());
+        quantity.setContent(`${counter * product.price}$`);
+        CartService.addToCart(product);
+      }
+    });
+
+    minusItem.getNode().addEventListener('click', () => {
+      if (counter > 0) {
+        counter--;
+        amountOfAddedProduct.setContent(counter.toString());
+        quantity.setContent(`${counter * product.price}$`);
+        CartService.decreaseByOne(product);
+      }
     });
     addedItem.append(removeItem);
 
     return addedItem;
   }
 
-  renderCards(cartData: { product: Product; count: number }[]) {
-    this.container.setInnerHTML('');
+  renderCards = (cartData: CartItem[]) => {
+    this.productContainer.setInnerHTML('');
     cartData.forEach((item) => {
       const card = this.createItem(item);
-      this.container.append(card);
+      this.productContainer.append(card);
     });
-  }
+  };
 
   buyCartPopup() {
     let isCVVValid = false;
@@ -535,5 +543,15 @@ export class CartPage extends BaseComponent {
     }, 2000);
 
     return thanksPopup;
+  }
+
+  updateSum = (value: number) => {
+    this.finalSumAllProducts.setContent(`${value}$`);
+  };
+
+  destroy() {
+    CartService.sumInCart.unsubscribe(this.updateSum);
+    CartService.cartData.unsubscribe(this.renderCards);
+    super.destroy();
   }
 }

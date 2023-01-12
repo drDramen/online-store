@@ -10,7 +10,8 @@ import { Overlay } from '@/components/overlay/overlay';
 export class ProductPageCard extends BaseComponent {
   private overlay: Overlay = new Overlay();
   private productImage: ModalProductImage;
-  private counter = 0;
+  private counter =
+    CartService.cartData.getValue().find((item) => item.product.id === this.data.id)?.count ?? 0;
 
   constructor(private data: Product) {
     super('div', { className: 'wrapper' });
@@ -107,7 +108,7 @@ export class ProductPageCard extends BaseComponent {
     const amountOfAddedProduct = new BaseComponent('span', {
       className: 'added_number',
     });
-    amountOfAddedProduct.setInnerHTML('0');
+    amountOfAddedProduct.setInnerHTML(`${this.counter}`);
     cardButtonAmount.append(amountOfAddedProduct);
 
     const plusItem = new BaseComponent('span', { className: 'plus' });
@@ -116,15 +117,25 @@ export class ProductPageCard extends BaseComponent {
 
     plusItem.getNode().addEventListener('click', () => {
       if (this.counter < this.data.availableAmount) {
+        if (this.counter === 0) {
+          cardButtonAddToCart.setContent('Remove');
+        }
         this.counter++;
         amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        cardSum.setContent(`${this.counter * this.data.price}`);
+        CartService.addToCart(this.data);
       }
     });
 
     minusItem.getNode().addEventListener('click', () => {
       if (this.counter > 0) {
+        if (this.counter === 1) {
+          cardButtonAddToCart.setContent('Add to Cart');
+        }
         this.counter--;
         amountOfAddedProduct.setInnerHTML(this.counter.toString());
+        cardSum.setContent(`${this.counter * this.data.price}`);
+        CartService.decreaseByOne(this.data);
       }
     });
 
@@ -146,11 +157,20 @@ export class ProductPageCard extends BaseComponent {
     });
     cardButtonAddToCart.setContent('Add to Cart');
     cardButtonAddToCart.getNode().addEventListener('click', () => {
-      CartService.addToCart(this.data);
-      this.createAddToCartPopup();
+      if (this.counter > 0) {
+        this.counter = 0;
+        CartService.removeFromCart(this.data);
+        cardButtonAddToCart.setContent('Add to Cart');
+      } else {
+        this.counter += 1;
+        CartService.addToCart(this.data);
+        cardButtonAddToCart.setContent('Remove');
+        this.createAddToCartPopup();
+      }
       cardButtonAddToCart.toggleClass('active');
-      cardButtonAddToCart.setContent('Remove');
-      amountOfAddedProduct.setInnerHTML('1');
+
+      amountOfAddedProduct.setContent(`${this.counter}`);
+      cardSum.setContent(`${this.counter * this.data.price}`);
     });
     buttonsHolder.append(cardButtonAddToCart);
 
