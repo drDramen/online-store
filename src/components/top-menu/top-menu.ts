@@ -132,20 +132,29 @@ export class TopMenu extends BaseComponent {
     this.dropDownSort = new BaseComponent('span', { className: 'drop_down' });
     sort.append(this.dropDownSort);
 
-    const dropDownMenuSort = new BaseComponent('ul', { className: 'drop_down_menu sort' });
+    const dropDownMenuSort = new BaseComponent('div', { className: 'drop_down_menu sort' });
     this.dropDownSort.append(dropDownMenuSort);
 
-    const menuItemPriceDown = new BaseComponent('li', { className: 'menu_item price_down' });
+    const menuItemPriceDown = new BaseComponent('span', { className: 'menu_item price_down' });
     menuItemPriceDown.setContent('by Price Down');
     dropDownMenuSort.append(menuItemPriceDown);
-    const menuItemPriceUp = new BaseComponent('li', { className: 'menu_item price_up' });
+    const menuItemPriceUp = new BaseComponent('span', { className: 'menu_item price_up' });
     menuItemPriceUp.setContent('by Price Up');
     dropDownMenuSort.append(menuItemPriceUp);
+
+    const az = new BaseComponent('span', { className: 'menu_item az' });
+    az.setContent('A-Z');
+    dropDownMenuSort.append(az);
+    const za = new BaseComponent('span', { className: 'menu_item za' });
+    za.setContent('Z-A');
+    dropDownMenuSort.append(za);
 
     this.dropDownSort.getNode().addEventListener('click', () => {
       dropDownMenuSort.toggleClass('active');
       menuItemPriceDown.toggleClass('active');
       menuItemPriceUp.toggleClass('active');
+      az.toggleClass('active');
+      za.toggleClass('active');
     });
 
     const search = new BaseComponent('div', { className: 'top_menu__right__item search' });
