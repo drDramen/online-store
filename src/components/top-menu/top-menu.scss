@@ -134,15 +134,14 @@
 
       .drop_down_menu {
         &.sort {
-          transform: translate(-88px, 40px);
-          padding: 0px 60px 0px 60px;
-          list-style: none;
+          transform: translate(-128px, 40px);
+          padding: 0px 80px 0px 80px;
           background-color: rgba(156, 248, 231, 0.9);
-          z-index: 500;
+          z-index: 1000;
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-size: 20px;
+          font-size: 18px;
           border-radius: 10px;
           visibility: hidden;
 
@@ -154,8 +153,11 @@
             color: var(--color-black);
             transition: color var(--transition);
             visibility: hidden;
-            z-index: 600;
-            display: inline-block;
+            z-index: 2000;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 200px;
 
             &:not(:last-child) {
               margin-top: 5px;

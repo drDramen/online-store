@@ -132,20 +132,29 @@ export class TopMenu extends BaseComponent {
     this.dropDownSort = new BaseComponent('span', { className: 'drop_down' });
     sort.append(this.dropDownSort);
 
-    const dropDownMenuSort = new BaseComponent('ul', { className: 'drop_down_menu sort' });
+    const dropDownMenuSort = new BaseComponent('div', { className: 'drop_down_menu sort' });
     this.dropDownSort.append(dropDownMenuSort);
 
-    const menuItemPriceDown = new BaseComponent('li', { className: 'menu_item price_down' });
+    const menuItemPriceDown = new BaseComponent('span', { className: 'menu_item price_down' });
     menuItemPriceDown.setContent('by Price Down');
     dropDownMenuSort.append(menuItemPriceDown);
-    const menuItemPriceUp = new BaseComponent('li', { className: 'menu_item price_up' });
+    const menuItemPriceUp = new BaseComponent('span', { className: 'menu_item price_up' });
     menuItemPriceUp.setContent('by Price Up');
     dropDownMenuSort.append(menuItemPriceUp);
+
+    const az = new BaseComponent('span', { className: 'menu_item az' });
+    az.setContent('A-Z');
+    dropDownMenuSort.append(az);
+    const za = new BaseComponent('span', { className: 'menu_item za' });
+    za.setContent('Z-A');
+    dropDownMenuSort.append(za);
 
     this.dropDownSort.getNode().addEventListener('click', () => {
       dropDownMenuSort.toggleClass('active');
       menuItemPriceDown.toggleClass('active');
       menuItemPriceUp.toggleClass('active');
+      az.toggleClass('active');
+      za.toggleClass('active');
     });
 
     const search = new BaseComponent('div', { className: 'top_menu__right__item search' });
@@ -164,7 +173,8 @@ export class TopMenu extends BaseComponent {
   }
 
   changeViewButton() {
-    for (let i = 0; i < 8; i++) {
+    const numberOfButtonElements = 8;
+    for (let i = 0; i < numberOfButtonElements; i++) {
       const changeViewElement = new BaseComponent('span', { className: 'element' });
       this.changeView.append(changeViewElement);
       this.changeView.getNode().addEventListener('click', () => {
@@ -177,19 +187,23 @@ export class TopMenu extends BaseComponent {
   }
 
   changeColumnsViewButton() {
-    for (let i = 0; i < 12; i++) {
+    const numberOfButtonElements = 12;
+    for (let i = 0; i < numberOfButtonElements; i++) {
       const changeViewElement = new BaseComponent('span', { className: 'element' });
       this.changeColumnsView.append(changeViewElement);
     }
     this.changeColumnsView.getNode().addEventListener('click', () => {
-      let newValue = 4;
-      const oldValue = +getComputedStyle(document.documentElement).getPropertyValue(
+      let defaultNumberOfColumns = 4;
+      const previousNumberOfColumns = +getComputedStyle(document.documentElement).getPropertyValue(
         '--product-column',
       );
-      if (oldValue !== 1) {
-        newValue = oldValue - 1;
+      if (previousNumberOfColumns !== 1) {
+        defaultNumberOfColumns = previousNumberOfColumns - 1;
       }
-      document.documentElement.style.setProperty('--product-column', newValue.toString());
+      document.documentElement.style.setProperty(
+        '--product-column',
+        defaultNumberOfColumns.toString(),
+      );
     });
   }
 }

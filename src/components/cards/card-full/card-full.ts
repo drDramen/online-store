@@ -10,9 +10,9 @@ export class CardFull extends BaseComponent {
   private detailsLink: Link;
   private counter =
     CartService.cartData.getValue().find((item) => item.product.id === this.data.id)?.count ?? 0;
-  cardButtonAddToCart: BaseComponent<'div'>;
-  amountOfAddedProduct: BaseComponent<'span'>;
-  cardPrice: BaseComponent<'div'>;
+  private cardButtonAddToCart: BaseComponent<'div'>;
+  private amountOfAddedProduct: BaseComponent<'span'>;
+  private cardPrice: BaseComponent<'div'>;
 
   constructor(private data: Product) {
     super('div', {
@@ -52,18 +52,9 @@ export class CardFull extends BaseComponent {
 
     const productDetails = new BaseComponent('span', { className: 'card__details' });
     productDetails.setContent('Details');
-    this.detailsLink.append(productDetails);
-
-    const cardTitle = new BaseComponent('div', { className: 'card__title' });
-    this.append(cardTitle);
-
-    const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
-    brandName.setContent(`${this.data.brandName}`);
-    cardTitle.append(brandName);
-
-    const productName = new BaseComponent('div', { className: 'card__title product_name' });
-    productName.setContent(`${this.data.productName}`);
-    cardTitle.append(productName);
+    this.detailsLink.append(productDetails);    
+    
+    this.createCardTitle();
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     this.append(buttonsHolder);
@@ -140,6 +131,19 @@ export class CardFull extends BaseComponent {
 
     this.amountOfAddedProduct.setContent(`${this.counter}`);
     this.cardPrice.setContent(`${this.counter * this.data.price}$`);
+  }
+  
+  createCardTitle() {
+    const cardTitle = new BaseComponent('div', { className: 'card__title' });
+    this.append(cardTitle);
+
+    const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
+    brandName.setContent(`${this.data.brandName}`);
+    cardTitle.append(brandName);
+
+    const productName = new BaseComponent('div', { className: 'card__title product_name' });
+    productName.setContent(`${this.data.productName}`);
+    cardTitle.append(productName);
   }
 
   changeCardView() {
