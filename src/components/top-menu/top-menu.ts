@@ -173,7 +173,8 @@ export class TopMenu extends BaseComponent {
   }
 
   changeViewButton() {
-    for (let i = 0; i < 8; i++) {
+    const numberOfButtonElements = 8;
+    for (let i = 0; i < numberOfButtonElements; i++) {
       const changeViewElement = new BaseComponent('span', { className: 'element' });
       this.changeView.append(changeViewElement);
       this.changeView.getNode().addEventListener('click', () => {
@@ -186,7 +187,8 @@ export class TopMenu extends BaseComponent {
   }
 
   changeColumnsViewButton() {
-    for (let i = 0; i < 12; i++) {
+    const numberOfButtonElements = 12;
+    for (let i = 0; i < numberOfButtonElements; i++) {
       const changeViewElement = new BaseComponent('span', { className: 'element' });
       this.changeColumnsView.append(changeViewElement);
     }
