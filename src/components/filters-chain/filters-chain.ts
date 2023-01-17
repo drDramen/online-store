@@ -3,7 +3,7 @@ import { BaseComponent } from '@/templates/base-component';
 import './filters-chain.scss';
 
 export class FiltersChain extends BaseComponent {
-  container: Container;
+  private container: Container;
   private filterItem: BaseComponent;
   private cross: BaseComponent;
 
