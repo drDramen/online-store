@@ -194,11 +194,11 @@ export class TopMenu extends BaseComponent {
     }
     this.changeColumnsView.getNode().addEventListener('click', () => {
       let defaultNumberOfColumns = 4;
-      const oldValue = +getComputedStyle(document.documentElement).getPropertyValue(
+      const previousNumberOfColumns = +getComputedStyle(document.documentElement).getPropertyValue(
         '--product-column',
       );
-      if (oldValue !== 1) {
-        defaultNumberOfColumns = oldValue - 1;
+      if (previousNumberOfColumns !== 1) {
+        defaultNumberOfColumns = previousNumberOfColumns - 1;
       }
       document.documentElement.style.setProperty(
         '--product-column',
