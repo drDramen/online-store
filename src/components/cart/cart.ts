@@ -2,11 +2,13 @@ import { NameRoute } from '@/enums/name-route';
 import { Link } from '@/templates/link';
 import { BaseComponent } from '@/templates/base-component';
 import './cart.scss';
+import { CartService } from '@/services/cart-service';
 
 const cartLink = { href: NameRoute.Cart };
 
 export class HeaderCart extends BaseComponent {
   private cartLink: Link;
+  private cartProductsAmount: BaseComponent<'span'>;
 
   constructor() {
     super('div', {
@@ -28,12 +30,23 @@ export class HeaderCart extends BaseComponent {
     });
     this.cartLink.append(cartProductsCircle);
 
-    const cartProductsAmount = new BaseComponent('span', {
+    this.cartProductsAmount = new BaseComponent('span', {
       className: 'cart__products_amount',
     });
-    cartProductsAmount.setContent('0');
-    cartProductsCircle.append(cartProductsAmount);
+    this.cartProductsAmount.setContent('0');
+    cartProductsCircle.append(this.cartProductsAmount);
+
+    CartService.amountInCart.subscribe(this.updateAmount);
 
     Link.addNavigationLink(this.cartLink);
+  }
+
+  updateAmount = (value: number) => {
+    this.cartProductsAmount.setContent(`${value}`);
+  };
+
+  destroy() {
+    CartService.amountInCart.unsubscribe(this.updateAmount);
+    super.destroy();
   }
 }

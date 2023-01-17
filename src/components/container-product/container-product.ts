@@ -8,20 +8,15 @@ export class ProductContainer extends BaseComponent {
   }
 
   updateProduct(data: Product[]) {
+    this.clear();
     data.forEach((product) => {
       const card = new CardFull(product);
       this.append(card);
     });
   }
 
-  changeWrapperDivisions() {
-    let newValue = 4;
-    const oldValue = +getComputedStyle(document.documentElement).getPropertyValue(
-      '--product-column',
-    );
-    if (oldValue !== 1) {
-      newValue = oldValue - 1;
-      document.documentElement.style.setProperty('--product-column', newValue.toString());
-    }
+  private clear() {
+    this.children = [];
+    this.setInnerHTML('');
   }
 }
