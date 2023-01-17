@@ -193,14 +193,17 @@ export class TopMenu extends BaseComponent {
       this.changeColumnsView.append(changeViewElement);
     }
     this.changeColumnsView.getNode().addEventListener('click', () => {
-      let newValue = 4;
+      let defaultNumberOfColumns = 4;
       const oldValue = +getComputedStyle(document.documentElement).getPropertyValue(
         '--product-column',
       );
       if (oldValue !== 1) {
-        newValue = oldValue - 1;
+        defaultNumberOfColumns = oldValue - 1;
       }
-      document.documentElement.style.setProperty('--product-column', newValue.toString());
+      document.documentElement.style.setProperty(
+        '--product-column',
+        defaultNumberOfColumns.toString(),
+      );
     });
   }
 }
