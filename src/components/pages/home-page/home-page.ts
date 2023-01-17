@@ -36,7 +36,7 @@ export class HomePage extends BaseComponent {
 
     this.advantages = new BaseComponent('div', { className: 'home-page__advantages advantages' });
     this.shopNowButton = new Link({
-      href: '/catalog',
+      href: NameRoute.Catalog,
       className: 'home-page__button',
       textContent: 'Shop Now',
     });
