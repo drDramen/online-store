@@ -21,8 +21,6 @@ export class Header extends BaseComponent {
 
     this.container = new Container('header__container');
 
-    //this.container.setContent(`Header`);
-
     this.append(this.container);
 
     this.container.append(this.logo);
