@@ -43,7 +43,10 @@ export class CatalogPage extends BaseComponent {
     const paginationButtons = new BaseComponent('div', { className: 'pagination_buttons' });
     bottomButtons.append(paginationButtons);
 
-    for (let i = 1; i <= 5; i++) {
+    const numberOfPaginationCircles = 5;
+    const numberPaginationStartsWith = 1;
+
+    for (let i = numberPaginationStartsWith; i <= numberOfPaginationCircles; i++) {
       const paginationCircle = new BaseComponent('span', { className: 'pagination_circle' });
       paginationButtons.append(paginationCircle);
     }
