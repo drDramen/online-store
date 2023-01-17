@@ -53,16 +53,7 @@ export class CardFull extends BaseComponent {
     productDetails.setContent('Details');
     this.detailsLink.append(productDetails);
 
-    const cardTitle = new BaseComponent('div', { className: 'card__title' });
-    this.append(cardTitle);
-
-    const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
-    brandName.setContent(`${data.brandName}`);
-    cardTitle.append(brandName);
-
-    const productName = new BaseComponent('div', { className: 'card__title product_name' });
-    productName.setContent(`${data.productName}`);
-    cardTitle.append(productName);
+    this.createCardTitle();
 
     const buttonsHolder = new BaseComponent('div', { className: 'card__buttons_holder' });
     this.append(buttonsHolder);
@@ -112,6 +103,19 @@ export class CardFull extends BaseComponent {
     });
     this.cardButtonAddToCart.setContent('Add to Cart');
     buttonsHolder.append(this.cardButtonAddToCart);
+  }
+
+  createCardTitle() {
+    const cardTitle = new BaseComponent('div', { className: 'card__title' });
+    this.append(cardTitle);
+
+    const brandName = new BaseComponent('div', { className: 'card__title brand_name' });
+    brandName.setContent(`${this.data.brandName}`);
+    cardTitle.append(brandName);
+
+    const productName = new BaseComponent('div', { className: 'card__title product_name' });
+    productName.setContent(`${this.data.productName}`);
+    cardTitle.append(productName);
   }
 
   changeCardView() {
